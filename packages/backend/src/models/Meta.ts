@@ -43,6 +43,11 @@ export class MiMeta {
 	})
 	public description: string | null;
 
+	@Column('text', {
+		nullable: true,
+	})
+	public about: string | null;
+
 	/**
 	 * メンテナの名前
 	 */
@@ -628,8 +633,7 @@ export class MiMeta {
 	})
 	public policies: Record<string, any>;
 
-	@Column('varchar', {
-		length: 280,
+	@Column('text', {
 		array: true,
 		default: '{}',
 	})
@@ -770,4 +774,14 @@ export class MiMeta {
 		default: false,
 	})
 	public enableProxyAccount: boolean;
+
+	@Column('jsonb', {
+		default: [],
+	})
+	public deliverSuspendedSoftware: SoftwareSuspension[];
 }
+
+export type SoftwareSuspension = {
+	software: string,
+	versionRange: string,
+};

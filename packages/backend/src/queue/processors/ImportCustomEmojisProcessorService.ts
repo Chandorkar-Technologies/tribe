@@ -18,6 +18,7 @@ import { bindThis } from '@/decorators.js';
 import type { Config } from '@/config.js';
 import { renderInlineError } from '@/misc/render-inline-error.js';
 import { QueueLoggerService } from '../QueueLoggerService.js';
+import { NotificationService } from '@/core/NotificationService.js';
 import type * as Bull from 'bullmq';
 import type { DbUserImportJobData } from '../types.js';
 
@@ -40,6 +41,7 @@ export class ImportCustomEmojisProcessorService {
 		private driveService: DriveService,
 		private downloadService: DownloadService,
 		private queueLoggerService: QueueLoggerService,
+		private notificationService: NotificationService,
 	) {
 		this.logger = this.queueLoggerService.logger.createSubLogger('import-custom-emojis');
 	}
@@ -66,9 +68,7 @@ export class ImportCustomEmojisProcessorService {
 			fs.writeFileSync(destPath, '', 'binary');
 			await this.downloadService.downloadUrl(file.url, destPath, { operationTimeout: this.config.import?.downloadTimeout, maxSize: this.config.import?.maxFileSize });
 		} catch (e) { // TODO: 何度か再試行
-			if (e instanceof Error || typeof e === 'string') {
-				this.logger.error('Error importing custom emojis:', e as Error);
-			}
+			this.logger.error(`Error importing custom emojis: ${renderInlineError(e)}`);
 			throw e;
 		}
 
@@ -92,10 +92,11 @@ export class ImportCustomEmojisProcessorService {
 					continue;
 				}
 				const emojiPath = outputPath + '/' + record.fileName;
-				await this.emojisRepository.delete({
-					name: nameNfc,
-					host: IsNull(),
-				});
+
+				const existing = await this.customEmojiService.emojisByIdCache.fetchMaybe(nameNfc);
+				if (existing) {
+					await this.customEmojiService.delete(existing.id, job.data.user);
+				}
 
 				try {
 					const driveFile = await this.driveService.addFile({
@@ -127,7 +128,12 @@ export class ImportCustomEmojisProcessorService {
 
 			cleanup();
 
-			this.logger.debug('Imported');
+			this.notificationService.createNotification(job.data.user.id, 'importCompleted', {
+				importedEntity: 'customEmoji',
+				fileId: file.id,
+			});
+
+			this.logger.debug('Imported', file.name);
 		} catch (e) {
 			this.logger.error('Error importing custom emojis:', e as Error);
 			cleanup();

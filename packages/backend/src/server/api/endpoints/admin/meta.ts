@@ -489,6 +489,10 @@ export const meta = {
 				type: 'string',
 				optional: false, nullable: true,
 			},
+			about: {
+				type: 'string',
+				optional: false, nullable: true,
+			},
 			disableRegistration: {
 				type: 'boolean',
 				optional: false, nullable: false,
@@ -613,6 +617,24 @@ export const meta = {
 				type: 'boolean',
 				optional: false, nullable: false,
 			},
+			deliverSuspendedSoftware: {
+				type: 'array',
+				optional: false, nullable: false,
+				items: {
+					type: 'object',
+					optional: false, nullable: false,
+					properties: {
+						software: {
+							type: 'string',
+							optional: false, nullable: false,
+						},
+						versionRange: {
+							type: 'string',
+							optional: false, nullable: false,
+						},
+					},
+				},
+			},
 		},
 	},
 } as const;
@@ -646,6 +668,7 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 				shortName: instance.shortName,
 				uri: this.config.url,
 				description: instance.description,
+				about: instance.about,
 				langs: instance.langs,
 				tosUrl: instance.termsOfServiceUrl,
 				repositoryUrl: instance.repositoryUrl,
@@ -776,6 +799,7 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 				hasLegacyAuthFetchSetting: config.checkActivityPubGetSignature != null,
 				allowUnsignedFetch: instance.allowUnsignedFetch,
 				enableProxyAccount: instance.enableProxyAccount,
+				deliverSuspendedSoftware: instance.deliverSuspendedSoftware,
 			};
 		});
 	}

@@ -12,13 +12,13 @@ import { QueueStatsService } from '@/daemons/QueueStatsService.js';
 import { ServerStatsService } from '@/daemons/ServerStatsService.js';
 import { ServerService } from '@/server/ServerService.js';
 import { MainModule } from '@/MainModule.js';
-import { envOption } from '@/env.js';
-import { ApLogCleanupService } from '@/daemons/ApLogCleanupService.js';
+import { EnvService } from '@/global/EnvService.js';
 
 export async function server() {
 	const app = await NestFactory.createApplicationContext(MainModule, {
 		logger: new NestLogger(),
 	});
+	app.enableShutdownHooks();
 
 	const serverService = app.get(ServerService);
 	await serverService.launch();
@@ -26,10 +26,11 @@ export async function server() {
 	if (process.env.NODE_ENV !== 'test') {
 		app.get(ChartManagementService).start();
 	}
-	if (!envOption.noDaemons) {
+
+	const envService = app.get(EnvService);
+	if (!envService.options.noDaemons) {
 		app.get(QueueStatsService).start();
 		app.get(ServerStatsService).start();
-		app.get(ApLogCleanupService).start();
 	}
 
 	return app;
@@ -39,6 +40,7 @@ export async function jobQueue() {
 	const jobQueue = await NestFactory.createApplicationContext(QueueProcessorModule, {
 		logger: new NestLogger(),
 	});
+	jobQueue.enableShutdownHooks();
 
 	jobQueue.get(QueueProcessorService).start();
 	jobQueue.get(ChartManagementService).start();

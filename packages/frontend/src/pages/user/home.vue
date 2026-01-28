@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 			<MkInfo v-if="user.isSilenced" :warn="true">{{ i18n.ts.userSilenced }}</MkInfo>
 
 			<div class="profile _gaps">
-				<MkAccountMoved v-if="user.movedTo" :movedTo="user.movedTo"/>
+				<MkAccountMoved v-if="user.movedToUri" :movedTo="user.movedTo" :movedToUri="user.movedToUri"/>
 				<MkRemoteCaution v-if="user.host != null" :href="user.url ?? user.uri!"/>
 				<MkInfo v-if="user.host == null && user.username.includes('.')">{{ i18n.ts.isSystemAccount }}</MkInfo>
 
@@ -173,14 +173,13 @@ SPDX-License-Identifier: AGPL-3.0-only
 					<MkLazy>
 						<div v-if="noteview === 'pinned'" class="_gaps">
 							<div v-if="user.pinnedNotes.length < 1" class="_fullinfo">
-								<img :src="infoImageUrl" draggable="false" aria-hidden="true" :alt="i18n.ts.noNotes"/>
-								<div>{{ i18n.ts.noNotes }}</div>
+								<MkResult type="empty" :text="i18n.ts.noNotes"/>
 							</div>
 							<div v-else class="_panel">
-								<DynamicNote v-for="note of user.pinnedNotes" :key="note.id" class="note" :class="$style.pinnedNote" :note="note" :pinned="true"/>
+								<DynamicNote v-for="note of user.pinnedNotes" :key="note.id" class="note" :class="$style.pinnedNote" :note="note" :pinned="true" @expandMute="n => onExpandMute(n)"/>
 							</div>
 						</div>
-						<MkNotes v-else :class="$style.tl" :noGap="true" :pagination="AllPagination"/>
+						<MkNotes v-else :class="$style.tl" :noGap="true" :pagination="AllPagination" @expandMute="n => onExpandMute(n)"/>
 					</MkLazy>
 				</MkStickyContainer>
 			</div>
@@ -199,6 +198,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 import { defineAsyncComponent, computed, onMounted, onUnmounted, nextTick, watch, ref } from 'vue';
 import * as Misskey from 'misskey-js';
 import { getScrollPosition } from '@@/js/scroll.js';
+import { useMuteOverrides } from '@/utility/check-word-mute.js';
 import MkTab from '@/components/MkTab.vue';
 import MkNotes from '@/components/MkNotes.vue';
 import MkFollowButton from '@/components/MkFollowButton.vue';
@@ -220,10 +220,11 @@ import { misskeyApi } from '@/utility/misskey-api.js';
 import { isFollowingVisibleForMe, isFollowersVisibleForMe } from '@/utility/isFfVisibleForMe.js';
 import { useRouter } from '@/router.js';
 import { getStaticImageUrl } from '@/utility/media-proxy.js';
-import { infoImageUrl } from '@/instance.js';
 import MkSparkle from '@/components/MkSparkle.vue';
 import { prefer } from '@/preferences.js';
 import DynamicNote from '@/components/DynamicNote.vue';
+import MkOmit from '@/components/MkOmit.vue';
+import { deepAssign } from '@/utility/merge';
 
 function calcAge(birthdate: string): number {
 	const date = new Date(birthdate);
@@ -255,6 +256,28 @@ const props = withDefaults(defineProps<{
 const emit = defineEmits<{
 	(ev: 'unfoldFiles'): void;
 }>();
+
+const muteOverrides = useMuteOverrides();
+
+function onExpandMute(note: Misskey.entities.Note) {
+	if (note.user.id === props.user.id) {
+		// This kills the mandatoryCW for this user below this point
+		deepAssign(muteOverrides, {
+			user: {
+				[props.user.id]: {
+					userMandatoryCW: null,
+					userSilenced: false,
+				},
+				instance: {
+					[props.user.host ?? '']: {
+						instanceMandatoryCW: null,
+						instanceSilenced: false,
+					},
+				},
+			},
+		});
+	}
+}
 
 const router = useRouter();
 

@@ -12,6 +12,12 @@ export const packedNoteSchema = {
 			format: 'id',
 			example: 'xxxxxxxxxx',
 		},
+		threadId: {
+			type: 'string',
+			optional: false, nullable: false,
+			format: 'id',
+			example: 'xxxxxxxxxx',
+		},
 		createdAt: {
 			type: 'string',
 			optional: false, nullable: false,
@@ -35,10 +41,18 @@ export const packedNoteSchema = {
 			type: 'string',
 			optional: true, nullable: true,
 		},
+		mandatoryCW: {
+			type: 'string',
+			optional: true, nullable: true,
+		},
 		userId: {
 			type: 'string',
 			optional: false, nullable: false,
 			format: 'id',
+		},
+		userHost: {
+			type: 'string',
+			optional: false, nullable: true,
 		},
 		user: {
 			type: 'object',
@@ -166,6 +180,26 @@ export const packedNoteSchema = {
 					},
 				},
 			},
+		},
+		isMutingThread: {
+			type: 'boolean',
+			optional: false, nullable: false,
+		},
+		isMutingNote: {
+			type: 'boolean',
+			optional: false, nullable: false,
+		},
+		isFavorited: {
+			type: 'boolean',
+			optional: false, nullable: false,
+		},
+		isRenoted: {
+			type: 'boolean',
+			optional: false, nullable: false,
+		},
+		bypassSilence: {
+			type: 'boolean',
+			optional: false, nullable: false,
 		},
 		emojis: {
 			type: 'object',

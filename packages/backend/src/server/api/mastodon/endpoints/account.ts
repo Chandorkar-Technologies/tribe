@@ -12,6 +12,7 @@ import type { AccessTokensRepository, UserProfilesRepository } from '@/models/_.
 import { attachMinMaxPagination } from '@/server/api/mastodon/pagination.js';
 import { MastodonConverters, convertRelationship, convertFeaturedTag, convertList } from '../MastodonConverters.js';
 import type { FastifyInstance } from 'fastify';
+import { promiseMap } from '@/misc/promise-map.js';
 
 interface ApiAccountMastodonRoute {
 	Params: { id?: string },
@@ -153,6 +154,25 @@ export class ApiAccountMastodon {
 			return reply.send(response);
 		});
 
+		fastify.get<{ Querystring: { q: string; limit?: string; offset?: string; resolve?: string; following?: string; } }>('/v1/accounts/search', async (request, reply) => {
+			if (!request.query.q) return reply.code(400).send({ error: 'BAD_REQUEST', error_description: 'Missing required property "q"' });
+
+			const client = this.clientService.getClient(request);
+
+			const limit = request.query.limit ? parseInt(request.query.limit) : 40;
+
+			const options = {
+				following: toBoolean(request.query.following),
+				limit,
+				resolve: toBoolean(request.query.resolve),
+			};
+
+			const data = await client.searchAccount(request.query.q, options);
+			const response = await Promise.all(data.data.map(async (account) => await this.mastoConverters.convertAccount(account)));
+
+			return reply.send(response);
+		});
+
 		fastify.get<{ Params: { id?: string } }>('/v1/accounts/:id', async (_request, reply) => {
 			if (!_request.params.id) return reply.code(400).send({ error: 'BAD_REQUEST', error_description: 'Missing required parameter "id"' });
 
@@ -169,7 +189,7 @@ export class ApiAccountMastodon {
 			const { client, me } = await this.clientService.getAuthClient(request);
 			const args = parseTimelineArgs(request.query);
 			const data = await client.getAccountStatuses(request.params.id, args);
-			const response = await Promise.all(data.data.map(async (status) => await this.mastoConverters.convertStatus(status, me)));
+			const response = await promiseMap(data.data, async status => await this.mastoConverters.convertStatus(status, me), { limit: 2 });
 
 			attachMinMaxPagination(request, reply, response);
 			return reply.send(response);
@@ -193,7 +213,7 @@ export class ApiAccountMastodon {
 				request.params.id,
 				parseTimelineArgs(request.query),
 			);
-			const response = await Promise.all(data.data.map(async (account) => await this.mastoConverters.convertAccount(account)));
+			const response = await promiseMap(data.data, async account => await this.mastoConverters.convertAccount(account), { limit: 2 });
 
 			attachMinMaxPagination(request, reply, response);
 			return reply.send(response);
@@ -207,7 +227,7 @@ export class ApiAccountMastodon {
 				request.params.id,
 				parseTimelineArgs(request.query),
 			);
-			const response = await Promise.all(data.data.map(async (account) => await this.mastoConverters.convertAccount(account)));
+			const response = await promiseMap(data.data, async account => await this.mastoConverters.convertAccount(account), { limit: 2 });
 
 			attachMinMaxPagination(request, reply, response);
 			return reply.send(response);

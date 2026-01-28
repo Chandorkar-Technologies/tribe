@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.4
 
-ARG NODE_VERSION=22.11.0-alpine3.20
+ARG NODE_VERSION=22.15.0-alpine3.20
 
 FROM node:${NODE_VERSION} as build
 
@@ -65,7 +65,7 @@ COPY --chown=sharkey:sharkey --from=build /sharkey/packages/misskey-js/built ./p
 COPY --chown=sharkey:sharkey --from=build /sharkey/packages/misskey-reversi/built ./packages/misskey-reversi/built
 COPY --chown=sharkey:sharkey --from=build /sharkey/packages/misskey-bubble-game/built ./packages/misskey-bubble-game/built
 COPY --chown=sharkey:sharkey --from=build /sharkey/packages/backend/built ./packages/backend/built
-COPY --chown=sharkey:sharkey --from=build /sharkey/packages/megalodon/lib ./packages/megalodon/lib
+COPY --chown=sharkey:sharkey --from=build /sharkey/packages/megalodon/built ./packages/megalodon/built
 COPY --chown=sharkey:sharkey --from=build /sharkey/fluent-emojis ./fluent-emojis
 COPY --chown=sharkey:sharkey --from=build /sharkey/tossface-emojis/dist ./tossface-emojis/dist
 COPY --chown=sharkey:sharkey --from=build /sharkey/sharkey-assets ./packages/frontend/assets

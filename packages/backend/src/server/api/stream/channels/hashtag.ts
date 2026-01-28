@@ -34,7 +34,7 @@ class HashtagChannel extends Channel {
 		this.q = params.q;
 
 		// Subscribe stream
-		this.subscriber.on('notesStream', this.onNote);
+		this.subscriber?.on('notesStream', this.onNote);
 	}
 
 	@bindThis
@@ -43,18 +43,17 @@ class HashtagChannel extends Channel {
 		const matched = this.q.some(tags => tags.every(tag => noteTags.includes(normalizeForSearch(tag))));
 		if (!matched) return;
 
-		if (this.isNoteMutedOrBlocked(note)) return;
+		const { accessible, silence } = await this.checkNoteVisibility(note, { includeReplies: true });
+		if (!accessible || silence) return;
 
-		const clonedNote = await this.assignMyReaction(note);
-		await this.hideNote(clonedNote);
-
+		const clonedNote = await this.rePackNote(note);
 		this.send('note', clonedNote);
 	}
 
 	@bindThis
 	public dispose() {
 		// Unsubscribe events
-		this.subscriber.off('notesStream', this.onNote);
+		this.subscriber?.off('notesStream', this.onNote);
 	}
 }
 

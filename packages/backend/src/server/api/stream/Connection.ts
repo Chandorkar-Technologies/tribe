@@ -10,13 +10,15 @@ import type { Packed } from '@/misc/json-schema.js';
 import type { NotificationService } from '@/core/NotificationService.js';
 import { bindThis } from '@/decorators.js';
 import { CacheService } from '@/core/CacheService.js';
-import { MiFollowing, MiUserProfile } from '@/models/_.js';
+import type { MiFollowing, MiUserProfile, NoteFavoritesRepository, NoteReactionsRepository, NotesRepository } from '@/models/_.js';
 import type { StreamEventEmitter, GlobalEvents } from '@/core/GlobalEventService.js';
 import { ChannelFollowingService } from '@/core/ChannelFollowingService.js';
 import { isJsonObject } from '@/misc/json-value.js';
 import type { JsonObject, JsonValue } from '@/misc/json-value.js';
 import { LoggerService } from '@/core/LoggerService.js';
+import { TimeService, type TimerHandle } from '@/global/TimeService.js';
 import type Logger from '@/logger.js';
+import { QueryService } from '@/core/QueryService.js';
 import type { ChannelsService } from './ChannelsService.js';
 import type { EventEmitter } from 'events';
 import type Channel from './channel.js';
@@ -31,8 +33,8 @@ const MAX_SUBSCRIPTIONS_PER_CONNECTION = 512;
 export default class Connection {
 	public user?: MiUser;
 	public token?: MiAccessToken;
-	private wsConnection: WebSocket.WebSocket;
-	public subscriber: StreamEventEmitter;
+	private wsConnection?: WebSocket.WebSocket;
+	public subscriber?: StreamEventEmitter;
 	private channels = new Map<string, Channel>();
 	private subscribingNotes = new Map<string, number>();
 	public userProfile: MiUserProfile | null = null;
@@ -42,15 +44,26 @@ export default class Connection {
 	public userIdsWhoBlockingMe: Set<string> = new Set();
 	public userIdsWhoMeMutingRenotes: Set<string> = new Set();
 	public userMutedInstances: Set<string> = new Set();
-	private fetchIntervalId: NodeJS.Timeout | null = null;
+	public userMutedThreads: Set<string> = new Set();
+	public userMutedNotes: Set<string> = new Set();
+	public myRecentReactions: Map<string, string> = new Map();
+	public myRecentRenotes: Set<string> = new Set();
+	public myRecentFavorites: Set<string> = new Set();
+	private fetchIntervalId: TimerHandle | null = null;
 	private closingConnection = false;
 	private logger: Logger;
 
 	constructor(
+		private readonly noteReactionsRepository: NoteReactionsRepository,
+		private readonly notesRepository: NotesRepository,
+		private readonly noteFavoritesRepository: NoteFavoritesRepository,
+		private readonly queryService: QueryService,
 		private channelsService: ChannelsService,
 		private notificationService: NotificationService,
-		private cacheService: CacheService,
+		public readonly cacheService: CacheService,
 		private channelFollowingService: ChannelFollowingService,
+		private readonly timeService: TimeService,
+
 		loggerService: LoggerService,
 
 		user: MiUser | null | undefined,
@@ -67,13 +80,34 @@ export default class Connection {
 	@bindThis
 	public async fetch() {
 		if (this.user == null) return;
-		const [userProfile, following, followingChannels, userIdsWhoMeMuting, userIdsWhoBlockingMe, userIdsWhoMeMutingRenotes] = await Promise.all([
+		const [userProfile, following, followingChannels, userIdsWhoMeMuting, userIdsWhoBlockingMe, userIdsWhoMeMutingRenotes, threadMutings, noteMutings, myRecentReactions, myRecentFavorites, myRecentRenotes] = await Promise.all([
 			this.cacheService.userProfileCache.fetch(this.user.id),
 			this.cacheService.userFollowingsCache.fetch(this.user.id),
-			this.channelFollowingService.userFollowingChannelsCache.fetch(this.user.id),
+			this.cacheService.userFollowingChannelsCache.fetch(this.user.id),
 			this.cacheService.userMutingsCache.fetch(this.user.id),
 			this.cacheService.userBlockedCache.fetch(this.user.id),
 			this.cacheService.renoteMutingsCache.fetch(this.user.id),
+			this.cacheService.threadMutingsCache.fetch(this.user.id),
+			this.cacheService.noteMutingsCache.fetch(this.user.id),
+			this.noteReactionsRepository.find({
+				where: { userId: this.user.id },
+				select: { noteId: true, reaction: true },
+				order: { id: 'desc' },
+				take: 100,
+			}),
+			this.noteFavoritesRepository.find({
+				where: { userId: this.user.id },
+				select: { noteId: true },
+				order: { id: 'desc' },
+				take: 100,
+			}),
+			this.queryService
+				.andIsRenote(this.notesRepository.createQueryBuilder('note'), 'note')
+				.andWhere({ userId: this.user.id })
+				.orderBy({ id: 'DESC' })
+				.limit(100)
+				.select('note.renoteId', 'renoteId')
+				.getRawMany<{ renoteId: string }>(),
 		]);
 		this.userProfile = userProfile;
 		this.following = following;
@@ -82,6 +116,11 @@ export default class Connection {
 		this.userIdsWhoBlockingMe = userIdsWhoBlockingMe;
 		this.userIdsWhoMeMutingRenotes = userIdsWhoMeMutingRenotes;
 		this.userMutedInstances = new Set(userProfile.mutedInstances);
+		this.userMutedThreads = threadMutings;
+		this.userMutedNotes = noteMutings;
+		this.myRecentReactions = new Map(myRecentReactions.map(r => [r.noteId, r.reaction]));
+		this.myRecentFavorites = new Set(myRecentFavorites.map(f => f.noteId ));
+		this.myRecentRenotes = new Set(myRecentRenotes.map(r => r.renoteId ));
 	}
 
 	@bindThis
@@ -90,7 +129,7 @@ export default class Connection {
 			await this.fetch();
 
 			if (!this.fetchIntervalId) {
-				this.fetchIntervalId = setInterval(this.fetch, 1000 * 10);
+				this.fetchIntervalId = this.timeService.startTimer(this.fetch, 1000 * 10, { repeated: true });
 			}
 		}
 	}
@@ -121,7 +160,7 @@ export default class Connection {
 			this.logger.warn(`Closing a connection from ${this.ip} (user=${this.user?.id}}) due to an excessive influx of messages.`);
 
 			this.closingConnection = true;
-			this.wsConnection.close(1008, 'Disconnected - too many requests');
+			this.wsConnection?.close(1008, 'Disconnected - too many requests');
 			return;
 		}
 
@@ -176,11 +215,11 @@ export default class Connection {
 			const oldestKey = this.subscribingNotes.keys().next().value!;
 
 			this.subscribingNotes.delete(oldestKey);
-			this.subscriber.off(`noteStream:${oldestKey}`, this.onNoteStreamMessage);
+			this.subscriber?.off(`noteStream:${oldestKey}`, this.onNoteStreamMessage);
 		}
 
 		if (updated === 1) {
-			this.subscriber.on(`noteStream:${payload.id}`, this.onNoteStreamMessage);
+			this.subscriber?.on(`noteStream:${payload.id}`, this.onNoteStreamMessage);
 		}
 	}
 
@@ -198,7 +237,7 @@ export default class Connection {
 		this.subscribingNotes.set(payload.id, updated);
 		if (updated <= 0) {
 			this.subscribingNotes.delete(payload.id);
-			this.subscriber.off(`noteStream:${payload.id}`, this.onNoteStreamMessage);
+			this.subscriber?.off(`noteStream:${payload.id}`, this.onNoteStreamMessage);
 		}
 	}
 
@@ -253,6 +292,7 @@ export default class Connection {
 	 */
 	@bindThis
 	public sendMessageToWs(type: string, payload: JsonObject) {
+		if (!this.wsConnection) throw new Error('Cannot send: not connected');
 		this.wsConnection.send(JSON.stringify({
 			type: type,
 			body: payload,
@@ -339,13 +379,14 @@ export default class Connection {
 	 */
 	@bindThis
 	public dispose() {
-		if (this.fetchIntervalId) clearInterval(this.fetchIntervalId);
+		if (this.fetchIntervalId) this.timeService.stopTimer(this.fetchIntervalId);
 		for (const c of this.channels.values()) {
 			if (c.dispose) c.dispose();
 		}
 		for (const k of this.subscribingNotes.keys()) {
-			this.subscriber.off(`noteStream:${k}`, this.onNoteStreamMessage);
+			this.subscriber?.off(`noteStream:${k}`, this.onNoteStreamMessage);
 		}
+		this.wsConnection?.off('message', this.onWsConnectionMessage);
 
 		this.fetchIntervalId = null;
 		this.channels.clear();

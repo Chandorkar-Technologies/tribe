@@ -257,7 +257,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/captcha/current', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -267,6 +267,28 @@ declare module '../api.js' {
      * **Credential required**: *Yes* / **Permission**: *write:admin:meta*
      */
     request<E extends 'admin/captcha/save', P extends Endpoints[E]['req']>(
+      endpoint: E,
+      params: P,
+      credential?: string | null,
+    ): Promise<SwitchCaseResponseType<E, P>>;
+
+    /**
+     * No description provided.
+     * 
+     * **Credential required**: *Yes* / **Permission**: *write:admin:cw-instance*
+     */
+    request<E extends 'admin/cw-instance', P extends Endpoints[E]['req']>(
+      endpoint: E,
+      params: P,
+      credential?: string | null,
+    ): Promise<SwitchCaseResponseType<E, P>>;
+
+    /**
+     * No description provided.
+     * 
+     * **Credential required**: *Yes* / **Permission**: *write:admin:cw-note*
+     */
+    request<E extends 'admin/cw-note', P extends Endpoints[E]['req']>(
       endpoint: E,
       params: P,
       credential?: string | null,
@@ -334,7 +356,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/drive/cleanup', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -566,7 +588,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/gen-vapid-keys', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -577,7 +599,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/get-index-stats', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -588,7 +610,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/get-table-stats', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -632,7 +654,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/meta', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -676,7 +698,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/queue/deliver-delayed', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -687,7 +709,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/queue/inbox-delayed', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -731,7 +753,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/queue/queues', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -775,7 +797,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/queue/stats', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -808,7 +830,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/relays/list', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -848,9 +870,42 @@ declare module '../api.js' {
     /**
      * No description provided.
      * 
+     * **Credential required**: *Yes* / **Permission**: *write:admin:restart-migration*
+     */
+    request<E extends 'admin/restart-migration', P extends Endpoints[E]['req']>(
+      endpoint: E,
+      params: P,
+      credential?: string | null,
+    ): Promise<SwitchCaseResponseType<E, P>>;
+
+    /**
+     * No description provided.
+     * 
+     * **Credential required**: *Yes* / **Permission**: *read:admin:roles*
+     */
+    request<E extends 'admin/roles/annotate-condition', P extends Endpoints[E]['req']>(
+      endpoint: E,
+      params: P,
+      credential?: string | null,
+    ): Promise<SwitchCaseResponseType<E, P>>;
+
+    /**
+     * No description provided.
+     * 
      * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
      */
     request<E extends 'admin/roles/assign', P extends Endpoints[E]['req']>(
+      endpoint: E,
+      params: P,
+      credential?: string | null,
+    ): Promise<SwitchCaseResponseType<E, P>>;
+
+    /**
+     * No description provided.
+     * 
+     * **Credential required**: *Yes* / **Permission**: *write:admin:roles*
+     */
+    request<E extends 'admin/roles/clone', P extends Endpoints[E]['req']>(
       endpoint: E,
       params: P,
       credential?: string | null,
@@ -885,7 +940,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/roles/list', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -962,7 +1017,7 @@ declare module '../api.js' {
      */
     request<E extends 'admin/server-info', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -1243,7 +1298,7 @@ declare module '../api.js' {
      */
     request<E extends 'antennas/list', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -1320,7 +1375,7 @@ declare module '../api.js' {
      */
     request<E extends 'app/current', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -1464,7 +1519,7 @@ declare module '../api.js' {
      */
     request<E extends 'channels/featured', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -1497,7 +1552,7 @@ declare module '../api.js' {
      */
     request<E extends 'channels/my-favorites', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2025,7 +2080,7 @@ declare module '../api.js' {
      */
     request<E extends 'clips/list', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2036,7 +2091,7 @@ declare module '../api.js' {
      */
     request<E extends 'clips/my-favorites', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2102,7 +2157,7 @@ declare module '../api.js' {
      */
     request<E extends 'drive', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2322,7 +2377,7 @@ declare module '../api.js' {
      */
     request<E extends 'emojis', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2344,7 +2399,7 @@ declare module '../api.js' {
      */
     request<E extends 'endpoints', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2356,7 +2411,7 @@ declare module '../api.js' {
      */
     request<E extends 'export-custom-emojis', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2687,7 +2742,7 @@ declare module '../api.js' {
      */
     request<E extends 'gallery/popular', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2775,7 +2830,7 @@ declare module '../api.js' {
      */
     request<E extends 'get-avatar-decorations', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2786,7 +2841,7 @@ declare module '../api.js' {
      */
     request<E extends 'get-online-users-count', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2830,7 +2885,7 @@ declare module '../api.js' {
      */
     request<E extends 'hashtags/trend', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -2852,7 +2907,7 @@ declare module '../api.js' {
      */
     request<E extends 'i', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3019,7 +3074,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/export-antennas', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3031,7 +3086,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/export-blocking', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3043,7 +3098,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/export-clips', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3055,7 +3110,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/export-data', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3067,7 +3122,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/export-favorites', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3091,7 +3146,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/export-mute', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3103,7 +3158,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/export-notes', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3115,7 +3170,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/export-user-lists', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3399,7 +3454,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/registry/scopes-with-domain', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3421,6 +3476,30 @@ declare module '../api.js' {
      * **Credential required**: *Yes*
      */
     request<E extends 'i/revoke-token', P extends Endpoints[E]['req']>(
+      endpoint: E,
+      params: P,
+      credential?: string | null,
+    ): Promise<SwitchCaseResponseType<E, P>>;
+
+    /**
+     * No description provided.
+     * 
+     * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
+     * **Credential required**: *Yes*
+     */
+    request<E extends 'i/shared-access/list', P extends Endpoints[E]['req']>(
+      endpoint: E,
+      params: P,
+      credential?: string | null,
+    ): Promise<SwitchCaseResponseType<E, P>>;
+
+    /**
+     * No description provided.
+     * 
+     * **Internal Endpoint**: This endpoint is an API for the misskey mainframe and is not intended for use by third parties.
+     * **Credential required**: *Yes*
+     */
+    request<E extends 'i/shared-access/login', P extends Endpoints[E]['req']>(
       endpoint: E,
       params: P,
       credential?: string | null,
@@ -3501,7 +3580,7 @@ declare module '../api.js' {
      */
     request<E extends 'i/webhooks/list', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3546,7 +3625,7 @@ declare module '../api.js' {
      */
     request<E extends 'invite/create', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -3568,7 +3647,7 @@ declare module '../api.js' {
      */
     request<E extends 'invite/limit', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4097,7 +4176,7 @@ declare module '../api.js' {
      */
     request<E extends 'notifications/flush', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4108,7 +4187,7 @@ declare module '../api.js' {
      */
     request<E extends 'notifications/mark-all-as-read', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4119,7 +4198,7 @@ declare module '../api.js' {
      */
     request<E extends 'notifications/test-notification', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4164,7 +4243,7 @@ declare module '../api.js' {
      */
     request<E extends 'pages/featured', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4219,7 +4298,7 @@ declare module '../api.js' {
      */
     request<E extends 'ping', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4296,7 +4375,7 @@ declare module '../api.js' {
      */
     request<E extends 'reset-db', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4318,7 +4397,7 @@ declare module '../api.js' {
      */
     request<E extends 'retention', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4351,7 +4430,7 @@ declare module '../api.js' {
      */
     request<E extends 'reversi/invitations', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4406,7 +4485,7 @@ declare module '../api.js' {
      */
     request<E extends 'roles/list', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4450,7 +4529,7 @@ declare module '../api.js' {
      */
     request<E extends 'server-info', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 
@@ -4472,7 +4551,7 @@ declare module '../api.js' {
      */
     request<E extends 'stats', P extends Endpoints[E]['req']>(
       endpoint: E,
-      params: P,
+      params?: P,
       credential?: string | null,
     ): Promise<SwitchCaseResponseType<E, P>>;
 

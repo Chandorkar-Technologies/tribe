@@ -11,6 +11,23 @@ import { bindThis } from '@/decorators.js';
 import type { OnApplicationShutdown } from '@nestjs/common';
 import { MiMeta } from '@/models/_.js';
 import { DI } from '@/di-symbols.js';
+import { TimeService, type TimerHandle } from '@/global/TimeService.js';
+
+export interface Stats {
+	cpu: number,
+	mem: {
+		used: number,
+		active: number,
+	},
+	net: {
+		rx: number,
+		tx: number,
+	},
+	fs: {
+		r: number,
+		w: number,
+	},
+}
 
 const ev = new Xev();
 
@@ -21,12 +38,20 @@ const round = (num: number) => Math.round(num * 10) / 10;
 
 @Injectable()
 export class ServerStatsService implements OnApplicationShutdown {
-	private intervalId: NodeJS.Timeout | null = null;
+	private intervalId: TimerHandle | null = null;
+
+	private log: Stats[] = [];
 
 	constructor(
 		@Inject(DI.meta)
 		private meta: MiMeta,
+		private readonly timeService: TimeService,
 	) {
+	}
+
+	@bindThis
+	private async onRequestStatsLog(x: { id: string, length: number }) {
+		ev.emit(`serverStatsLog:${x.id}`, this.log.slice(0, x.length));
 	}
 
 	/**
@@ -36,11 +61,8 @@ export class ServerStatsService implements OnApplicationShutdown {
 	public async start(): Promise<void> {
 		if (!this.meta.enableServerMachineStats) return;
 
-		const log = [] as any[];
-
-		ev.on('requestServerStatsLog', x => {
-			ev.emit(`serverStatsLog:${x.id}`, log.slice(0, x.length));
-		});
+		this.log = [];
+		ev.on('requestServerStatsLog', this.onRequestStatsLog);
 
 		const tick = async () => {
 			const cpu = await cpuUsage();
@@ -64,20 +86,25 @@ export class ServerStatsService implements OnApplicationShutdown {
 				},
 			};
 			ev.emit('serverStats', stats);
-			log.unshift(stats);
-			if (log.length > 200) log.pop();
+			this.log.unshift(stats);
+			if (this.log.length > 200) this.log.pop();
 		};
 
 		tick();
 
-		this.intervalId = setInterval(tick, interval);
+		this.intervalId = this.timeService.startTimer(tick, interval, { repeated: true });
 	}
 
 	@bindThis
 	public dispose(): void {
 		if (this.intervalId) {
-			clearInterval(this.intervalId);
+			this.timeService.stopTimer(this.intervalId);
 		}
+
+		this.log = [];
+		ev.off('requestServerStatsLog', this.onRequestStatsLog);
+
+		ev.dispose();
 	}
 
 	@bindThis
@@ -89,9 +116,13 @@ export class ServerStatsService implements OnApplicationShutdown {
 // CPU STAT
 function cpuUsage(): Promise<number> {
 	return new Promise((res, rej) => {
-		osUtils.cpuUsage((cpuUsage) => {
-			res(cpuUsage);
-		});
+		try {
+			osUtils.cpuUsage((cpuUsage) => {
+				res(cpuUsage);
+			});
+		} catch (err) {
+			rej(err);
+		}
 	});
 }
 

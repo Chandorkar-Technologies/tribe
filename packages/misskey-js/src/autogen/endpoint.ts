@@ -38,10 +38,13 @@ import type {
 	AdminAvatarDecorationsUpdateRequest,
 	AdminCaptchaCurrentResponse,
 	AdminCaptchaSaveRequest,
+	AdminCwInstanceRequest,
+	AdminCwNoteRequest,
 	AdminCwUserRequest,
 	AdminDeclineUserRequest,
 	AdminDeleteAccountRequest,
 	AdminDeleteAllFilesOfAUserRequest,
+	AdminDriveCleanRemoteFilesRequest,
 	AdminDriveFilesRequest,
 	AdminDriveFilesResponse,
 	AdminDriveShowFileRequest,
@@ -68,6 +71,7 @@ import type {
 	AdminFederationRemoveAllFollowingRequest,
 	AdminFederationUpdateInstanceRequest,
 	AdminForwardAbuseUserReportRequest,
+	AdminGenVapidKeysResponse,
 	AdminGetIndexStatsResponse,
 	AdminGetTableStatsResponse,
 	AdminGetUserIpsRequest,
@@ -83,6 +87,7 @@ import type {
 	AdminQueueDeliverDelayedResponse,
 	AdminQueueInboxDelayedResponse,
 	AdminQueueJobsRequest,
+	AdminQueueJobsResponse,
 	AdminQueuePromoteJobsRequest,
 	AdminQueueQueueStatsRequest,
 	AdminQueueRemoveJobRequest,
@@ -97,7 +102,13 @@ import type {
 	AdminResetPasswordRequest,
 	AdminResetPasswordResponse,
 	AdminResolveAbuseUserReportRequest,
+	AdminRestartMigrationRequest,
+	AdminRestartMigrationResponse,
+	AdminRolesAnnotateConditionRequest,
+	AdminRolesAnnotateConditionResponse,
 	AdminRolesAssignRequest,
+	AdminRolesCloneRequest,
+	AdminRolesCloneResponse,
 	AdminRolesCreateRequest,
 	AdminRolesCreateResponse,
 	AdminRolesDeleteRequest,
@@ -438,7 +449,6 @@ import type {
 	IReadAnnouncementRequest,
 	IRegenerateTokenRequest,
 	IRegistryGetRequest,
-	IRegistryGetResponse,
 	IRegistryGetAllRequest,
 	IRegistryGetAllResponse,
 	IRegistryGetDetailRequest,
@@ -452,6 +462,10 @@ import type {
 	IRegistryScopesWithDomainResponse,
 	IRegistrySetRequest,
 	IRevokeTokenRequest,
+	ISharedAccessListRequest,
+	ISharedAccessListResponse,
+	ISharedAccessLoginRequest,
+	ISharedAccessLoginResponse,
 	ISigninHistoryRequest,
 	ISigninHistoryResponse,
 	IUnpinRequest,
@@ -560,6 +574,7 @@ import type {
 	PagesUnlikeRequest,
 	PagesUpdateRequest,
 	PingResponse,
+	PinnedUsersRequest,
 	PinnedUsersResponse,
 	PromoReadRequest,
 	RenoteMuteCreateRequest,
@@ -685,11 +700,13 @@ export type Endpoints = {
 	'admin/avatar-decorations/update': { req: AdminAvatarDecorationsUpdateRequest; res: EmptyResponse };
 	'admin/captcha/current': { req: EmptyRequest; res: AdminCaptchaCurrentResponse };
 	'admin/captcha/save': { req: AdminCaptchaSaveRequest; res: EmptyResponse };
+	'admin/cw-instance': { req: AdminCwInstanceRequest; res: EmptyResponse };
+	'admin/cw-note': { req: AdminCwNoteRequest; res: EmptyResponse };
 	'admin/cw-user': { req: AdminCwUserRequest; res: EmptyResponse };
 	'admin/decline-user': { req: AdminDeclineUserRequest; res: EmptyResponse };
 	'admin/delete-account': { req: AdminDeleteAccountRequest; res: EmptyResponse };
 	'admin/delete-all-files-of-a-user': { req: AdminDeleteAllFilesOfAUserRequest; res: EmptyResponse };
-	'admin/drive/clean-remote-files': { req: EmptyRequest; res: EmptyResponse };
+	'admin/drive/clean-remote-files': { req: AdminDriveCleanRemoteFilesRequest; res: EmptyResponse };
 	'admin/drive/cleanup': { req: EmptyRequest; res: EmptyResponse };
 	'admin/drive/files': { req: AdminDriveFilesRequest; res: AdminDriveFilesResponse };
 	'admin/drive/show-file': { req: AdminDriveShowFileRequest; res: AdminDriveShowFileResponse };
@@ -711,7 +728,7 @@ export type Endpoints = {
 	'admin/federation/remove-all-following': { req: AdminFederationRemoveAllFollowingRequest; res: EmptyResponse };
 	'admin/federation/update-instance': { req: AdminFederationUpdateInstanceRequest; res: EmptyResponse };
 	'admin/forward-abuse-user-report': { req: AdminForwardAbuseUserReportRequest; res: EmptyResponse };
-	'admin/gen-vapid-keys': { req: EmptyRequest; res: EmptyResponse };
+	'admin/gen-vapid-keys': { req: EmptyRequest; res: AdminGenVapidKeysResponse };
 	'admin/get-index-stats': { req: EmptyRequest; res: AdminGetIndexStatsResponse };
 	'admin/get-table-stats': { req: EmptyRequest; res: AdminGetTableStatsResponse };
 	'admin/get-user-ips': { req: AdminGetUserIpsRequest; res: AdminGetUserIpsResponse };
@@ -723,7 +740,7 @@ export type Endpoints = {
 	'admin/queue/clear': { req: AdminQueueClearRequest; res: EmptyResponse };
 	'admin/queue/deliver-delayed': { req: EmptyRequest; res: AdminQueueDeliverDelayedResponse };
 	'admin/queue/inbox-delayed': { req: EmptyRequest; res: AdminQueueInboxDelayedResponse };
-	'admin/queue/jobs': { req: AdminQueueJobsRequest; res: EmptyResponse };
+	'admin/queue/jobs': { req: AdminQueueJobsRequest; res: AdminQueueJobsResponse };
 	'admin/queue/promote-jobs': { req: AdminQueuePromoteJobsRequest; res: EmptyResponse };
 	'admin/queue/queue-stats': { req: AdminQueueQueueStatsRequest; res: EmptyResponse };
 	'admin/queue/queues': { req: EmptyRequest; res: EmptyResponse };
@@ -737,7 +754,10 @@ export type Endpoints = {
 	'admin/relays/remove': { req: AdminRelaysRemoveRequest; res: EmptyResponse };
 	'admin/reset-password': { req: AdminResetPasswordRequest; res: AdminResetPasswordResponse };
 	'admin/resolve-abuse-user-report': { req: AdminResolveAbuseUserReportRequest; res: EmptyResponse };
+	'admin/restart-migration': { req: AdminRestartMigrationRequest; res: AdminRestartMigrationResponse };
+	'admin/roles/annotate-condition': { req: AdminRolesAnnotateConditionRequest; res: AdminRolesAnnotateConditionResponse };
 	'admin/roles/assign': { req: AdminRolesAssignRequest; res: EmptyResponse };
+	'admin/roles/clone': { req: AdminRolesCloneRequest; res: AdminRolesCloneResponse };
 	'admin/roles/create': { req: AdminRolesCreateRequest; res: AdminRolesCreateResponse };
 	'admin/roles/delete': { req: AdminRolesDeleteRequest; res: EmptyResponse };
 	'admin/roles/list': { req: EmptyRequest; res: AdminRolesListResponse };
@@ -958,7 +978,7 @@ export type Endpoints = {
 	'i/pin': { req: IPinRequest; res: IPinResponse };
 	'i/read-announcement': { req: IReadAnnouncementRequest; res: EmptyResponse };
 	'i/regenerate-token': { req: IRegenerateTokenRequest; res: EmptyResponse };
-	'i/registry/get': { req: IRegistryGetRequest; res: IRegistryGetResponse };
+	'i/registry/get': { req: IRegistryGetRequest; res: EmptyResponse };
 	'i/registry/get-all': { req: IRegistryGetAllRequest; res: IRegistryGetAllResponse };
 	'i/registry/get-detail': { req: IRegistryGetDetailRequest; res: IRegistryGetDetailResponse };
 	'i/registry/get-unsecure': { req: IRegistryGetUnsecureRequest; res: EmptyResponse };
@@ -968,6 +988,8 @@ export type Endpoints = {
 	'i/registry/scopes-with-domain': { req: EmptyRequest; res: IRegistryScopesWithDomainResponse };
 	'i/registry/set': { req: IRegistrySetRequest; res: EmptyResponse };
 	'i/revoke-token': { req: IRevokeTokenRequest; res: EmptyResponse };
+	'i/shared-access/list': { req: ISharedAccessListRequest; res: ISharedAccessListResponse };
+	'i/shared-access/login': { req: ISharedAccessLoginRequest; res: ISharedAccessLoginResponse };
 	'i/signin-history': { req: ISigninHistoryRequest; res: ISigninHistoryResponse };
 	'i/unpin': { req: IUnpinRequest; res: IUnpinResponse };
 	'i/update': { req: IUpdateRequest; res: IUpdateResponse };
@@ -1040,7 +1062,7 @@ export type Endpoints = {
 	'pages/unlike': { req: PagesUnlikeRequest; res: EmptyResponse };
 	'pages/update': { req: PagesUpdateRequest; res: EmptyResponse };
 	'ping': { req: EmptyRequest; res: PingResponse };
-	'pinned-users': { req: EmptyRequest; res: PinnedUsersResponse };
+	'pinned-users': { req: PinnedUsersRequest; res: PinnedUsersResponse };
 	'promo/read': { req: PromoReadRequest; res: EmptyResponse };
 	'renote-mute/create': { req: RenoteMuteCreateRequest; res: EmptyResponse };
 	'renote-mute/delete': { req: RenoteMuteDeleteRequest; res: EmptyResponse };

@@ -1,4 +1,4 @@
-import { components } from './types.js';
+import type { components } from './types.js';
 export type Error = components['schemas']['Error'];
 export type UserLite = components['schemas']['UserLite'];
 export type UserDetailedNotMeOnly = components['schemas']['UserDetailedNotMeOnly'];
@@ -8,6 +8,8 @@ export type MeDetailed = components['schemas']['MeDetailed'];
 export type UserDetailed = components['schemas']['UserDetailed'];
 export type User = components['schemas']['User'];
 export type UserList = components['schemas']['UserList'];
+export type Achievement = components['schemas']['Achievement'];
+export type AchievementName = components['schemas']['AchievementName'];
 export type Ad = components['schemas']['Ad'];
 export type Announcement = components['schemas']['Announcement'];
 export type App = components['schemas']['App'];

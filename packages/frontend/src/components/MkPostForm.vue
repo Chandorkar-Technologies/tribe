@@ -52,8 +52,8 @@ SPDX-License-Identifier: AGPL-3.0-only
 			</button>
 		</div>
 	</header>
-	<MkNoteSimple v-if="reply" :class="$style.targetNote" :hideFiles="true" :note="reply"/>
-	<MkNoteSimple v-if="renoteTargetNote" :class="$style.targetNote" :hideFiles="true" :note="renoteTargetNote"/>
+	<MkNoteSimple v-if="reply" :class="$style.targetNote" :hideFiles="true" :note="reply" :skipMute="true"/>
+	<MkNoteSimple v-if="renoteTargetNote" :class="$style.targetNote" :hideFiles="true" :note="renoteTargetNote" :skipMute="true"/>
 	<div v-if="quoteId" :class="$style.withQuote"><i class="ti ti-quote"></i> {{ i18n.ts.quoteAttached }}<button @click="quoteId = null; renoteTargetNote = null;"><i class="ti ti-x"></i></button></div>
 	<div v-if="visibility === 'specified'" :class="$style.toSpecified">
 		<span style="margin-right: 8px;">{{ i18n.ts.recipient }}</span>
@@ -676,7 +676,10 @@ function clear() {
 }
 
 function onKeydown(ev: KeyboardEvent) {
-	if (ev.key === 'Enter' && (ev.ctrlKey || ev.metaKey) && canPost.value) post();
+	if (ev.key === 'Enter' && (ev.ctrlKey || ev.metaKey) && canPost.value) {
+		ev.preventDefault();
+		post();
+	}
 
 	// justEndedComposition.value is for Safari, which keyDown occurs after compositionend.
 	// ev.isComposing is for another browsers.
@@ -1497,7 +1500,7 @@ defineExpose({
 	max-width: 100%;
 	min-width: 100%;
 	width: 100%;
-	min-height: 90px;
+	min-height: 5.85em;
 	height: 100%;
 }
 

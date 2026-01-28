@@ -39,12 +39,16 @@ export const notificationTypes = [
 	'chatRoomInvitationReceived',
 	'achievementEarned',
 	'exportCompleted',
+	'importCompleted',
 	'login',
 	'createToken',
 	'scheduledNoteFailed',
 	'scheduledNotePosted',
 	'app',
 	'test',
+	'sharedAccessGranted',
+	'sharedAccessRevoked',
+	'sharedAccessLogin',
 ] as const;
 
 export const groupedNotificationTypes = [
@@ -104,9 +108,10 @@ export const moderationLogTypes = [
 	'deleteGlobalAnnouncement',
 	'deleteUserAnnouncement',
 	'resetPassword',
+	'restartMigration',
 	'setMandatoryCW',
-	'setRemoteInstanceNSFW',
-	'unsetRemoteInstanceNSFW',
+	'setMandatoryCWForNote',
+	'setMandatoryCWForInstance',
 	'suspendRemoteInstance',
 	'unsuspendRemoteInstance',
 	'rejectRemoteInstanceReports',
@@ -286,6 +291,11 @@ export type ModerationLogPayloads = {
 		userUsername: string;
 		userHost: string | null;
 	};
+	restartMigration: {
+		userId: string;
+		userUsername: string;
+		userHost: string | null;
+	};
 	setMandatoryCW: {
 		newCW: string | null;
 		oldCW: string | null;
@@ -293,12 +303,17 @@ export type ModerationLogPayloads = {
 		userUsername: string;
 		userHost: string | null;
 	};
-	setRemoteInstanceNSFW: {
-		id: string;
-		host: string;
+	setMandatoryCWForNote: {
+		newCW: string | null;
+		oldCW: string | null;
+		noteId: string;
+		noteUserId: string;
+		noteUserUsername: string;
+		noteUserHost: string | null;
 	};
-	unsetRemoteInstanceNSFW: {
-		id: string;
+	setMandatoryCWForInstance: {
+		newCW: string | null;
+		oldCW: string | null;
 		host: string;
 	};
 	suspendRemoteInstance: {
@@ -536,13 +551,17 @@ export type Serialized<T> = {
 		? string
 		: T[K] extends (Date | null)
 			? (string | null)
-			: T[K] extends Record<string, any>
-				? Serialized<T[K]>
-				: T[K] extends (Record<string, any> | null)
-					? (Serialized<T[K]> | null)
-					: T[K] extends (Record<string, any> | undefined)
-						? (Serialized<T[K]> | undefined)
-						: T[K];
+			: T[K] extends (Date | undefined)
+				? (string | undefined)
+				: T[K] extends (Date | null | undefined)
+					? (string | null | undefined)
+					: T[K] extends Record<string, any>
+						? Serialized<T[K]>
+						: T[K] extends (Record<string, any> | null)
+							? (Serialized<T[K]> | null)
+							: T[K] extends (Record<string, any> | undefined)
+								? (Serialized<T[K]> | undefined)
+								: T[K];
 };
 
 export type FilterUnionByProperty<

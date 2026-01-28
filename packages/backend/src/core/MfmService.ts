@@ -299,7 +299,7 @@ export class MfmService {
 							(note that the `rp` are to be ignored, they only exist
 							for browsers who don't understand ruby)
 						*/
-						let nonRtNodes = [];
+						let nonRtNodes: ChildNode[] = [];
 						// scan children, ignore `rp`, split on `rt`
 						for (const child of node.childNodes) {
 							if (isText(child)) {
@@ -335,6 +335,38 @@ export class MfmService {
 					break;
 				}
 
+				// Replace iframe with link so we can generate previews.
+				// We shouldn't normally see this, but federated blogging platforms (WordPress, MicroBlog.Pub) can send it.
+				case 'iframe': {
+					const txt: string | undefined = node.attribs.title || node.attribs.alt;
+					const href: string | undefined = node.attribs.src;
+					if (href) {
+						if (href.match(/[\s>]/)) {
+							if (txt) {
+								// href is invalid + has a label => render a pseudo-link
+								text += `${text} (${href})`;
+							} else {
+								// href is invalid + no label => render plain text
+								text += href;
+							}
+						} else {
+							if (txt) {
+								// href is valid + has a label => render a link
+								const label = txt
+									.replaceAll('[', '(')
+									.replaceAll(']', ')')
+									.replaceAll(/\r?\n/, ' ')
+									.replaceAll('`', '\'');
+								text += `[${label}](<${href}>)`;
+							} else {
+								// href is valid + no label => render a plain URL
+								text += `<${href}>`;
+							}
+						}
+					}
+					break;
+				}
+
 				default:	// includes inline elements
 				{
 					appendChildren(node.childNodes);
@@ -345,7 +377,7 @@ export class MfmService {
 	}
 
 	@bindThis
-	public toHtml(nodes: mfm.MfmNode[] | null, mentionedRemoteUsers: IMentionedRemoteUsers = [], additionalAppenders: Appender[] = []) {
+	public toHtml(nodes: mfm.MfmNode[] | null, mentionedRemoteUsers: IMentionedRemoteUsers = [], additionalAppenders: Appender[] = [], inline = false) {
 		if (nodes == null) {
 			return null;
 		}
@@ -594,9 +626,15 @@ export class MfmService {
 			additionalAppender(doc, body);
 		}
 
-		return domserializer.render(body, {
+		let result = domserializer.render(body, {
 			encodeEntities: 'utf8'
 		});
+
+		if (inline) {
+			result = result.replace(/^<p>/, '').replace(/<\/p>$/, '');
+		}
+
+		return result;
 	}
 
 	// the toMastoApiHtml function was taken from Iceshrimp and written by zotan and modified by marie to work with the current MK version

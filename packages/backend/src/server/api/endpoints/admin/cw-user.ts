@@ -41,27 +41,28 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 		super(meta, paramDef, async (ps, me) => {
 			const user = await this.cacheService.findUserById(ps.userId);
 
-			// Skip if there's nothing to do
-			if (user.mandatoryCW === ps.cw) return;
+			// Collapse empty strings to null
+			const newCW = ps.cw?.trim() || null;
+			const oldCW = user.mandatoryCW;
 
-			// Log event first.
-			// This ensures that we don't "lose" the log if an error occurs
+			// Skip if there's nothing to do
+			if (oldCW === newCW) return;
+
+			await this.usersRepository.update(ps.userId, { mandatoryCW: newCW });
+
+			// Synchronize caches and other processes
+			const evt = user.host == null ? 'localUserUpdated' : 'remoteUserUpdated';
+			this.globalEventService.publishInternalEvent(evt, { id: ps.userId });
+
 			await this.moderationLogService.log(me, 'setMandatoryCW', {
-				newCW: ps.cw,
-				oldCW: user.mandatoryCW,
+				newCW,
+				oldCW,
 				userId: user.id,
 				userUsername: user.username,
 				userHost: user.host,
 			});
 
-			await this.usersRepository.update(ps.userId, {
-				// Collapse empty strings to null
-				// eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-				mandatoryCW: ps.cw || null,
-			});
-
-			// Synchronize caches and other processes
-			this.globalEventService.publishInternalEvent('localUserUpdated', { id: ps.userId });
+			return {};
 		});
 	}
 }

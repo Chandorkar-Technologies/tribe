@@ -11,6 +11,8 @@ import Logger from '@/logger.js';
 import type { AntennasRepository, UsersRepository } from '@/models/_.js';
 import { DI } from '@/di-symbols.js';
 import { bindThis } from '@/decorators.js';
+import { NotificationService } from '@/core/NotificationService.js';
+import { TimeService } from '@/global/TimeService.js';
 import { QueueLoggerService } from '../QueueLoggerService.js';
 import { DBAntennaImportJobData } from '../types.js';
 import type * as Bull from 'bullmq';
@@ -65,6 +67,8 @@ export class ImportAntennasProcessorService {
 		private queueLoggerService: QueueLoggerService,
 		private idService: IdService,
 		private globalEventService: GlobalEventService,
+		private notificationService: NotificationService,
+		private readonly timeService: TimeService,
 	) {
 		this.logger = this.queueLoggerService.logger.createSubLogger('import-antennas');
 	}
@@ -77,9 +81,9 @@ export class ImportAntennasProcessorService {
 			return;
 		}
 
-		this.logger.debug(`Importing blocking of ${job.data.user.id} ...`);
+		this.logger.debug(`Importing antennas of ${job.data.user.id} ...`);
 
-		const now = new Date();
+		const now = this.timeService.date;
 		try {
 			for (const antenna of job.data.antenna) {
 				if (antenna.keywords.length === 0 || antenna.keywords[0].every(x => x === '')) continue;
@@ -106,6 +110,10 @@ export class ImportAntennasProcessorService {
 				this.logger.debug('Antenna created: ' + result.id);
 				this.globalEventService.publishInternalEvent('antennaCreated', result);
 			}
+
+			this.notificationService.createNotification(job.data.user.id, 'importCompleted', {
+				importedEntity: 'antenna',
+			});
 		} catch (err: any) {
 			this.logger.error('Error importing antennas:', err);
 		}

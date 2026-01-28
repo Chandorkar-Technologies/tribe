@@ -127,7 +127,6 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 					: ps.withReplies ? ['localTimeline', 'localTimelineWithReplies']
 					: me ? ['localTimeline', `localTimelineWithReplyTo:${me.id}`]
 					: ['localTimeline'],
-				alwaysIncludeMyNotes: true,
 				excludePureRenotes: !ps.withRenotes,
 				excludeBots: !ps.withBots,
 				dbFallback: async (untilId, sinceId, limit) => await this.getFromDb({
@@ -173,18 +172,16 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 			.limit(ps.limit);
 
 		if (!ps.withReplies) {
-			query
-				// 1. Not a reply, 2. a self-reply
-				.andWhere(new Brackets(qb => qb
-					.orWhere('note.replyId IS NULL') // 返信ではない
-					.orWhere('note.replyUserId = note.userId')));
+			this.queryService.generateExcludedRepliesQueryForNotes(query, me);
 		}
 
 		this.queryService.generateBlockedHostQueryForNote(query);
+		this.queryService.generateSuspendedUserQueryForNote(query);
 		this.queryService.generateSilencedUserQueryForNotes(query, me);
 		if (me) {
 			this.queryService.generateMutedUserQueryForNotes(query, me);
 			this.queryService.generateBlockedUserQueryForNotes(query, me);
+			this.queryService.generateMutedNoteThreadQuery(query, me);
 		}
 
 		if (ps.withFiles) {

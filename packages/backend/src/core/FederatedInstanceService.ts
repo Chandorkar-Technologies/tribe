@@ -4,38 +4,80 @@
  */
 
 import { Inject, Injectable, OnApplicationShutdown } from '@nestjs/common';
-import * as Redis from 'ioredis';
-import type { InstancesRepository, MiMeta } from '@/models/_.js';
+import { In } from 'typeorm';
+import type { InstancesRepository } from '@/models/_.js';
+import type { MiMeta } from '@/models/Meta.js';
 import type { MiInstance } from '@/models/Instance.js';
-import { MemoryKVCache } from '@/misc/cache.js';
+import type { InternalEventTypes } from '@/core/GlobalEventService.js';
 import { IdService } from '@/core/IdService.js';
 import { DI } from '@/di-symbols.js';
 import { UtilityService } from '@/core/UtilityService.js';
+import { CacheManagementService, type ManagedQuantumKVCache } from '@/global/CacheManagementService.js';
+import { InternalEventService } from '@/global/InternalEventService.js';
+import { diffArraysSimple } from '@/misc/diff-arrays.js';
 import { bindThis } from '@/decorators.js';
-import type { GlobalEvents } from '@/core/GlobalEventService.js';
-import { Serialized } from '@/types.js';
-import { diffArrays, diffArraysSimple } from '@/misc/diff-arrays.js';
+import { TimeService } from '@/global/TimeService.js';
+import type { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity.js';
 
 @Injectable()
 export class FederatedInstanceService implements OnApplicationShutdown {
-	private readonly federatedInstanceCache: MemoryKVCache<MiInstance | null>;
+	public readonly federatedInstanceCache: ManagedQuantumKVCache<MiInstance>;
 
 	constructor(
-		@Inject(DI.redisForSub)
-		private redisForSub: Redis.Redis,
-
 		@Inject(DI.instancesRepository)
 		private instancesRepository: InstancesRepository,
 
+		@Inject(DI.meta)
+		private readonly meta: MiMeta,
+
 		private utilityService: UtilityService,
 		private idService: IdService,
+		private readonly internalEventService: InternalEventService,
+		private readonly timeService: TimeService,
+
+		cacheManagementService: CacheManagementService,
 	) {
-		this.federatedInstanceCache = new MemoryKVCache(1000 * 60 * 3); // 3m
-		this.redisForSub.on('message', this.onMessage);
+		this.federatedInstanceCache = cacheManagementService.createQuantumKVCache('federatedInstance', {
+			// TODO can we increase this?
+			lifetime: 1000 * 60 * 3, // 3 minutes
+			fetcher: async key => {
+				const host = this.utilityService.toPuny(key);
+				let instance = await this.instancesRepository.findOneBy({ host });
+				if (instance == null) {
+					await this.instancesRepository.createQueryBuilder('instance')
+						.insert()
+						.values({
+							id: this.idService.gen(),
+							host,
+							firstRetrievedAt: this.timeService.date,
+							isBlocked: this.utilityService.isBlockedHost(host),
+							isSilenced: this.utilityService.isSilencedHost(host),
+							isMediaSilenced: this.utilityService.isMediaSilencedHost(host),
+							isAllowListed: this.utilityService.isAllowListedHost(host),
+							isBubbled: this.utilityService.isBubbledHost(host),
+						})
+						.orIgnore()
+						.execute();
+
+					instance = await this.instancesRepository.findOneByOrFail({ host });
+				}
+				return instance;
+			},
+			// optionalFetcher not needed
+			bulkFetcher: async keys => {
+				const hosts = keys.map(key => this.utilityService.toPuny(key));
+				const instances = await this.instancesRepository.findBy({ host: In(hosts) });
+				return instances.map(instance => [instance.host, instance]);
+			},
+		});
+
+		this.internalEventService.on('metaUpdated', this.onMetaUpdated, { ignoreRemote: true });
 	}
 
 	@bindThis
 	public async fetchOrRegister(host: string): Promise<MiInstance> {
+		return this.federatedInstanceCache.fetch(host);
+		/*
 		host = this.utilityService.toPuny(host);
 
 		const cached = this.federatedInstanceCache.get(host);
@@ -48,7 +90,7 @@ export class FederatedInstanceService implements OnApplicationShutdown {
 				.values({
 					id: this.idService.gen(),
 					host,
-					firstRetrievedAt: new Date(),
+					firstRetrievedAt: this.timeService.date,
 					isBlocked: this.utilityService.isBlockedHost(host),
 					isSilenced: this.utilityService.isSilencedHost(host),
 					isMediaSilenced: this.utilityService.isMediaSilencedHost(host),
@@ -61,12 +103,15 @@ export class FederatedInstanceService implements OnApplicationShutdown {
 			index = await this.instancesRepository.findOneByOrFail({ host });
 		}
 
-		this.federatedInstanceCache.set(host, index);
+		await this.federatedInstanceCache.set(host, index);
 		return index;
+		 */
 	}
 
 	@bindThis
-	public async fetch(host: string): Promise<MiInstance | null> {
+	public async fetch(host: string): Promise<MiInstance> {
+		return this.federatedInstanceCache.fetch(host);
+		/*
 		host = this.utilityService.toPuny(host);
 
 		const cached = this.federatedInstanceCache.get(host);
@@ -75,62 +120,77 @@ export class FederatedInstanceService implements OnApplicationShutdown {
 		const index = await this.instancesRepository.findOneBy({ host });
 
 		if (index == null) {
-			this.federatedInstanceCache.set(host, null);
+			await this.federatedInstanceCache.set(host, null);
 			return null;
 		} else {
-			this.federatedInstanceCache.set(host, index);
+			await this.federatedInstanceCache.set(host, index);
 			return index;
 		}
+		*/
 	}
 
 	@bindThis
-	public async update(id: MiInstance['id'], data: Partial<MiInstance>): Promise<void> {
+	public async update(id: MiInstance['id'], data: QueryDeepPartialEntity<MiInstance>): Promise<MiInstance> {
 		const result = await this.instancesRepository.createQueryBuilder().update()
 			.set(data)
 			.where('id = :id', { id })
 			.returning('*')
 			.execute()
 			.then((response) => {
-				return response.raw[0];
+				return response.raw[0] as MiInstance;
 			});
 
-		this.federatedInstanceCache.set(result.host, result);
+		await this.federatedInstanceCache.set(result.host, result);
+
+		return result;
 	}
 
-	private syncCache(before: Serialized<MiMeta | undefined>, after: Serialized<MiMeta>): void {
-		const changed =
+	/**
+	 * Gets all instances in the allowlist (meta.federationHosts).
+	 */
+	@bindThis
+	public async getAllowList(): Promise<MiInstance[]> {
+		const allowedHosts = new Set(this.meta.federationHosts);
+		this.meta.blockedHosts.forEach(h => allowedHosts.delete(h));
+
+		const instances = await this.federatedInstanceCache.fetchMany(this.meta.federationHosts);
+		return instances.map(i => i[1]);
+	}
+
+	/**
+	 * Gets all instances in the denylist (meta.blockedHosts).
+	 */
+	@bindThis
+	public async getDenyList(): Promise<MiInstance[]> {
+		const instances = await this.federatedInstanceCache.fetchMany(this.meta.blockedHosts);
+		return instances.map(i => i[1]);
+	}
+
+	@bindThis
+	private async onMetaUpdated(body: InternalEventTypes['metaUpdated']): Promise<void> {
+		const { before, after } = body;
+		const changed = (
 			diffArraysSimple(before?.blockedHosts, after.blockedHosts) ||
 			diffArraysSimple(before?.silencedHosts, after.silencedHosts) ||
 			diffArraysSimple(before?.mediaSilencedHosts, after.mediaSilencedHosts) ||
 			diffArraysSimple(before?.federationHosts, after.federationHosts) ||
-			diffArraysSimple(before?.bubbleInstances, after.bubbleInstances);
+			diffArraysSimple(before?.bubbleInstances, after.bubbleInstances)
+		);
 
 		if (changed) {
 			// We have to clear the whole thing, otherwise subdomains won't be synced.
+			// This gets fired in *each* process so don't do anything to trigger cache notifications!
 			this.federatedInstanceCache.clear();
 		}
 	}
 
 	@bindThis
-	private async onMessage(_: string, data: string): Promise<void> {
-		const obj = JSON.parse(data);
-
-		if (obj.channel === 'internal') {
-			const { type, body } = obj.message as GlobalEvents['internal']['payload'];
-			if (type === 'metaUpdated') {
-				this.syncCache(body.before, body.after);
-			}
-		}
+	public dispose() {
+		this.internalEventService.off('metaUpdated', this.onMetaUpdated);
 	}
 
 	@bindThis
-	public dispose(): void {
-		this.redisForSub.off('message', this.onMessage);
-		this.federatedInstanceCache.dispose();
-	}
-
-	@bindThis
-	public onApplicationShutdown(signal?: string | undefined): void {
+	public onApplicationShutdown() {
 		this.dispose();
 	}
 }

@@ -9,6 +9,7 @@ import type { ChannelFollowingsRepository } from '@/models/_.js';
 import { QueryService } from '@/core/QueryService.js';
 import { ChannelEntityService } from '@/core/entities/ChannelEntityService.js';
 import { DI } from '@/di-symbols.js';
+import { promiseMap } from '@/misc/promise-map.js';
 
 export const meta = {
 	tags: ['channels', 'account'],
@@ -54,14 +55,22 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 		private queryService: QueryService,
 	) {
 		super(meta, paramDef, async (ps, me) => {
-			const query = this.queryService.makePaginationQuery(this.channelFollowingsRepository.createQueryBuilder(), ps.sinceId, ps.untilId)
+			const query = this.queryService
+				.makePaginationQuery(
+					this.channelFollowingsRepository.createQueryBuilder(),
+					ps.sinceId,
+					ps.untilId,
+					null,
+					null,
+					'followeeId',
+				)
 				.andWhere({ followerId: me.id });
 
 			const followings = await query
 				.limit(ps.limit)
 				.getMany();
 
-			return await Promise.all(followings.map(x => this.channelEntityService.pack(x.followeeId, me)));
+			return await promiseMap(followings, async x => await this.channelEntityService.pack(x.followeeId, me), { limit: 4 });
 		});
 	}
 }

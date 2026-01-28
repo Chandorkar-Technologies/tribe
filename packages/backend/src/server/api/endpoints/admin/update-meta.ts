@@ -67,6 +67,7 @@ export const paramDef = {
 		name: { type: 'string', nullable: true },
 		shortName: { type: 'string', nullable: true },
 		description: { type: 'string', nullable: true },
+		about: { type: 'string', nullable: true },
 		defaultLightTheme: { type: 'string', nullable: true },
 		defaultDarkTheme: { type: 'string', nullable: true },
 		defaultLike: { type: 'string' },
@@ -215,6 +216,17 @@ export const paramDef = {
 			type: 'boolean',
 			nullable: false,
 		},
+		deliverSuspendedSoftware: {
+			type: 'array',
+			items: {
+				type: 'object',
+				properties: {
+					software: { type: 'string' },
+					versionRange: { type: 'string' },
+				},
+				required: ['software', 'versionRange'],
+			},
+		},
 	},
 	required: [],
 } as const;
@@ -327,6 +339,10 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 
 			if (ps.description !== undefined) {
 				set.description = ps.description;
+			}
+
+			if (ps.about !== undefined) {
+				set.about = ps.about;
 			}
 
 			if (ps.defaultLightTheme !== undefined) {
@@ -757,6 +773,10 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 
 			if (ps.federation !== undefined) {
 				set.federation = ps.federation;
+			}
+
+			if (ps.deliverSuspendedSoftware !== undefined) {
+				set.deliverSuspendedSoftware = ps.deliverSuspendedSoftware;
 			}
 
 			if (Array.isArray(ps.federationHosts)) {

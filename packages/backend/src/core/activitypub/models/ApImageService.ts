@@ -75,7 +75,7 @@ export class ApImageService {
 		const shouldBeCached = this.meta.cacheRemoteFiles && (this.meta.cacheRemoteSensitiveFiles || !image.sensitive);
 
 		await this.federatedInstanceService.fetchOrRegister(actor.host).then(async i => {
-			if (i.isNSFW) {
+			if (i.isMediaSilenced) {
 				image.sensitive = true;
 			}
 		});
@@ -86,7 +86,7 @@ export class ApImageService {
 			uri: image.url,
 			sensitive: !!(image.sensitive),
 			isLink: !shouldBeCached,
-			comment: truncate(image.name ?? undefined, this.config.maxRemoteAltTextLength),
+			comment: truncate(image.summary || image.name || undefined, this.config.maxRemoteAltTextLength),
 		});
 		if (!file.isLink || file.url === image.url) return file;
 

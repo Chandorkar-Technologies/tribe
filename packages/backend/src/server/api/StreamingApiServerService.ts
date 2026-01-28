@@ -4,15 +4,15 @@
  */
 
 import { EventEmitter } from 'events';
-import { Inject, Injectable } from '@nestjs/common';
+import { Inject, Injectable, OnApplicationShutdown } from '@nestjs/common';
 import * as Redis from 'ioredis';
 import * as WebSocket from 'ws';
 import proxyAddr from 'proxy-addr';
-import ms from 'ms';
 import { DI } from '@/di-symbols.js';
-import type { UsersRepository, MiAccessToken, MiUser } from '@/models/_.js';
+import type { UsersRepository, MiAccessToken, MiUser, NoteReactionsRepository, NotesRepository, NoteFavoritesRepository } from '@/models/_.js';
 import type { Config } from '@/config.js';
 import type { Keyed, RateLimit } from '@/misc/rate-limit-utils.js';
+import { renderInlineError } from '@/misc/render-inline-error.js';
 import { NotificationService } from '@/core/NotificationService.js';
 import { bindThis } from '@/decorators.js';
 import { CacheService } from '@/core/CacheService.js';
@@ -21,7 +21,10 @@ import { UserService } from '@/core/UserService.js';
 import { ChannelFollowingService } from '@/core/ChannelFollowingService.js';
 import { getIpHash } from '@/misc/get-ip-hash.js';
 import { LoggerService } from '@/core/LoggerService.js';
+import type Logger from '@/logger.js';
 import { SkRateLimiterService } from '@/server/SkRateLimiterService.js';
+import { QueryService } from '@/core/QueryService.js';
+import { TimeService, type TimerHandle } from '@/global/TimeService.js';
 import { AuthenticateService, AuthenticationError } from './AuthenticateService.js';
 import MainStreamConnection from './stream/Connection.js';
 import { ChannelsService } from './stream/ChannelsService.js';
@@ -32,11 +35,13 @@ import type * as http from 'node:http';
 const MAX_CONNECTIONS_PER_CLIENT = 32;
 
 @Injectable()
-export class StreamingApiServerService {
-	#wss: WebSocket.WebSocketServer;
+export class StreamingApiServerService implements OnApplicationShutdown {
+	#wss?: WebSocket.WebSocketServer;
 	#connections = new Map<WebSocket.WebSocket, number>();
 	#connectionsByClient = new Map<string, Set<WebSocket.WebSocket>>(); // key: IP / user ID -> value: connection
-	#cleanConnectionsIntervalId: NodeJS.Timeout | null = null;
+	#cleanConnectionsIntervalId: TimerHandle | null = null;
+	readonly #globalEv = new EventEmitter();
+	#logger: Logger;
 
 	constructor(
 		@Inject(DI.redisForSub)
@@ -44,6 +49,18 @@ export class StreamingApiServerService {
 
 		@Inject(DI.usersRepository)
 		private usersRepository: UsersRepository,
+
+		@Inject(DI.noteReactionsRepository)
+		private readonly noteReactionsRepository: NoteReactionsRepository,
+
+		@Inject(DI.notesRepository)
+		private readonly notesRepository: NotesRepository,
+
+		@Inject(DI.noteFavoritesRepository)
+		private readonly noteFavoritesRepository: NoteFavoritesRepository,
+
+		@Inject(DI.config)
+		private config: Config,
 
 		private cacheService: CacheService,
 		private authenticateService: AuthenticateService,
@@ -53,10 +70,18 @@ export class StreamingApiServerService {
 		private channelFollowingService: ChannelFollowingService,
 		private rateLimiterService: SkRateLimiterService,
 		private loggerService: LoggerService,
-
-		@Inject(DI.config)
-		private config: Config,
+		private readonly queryService: QueryService,
+		private readonly timeService: TimeService,
 	) {
+		this.redisForSub.on('message', this.onRedis);
+		this.#logger = loggerService.getLogger('streaming', 'coral');
+	}
+
+	@bindThis
+	onApplicationShutdown() {
+		this.redisForSub.off('message', this.onRedis);
+		this.#globalEv.removeAllListeners();
+		// Other shutdown logic is handled by detach(), which gets called by ServerServer's own shutdown handler.
 	}
 
 	@bindThis
@@ -70,11 +95,21 @@ export class StreamingApiServerService {
 	}
 
 	@bindThis
+	private onRedis(_: string, data: string) {
+		const parsed = JSON.parse(data);
+		this.#globalEv.emit('message', parsed);
+	}
+
+	@bindThis
 	public attach(server: http.Server): void {
-		this.#wss = new WebSocket.WebSocketServer({
+		const wss = this.#wss = new WebSocket.WebSocketServer({
 			noServer: true,
 			perMessageDeflate: this.config.websocketCompression,
 		});
+
+		// ws library will kill the process if we don't catch unhandled exceptions.
+		// https://github.com/websockets/ws/issues/1354#issuecomment-1343117738
+		this.#wss.on('error', this.onWsError);
 
 		server.on('upgrade', async (request, socket, head) => {
 			if (request.url == null) {
@@ -87,6 +122,7 @@ export class StreamingApiServerService {
 
 			let user: MiLocalUser | null = null;
 			let app: MiAccessToken | null = null;
+			let dieInstantly: [number, string] | null = null;
 
 			// https://datatracker.ietf.org/doc/html/rfc6750.html#section-2.1
 			// Note that the standard WHATWG WebSocket API does not support setting any headers,
@@ -103,21 +139,16 @@ export class StreamingApiServerService {
 				}
 			} catch (e) {
 				if (e instanceof AuthenticationError) {
-					socket.write([
-						'HTTP/1.1 401 Unauthorized',
-						'WWW-Authenticate: Bearer realm="Misskey", error="invalid_token", error_description="Failed to authenticate"',
-					].join('\r\n') + '\r\n\r\n');
+					dieInstantly = [4000, 'Failed to authenticate'];
 				} else {
 					socket.write('HTTP/1.1 500 Internal Server Error\r\n\r\n');
+					socket.destroy();
+					return;
 				}
-				socket.destroy();
-				return;
 			}
 
 			if (user?.isSuspended) {
-				socket.write('HTTP/1.1 403 Forbidden\r\n\r\n');
-				socket.destroy();
-				return;
+				dieInstantly = [4001, 'User suspended'];
 			}
 
 			// ServerServices sets `trustProxy: true`, which inside fastify/request.js ends up calling `proxyAddr` in this way, so we do the same.
@@ -168,10 +199,15 @@ export class StreamingApiServerService {
 			};
 
 			const stream = new MainStreamConnection(
+				this.noteReactionsRepository,
+				this.notesRepository,
+				this.noteFavoritesRepository,
+				this.queryService,
 				this.channelsService,
 				this.notificationService,
 				this.cacheService,
 				this.channelFollowingService,
+				this.timeService,
 				this.loggerService,
 				user, app, requestIp,
 				rateLimiter,
@@ -179,7 +215,7 @@ export class StreamingApiServerService {
 
 			await stream.init();
 
-			this.#wss.handleUpgrade(request, socket, head, (ws) => {
+			wss.handleUpgrade(request, socket, head, (ws) => {
 				connectionsForClient.add(ws);
 
 				// Call before emit() in case it throws an error.
@@ -191,19 +227,28 @@ export class StreamingApiServerService {
 					if (connectionsForClient.size < 1) {
 						this.#connectionsByClient.delete(limitActor);
 					}
+
+					stream.dispose();
 				});
 
-				this.#wss.emit('connection', ws, request, {
+				if (dieInstantly !== null) {
+					ws.close(...dieInstantly);
+					return;
+				}
+
+				// Special handler to hard-terminate the connection if it fails during initialization.
+				// Disconnect immediately after because the connection() handler below defines its own error handler.
+				const onWsInitError = (error: unknown) => {
+					this.onWsError(error);
+					ws.terminate();
+				};
+
+				ws.on('error', onWsInitError);
+				wss.emit('connection', ws, request, {
 					stream, user, app,
 				});
+				ws.off('error', onWsInitError);
 			});
-		});
-
-		const globalEv = new EventEmitter();
-
-		this.redisForSub.on('message', (_: string, data: string) => {
-			const parsed = JSON.parse(data);
-			globalEv.emit('message', parsed);
 		});
 
 		this.#wss.on('connection', async (connection: WebSocket.WebSocket, request: http.IncomingMessage, ctx: {
@@ -219,35 +264,40 @@ export class StreamingApiServerService {
 				ev.emit(data.channel, data.message);
 			}
 
-			globalEv.on('message', onRedisMessage);
+			this.#globalEv.on('message', onRedisMessage);
 
 			await stream.listen(ev, connection);
 
-			this.#connections.set(connection, Date.now());
+			this.#connections.set(connection, this.timeService.now);
 
-			const userUpdateIntervalId = user ? setInterval(() => {
-				this.usersService.updateLastActiveDate(user);
-			}, 1000 * 60 * 5) : null;
+			// TODO use collapsed queue
+			const userUpdateIntervalId = user ? this.timeService.startTimer(async () => {
+				await this.usersService.updateLastActiveDate(user);
+			}, 1000 * 60 * 5, { repeated: true }) : null;
 			if (user) {
-				this.usersService.updateLastActiveDate(user);
+				await this.usersService.updateLastActiveDate(user);
 			}
+			const pong = () => {
+				this.#connections.set(connection, this.timeService.now);
+			};
 
 			connection.once('close', () => {
+				connection.off('error', this.onWsError);
+				connection.off('pong', pong);
 				ev.removeAllListeners();
 				stream.dispose();
-				globalEv.off('message', onRedisMessage);
+				this.#globalEv.off('message', onRedisMessage);
 				this.#connections.delete(connection);
-				if (userUpdateIntervalId) clearInterval(userUpdateIntervalId);
+				if (userUpdateIntervalId) this.timeService.stopTimer(userUpdateIntervalId);
 			});
 
-			connection.on('pong', () => {
-				this.#connections.set(connection, Date.now());
-			});
+			connection.on('error', this.onWsError);
+			connection.on('pong', pong);
 		});
 
 		// 一定期間通信が無いコネクションは実際には切断されている可能性があるため定期的にterminateする
-		this.#cleanConnectionsIntervalId = setInterval(() => {
-			const now = Date.now();
+		this.#cleanConnectionsIntervalId = this.timeService.startTimer(() => {
+			const now = this.timeService.now;
 			for (const [connection, lastActive] of this.#connections.entries()) {
 				if (now - lastActive > 1000 * 60 * 2) {
 					connection.terminate();
@@ -256,17 +306,41 @@ export class StreamingApiServerService {
 					connection.ping();
 				}
 			}
-		}, 1000 * 60);
+		}, 1000 * 60, { repeated: true });
 	}
 
 	@bindThis
-	public detach(): Promise<void> {
+	public async detach(): Promise<void> {
 		if (this.#cleanConnectionsIntervalId) {
-			clearInterval(this.#cleanConnectionsIntervalId);
+			this.timeService.stopTimer(this.#cleanConnectionsIntervalId);
 			this.#cleanConnectionsIntervalId = null;
 		}
-		return new Promise((resolve) => {
-			this.#wss.close(() => resolve());
+
+		for (const connection of this.#connections.keys()) {
+			connection.close();
+		}
+
+		this.#connections.clear();
+		this.#connectionsByClient.clear();
+
+		await new Promise<void>((resolve, reject) => {
+			if (this.#wss) {
+				this.#wss.close(err => {
+					// according to the documentation, this callback only receives an error if the server was already closed: we can ignore that
+					resolve();
+				});
+			} else {
+				resolve();
+			}
 		});
+
+		// Don't disconnect this until *after* close returns
+		this.#wss?.off('error', this.onWsError);
+	}
+
+	@bindThis
+	private async onWsError(error: unknown) {
+		this.#logger.error(`Unhandled error in streaming api: ${renderInlineError(error)}`);
+		this.#logger.debug('Error details:', { error });
 	}
 }

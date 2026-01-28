@@ -21,6 +21,9 @@ import type * as misskey from 'misskey-js';
 import { DEFAULT_POLICIES } from '@/core/RoleService.js';
 import { validateContentTypeSetAsActivityPub } from '@/core/activitypub/misc/validator.js';
 import { ApiError } from '@/server/api/error.js';
+import { LoggerService } from '@/core/LoggerService.js';
+import { EnvService } from '@/global/EnvService.js';
+import { NativeTimeService } from '@/global/TimeService.js';
 
 export { server as startServer, jobQueue as startJobQueue } from '@/boot/common.js';
 
@@ -38,7 +41,9 @@ export type SystemWebhookPayload = {
 	body: any;
 };
 
-const config = loadConfig();
+// eslint-disable-next-line no-restricted-globals
+const loggerService = new LoggerService(console, new NativeTimeService(), new EnvService());
+const config = loadConfig(loggerService);
 export const port = config.port;
 export const origin = config.url;
 export const host = new URL(config.url).host;
@@ -377,6 +382,12 @@ export function connectStream<C extends keyof misskey.Channels>(user: UserToken,
 		const ws = new WebSocket(url, options);
 
 		ws.on('unexpected-response', (req, res) => rej(res));
+		ws.on('close', (code, reason) => {
+			rej({
+				statusCode: code,
+				reason: reason.toString('utf8'),
+			});
+		});
 		ws.on('open', () => {
 			ws.on('message', data => {
 				const msg = JSON.parse(data.toString());
@@ -690,4 +701,19 @@ export async function captureWebhook<T = SystemWebhookPayload>(postAction: () =>
 	await fastify.close();
 
 	return JSON.parse(result) as T;
+}
+
+// the packed user inside each note returned by `users/notes` has the
+// latest `notesCount`, not the count at the time the note was
+// created, so we override it
+export function withNotesCount(notes: misskey.entities.Note[], count: number) {
+	return notes.map( note => {
+		return {
+			...note,
+			user: {
+				...note.user,
+				notesCount: count,
+			},
+		};
+	});
 }
