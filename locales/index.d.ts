@@ -11072,6 +11072,10 @@ export interface Locale extends ILocale {
          * Restarted migration for a user
          */
         "restartMigration": string;
+        /**
+         * Set the root user
+         */
+        "setRoot": string;
     };
     "_fileViewer": {
         /**
@@ -13683,6 +13687,22 @@ export interface Locale extends ILocale {
          */
         "manage": string;
     };
+    /**
+     * Set the root user
+     */
+    "setRootUser": string;
+    /**
+     * You are currently the root user; you can give that away to someone else. If you want to remain an administrator after that, you should make yourself an administration via a role, <em>before</em> you give root away
+     */
+    "setRootUserWarning": string;
+    /**
+     * Previous root user
+     */
+    "previousRootUser": string;
+    /**
+     * New root user
+     */
+    "newRootUser": string;
 }
 declare const locales: {
     [lang: string]: Locale;
