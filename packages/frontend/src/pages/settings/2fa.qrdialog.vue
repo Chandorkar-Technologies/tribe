@@ -25,7 +25,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<div style="height: 100cqh; overflow: auto; text-align: center;">
 					<div class="_spacer" style="--MI_SPACER-min: 20px; --MI_SPACER-max: 28px;">
 						<div class="_gaps">
-							<MkInfo><MkLink url="https://misskey-hub.net/docs/for-users/stepped-guides/how-to-enable-2fa/" target="_blank">{{ i18n.ts._2fa.moreDetailedGuideHere }}</MkLink></MkInfo>
+							<MkInfo><MkLink url="https://github.com/Chandorkar-Technologies/tribe/wiki/How-to-enable-2FA" target="_blank">{{ i18n.ts._2fa.moreDetailedGuideHere }}</MkLink></MkInfo>
 
 							<I18n :src="i18n.ts._2fa.step1" tag="div">
 								<template #a>

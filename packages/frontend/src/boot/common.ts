@@ -344,7 +344,7 @@ export async function common(createVue: () => Promise<App<Element>>) {
 			'font-size: 16px;',
 			'font-size: 20px; font-weight: 700; color: #f00;',
 		);
-		console.log(i18n.tsx._selfXssPrevention.description3({ link: 'https://misskey-hub.net/docs/for-users/resources/self-xss/' }));
+		console.log(i18n.tsx._selfXssPrevention.description3({ link: 'https://github.com/Chandorkar-Technologies/tribe/wiki/Self-XSS' }));
 	}
 	//#endregion
 

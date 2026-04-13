@@ -148,7 +148,7 @@ export function openInstanceMenu(ev: MouseEvent) {
 		type: 'a',
 		text: i18n.ts.document,
 		icon: 'ti ti-bulb',
-		href: 'https://misskey-hub.net/docs/for-users/',
+		href: 'https://github.com/Chandorkar-Technologies/tribe/wiki',
 		target: '_blank',
 	});
 
