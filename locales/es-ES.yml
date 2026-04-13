@@ -1,8 +1,8 @@
 ---
 _lang_: "Español"
 headlineMisskey: "Red conectada por notas"
-introMisskey: "¡Bienvenido/a! Misskey es un servicio de microblogging descentralizado de código abierto.\nEscribe \"notas\" para compartir lo que te ocurre ahora o para contar sobre ti a todos 📡\nCon la función de \"reacciones\", puedes también añadir una reacción rápida a las notas de todos 👍\n¡Exploremos juntos un nuevo mundo! 🚀"
-poweredByMisskeyDescription: "{name} es uno de los servicios (también llamado instancia) que usa la plataforma de código abierto <b>Misskey</b>"
+introMisskey: "¡Bienvenido/a! Tribe es un servicio de microblogging descentralizado de código abierto.\nEscribe \"notas\" para compartir lo que te ocurre ahora o para contar sobre ti a todos 📡\nCon la función de \"reacciones\", puedes también añadir una reacción rápida a las notas de todos 👍\n¡Exploremos juntos un nuevo mundo! 🚀"
+poweredByMisskeyDescription: "{name} es uno de los servicios (también llamado instancia) que usa la plataforma de código abierto <b>Tribe</b>"
 monthAndDay: "{day}/{month}"
 search: "Buscar"
 reset: "Reiniciar"
@@ -11,7 +11,7 @@ username: "Nombre de usuario"
 password: "Contraseña"
 initialPasswordForSetup: "Contraseña para iniciar la inicialización"
 initialPasswordIsIncorrect: "La contraseña para iniciar la configuración inicial es incorrecta."
-initialPasswordForSetupDescription: "Si ha instalado Misskey usted mismo, utilice la contraseña introducida en el archivo de configuración.\nSi utiliza un servicio de alojamiento de Misskey o similar, utilice la contraseña proporcionada.\nSi no ha establecido una contraseña, déjela en blanco para continuar."
+initialPasswordForSetupDescription: "Si ha instalado Tribe usted mismo, utilice la contraseña introducida en el archivo de configuración.\nSi utiliza un servicio de alojamiento de Tribe o similar, utilice la contraseña proporcionada.\nSi no ha establecido una contraseña, déjela en blanco para continuar."
 forgotPassword: "Olvidé mi contraseña"
 fetchingAsApObject: "Buscando en el fediverso"
 ok: "OK"
@@ -177,7 +177,7 @@ youCanCleanRemoteFilesCache: "Puedes vaciar la caché pulsando en el botón 🗑
 cacheRemoteSensitiveFiles: "Cachear archivos remotos sensibles"
 cacheRemoteSensitiveFilesDescription: "Cuando esta opción está desactivada, los archivos remotos sensibles son cargador directamente de la instancia origen sin ser cacheados."
 flagAsBot: "Esta cuenta es un bot"
-flagAsBotDescription: "En caso de que esta cuenta fuera usada por un programa, active esta opción. Al hacerlo, esta opción servirá para otros desarrolladores para evitar cadenas infinitas de reacciones, y ajustará los sistemas internos de Misskey para que trate a esta cuenta como un bot."
+flagAsBotDescription: "En caso de que esta cuenta fuera usada por un programa, active esta opción. Al hacerlo, esta opción servirá para otros desarrolladores para evitar cadenas infinitas de reacciones, y ajustará los sistemas internos de Tribe para que trate a esta cuenta como un bot."
 flagAsCat: "Esta cuenta es un gato"
 flagAsCatDescription: "En caso de que declare que esta cuenta es de un gato, active esta opción."
 flagShowTimelineReplies: "Mostrar respuestas a las notas en la biografía"
@@ -188,7 +188,7 @@ reloadAccountsList: "Recargar lista de cuentas"
 loginFailed: "Error al iniciar sesión."
 showOnRemote: "Ver en una instancia remota"
 continueOnRemote: "Ver en una instancia remota"
-chooseServerOnMisskeyHub: "Elegir un servidor en Misskey Hub"
+chooseServerOnMisskeyHub: "Elegir un servidor en Tribe Hub"
 specifyServerHost: "Especifica una instancia directamente"
 inputHostName: "Introduzca el dominio"
 general: "General"
@@ -250,7 +250,7 @@ noUsers: "No hay usuarios"
 editProfile: "Editar perfil"
 noteDeleteConfirm: "¿Desea borrar esta nota?"
 pinLimitExceeded: "Ya no se pueden fijar más posts"
-intro: "¡La instalación de Misskey ha terminado! Crea el usuario administrador."
+intro: "¡La instalación de Tribe ha terminado! Crea el usuario administrador."
 done: "Terminado"
 processing: "Procesando"
 preview: "Vista previa"
@@ -445,7 +445,7 @@ exploreFediverse: "Explorar fediverso"
 popularTags: "Etiquetas populares"
 userList: "Lista"
 about: "Información"
-aboutMisskey: "Sobre Misskey"
+aboutMisskey: "Sobre Tribe"
 administrator: "Administrador"
 token: "Token"
 2fa: "Autenticación de doble factor"
@@ -584,7 +584,7 @@ popout: "Popout"
 volume: "Volumen"
 masterVolume: "Volumen principal"
 notUseSound: "Sin sonido"
-useSoundOnlyWhenActive: "Sonar solo cuando Misskey esté activo"
+useSoundOnlyWhenActive: "Sonar solo cuando Tribe esté activo"
 details: "Detalles"
 renoteDetails: "Detalles(Renota)"
 chooseEmoji: "Elije un emoji"
@@ -601,7 +601,7 @@ sort: "Ordenar"
 ascendingOrder: "Ascendente"
 descendingOrder: "Descendente"
 scratchpad: "Scratch pad"
-scratchpadDescription: "Scratchpad proporciona un entorno experimental para AiScript. Puede escribir, ejecutar y verificar los resultados que interactúan con Misskey."
+scratchpadDescription: "Scratchpad proporciona un entorno experimental para AiScript. Puede escribir, ejecutar y verificar los resultados que interactúan con Tribe."
 uiInspector: "Inspector de UI"
 uiInspectorDescription: "Puedes visualizar una lista de elementos UI presentes en la memoria. Los componentes de la interfaz de usuario son generados por las funciones UI:C:"
 output: "Salida"
@@ -744,7 +744,7 @@ unclip: "Quitar clip"
 confirmToUnclipAlreadyClippedNote: "Esta nota ya está incluida en el clip \"{name}\". ¿Quiere quitar la nota del clip?"
 public: "Público"
 private: "Privado"
-i18nInfo: "Misskey está siendo traducido a varios idiomas gracias a voluntarios. Se puede colaborar traduciendo en {link}"
+i18nInfo: "Tribe está siendo traducido a varios idiomas gracias a voluntarios. Se puede colaborar traduciendo en {link}"
 manageAccessTokens: "Administrar tokens de acceso"
 accountInfo: "Información de la Cuenta"
 notesCount: "Cantidad de notas"
@@ -798,7 +798,7 @@ onlineUsersCount: "{n} usuarios en línea"
 nUsers: "{n} Usuarios"
 nNotes: "{n} Notas"
 sendErrorReports: "Envíar informe de errores"
-sendErrorReportsDescription: "Si habilita esta opción, ayudará a mejorar la calidad de Misskey compartiendo información detallada sobre los errores cuando se produzca un problema.\nEsto incluye información como la versión de su sistema operativo, el tipo de navegador que utiliza, su historial de actividad, etc."
+sendErrorReportsDescription: "Si habilita esta opción, ayudará a mejorar la calidad de Tribe compartiendo información detallada sobre los errores cuando se produzca un problema.\nEsto incluye información como la versión de su sistema operativo, el tipo de navegador que utiliza, su historial de actividad, etc."
 myTheme: "Mi Tema"
 backgroundColor: "Fondo"
 accentColor: "Acento"
@@ -893,7 +893,7 @@ hashtags: "Hashtag"
 troubleshooting: "Solución de problemas"
 useBlurEffect: "Utilizar efecto de desenfoque en la interfaz de usuario"
 learnMore: "Ver más"
-misskeyUpdated: "¡Misskey ha sido actualizado!"
+misskeyUpdated: "¡Tribe ha sido actualizado!"
 whatIsNew: "Mostrar cambios"
 translate: "Traducir"
 translatedFrom: "Traducido de {x}"
@@ -1027,8 +1027,8 @@ numberOfLikes: "Cantidad de 'Me gusta'"
 show: "Apariencia"
 neverShow: "No mostrar de nuevo"
 remindMeLater: "Recordar después"
-didYouLikeMisskey: "¿Te gusta Misskey?"
-pleaseDonate: "{host} usa el software gratuito Misskey. Por favor ¡Considera donar al proyecto principal para que podamos continuar!"
+didYouLikeMisskey: "¿Te gusta Tribe?"
+pleaseDonate: "{host} usa el software gratuito Tribe. Por favor ¡Considera donar al proyecto principal para que podamos continuar!"
 correspondingSourceIsAvailable: "El código fuente correspondiente se encuentra disponible en {anchor}"
 roles: "Roles"
 role: "Rol"
@@ -1155,7 +1155,7 @@ rolesThatCanBeUsedThisEmojiAsReactionPublicRoleWarn: "Éstos roles deben ser pú
 cancelReactionConfirm: "¿Realmente quieres eliminar la reacción?"
 changeReactionConfirm: "¿Realmente quieres cambiar la reacción?"
 later: "Ahora no"
-goToMisskey: "ir a Misskey"
+goToMisskey: "ir a Tribe"
 additionalEmojiDictionary: "Diccionario adicional de Emoji"
 installed: "Instalado"
 branding: "Marca"
@@ -1217,7 +1217,7 @@ externalServices: "Servicios Externos"
 sourceCode: "Código fuente"
 sourceCodeIsNotYetProvided: "El código fuente aún no está disponible. Contacta con el administrador para solucionarlo."
 repositoryUrl: "URL del repositorio"
-repositoryUrlDescription: "Si estás usando Misskey tal cual (sin cambios en el código fuente), entra en https://github.com/misskey-dev/misskey"
+repositoryUrlDescription: "Si estás usando Tribe tal cual (sin cambios en el código fuente), entra en https://github.com/misskey-dev/misskey"
 repositoryUrlOrTarballRequired: "Si no has publicado un repositorio aún, deberás publicar un tarball en su lugar. Mira el archivo .config/example.yml para más información."
 feedback: "Comentarios"
 feedbackUrl: "URL de comentarios"
@@ -1343,6 +1343,7 @@ readonly: "Solo Lectura"
 goToDeck: "Volver al Deck"
 federationJobs: "Trabajos de Federación"
 _chat:
+
   noMessagesYet: "Aún no hay mensajes"
   newMessage: "Mensajes nuevos"
   individualChat: "Chat individual"
@@ -1383,15 +1384,18 @@ _chat:
   chatAllowedUsers: "A quién permitir chatear."
   chatAllowedUsers_note: "Puedes chatear con cualquier persona a la que hayas enviado un mensaje de chat, independientemente de esta configuración."
   _chatAllowedUsers:
+
     everyone: "Todos"
     followers: "Sólo sus propios seguidores."
     following: "Solo usuarios que sigues"
     mutual: "Solo seguidores mutuos"
     none: "Nadie"
 _emojiPalette:
+
   palettes: "Paleta\n"
   enableSyncBetweenDevicesForPalettes: "Activar la sincronización de paletas entre dispositivos"
 _settings:
+
   api: "API"
   webhook: "Webhook"
   timelineAndNote: "Líneas del tiempo y notas"
@@ -1401,30 +1405,39 @@ _settings:
   ifOn: "Si está activado"
   enableSyncThemesBetweenDevices: "Sincronizar los temas instalados entre dispositivos."
   _chat:
+
     showSenderName: "Mostrar el nombre del remitente"
     sendOnEnter: "Intro para enviar"
 _preferencesProfile:
+
   profileName: "Nombre de perfil"
   profileNameDescription: "Establece un nombre que identifique al dispositivo"
   profileNameDescription2: "Por ejemplo: \"PC Principal\",\"Teléfono\""
 _preferencesBackup:
+
   autoBackup: "Respaldo automático"
   restoreFromBackup: "Restaurar desde copia de seguridad"
   noBackupsFoundTitle: "No se encontró una copia de seguridad"
 _accountSettings:
+
   requireSigninToViewContents: "Se requiere iniciar sesión para ver el contenido"
   requireSigninToViewContentsDescription1: "Requiere iniciar sesión para ver todas las notas y otros contenidos que hayas creado. Se espera que esto evite que los rastreadores recopilen información."
 _abuseUserReport:
+
   accept: "Acepte"
   reject: "repudio"
 _delivery:
+
   stop: "Suspendido"
   _type:
+
     none: "Publicando"
 _bubbleGame:
+
   howToPlay: "Cómo jugar"
   hold: "Mantener"
   _score:
+
     score: "Puntos"
     scoreYen: "Cantidad de dinero ganada"
     highScore: "Puntuación más alta"
@@ -1433,10 +1446,12 @@ _bubbleGame:
     estimatedQty: "{qty} Piezas"
     scoreSweets: "{onigiriQtyWithUnit} Onigiris"
   _howToPlay:
+
     section1: "Ajuste la posición y deje caer el objeto en la caja"
     section2: "Cuando dos objetos del mismo tipo se tocan, cambian a otro tipo y consigues puntos"
     section3: "El juego termina cuando la caja se desborda de objetos. ¡Intenta conseguir una puntuación alta al juntar objetos mientras evitas desbordar la caja!"
 _announcement:
+
   forExistingUsers: "Solo para usuarios registrados"
   forExistingUsersDescription: "Este anuncio solo se mostrará a aquellos usuarios registrados en el momento de su publicación. Si se deshabilita esta opción, aquellos usuarios que se registren tras su publicación también lo verán."
   needConfirmationToRead: "Requerir confirmación de lectura aparte"
@@ -1450,6 +1465,7 @@ _announcement:
   silence: "Silenciar notificaciones"
   silenceDescription: "Si lo activas, no enviarás notificación sobre este anuncio y el usuario no tendrá que leerlo."
 _initialAccountSetting:
+
   accountCreated: "¡La cuenta ha sido creada!"
   letsStartAccountSetup: "Para empezar, creemos tu perfil."
   letsFillYourProfile: "Primero, creemos tu perfil."
@@ -1461,26 +1477,30 @@ _initialAccountSetting:
   pushNotificationDescription: "Habilitar las notificaciones push te permitirá recibir notificaciones de {name} directamente en tu dispositivo."
   initialAccountSettingCompleted: "¡Configuración del perfil completada!"
   haveFun: "¡Disfruta de {name}!"
-  youCanContinueTutorial: "Puedes proceder a un tutorial sobre cómo usar {name} (Misskey) o puedes terminar la instalación aquí y empezar a usarlo ya mismo."
+  youCanContinueTutorial: "Puedes proceder a un tutorial sobre cómo usar {name} (Tribe) o puedes terminar la instalación aquí y empezar a usarlo ya mismo."
   startTutorial: "Comenzar tutorial"
   skipAreYouSure: "¿Realmente quieres saltarte la configuración del perfil?"
   laterAreYouSure: "¿Realmente quieres configurar tu perfil después?"
 _initialTutorial:
+
   launchTutorial: "Comenzar tutorial"
   title: "Tutorial"
   wellDone: "¡Bien hecho!"
   skipAreYouSure: "¿Salir del tutorial?"
   _landing:
+
     title: "Bienvenid@ al tutorial"
-    description: "Aquí podrás aprender las nociones básicas sobre cómo usar Misskey y sus funciones."
+    description: "Aquí podrás aprender las nociones básicas sobre cómo usar Tribe y sus funciones."
   _note:
+
     title: "¿Qué es una nota?"
-    description: "Las publicaciones en Misskey se llaman 'Notas'. Las notas se ordenan de forma cronológica en la línea de tiempo y se actualizan en tiempo real."
+    description: "Las publicaciones en Tribe se llaman 'Notas'. Las notas se ordenan de forma cronológica en la línea de tiempo y se actualizan en tiempo real."
     reply: "Pulsa en este botón para contestar a un mensaje. También es posible contestar a otras contestaciones, continuando así la conversación como un hilo."
     renote: "Puedes compartir esa nota en tu propia línea de tiempo. También puedes añadir una cita con tus comentarios."
     reaction: "Puedes añadir reacciones a la Nota. Se explicarán más detalles en la siguiente página."
     menu: "Puedes ver los detalles de la Nota, copiar enlaces, y realizar otras acciones."
   _reaction:
+
     title: "¿Qué son las reacciones?"
     description: "Se puede reaccionar a las Notas con diferentes emojis. Las reacciones te permiten expresar matices que no se pueden transmitir con un simple 'me gusta'."
     letsTryReacting: "Puedes añadir reacciones pulsando en el botón '+' de la nota. ¡Intenta reaccionar a esta nota de ejemplo!"
@@ -1488,8 +1508,9 @@ _initialTutorial:
     reactNotification: "Recibirás notificaciones en tiempo real cuando alguien reaccione a tu nota."
     reactDone: "Puedes deshacer una reacción pulsando en el botón '-'."
   _timeline:
+
     title: "El concepto de Línea de tiempo"
-    description1: "Misskey proporciona múltiples líneas de tiempo basadas en su uso (algunas pueden no estar disponibles dependiendo de las políticas de la instancia)."
+    description1: "Tribe proporciona múltiples líneas de tiempo basadas en su uso (algunas pueden no estar disponibles dependiendo de las políticas de la instancia)."
     home: "Puedes ver los posts de las cuentas que sigues."
     local: "Puedes ver los posts de todos los usuarios de este servidor."
     social: "Se ven los posts de la línea de tiempo de inicio junto con los de la línea de tiempo local."
@@ -1497,9 +1518,11 @@ _initialTutorial:
     description2: "Puedes cambiar la línea de tiempo en la parte superior de la pantalla cuando quieras."
     description3: "Además, hay listas de líneas de tiempo y listas de canales. Para más detalle, por favor visita este enlace: {link}"
   _postNote:
+
     title: "Ajustes de publicación de nota"
-    description1: "Cuando publicas una nota en Misskey, hay varias opciones disponibles. El formulario tiene este aspecto."
+    description1: "Cuando publicas una nota en Tribe, hay varias opciones disponibles. El formulario tiene este aspecto."
     _visibility:
+
       description: "Puedes limitar quién puede ver tu nota."
       public: "Tu nota será visible para todos los usuarios."
       home: "Publicar solo en la línea de tiempo de Inicio. La nota se verá en tu perfil, la verán tus seguidores y también cuando sea renotada."
@@ -1509,32 +1532,40 @@ _initialTutorial:
       doNotSendConfidencialOnDirect2: "Los administradores del servidor pueden leer lo que escribes. Ten cuidado cuando envíes información sensible en notas directas en servidores no confiables."
       localOnly: "Publicando con esta opción seleccionada, la nota no se federará hacia otros servidores. Los usuarios de otros servidores no podrán ver estas notas directamente, sin importar los ajustes seleccionados más arriba."
     _cw:
+
       title: "Alerta de contenido (CW)"
       description: "En lugar de mostrarse el contenido de la nota, se mostrará lo que escribas en el campo \"comentarios\". Pulsando en \"leer más\" desplegará el contenido de la nota."
       _exampleNote:
+
         cw: "¡Esto te hará tener hambre!"
         note: "Acabo de comerme un donut de chocolate glaseado 🍩😋"
       useCases: "Esto se usa cuando las normas del servidor lo requieren, o para ocultar spoilers o contenido sensible."
   _howToMakeAttachmentsSensitive:
+
     title: "¿Cómo puedo marcar adjuntos como contenido sensible?"
     description: "Cuando las normas del servidor lo requieran, o el contenido lo requiera, marca la opción de \"contenido sensible\" para el adjunto."
     tryThisFile: "¡Prueba a marcar la imagen adjunta como contenido sensible!"
     _exampleNote:
+
       note: "Ups, la he liado al abrir la tapa del natto..."
     method: "Para marcar un adjunto como sensible, haz clic en la miniatura, abre el menú, y haz clic en \"Marcar como sensible\"."
     sensitiveSucceeded: "Cuando adjuntes archivos, por favor, ten en cuenta las normas del servidor para marcarlos como contenido sensible."
     doItToContinue: "Marca el archivo adjunto como sensible para continuar."
   _done:
+
     title: "¡Has completado el tutorial! 🎉"
-    description: "Las funciones que mostramos aquí son sólo una pequeña parte. Para más detalles sobre el funcionamiento de Misskey, pulsa en este enlace: {link}"
+    description: "Las funciones que mostramos aquí son sólo una pequeña parte. Para más detalles sobre el funcionamiento de Tribe, pulsa en este enlace: {link}"
 _timelineDescription:
+
   home: "En la línea de tiempo de Inicio puedes ver las notas de las cuentas a las que sigues."
   local: "En la línea de tiempo Local puedes ver las notas de todos los usuarios del servidor."
   social: "En la línea de tiempo Social verás las notas de Inicio y Local a la vez."
   global: "En la línea de tiempo Global verás las notas de todos los servidores conectados."
 _serverRules:
+
   description: "Un conjunto de reglas que serán mostradas antes del registro. Configurar un sumario de términos de servicio es recomendado."
 _serverSettings:
+
   iconUrl: "URL del ícono"
   appIconDescription: "Indica el icono que se va a usar cuando {host} se muestre como una app."
   appIconUsageExample: "Por ejemplo, como PWA o cuando se muestre como un marcador en la pantalla inicial del dispositivo"
@@ -1547,6 +1578,7 @@ _serverSettings:
   fanoutTimelineDbFallback: "Cargar desde la base de datos"
   fanoutTimelineDbFallbackDescription: "Cuando esta opción está habilitada, la carga de peticiones adicionales de la línea de tiempo se hará desde la base de datos cuando éstas no se encuentren en la caché. Al deshabilitar esta opción se reduce la carga del servidor, pero limita el número de líneas de tiempo que pueden obtenerse."
 _accountMigration:
+
   moveFrom: "Trasladar de otra cuenta a ésta"
   moveFromSub: "Crear un alias para otra cuenta."
   moveFromLabel: "Cuenta desde la que se realiza el traslado #{n}"
@@ -1562,258 +1594,339 @@ _accountMigration:
   postMigrationNote: "Ésta cuenta dejará de seguir a todas las cuentas en las siguientes 24 horas después de que finalice la migración.\nEl número de seguidos y seguidores serán 0. Para evitar que Para evitar que tus seguidores dejen de ver las publicaciones, todas serán marcadas como \"sólo seguidores\"."
   movedTo: "Cuenta destino:"
 _achievements:
+
   earnedAt: "Desbloqueado el"
   _types:
+
     _notes1:
-      title: "¡Hola Misskey!"
+
+      title: "¡Hola Tribe!"
       description: "Publicaste tu primera nota"
-      flavor: "¡Pasándola bien con Misskey!"
+      flavor: "¡Pasándola bien con Tribe!"
     _notes10:
+
       title: "Algunas notas"
       description: "10 notas publicadas"
     _notes100:
+
       title: "¡Muchas notas!"
       description: "100 notas publicadas"
     _notes500:
+
       title: "¡Cubierto de notas!"
       description: "500 notas publicadas"
     _notes1000:
+
       title: "¡Una montaña de notas!"
       description: "1000 notas publicadas"
     _notes5000:
+
       title: "¡Exceso de notas!"
       description: "5000 notas publicadas"
     _notes10000:
+
       title: "¡Súpernota!"
       description: "10000 notas publicadas"
     _notes20000:
+
       title: "Necesito... Más... ¡Notas!"
       description: "20000 notas publicadas"
     _notes30000:
+
       title: "¡Notas! ¡Notas! ¡Notas!"
       description: "30000 notas publicadas"
     _notes40000:
+
       title: "Fábrica de notas"
       description: "40000 notas publicadas"
     _notes50000:
+
       title: "¡Un planeta de notas!"
       description: "50000 notas publicadas"
     _notes60000:
+
       title: "¡Un cuásar de notas!"
       description: "60000 notas publicadas"
     _notes70000:
+
       title: "¡Un hoyo negro de notas!"
       description: "70000 notas publicadas"
     _notes80000:
+
       title: "¡Una galaxia de notas!"
       description: "80000 notas publicadas"
     _notes90000:
+
       title: "¡Todo un universo de notas!"
       description: "90000 notas publicadas"
     _notes100000:
+
       title: "ALL YOUR NOTE ARE BELONG TO US"
       description: "100000 notas publicadas"
       flavor: "¿Tienes tanto para publicar?"
     _login3:
+
       title: "Principiante I"
       description: "Días desde el inicio de sesión: 3"
       flavor: "Desde hoy, soy Misskero"
     _login7:
+
       title: "Principiante II"
       description: "Días desde el inicio de sesión: 7"
       flavor: "¿Ya te acostumbraste?"
     _login15:
+
       title: "Principiante III"
       description: "Días desde el inicio de sesión: 15"
     _login30:
+
       title: "Misskero I"
       description: "Días desde el inicio de sesión: 30"
     _login60:
+
       title: "Misskero II"
       description: "Días desde el inicio de sesión: 60"
     _login100:
+
       title: "Misskero III"
       description: "Días desde el inicio de sesión: 100"
       flavor: "Para este usuario, Misskaína"
     _login200:
+
       title: "Regular I"
       description: "Días desde el inicio de sesión: 200"
     _login300:
+
       title: "Regular II"
       description: "Días desde el inicio de sesión: 300"
     _login400:
+
       title: "Regular III"
       description: "Días desde el inicio de sesión: 400"
     _login500:
+
       title: "Veterano I"
       description: "Días desde el inicio de sesión: 500"
       flavor: "Chicos, me encantan las libretas..."
     _login600:
+
       title: "Veterano II"
       description: "Días desde el inicio de sesión: 600"
     _login700:
+
       title: "Veterano III"
       description: "Días desde el inicio de sesión: 700"
     _login800:
+
       title: "Maestro I"
       description: "Días desde el inicio de sesión: 800"
     _login900:
+
       title: "Maestro II"
       description: "Días desde el inicio de sesión: 900"
     _login1000:
+
       title: "Maestro III"
       description: "Días desde el inicio de sesión: 1000"
-      flavor: "¡Gracias por usar Misskey!"
+      flavor: "¡Gracias por usar Tribe!"
     _noteClipped1:
+
       title: "No puedo evitar clipearte..."
       description: "Hacer un clip por primera vez"
     _noteFavorited1:
+
       title: "Contemplando las estrellas"
       description: "Poner una nota como favorito por primera vez"
     _myNoteFavorited1:
+
       title: "¡Quiero una estrella!"
       description: "Tu nota ha sido marcada como favorito por primera vez"
     _profileFilled:
+
       title: "¡Listo!"
       description: "Perfil completado"
     _markedAsCat:
+
       title: "Soy un gato"
       description: "Configurar la cuenta como cuenta de un gato"
       flavor: "Aún no tengo nombre"
     _following1:
+
       title: "Primera vez siguiendo a alguien"
       description: "Seguir a un usuario"
     _following10:
+
       title: "Ahí la llevas, ahí la llevas..."
       description: "10 usuarios seguidos"
     _following50:
+
       title: "¡Un puñado de amigos!"
       description: "50 cuentas seguidas"
     _following100:
+
       title: "100 amigos"
       description: "100 cuentas seguidas"
     _following300:
+
       title: "¡Sobrecarga de amigos!"
       description: "300 cuentas seguidas"
     _followers1:
+
       title: "¡Tu primer seguidor!"
       description: "1 seguidor ganado"
     _followers10:
+
       title: "¡Sígueme!"
       description: "10 seguidores ganados"
     _followers50:
+
       title: "Viniendo en manada"
       description: "50 seguidores ganados"
     _followers100:
+
       title: "Popular"
       description: "100 cuentas seguidas"
     _followers300:
+
       title: "Por favor, hagan una fila"
       description: "300 seguidores ganados"
     _followers500:
+
       title: "¡Toda una torre de radio!"
       description: "500 seguidores ganados"
     _followers1000:
+
       title: "\"Influyente\""
       description: "1000 seguidores gandos"
     _collectAchievements30:
+
       title: "Coleccionista"
       description: "30 logros ganados"
     _viewAchievements3min:
+
       title: "¡Te gustan los logros!"
       description: "Mirando tus logros por 3 minutos"
     _iLoveMisskey:
-      title: "¡AMO Misskey!"
-      description: "\"I ❤ #Misskey\" Publicado"
-      flavor: "El equipo de desarrollo de Misskey, en verdad, ¡aprecia tu apoyo!"
+
+      title: "¡AMO Tribe!"
+      description: "\"I ❤ #Tribe\" Publicado"
+      flavor: "El equipo de desarrollo de Tribe, en verdad, ¡aprecia tu apoyo!"
     _foundTreasure:
+
       title: "Búsqueda del tesoro"
       description: "Encontraste un tesoro"
     _client30min:
+
       title: "Un descansito"
-      description: "30 minutos dedicados a Misskey"
+      description: "30 minutos dedicados a Tribe"
     _client60min:
-      title: "Viendo mucho Misskey."
-      description: "Dejar abierto Misskey por al menos 60 minutos"
+
+      title: "Viendo mucho Tribe."
+      description: "Dejar abierto Tribe por al menos 60 minutos"
     _noteDeletedWithin1min:
+
       title: "Ah... Mejor no..."
       description: "Borrar una nota antes que de pase 1 minuto"
     _postedAtLateNight:
+
       title: "Nocturno"
       description: "Una nota publicada por la noche"
       flavor: "¡Ya casi es hora de dormir!"
     _postedAt0min0sec:
+
       title: "Reloj parlante"
       description: "Publicar una nota a las 00:00 de la madrugada"
       flavor: "Tic, tic, tic ¡TUUUUUN!"
     _selfQuote:
+
       title: "Autoreferencia"
       description: "Citar tu propia nota"
     _htl20npm:
+
       title: "Línea de tiempo fluyendo"
       description: "La velocidad de tu línea de tiempo excede las 20 npm (notas por minuto)"
     _viewInstanceChart:
+
       title: "Analista"
       description: "Gráficas de la instancia mostradas"
     _outputHelloWorldOnScratchpad:
+
       title: "¡Hola mundo!"
       description: "Escribir \"hello world\" en el compositor"
     _open3windows:
+
       title: "Multiventana"
       description: "Tener más de 3 ventanas al mismo tiempo"
     _driveFolderCircularReference:
+
       title: "Referencia circular"
       description: "Intento de crear carpetas recursivamente"
     _reactWithoutRead:
+
       title: "¡Sí lo leíste bien?"
       description: "Reaccionar a los 3 segundos de publicación de una nota con más de 100 caracteres"
     _clickedClickHere:
+
       title: "Pícale aquí"
       description: "Le picó ahí"
     _justPlainLucky:
+
       title: "Pura suerte"
       description: "Obtenido con una probabilidad del 0.01% cada 10 segundos"
     _setNameToSyuilo:
+
       title: "Complejo de superioridad"
       description: "Configurar el nombre como 'Syuilo'"
     _passedSinceAccountCreated1:
+
       title: "Primer aniversario"
       description: "Pasó un año desde la creación de la cuenta"
     _passedSinceAccountCreated2:
+
       title: "Segundo aniversario"
       description: "Pasaron dos años desde la creación de la cuenta"
     _passedSinceAccountCreated3:
+
       title: "Tercer aniversario"
       description: "Pasaron tres años desde la creación de la cuenta"
     _loggedInOnBirthday:
+
       title: "¡Feliz cumpleaños!"
       description: "En linea el día de tu cumpleaños"
     _loggedInOnNewYearsDay:
+
       title: "¡Feliz Año Nuevo!"
       description: "En linea en año nuevo"
       flavor: "¡Gracias por tu apoyo a la instancia durante todo este año!"
     _cookieClicked:
+
       title: "Un juego para picarle a una galleta"
       description: "Picaste una galleta"
       flavor: "¿Está mal este juego?"
     _brainDiver:
+
       title: "Brain Diver"
       description: "Publicaste un vínculo a \"Brain Diver\""
-      flavor: "Misskey-Misskey La-Tu-Ma"
+      flavor: "Tribe-Tribe La-Tu-Ma"
     _smashTestNotificationButton:
+
       title: "Sobrecarga de pruebas"
       description: "Envía muchas notificaciones de prueba en un corto espacio de tiempo"
     _tutorialCompleted:
-      title: "Diploma del Curso Básico de Misskey"
+
+      title: "Diploma del Curso Básico de Tribe"
       description: "Tutorial completado"
     _bubbleGameExplodingHead:
+
       title: "🤯"
       description: "El objeto más grande en el juego de burbujas"
     _bubbleGameDoubleExplodingHead:
+
       title: "Doble 🤯"
       description: "Dos de los objetos más grandes en el juego de burbujas al mismo tiempo"
       flavor: "Puedes llenar el bento un poco de esta forma 🤯 🤯."
 _role:
+
   new: "Crear rol"
   edit: "Editar rol"
   name: "Nombre del rol"
@@ -1846,10 +1959,12 @@ _role:
   descriptionOfCanEditMembersByModerator: "Si se activa, los moderadores, al igual que los administradores, serán capaces de asignar/quitar usuarios a éste rol. Si se desactiva, sólo los administradores podrán hacerlo."
   priority: "Prioridad"
   _priority:
+
     low: "Baja"
     middle: "Mediano"
     high: "Alta"
   _options:
+
     gtlAvailable: "Explorar la línea de tiempo global"
     ltlAvailable: "Explorar la línea de tiempo local"
     canPublicNote: "Permitir la publicación"
@@ -1877,6 +1992,7 @@ _role:
     canUseTranslator: "Uso de traductor"
     avatarDecorationLimit: "Número máximo de decoraciones de avatar"
   _condition:
+
     roleAssignedTo: "Asignado a roles manuales"
     isLocal: "Usuario local"
     isRemote: "Usuario remoto"
@@ -1896,6 +2012,7 @@ _role:
     or: "Condicional OR"
     not: "Condicional NOT"
 _sensitiveMediaDetection:
+
   description: "Reduce el esfuerzo de la moderación en el servidor a través del reconocimiento automático de contenido NSFW usando 'Machine Learning'. Esto puede incrementar ligeramente la carga en el servidor."
   sensitivity: "Sensibilidad de la detección"
   sensitivityDescription: "Reducir la sensibilidad puede acarrear a varios falsos positivos, mientras que incrementarla puede reducir las detecciones (falsos negativos)."
@@ -1904,6 +2021,7 @@ _sensitiveMediaDetection:
   analyzeVideos: "Habilitar el análisis de videos"
   analyzeVideosDescription: "Analizar videos en adición a las imágenes. Esto puede incrementar ligeramente la carga del servidor."
 _emailUnavailable:
+
   used: "Ya fue usado"
   format: "Formato no válido."
   disposable: "No es un correo reutilizable"
@@ -1911,14 +2029,17 @@ _emailUnavailable:
   smtp: "Servidor de correo no disponible"
   banned: "Email no disponible"
 _ffVisibility:
+
   public: "Publicar"
   followers: "Visible solo para seguidores"
   private: "Privado"
 _signup:
+
   almostThere: "Ya falta poco"
   emailAddressInfo: "Ingrese el correo electrónico que usa. Este no se hará público."
   emailSent: "Se envió un correo de verificación a la dirección {email}. Acceda al link enviado en el correo para completar el ingreso."
 _accountDelete:
+
   accountDelete: "Eliminar Cuenta"
   mayTakeTime: "La eliminación de la cuenta es un proceso que precisa de carga. Puede pasar un tiempo hasta que se complete si es mucho el contenido creado y los archivos subidos."
   sendEmail: "Cuando se termine de borrar la cuenta, se enviará un correo a la dirección usada para el registro."
@@ -1926,6 +2047,7 @@ _accountDelete:
   started: "El proceso de eliminación ha comenzado."
   inProgress: "La eliminación está en proceso."
 _ad:
+
   back: "Deseleccionar"
   reduceFrequencyOfThisAd: "Mostrar menos este anuncio."
   hide: "No mostrar"
@@ -1935,26 +2057,33 @@ _ad:
   setZeroToDisable: "Establece este valor a 0 para deshabilitar la actualización de anuncios en tiempo real"
   adsTooClose: "El intervalo de anuncios actual puede empeorar la experiencia del usuario por ser demasiado bajo."
 _forgotPassword:
+
   enterEmail: "Ingrese el correo usado para registrar la cuenta. Se enviará un link para resetear la contraseña."
   ifNoEmail: "Si no utilizó un correo para crear la cuenta, contáctese con el administrador."
   contactAdmin: "Esta instancia no admite el uso de direcciones de correo electrónico, póngase en contacto con el administrador de la instancia para restablecer su contraseña"
 _gallery:
+
   my: "Mi galería"
   liked: "Publicaciones que me gustan"
   like: "¡Muy bien!"
   unlike: "Quitar me gusta"
 _email:
+
   _follow:
+
     title: "te ha seguido"
   _receiveFollowRequest:
+
     title: "Has recibido una solicitud de seguimiento"
 _plugin:
+
   install: "Instalar plugins"
   installWarn: "Por favor no instale plugins que no son de confianza"
   manage: "Gestionar plugins"
   viewSource: "Ver la fuente"
   viewLog: "Ver log"
 _preferencesBackups:
+
   list: "Respaldos creados"
   saveNew: "Guardar nuevo respaldo"
   loadFile: "Cargar desde archivo"
@@ -1973,36 +2102,42 @@ _preferencesBackups:
   cannotLoad: "La carga falló"
   invalidFile: "Formato de archivo inválido"
 _registry:
+
   scope: "Alcance"
   key: "Clave"
   keys: "Clave"
   domain: "Dominio"
   createKey: "Crear una llave"
 _aboutMisskey:
-  about: "Misskey es un software de código abierto, desarrollado por syuilo desde el 2014"
+
+  about: "Tribe es un software de código abierto, desarrollado por syuilo desde el 2014"
   contributors: "Principales colaboradores"
   allContributors: "Todos los colaboradores"
   source: "Código fuente"
   original: "Original"
-  thisIsModifiedVersion: "{name} usa una versión modificada de Misskey."
-  translation: "Traducir Misskey"
-  donate: "Donar a Misskey"
+  thisIsModifiedVersion: "{name} usa una versión modificada de Tribe."
+  translation: "Traducir Tribe"
+  donate: "Donar a Tribe"
   morePatrons: "Muchas más personas nos apoyan. Muchas gracias🥰"
   patrons: "Patrocinadores"
   projectMembers: "Miembros del proyecto"
 _displayOfSensitiveMedia:
+
   respect: "Esconder medios marcados como sensibles"
   ignore: "Mostrar medios marcados como sensibles"
   force: "Esconder todala multimedia"
 _instanceTicker:
+
   none: "No mostrar"
   remote: "Mostrar a usuarios remotos"
   always: "Mostrar siempre"
 _serverDisconnectedBehavior:
+
   reload: "Recargar automáticamente"
   dialog: "Mostrar diálogo de advertencia"
   quiet: "Advertencia discreta"
 _channel:
+
   create: "Crear canal"
   edit: "Editar canal"
   setBanner: "Elegir banner"
@@ -2016,20 +2151,24 @@ _channel:
   nameOnly: "Sólo nombre"
   allowRenoteToExternal: "Permitir renotas y menciones fuera del canal"
 _menuDisplay:
+
   sideFull: "Horizontal"
   sideIcon: "Horizontal (ícono)"
   top: "Arriba"
   hide: "Ocultar"
 _wordMute:
+
   muteWords: "Palabras que silenciar"
   muteWordsDescription: "Separar con espacios indica una declaracion And, separar con lineas nuevas indica una declaracion Or。"
   muteWordsDescription2: "Encerrar las palabras clave entre numerales para usar expresiones regulares"
 _instanceMute:
+
   instanceMuteDescription: "Silencia todas las notas y reposts de la instancias seleccionadas, incluyendo respuestas a los usuarios de las mismas"
   instanceMuteDescription2: "Separar por líneas"
   title: "Oculta las notas de las instancias listadas."
   heading: "Instancias a silenciar"
 _theme:
+
   explore: "Explorar temas"
   install: "Instalar tema"
   manage: "Gestor de temas"
@@ -2060,6 +2199,7 @@ _theme:
   importInfo: "Pegando el código del tema aquí, puede importarlo al editor"
   deleteConstantConfirm: "¿Desea borrar la constante {const}?"
   keys:
+
     accent: "Acento"
     bg: "Fondo"
     fg: "Texto"
@@ -2096,18 +2236,21 @@ _theme:
     messageBg: "Fondo de chat"
     fgHighlighted: "Texto resaltado"
 _sfx:
+
   note: "Notas"
   noteMy: "Nota (a mí mismo)"
   notification: "Notificaciones"
   reaction: "Al seleccionar una reacción"
 _soundSettings:
+
   driveFile: "Usar un archivo de audio en Drive"
   driveFileWarn: "Selecciona un archivo de audio en Drive."
   driveFileTypeWarn: "Este archivo es incompatible"
   driveFileTypeWarnDescription: "Selecciona un archivo de audio"
   driveFileDurationWarn: "La duración del audio es demasiado larga."
-  driveFileDurationWarnDescription: "Usar un audio de larga duración puede llegar a molestar mientras usas Misskey. ¿Quieres continuar?"
+  driveFileDurationWarnDescription: "Usar un audio de larga duración puede llegar a molestar mientras usas Tribe. ¿Quieres continuar?"
 _ago:
+
   future: "Futuro"
   justNow: "Justo ahora"
   secondsAgo: "Hace {n} segundos"
@@ -2119,6 +2262,7 @@ _ago:
   yearsAgo: "Hace {n} años"
   invalid: "No hay nada que ver aqui"
 _timeIn:
+
   seconds: "En {n} segundos"
   minutes: "En {n}m"
   hours: "En {n}h"
@@ -2127,11 +2271,13 @@ _timeIn:
   months: "En {n}M"
   years: "En {n} años"
 _time:
+
   second: "Segundos"
   minute: "Minutos"
   hour: "Horas"
   day: "Días"
 _2fa:
+
   alreadyRegistered: "Ya has completado la configuración."
   registerTOTP: "Registrar aplicación autenticadora"
   step1: "Primero, instale en su dispositivo la aplicación de autenticación {a} o {b} u otra."
@@ -2161,6 +2307,7 @@ _2fa:
   backupCodesExhaustedWarning: "Has usado todos los códigos de respaldo. Si dejas de tener acceso a tu aplicación de autenticación, no podrás volver a iniciar sesión en la cuenta que figura arriba. Por favor, reconfigura tu aplicación de autenticación lo antes posible."
   moreDetailedGuideHere: "Guía detallada"
 _permissions:
+
   "read:account": "Ver información de la cuenta"
   "write:account": "Editar información de la cuenta"
   "read:blocks": "Ver usuarios bloqueados"
@@ -2175,7 +2322,7 @@ _permissions:
   "write:messaging": "Administrar chat"
   "read:mutes": "Ver usuarios silenciados"
   "write:mutes": "Administrar usuarios silenciados"
-  "write:notes": "Crear/borrar notas"
+  "write:sparks": "Crear/borrar notas"
   "read:notifications": "Ver notificaciones"
   "write:notifications": "Administrar notificaciones"
   "read:reactions": "Ver reacciones"
@@ -2215,7 +2362,7 @@ _permissions:
   "write:admin:unset-user-banner": "Quitar banner de usuarios"
   "write:admin:unsuspend-user": "Quitar suspensión de cuentas de usuario"
   "write:admin:meta": "Edición de metadatos de la instancia"
-  "write:admin:user-note": "Moderación de notas"
+  "write:admin:user-spark": "Moderación de notas"
   "write:admin:roles": "Edición de roles de usuario"
   "read:admin:roles": "Ver roles de usuario"
   "write:admin:relays": "Edición de relays"
@@ -2247,6 +2394,7 @@ _permissions:
   "write:report-abuse": "Crear reportes de usuario"
   "write:chat": "Administrar chat"
 _auth:
+
   shareAccessTitle: "Permisos de la aplicación"
   shareAccess: "¿Desea permitir el acceso a la cuenta \"{name}\"?"
   shareAccessAsk: "¿Está seguro de que desea autorizar esta aplicación para acceder a su cuenta?"
@@ -2257,12 +2405,14 @@ _auth:
   denied: "Acceso denegado"
   pleaseLogin: "Se requiere un inicio de sesión para darle permisos a la aplicación"
 _antennaSources:
+
   all: "Todas las notas"
   homeTimeline: "Notas de los usuarios que sigues"
   users: "Notas de un usuario o varios"
   userList: "Notas de los usuarios de una lista"
   userBlacklist: "Todas las notas excepto aquellas de uno o más usuarios especificados"
 _weekday:
+
   sunday: "Domingo"
   monday: "Lunes"
   tuesday: "Martes"
@@ -2271,6 +2421,7 @@ _weekday:
   friday: "Viernes"
   saturday: "Sábado"
 _widgets:
+
   profile: "Perfil"
   instanceInfo: "información de la instancia"
   memo: "Nota adhesiva"
@@ -2298,16 +2449,19 @@ _widgets:
   aichan: "indigo"
   userList: "Lista de usuarios"
   _userList:
+
     chooseList: "Seleccione una lista"
   clicker: "Cliqueador"
   birthdayFollowings: "Hoy cumplen años"
   chat: "Chat"
 _cw:
+
   hide: "Ocultar"
   show: "Ver más"
   chars: "{count} caracteres"
   files: "{count} archivos"
 _poll:
+
   noOnlyOneChoice: "Se necesitan al menos 2 opciones"
   choiceN: "Opción {n}"
   noMore: "No se pueden agregar más"
@@ -2330,6 +2484,7 @@ _poll:
   remainingMinutes: "Quedan {m} minutos y {s} segundos para que finalice"
   remainingSeconds: "Quedan {s} segundos para que finalice"
 _visibility:
+
   public: "Público"
   publicDescription: "Visible para todos los usuarios"
   home: "Inicio"
@@ -2341,10 +2496,12 @@ _visibility:
   disableFederation: "No federado"
   disableFederationDescription: "No enviar a otras instancias"
 _postForm:
+
   replyPlaceholder: "Responder a esta nota"
   quotePlaceholder: "Citar esta nota"
   channelPlaceholder: "Publicar en el canal"
   _placeholders:
+
     a: "¿Qué haces?"
     b: "¿Te pasó algo?"
     c: "¿Qué estás pensando?"
@@ -2352,6 +2509,7 @@ _postForm:
     e: "Escribe aquí"
     f: "Esperando a que escribas algo..."
 _profile:
+
   name: "Nombre"
   username: "Nombre de usuario"
   description: "Descripción"
@@ -2366,6 +2524,7 @@ _profile:
   verifiedLinkDescription: "Introduciendo una URL que contiene un enlace a tu perfil, se puede mostrar un icono de verificación de propiedad al lado del campo."
   avatarDecorationMax: "Puedes añadir un máximo de {max} decoraciones de avatar."
 _exportOrImport:
+
   allNotes: "Todas las notas"
   favoritedNotes: "Notas favoritas"
   clips: "Clip"
@@ -2377,6 +2536,7 @@ _exportOrImport:
   excludeInactiveUsers: "Excluir usuarios inactivos"
   withReplies: "Incluir respuestas de los usuarios importados en la línea de tiempo"
 _charts:
+
   federation: "Federación"
   apRequest: "Pedidos"
   usersIncDec: "Variación de usuarios"
@@ -2391,6 +2551,7 @@ _charts:
   storageUsageIncDec: "Variación de uso del almacenamiento"
   storageUsageTotal: "Total de uso del almacenamiento"
 _instanceCharts:
+
   requests: "Pedidos"
   users: "Variación de usuarios"
   usersTotal: "Total acumulado de usuarios"
@@ -2403,11 +2564,13 @@ _instanceCharts:
   files: "Variación de cantidad de archivos"
   filesTotal: "Total acumulado de cantidad de archivos"
 _timelines:
+
   home: "Inicio"
   local: "Local"
   social: "Social"
   global: "Global"
 _play:
+
   new: "Crear guión"
   edit: "Editar guión"
   created: "Guión creado"
@@ -2424,6 +2587,7 @@ _play:
   summary: "Descripción"
   visibilityDescription: "Poniéndola como privada significa que no será visible en tu perfil, pero cualquiera que tenga la URL aún podrá acceder a ella."
 _pages:
+
   newPage: "Crear página"
   editPage: "Editar página"
   readPage: "Viendo la fuente"
@@ -2459,6 +2623,7 @@ _pages:
   inputBlocks: "Entrada"
   specialBlocks: "Especial"
   blocks:
+
     text: "Texto"
     textarea: "Área de texto"
     section: "Sección"
@@ -2468,14 +2633,17 @@ _pages:
     dynamicDescription: "Los bloques dinámicos están obsoletos. A partir de ahora, utiliza {play} por favor."
     note: "Nota embebida"
     _note:
+
       id: "Id de la nota"
       idDescription: "Pega la URL de la nota para configurarla"
       detailed: "Ver Detalles"
 _relayStatus:
+
   requesting: "Pendiente"
   accepted: "Aceptar"
   rejected: "Rechazada"
 _notification:
+
   fileUploaded: "Archivo subido"
   youGotMention: "Mención de {name}"
   youGotReply: "Respuesta de {name}"
@@ -2498,6 +2666,7 @@ _notification:
   renotedBySomeUsers: "{n} usuarios han renotado"
   followedBySomeUsers: "Seguido por {n} usuarios"
   _types:
+
     all: "Todo"
     note: "Nuevas notas"
     follow: "Siguiendo"
@@ -2515,10 +2684,12 @@ _notification:
     test: "Pruebas de nofiticaciones"
     app: "Notificaciones desde aplicaciones"
   _actions:
+
     followBack: "Te sigue de vuelta"
     reply: "Responder"
     renote: "Renotar"
 _deck:
+
   alwaysShowMainColumn: "Siempre mostrar la columna principal"
   columnAlign: "Alinear columnas"
   addColumn: "Agregar columna"
@@ -2539,6 +2710,7 @@ _deck:
   usedAsMinWidthWhenFlexible: "Se usará el ancho mínimo cuando la opción \"Autoajustar ancho\" esté habilitada"
   flexible: "Autoajustar ancho"
   _columns:
+
     main: "Principal"
     widgets: "Widgets"
     notifications: "Notificaciones"
@@ -2551,36 +2723,46 @@ _deck:
     roleTimeline: "Linea de tiempo del rol"
     chat: "Chat"
 _dialog:
+
   charactersExceeded: "¡Has excedido el límite de caracteres! Actualmente {current} de {max}."
   charactersBelow: "¡Estás por debajo del límite de caracteres! Actualmente {current} de {min}."
 _disabledTimeline:
+
   title: "Línea de tiempo deshabilitada"
   description: "No puedes usar esta línea de tiempo con tus roles actuales."
 _drivecleaner:
+
   orderBySizeDesc: "Tamaño descendiente"
   orderByCreatedAtAsc: "Fecha ascendente"
 _webhookSettings:
+
   createWebhook: "Crear Webhook"
   name: "Nombre"
   secret: "Secreto"
   active: "Activado"
   _events:
+
     follow: "Cuando se sigue a alguien"
     followed: "Cuando se es seguido"
     note: "Cuando se publica una nota"
     reply: "Cuando se recibe una respuesta"
-    renote: "Cuando reciba un \"re-note\""
+    renote: "Cuando reciba un \"re-spark\""
     reaction: "Cuando se recibe una reacción"
     mention: "Cuando hay una mención"
   _systemEvents:
+
     userCreated: "Cuando se crea el usuario."
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "Correo"
       webhook: "Webhook"
     keywords: "Palabras Clave"
 _moderationLogTypes:
+
   createRole: "Rol creado"
   deleteRole: "Rol eliminado"
   updateRole: "Rol actualizado"
@@ -2617,6 +2799,7 @@ _moderationLogTypes:
   unsetUserAvatar: "Quitar decoración de avatar de este usuario"
   unsetUserBanner: "Quitar banner de este usuario"
 _fileViewer:
+
   title: "Detalles del archivo"
   type: "Tipo de archivo"
   size: "Tamaño del archivo"
@@ -2625,80 +2808,107 @@ _fileViewer:
   attachedNotes: "Notas adjuntas"
   thisPageCanBeSeenFromTheAuthor: "Esta página solo puede ser vista por el autor."
 _externalResourceInstaller:
+
   title: "Instalar desde sitio externo"
   checkVendorBeforeInstall: "Asegúrate de que el distribuidor de este recurso es de confianza antes de proceder a la instalación."
   _plugin:
+
     title: "¿Quieres instalar este plugin?"
   _theme:
+
     title: "¿Quieres instalar este tema?"
   _meta:
+
     base: "Esquema de color base"
   _vendorInfo:
+
     title: "Información del distribuidor"
     endpoint: "Terminal referenciada"
     hashVerify: "Verificación de hash"
   _errors:
+
     _invalidParams:
+
       title: "Parámetros inválidos"
       description: "No hay información suficiente para cargar datos de un sitio externo. Por favor, confirma la URL introducida."
     _resourceTypeNotSupported:
+
       title: "Este recurso externo no es compatible"
       description: "El tipo de este recurso externo no es compatible. Por favor, contacta con el administrador del sitio."
     _failedToFetch:
+
       title: "No se pudo obtener los datos"
       fetchErrorDescription: "Ha ocurrido un error al comunicarse con el sitio externo. Si no se soluciona tras intentarlo otra vez, por favor, contacta con el administrador del sitio."
       parseErrorDescription: "Ha ocurrido un error al procesar los datos obtenidos del sitio externo. Por favor, contacta con el administrador del sitio."
     _hashUnmatched:
+
       title: "Verificación de datos fallida"
       description: "Ha ocurrido un error al verificar la integridad de los datos obtenidos. Por seguridad, la instalación no se puede realizar. Por favor, contacta con el administrador del sitio."
     _pluginParseFailed:
+
       title: "Error de AiScript"
       description: "Los datos se han obtenido correctamente, pero ha ocurrido un error de AiScript al procesarlos. Por favor, contacta con el autor del plugin. Se pueden ver más detalles del error en la consola de Javascript."
     _pluginInstallFailed:
+
       title: "Instalación del plugin fallida."
       description: "Ha ocurrido un problema al instalar el plugin. Por favor, inténtalo de nuevo. Se pueden ver más detalles del error en la consola de Javascript."
     _themeParseFailed:
+
       title: "Análisis del tema fallido"
       description: "Los datos se han obtenido correctamente, pero ha ocurrido un error al analizar el tema. Por favor, contacta con el autor. Se pueden ver más detalles del error en la consola de Javascript."
     _themeInstallFailed:
+
       title: "Instalación de tema fallida"
       description: "Ha ocurrido un problema al instalar el tema. Por favor, inténtalo de nuevo. Se pueden ver más detalles del error en la consola de Javascript."
 _dataSaver:
+
   _media:
+
     title: "Cargando Multimedia"
     description: "Desactiva la carga automática de imágenes y vídeos. Tendrás que tocar en las imágenes y vídeos ocultos para cargarlos."
   _avatar:
+
     title: "Avatares animados"
     description: "Desactiva la animación de los avatares. Las imágenes animadas pueden llegar a ser de mayor tamaño que las normales, por lo que al desactivarlas puedes reducir el consumo de datos."
   _urlPreview:
+
     title: "Vista previa de URLs"
     description: "Desactiva la carga de vistas previas de las URLs."
   _code:
+
     title: "Resaltar código"
     description: "Si se usa resaltado de código en MFM, etc., no se cargará hasta pulsar en ello. El resaltado de sintaxis requiere la descarga de archivos de definición para cada lenguaje de programación. Debido a esto, al deshabilitar la carga automática de estos archivos reducirás el consumo de datos."
 _hemisphere:
+
   N: "Hemisferio norte"
   S: "Hemisferio sur"
 _reversi:
+
   reversi: "Reversi"
   rules: "Reglas"
   won: "{name} ha ganado"
   total: "Total"
 _urlPreviewSetting:
+
   timeout: "Timeout de la carga de vista previa de las URLs (ms)"
   maximumContentLength: "Content-Length Máximo (bytes)"
   userAgent: "User-Agent"
 _mediaControls:
+
   pip: "Picture in Picture"
   playbackRate: "Velocidad de reproducción"
   loop: "Reproducción en bucle"
 _followRequest:
+
   recieved: "Petición de seguimiento recibida"
   sent: "Petición de seguimiento enviada"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "No se encuentra"
 _search:
+
   searchScopeAll: "Todo"
   searchScopeLocal: "Local"
   searchScopeUser: "Especificar usuario"

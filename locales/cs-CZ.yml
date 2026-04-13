@@ -1,8 +1,8 @@
 ---
 _lang_: "Čeština"
 headlineMisskey: "Síť propojená poznámkami"
-introMisskey: "Vítejte! Misskey je otevřený a decentralizovaný microblogový servis.\n\"Poznámkami\" můžete sdílet co se zrovna děje se všemi ve Vašem okolí. 📡\nPomocí \"reakcí\" můžete sdílet své názory a pocity na ostatní poznámky. 👍\nPojďte objevovat nový svět! 🚀"
-poweredByMisskeyDescription: "{name} je jeden ze serverů využívající open source platformu <b>Misskey<b> (nazývaná \"Misskey instance\")."
+introMisskey: "Vítejte! Tribe je otevřený a decentralizovaný microblogový servis.\n\"Poznámkami\" můžete sdílet co se zrovna děje se všemi ve Vašem okolí. 📡\nPomocí \"reakcí\" můžete sdílet své názory a pocity na ostatní poznámky. 👍\nPojďte objevovat nový svět! 🚀"
+poweredByMisskeyDescription: "{name} je jeden ze serverů využívající open source platformu <b>Tribe<b> (nazývaná \"Tribe instance\")."
 monthAndDay: "{day}. {month}."
 search: "Vyhledávání"
 reset: "Obnovit"
@@ -11,7 +11,7 @@ username: "Uživatelské jméno"
 password: "Heslo"
 initialPasswordForSetup: "Počáteční heslo pro nastavení"
 initialPasswordIsIncorrect: "Počáteční heslo pro nastavení je nesprávné"
-initialPasswordForSetupDescription: "Použijte heslo, které jste nastavili v konfiguračním souboru, pokud jste Misskey instalovali ručně.\nPokud užíváte Misskey hostovací službu, použijte poskytnuté heslo.\nPokud jste heslo nenastavovali, zanechte prázdné."
+initialPasswordForSetupDescription: "Použijte heslo, které jste nastavili v konfiguračním souboru, pokud jste Tribe instalovali ručně.\nPokud užíváte Tribe hostovací službu, použijte poskytnuté heslo.\nPokud jste heslo nenastavovali, zanechte prázdné."
 forgotPassword: "Zapomenuté heslo"
 fetchingAsApObject: "Načítám data z Fediversu..."
 ok: "Potvrdit"
@@ -164,7 +164,7 @@ cacheRemoteFilesDescription: "Zakázání tohoto nastavení způsobí, že vzdá
 cacheRemoteSensitiveFiles: "Uložit do mezipaměti vzdálené citlivé soubory"
 cacheRemoteSensitiveFilesDescription: "Když je tohle nastavení zrušeno, tak jsou vzdálené citlivé soubory načítány přímo ze vzdálených instancí bez uložení do mezipaměti."
 flagAsBot: "Tento účet je bot"
-flagAsBotDescription: "Pokud je tento účet kontrolován programem zaškrtněte tuto možnost. To označí tento účet jako bot pro ostatní vývojáře a zabrání tak nekonečným interakcím s ostatními boty a upraví Misskey systém aby se choval k tomuhle účtu jako bot."
+flagAsBotDescription: "Pokud je tento účet kontrolován programem zaškrtněte tuto možnost. To označí tento účet jako bot pro ostatní vývojáře a zabrání tak nekonečným interakcím s ostatními boty a upraví Tribe systém aby se choval k tomuhle účtu jako bot."
 flagAsCat: "Tenhle účet je kočka"
 flagAsCatDescription: "Vyberte tuto možnost aby tento účet byl označen jako kočka."
 flagShowTimelineReplies: "Zobrazovat odpovědi na časové ose"
@@ -175,7 +175,7 @@ reloadAccountsList: "Obnovit list účtů"
 loginFailed: "Přihlášení se nezdařilo."
 showOnRemote: "Více na původním profilu"
 continueOnRemote: "Pokračujte na původní profil"
-chooseServerOnMisskeyHub: "Vyberete si server z Misskey Hubu"
+chooseServerOnMisskeyHub: "Vyberete si server z Tribe Hubu"
 inputHostName: "Zadejte doménu"
 general: "Obecně"
 wallpaper: "Obrázek na pozadí"
@@ -228,7 +228,7 @@ noUsers: "Žádní uživatelé"
 editProfile: "Upravit můj profil"
 noteDeleteConfirm: "Jste si jistí že chcete smazat tuhle poznámku?"
 pinLimitExceeded: "Nemůžete připnout další poznámky."
-intro: "Instalace Misskey byla dokončena! Prosím vytvořte admina."
+intro: "Instalace Tribe byla dokončena! Prosím vytvořte admina."
 done: "Hotovo"
 processing: "Zpracovávám"
 preview: "Náhled"
@@ -416,7 +416,7 @@ exploreFediverse: "Objevovat Fediverse"
 popularTags: "Populární tagy"
 userList: "Seznamy"
 about: "Informace"
-aboutMisskey: "O Misskey"
+aboutMisskey: "O Tribe"
 administrator: "Administrátor"
 token: "Token"
 2fa: "Dvoufázové ověření"
@@ -559,7 +559,7 @@ sort: "Seřadit"
 ascendingOrder: "Vzestupně"
 descendingOrder: "Sestupně"
 scratchpad: "Zápisník"
-scratchpadDescription: "Scratchpad poskytuje rozhraní pro AiScript experimenty. Můžete psát, spustit či zkontrolovat výsledky jeho interakce s Misskey."
+scratchpadDescription: "Scratchpad poskytuje rozhraní pro AiScript experimenty. Můžete psát, spustit či zkontrolovat výsledky jeho interakce s Tribe."
 output: "Výstup"
 script: "Skript"
 disablePagesScript: "Vypnout AiScript na stránkách"
@@ -687,7 +687,7 @@ unclip: "Odepnout"
 confirmToUnclipAlreadyClippedNote: "Tahle poznámku je už součásti \"{name}\" klipu. Chcete ji místo toho odepnout z tohodle klipu?"
 public: "Veřejný"
 private: "Soukromý"
-i18nInfo: "Misskey je překládán do jiných jazyků dobrovolníkama. Můžete pomoci na {link}."
+i18nInfo: "Tribe je překládán do jiných jazyků dobrovolníkama. Můžete pomoci na {link}."
 manageAccessTokens: "Spravovat přístupové tokeny"
 accountInfo: "Informace o účtu"
 notesCount: "Počet poznámek"
@@ -740,7 +740,7 @@ onlineUsersCount: "{n} uživatelů je online"
 nUsers: "{n} užívatelů"
 nNotes: "{n} poznámek"
 sendErrorReports: "Odesílat chybové záznamy"
-sendErrorReportsDescription: "Pokud je tato funkce zapnutá, budou se při výskytu problému sdílet podrobné informace o chybách se službou Misskey, což pomůže zlepšit kvalitu služby Misskey. Tyto informace budou zahrnovat například verzi operačního systému, jaký prohlížeč používáte, vaši aktivitu v Misskey atd."
+sendErrorReportsDescription: "Pokud je tato funkce zapnutá, budou se při výskytu problému sdílet podrobné informace o chybách se službou Tribe, což pomůže zlepšit kvalitu služby Tribe. Tyto informace budou zahrnovat například verzi operačního systému, jaký prohlížeč používáte, vaši aktivitu v Tribe atd."
 myTheme: "Moje vzhledy"
 backgroundColor: "Pozadí"
 accentColor: "Akcent"
@@ -834,7 +834,7 @@ hashtags: "Hashtagy"
 troubleshooting: "Poradce při potížích"
 useBlurEffect: "Použít efekt rozostření v UI"
 learnMore: "Zjistit více"
-misskeyUpdated: "Misskey byl aktualizován!"
+misskeyUpdated: "Tribe byl aktualizován!"
 whatIsNew: "Zobrazit změny"
 translate: "Přeložit"
 translatedFrom: "Přeloženo z {x}"
@@ -961,8 +961,8 @@ numberOfLikes: "Počet \"To se mi líbí\""
 show: "Zobrazit"
 neverShow: "Znovu nezobrazovat"
 remindMeLater: "Možná později"
-didYouLikeMisskey: "Oblíbili jste si Misskey?"
-pleaseDonate: "{host} používá bezplatný software Misskey. Velmi bychom ocenili vaše dary, aby mohl vývoj Misskey pokračovat!"
+didYouLikeMisskey: "Oblíbili jste si Tribe?"
+pleaseDonate: "{host} používá bezplatný software Tribe. Velmi bychom ocenili vaše dary, aby mohl vývoj Tribe pokračovat!"
 roles: "Role"
 role: "Role"
 noRole: "Role nenalezena"
@@ -1072,7 +1072,7 @@ rolesThatCanBeUsedThisEmojiAsReactionPublicRoleWarn: "Role musí být veřejné.
 cancelReactionConfirm: "Opravdu chcete odstranit vaší reakci?"
 changeReactionConfirm: "Opravdu chcete změnit vaši reakci?"
 later: "Později"
-goToMisskey: "Jít na Misskey"
+goToMisskey: "Jít na Tribe"
 additionalEmojiDictionary: "Další slovníky emoji"
 installed: "Nainstalováno"
 branding: "Značka"
@@ -1109,16 +1109,20 @@ surrender: "Zrušit"
 postForm: "Formulář pro odeslání"
 information: "Informace"
 _chat:
+
   invitations: "Pozvat"
   noHistory: "Žádná historie"
   members: "Členové"
   home: "Domů"
   send: "Odeslat"
 _delivery:
+
   stop: "Suspendováno"
   _type:
+
     none: "Publikuji"
 _initialAccountSetting:
+
   accountCreated: "Váš účet byl úspěšně vytvořen!"
   letsStartAccountSetup: "Pro začátek si nastavte svůj profil."
   letsFillYourProfile: "Nejprve si nastavte svůj profil."
@@ -1133,10 +1137,13 @@ _initialAccountSetting:
   skipAreYouSure: "Opravdu chcete přeskočit nastavení profilu?"
   laterAreYouSure: "Opravdu chcete provést nastavení profilu později?"
 _serverRules:
+
   description: "Soubor pravidel, která se zobrazí před registrací. Doporučuje se nastavit shrnutí podmínek služby."
 _serverSettings:
+
   iconUrl: "URL ikony"
 _accountMigration:
+
   moveFrom: "Migrace jiného účtu na tento účet"
   moveFromSub: "Vytvořit alias na jiný účet"
   moveFromLabel: "Původní účet #{n}"
@@ -1144,7 +1151,7 @@ _accountMigration:
   moveTo: "Přesunout tenhle účet do jiného"
   moveToLabel: "Cílový účet pro přesunutí:"
   moveCannotBeUndone: "Migrace účtu nemůže být vrácena."
-  moveAccountDescription: "Tím dojde k migraci vašeho účtu na jiný účet.\n　・Sledovatelé z tohoto účtu budou automaticky převedeni na nový účet.\n　・Tento účet zruší sledování všech uživatelů, které aktuálně sleduje.\n　・Na tomto účtu nebude možné vytvářet nové poznámky atd.\n\nZatímco migrace sledovaných uživatelů probíhá automaticky, pro migraci seznamu sledovaných uživatelů je nutné připravit některé kroky ručně. Za tímto účelem proveďte export sledovaných, který později naimportujete na nový účet v nabídce nastavení. Stejný postup platí pro seznamy i pro ztlumené a zablokované uživatele.\n\n(Tento výklad platí pro Misskey v13.12.0 a novější. Jiný software ActivityPub, například Mastodon, může fungovat jinak.)"
+  moveAccountDescription: "Tím dojde k migraci vašeho účtu na jiný účet.\n　・Sledovatelé z tohoto účtu budou automaticky převedeni na nový účet.\n　・Tento účet zruší sledování všech uživatelů, které aktuálně sleduje.\n　・Na tomto účtu nebude možné vytvářet nové poznámky atd.\n\nZatímco migrace sledovaných uživatelů probíhá automaticky, pro migraci seznamu sledovaných uživatelů je nutné připravit některé kroky ručně. Za tímto účelem proveďte export sledovaných, který později naimportujete na nový účet v nabídce nastavení. Stejný postup platí pro seznamy i pro ztlumené a zablokované uživatele.\n\n(Tento výklad platí pro Tribe v13.12.0 a novější. Jiný software ActivityPub, například Mastodon, může fungovat jinak.)"
   moveAccountHowTo: "Chcete-li migrovat, vytvořte nejprve alias tohoto účtu na účtu, na který chcete přejít.\nPo vytvoření aliasu zadejte účet, na který chcete přejít, v následujícím formátu: @username@server.example.com"
   startMigration: "Migrovat"
   migrationConfirm: "Opravdu chcete migrovat tento účet na {account}? Jednou zahájený proces nelze zastavit ani vrátit zpět a tento účet již nebudete moci používat v původním stavu."
@@ -1152,245 +1159,322 @@ _accountMigration:
   postMigrationNote: "Tento účet zruší sledování všech účtů, které aktuálně sleduje, 24 hodin po dokončení migrace.\nPočet sledujících i následovníků se poté vynuluje. Aby se zabránilo tomu, že vaši sledující nebudou moci vidět příspěvky tohoto účtu určené pouze pro sledující, budou však tento účet sledovat i nadále."
   movedTo: "Cílový účet pro přesunutí:"
 _achievements:
+
   earnedAt: "Odemčeno v"
   _types:
+
     _notes1:
-      title: "Dobrý den Misskey!"
+
+      title: "Dobrý den Tribe!"
       description: "Zveřejněte vaší první poznámku"
-      flavor: "Užijte si to s Misskey!"
+      flavor: "Užijte si to s Tribe!"
     _notes10:
+
       title: "Pár poznámek"
       description: "Zveřejněte 10 poznámek"
     _notes100:
+
       title: "Hodně poznámek"
       description: "Zveřejněte 100 poznámek"
     _notes500:
+
       title: "Zahlcen poznámkama"
       description: "Zveřejněte 500 poznámek"
     _notes1000:
+
       title: "Hora poznámek"
       description: "Zveřejněte 1000 poznámek"
     _notes5000:
+
       title: "Přetékající poznámky"
       description: "Zveřejněte 5000 poznámek"
     _notes10000:
+
       title: "Super poznámka"
       description: "Zveřejněte 10 000 poznámek"
     _notes20000:
+
       title: "Potřebuju... více... poznámek..."
       description: "Zveřejněte 20 000 poznámek"
     _notes30000:
+
       title: "Poznámky, poznámky, POZNÁMKY!"
       description: "Zveřejněte 30 000 poznámek"
     _notes40000:
+
       title: "Továrna na poznámky"
       description: "Zveřejněte 40 000 poznámek"
     _notes50000:
+
       title: "Planeta poznámek"
       description: "Zveřejněte 50 000 poznámek"
     _notes60000:
+
       title: "Poznámkový kvasar"
       description: "Zveřejněte 60 000 poznámek"
     _notes70000:
+
       title: "Černá díra poznámek"
       description: "Zveřejněte 70 000 poznámek"
     _notes80000:
+
       title: "Galaxie poznámek"
       description: "Zveřejněte 80 000 poznámek"
     _notes90000:
+
       title: "Vesmír poznámek"
       description: "Zveřejněte 90 000 poznámek"
     _notes100000:
+
       title: "ALL YOUR NOTE ARE BELONG TO US"
       description: "Zveřejněte 100 000 poznámek"
       flavor: "Máte toho hodně co říct."
     _login3:
+
       title: "Začátečník I"
       description: "Přihlaste se celkově za 3 dny"
       flavor: "Ode dneška mi říkejte Misskista."
     _login7:
+
       title: "Začátečník II"
       description: "Přihlaste se celkově za 7 dní"
       flavor: "Máte pocit, že už jste se v tom vyznali?"
     _login15:
+
       title: "Začátečník III"
       description: "Přihlaste se celkově za 15 dní"
     _login30:
+
       title: "Misskista I"
       description: "Přihlaste se celkově za 30 dní"
     _login60:
+
       title: "Misskista II"
       description: "Přihlaste se celkově za 60 dní"
     _login100:
+
       title: "Misskista III"
       description: "Přihlaste se celkově za 100 dní"
       flavor: "Violent Misskista"
     _login200:
+
       title: "Stálý zákazník I"
       description: "Přihlaste se celkově za 200 dní"
     _login300:
+
       title: "Stálý zákazník II"
       description: "Přihlaste se celkově za 300 dní"
     _login400:
+
       title: "Stálý zákazník III"
       description: "Přihlaste se celkově za 400 dní"
     _login500:
+
       title: "Expert I"
       description: "Přihlaste se celkově za 500 dní"
       flavor: "Moji přátelé, často se říká, že mám rád poznámky."
     _login600:
+
       title: "Expert II"
       description: "Přihlaste se celkově za 600 dní"
     _login700:
+
       title: "Expert III"
       description: "Přihlaste se celkově za 700 dní"
     _login800:
+
       title: "Mistr poznámek I"
       description: "Přihlaste se celkově za 800 dní"
     _login900:
+
       title: "Mistr poznámek II"
       description: "Přihlaste se celkově za 900 dní"
     _login1000:
+
       title: "Mistr poznámek III"
       description: "Přihlaste se celkově za 1000 dní"
-      flavor: "Děkujeme, že používáte Misskey!"
+      flavor: "Děkujeme, že používáte Tribe!"
     _noteClipped1:
+
       title: "Musím... připnout..."
       description: "Připněte si první poznámku"
     _noteFavorited1:
+
       title: "Hvězdář"
       description: "Oblíbena první poznámka"
     _myNoteFavorited1:
+
       title: "Hledání hvězd"
       description: "Někdo si oblíbil jednu z vašich poznámek"
     _profileFilled:
+
       title: "Dobře připravený"
       description: "Nastavte si profil"
     _markedAsCat:
+
       title: "Já jsem kočka"
       description: "Označte váš účet \"jako kočka\""
       flavor: "Jméno ti dám později."
     _following1:
+
       title: "Sledujte prvního uživatele"
       description: "Sledujte uživatele"
     _following10:
+
       title: "Drž se... drž se..."
       description: "Sledujte 10 uživatelů"
     _following50:
+
       title: "Hodně přátel"
       description: "Sledujte 50 uživatelů"
     _following100:
+
       title: "100 přátel"
       description: "Sledujte 100 uživatelů"
     _following300:
+
       title: "Přetížení přátel"
       description: "Sledujte 300 účtů"
     _followers1:
+
       title: "První sledující"
       description: "Získejte 1 sledujícího"
     _followers10:
+
       title: "Sledujte mě!"
       description: "Získejte 10 sledujících"
     _followers50:
+
       title: "Přicházejí davy"
       description: "Získejte 50 sledujících"
     _followers100:
+
       title: "Populární"
       description: "Získejte 100 sledujících"
     _followers300:
+
       title: "Prosíme srovnejte se do jedné řady!"
       description: "Získejte 300 sledujících"
     _followers500:
+
       title: "Rádiová věž"
       description: "Získejte 500 sledujících"
     _followers1000:
+
       title: "Influencer"
       description: "Získejte 1000 sledujících"
     _collectAchievements30:
+
       title: "Sběratel úspěchů"
       description: "Získejte 30 úspěchů"
     _viewAchievements3min:
+
       title: "Máš rád úspěchy"
       description: "Koukejte na váš seznam úspěchů alespoň po dobu 3 minut"
     _iLoveMisskey:
-      title: "Miluju Misskey"
-      description: "Zveřejněte \" I ❤ #Misskey\""
-      flavor: "Vývojový tým Misskey si velmi váží vaší podpory!"
+
+      title: "Miluju Tribe"
+      description: "Zveřejněte \" I ❤ #Tribe\""
+      flavor: "Vývojový tým Tribe si velmi váží vaší podpory!"
     _foundTreasure:
+
       title: "Hon za pokladem"
       description: "Našli jste schovaný poklad!"
     _client30min:
+
       title: "Krátká pauza"
-      description: "Mějte otevřený Misskey alespoň po dobu 30 minut"
+      description: "Mějte otevřený Tribe alespoň po dobu 30 minut"
     _client60min:
-      title: "Žádný \"Miss\" v Misskey"
-      description: "Mějte otevřený Misskey alespoň po dobu 60 minut"
+
+      title: "Žádný \"Miss\" v Tribe"
+      description: "Mějte otevřený Tribe alespoň po dobu 60 minut"
     _noteDeletedWithin1min:
+
       title: "Ups, nevadí"
       description: "Vymažte poznámku během minuty co ji zveřejníte"
     _postedAtLateNight:
+
       title: "Noční typ"
       description: "Zveřejněte poznámku pozdě v noci"
       flavor: "Je nejvyšší čas jít spát."
     _postedAt0min0sec:
+
       title: "Mluvící hodiny"
       description: "Zveřejněte poznámku přesně v 00:00"
       flavor: "Klik Klik Klik Bum"
     _selfQuote:
+
       title: "Sebereference"
       description: "Citujte vlastní poznámku"
     _htl20npm:
+
       title: "Plynoucí časová osa"
       description: "Mějte rychlost vaší domovské časové osy vyšší než 20 pzm (poznámek za minutu)."
     _viewInstanceChart:
+
       title: "Analytik"
       description: "Zobrazte graf instance"
     _outputHelloWorldOnScratchpad:
+
       title: "Hello, world!"
       description: "Dostaňte výpis \"hello world\" do Scratchpadu"
     _open3windows:
+
       title: "Splitscreen"
       description: "Mějte otevřená alespoň 3 okna zároveň"
     _driveFolderCircularReference:
+
       title: "Okružní reference"
       description: "Pokuste se o vytvoření rekurzivně vnořené složky v disku"
     _reactWithoutRead:
+
       title: "Opravdu jste to četl/a?"
       description: "Reagujte na poznámku, která má více než 100 znaků, do 3 sekund od jejího zveřejnění."
     _clickedClickHere:
+
       title: "Klikněte sem"
       description: "Kliknul si tam"
     _justPlainLucky:
+
       title: "Čisté štěstí"
       description: "Mějte šanci na získání s pravděpodobností 0,005 % každých 10 sekund."
     _setNameToSyuilo:
+
       title: "Boží komplex"
       description: "Nastavte si jméno na \"syuilo\""
     _passedSinceAccountCreated1:
+
       title: "Roční výročí"
       description: "Od vytvoření vašeho účtu uplynul jeden rok"
     _passedSinceAccountCreated2:
+
       title: "Dvouleté výročí"
       description: "Od vytvoření vašeho účtu uplynuly dva roky"
     _passedSinceAccountCreated3:
+
       title: "Tříleté výročí"
       description: "Od vytvoření vašeho účtu uplynuly tři roky"
     _loggedInOnBirthday:
+
       title: "Všechno nejlepší!"
       description: "Přihlašte se v den vašich narozenin"
     _loggedInOnNewYearsDay:
+
       title: "Štastný nový rok!"
       description: "Přihlašte se v den nového roku"
       flavor: "Na další skvělý rok v této instanci"
     _cookieClicked:
+
       title: "Hra, ve které klikáte na sušenky"
       description: "Klikněte na soubor cookie"
       flavor: "Počkejte, jste na správné webové stránce?"
     _brainDiver:
+
       title: "Brain Diver"
       description: "Zveřejněte odkaz na Brain Diver"
-      flavor: "Misskey-Misskey La-Tu-Ma"
+      flavor: "Tribe-Tribe La-Tu-Ma"
 _role:
+
   new: "Nová role"
   edit: "Upravit roli"
   name: "Název role"
@@ -1421,10 +1505,12 @@ _role:
   descriptionOfCanEditMembersByModerator: "Po zapnutí této role budou moci moderátoři i administrátoři přiřazovat a odebírat uživatele do této role. Pokud je tato funkce vypnutá, budou moci uživatele přiřazovat pouze správci."
   priority: "Priorita"
   _priority:
+
     low: "Nízká"
     middle: "Střední"
     high: "Vysoká"
   _options:
+
     gtlAvailable: "Může zobrazit globální časovou osu"
     ltlAvailable: "Může zobrazit místní časovou osu"
     canPublicNote: "Může posílat veřejné poznámky"
@@ -1448,6 +1534,7 @@ _role:
     canHideAds: "Může schovat reklamy"
     canSearchNotes: "Použití vyhledávání poznámek"
   _condition:
+
     isLocal: "Místní uživatel"
     isRemote: "Vzdálený uživatel"
     createdLessThan: "Od vytvoření účtu uplynulo méně než X"
@@ -1462,6 +1549,7 @@ _role:
     or: "OR kondice"
     not: "NOT kondice"
 _sensitiveMediaDetection:
+
   description: "Snižuje náročnost moderování serveru díky automatickému rozpoznávání citlivých médií pomocí strojového učení. Tím se mírně zvýší zatížení serveru."
   sensitivity: "Detekce citlivosti"
   sensitivityDescription: "Snížení citlivosti povede k menšímu počtu chybných detekcí (falešně pozitivních), zatímco její zvýšení povede k menšímu počtu chybných detekcí (falešně negativních)."
@@ -1470,20 +1558,24 @@ _sensitiveMediaDetection:
   analyzeVideos: "Povolit analýzy videí"
   analyzeVideosDescription: "Kromě obrázků analyzuje i videa. Tím se mírně zvýší zatížení serveru."
 _emailUnavailable:
+
   used: "Tato emailová adresa se již používá"
   format: "Formát této emailové adresy je neplatný"
   disposable: "Jednorázové emailové adresy se nesmí používat"
   mx: "Tento e-mailový server je neplatný"
   smtp: "Tento emailový server neodpovídá"
 _ffVisibility:
+
   public: "Zveřejnit"
   followers: "Viditelné pouze pro sledující"
   private: "Soukromý"
 _signup:
+
   almostThere: "Už to skoro je"
   emailAddressInfo: "Zadejte prosím svou emailovou adresu. Nebude zveřejněna."
   emailSent: "Na vaši e-mailovou adresu ({email}) byl odeslán potvrzovací e-mail. Kliknutím na přiložený odkaz dokončete vytvoření účtu."
 _accountDelete:
+
   accountDelete: "Smazat účet"
   mayTakeTime: "Vzhledem k tomu, že odstranění účtu je proces náročný na zdroje, může jeho dokončení trvat určitou dobu v závislosti na tom, kolik obsahu jste vytvořili a kolik souborů jste nahráli."
   sendEmail: "Po dokončení odstranění účtu bude na emailovou adresu registrovanou k tomuto účtu zaslán email."
@@ -1491,30 +1583,38 @@ _accountDelete:
   started: "Bylo zahájeno mazání."
   inProgress: "V současné době probíhá mazání"
 _ad:
+
   back: "Zpět"
   reduceFrequencyOfThisAd: "Zobrazovat tuto reklamu méně"
   hide: "Schovat"
   timezoneinfo: "Den v týdnu se určuje podle časového pásma serveru."
 _forgotPassword:
+
   enterEmail: "Zadejte emailovou adresu, kterou jste použili při registraci. Na ni vám pak bude zaslán odkaz, pomocí kterého si můžete obnovit heslo."
   ifNoEmail: "Pokud jste při registraci nepoužili email, obraťte se na správce instance."
   contactAdmin: "Tato instance nepodporuje používání emailových adres, pro obnovení hesla se obraťte na správce instance."
 _gallery:
+
   my: "Moje galerie"
   liked: "Oblíbené příspěvky"
   like: "To se mi líbí"
   unlike: "Už se mi to nelíbí"
 _email:
+
   _follow:
+
     title: "Máte nového následovníka"
   _receiveFollowRequest:
+
     title: "Obdrželi jste žádost o sledování"
 _plugin:
+
   install: "Instalovat plugin"
   installWarn: "Neinstalujte nedůvěryhodné pluginy."
   manage: "Správce pluginů"
   viewSource: "Zobrazit zdroj"
 _preferencesBackups:
+
   list: "Vytvořit backup"
   saveNew: "Uložit novou zálohu"
   loadFile: "Načíst ze souboru"
@@ -1533,33 +1633,39 @@ _preferencesBackups:
   cannotLoad: "Načítání selhalo"
   invalidFile: "Neplatný typ souboru"
 _registry:
+
   scope: "Rozsah"
   key: "Klíč"
   keys: "Klíče"
   domain: "Doména"
   createKey: "Vytvořit klíč"
 _aboutMisskey:
-  about: "Misskey je open-source software vyvíjený syuilo od roku 2014."
+
+  about: "Tribe je open-source software vyvíjený syuilo od roku 2014."
   contributors: "Hlavní přispěvatelé"
   allContributors: "Všichni přispěvatelé"
   source: "Zdrojový kód"
-  translation: "Přeložit Misskey"
-  donate: "Přispějte na Misskey"
+  translation: "Přeložit Tribe"
+  donate: "Přispějte na Tribe"
   morePatrons: "Vážíme si také podpory mnoha dalších pomocníků, kteří zde nejsou uvedeni. Děkujeme! 🥰"
   patrons: "Patroni"
 _displayOfSensitiveMedia:
+
   respect: "Skrýt média označená jako citlivá"
   ignore: "Zobrazit média označená jako citlivá"
   force: "Skrýt všechna média"
 _instanceTicker:
+
   none: "Nikdy nezobrazovat"
   remote: "Zobrazit pro vzdálené uživatelé"
   always: "Vždy zobrazovat"
 _serverDisconnectedBehavior:
+
   reload: "Automatické znovunačtení"
   dialog: "Zobrazení dialogového okna s varováním"
   quiet: "Zobrazit nerušivé upozornění"
 _channel:
+
   create: "Vytvořit kanál"
   edit: "Upravit kanál"
   setBanner: "Nastavit banner"
@@ -1572,20 +1678,24 @@ _channel:
   nameAndDescription: "Název a popis"
   nameOnly: "Pouze název"
 _menuDisplay:
+
   sideFull: "Postranně"
   sideIcon: "Postranně (Ikony)"
   top: "Nahoru"
   hide: "Skrýt"
 _wordMute:
+
   muteWords: "Ztlumená slova"
   muteWordsDescription: "Podmínku AND oddělujte mezerami, podmínku OR oddělujte řádkovými zlomy."
   muteWordsDescription2: "Chcete-li použít regulární výrazy, obklopte klíčová slova lomítky."
 _instanceMute:
+
   instanceMuteDescription: "Tímhle se ztlumí všechny poznámky/poznámky z uvedených instancí, včetně poznámek uživatelů, kteří odpovídají uživateli ze ztlumené instance."
   instanceMuteDescription2: "Oddělte novými řádky"
   title: "Skryje poznámky z uvedených případů."
   heading: "Seznam instancí, které mají být ztlumeny"
 _theme:
+
   explore: "Objevit témata"
   install: "Nainstalovat vzhled"
   manage: "Správa vzhledů"
@@ -1616,6 +1726,7 @@ _theme:
   importInfo: "Pokud zde zadáte kód motivu, můžete jej importovat do editoru motivu."
   deleteConstantConfirm: "Opravdu chcete odstranit konstantu {const}?"
   keys:
+
     accent: "Akcent"
     bg: "Pozadí"
     fg: "Text"
@@ -1652,10 +1763,12 @@ _theme:
     messageBg: "Pozadí chatu"
     fgHighlighted: "Zvýrazněný text"
 _sfx:
+
   note: "Poznámky"
   noteMy: "Moje poznámka"
   notification: "Oznámení"
 _ago:
+
   future: "Budoucí"
   justNow: "Teď"
   secondsAgo: "Před {n}s"
@@ -1667,11 +1780,13 @@ _ago:
   yearsAgo: "Před {n}r"
   invalid: "Nic nebylo nalezeno"
 _time:
+
   second: "Sekund"
   minute: "Minut"
   hour: "Hodin"
   day: "Dnů"
 _2fa:
+
   alreadyRegistered: "Již jste zaregistrovali dvoufaktorové ověřovací zařízení."
   registerTOTP: "Registrovat aplikaci autentizátoru"
   step1: "Nejprve si do zařízení nainstalujte aplikaci pro ověřování (například {a} nebo {b})."
@@ -1693,6 +1808,7 @@ _2fa:
   renewTOTPOk: "Přenastavit"
   renewTOTPCancel: "Ne děkuji"
 _permissions:
+
   "read:account": "Zobrazit informace o účtu"
   "write:account": "Upravit informace o účtu"
   "read:blocks": "Zobrazit seznam blokovaných uživatelů"
@@ -1707,7 +1823,7 @@ _permissions:
   "write:messaging": "Sestavit nebo mazat zprávy chatu"
   "read:mutes": "Zobrazit seznam ztlumených uživatelů"
   "write:mutes": "Upravit seznam ztlumených uživatelů"
-  "write:notes": "Sestavit nebo odstranit poznámky"
+  "write:sparks": "Sestavit nebo odstranit poznámky"
   "read:notifications": "Zobrazit oznámení"
   "write:notifications": "Spravit oznámení"
   "read:reactions": "Zobrazit vaše reakce"
@@ -1727,6 +1843,7 @@ _permissions:
   "write:gallery-likes": "Upravit seznam to se mi líbí příspěvků v galerii"
   "write:chat": "Sestavit nebo mazat zprávy chatu"
 _auth:
+
   shareAccessTitle: "Udělovat oprávnění k aplikacím"
   shareAccess: "Chcete autorizovat \"{name}\" pro přístup k tomuto účtu?"
   shareAccessAsk: "Opravdu chcete této aplikaci povolit přístup k vašemu účtu?"
@@ -1737,11 +1854,13 @@ _auth:
   denied: "Přístup odepřen"
   pleaseLogin: "Pro autorizaci aplikací se prosím přihlaste."
 _antennaSources:
+
   all: "Všechny poznámky"
   homeTimeline: "Poznámky sledovaných uživatelů"
   users: "Poznámky konkrétních uživatelů"
   userList: "Poznámky z určitého seznamu uživatelů"
 _weekday:
+
   sunday: "Neděle"
   monday: "Pondělí"
   tuesday: "Úterý"
@@ -1750,6 +1869,7 @@ _weekday:
   friday: "Pátek"
   saturday: "Sobota"
 _widgets:
+
   profile: "Váš profil"
   instanceInfo: "Informace o instanci"
   memo: "Přilepené poznámky"
@@ -1777,14 +1897,17 @@ _widgets:
   aichan: "Ai"
   userList: "Seznam uživatelů"
   _userList:
+
     chooseList: "Vybrat seznam"
   clicker: "Clicker"
 _cw:
+
   hide: "Skrýt"
   show: "Zobrazit více"
   chars: "{count} charakterů"
   files: "{count} souborů"
 _poll:
+
   noOnlyOneChoice: "Jsou zapotřebí alespoň dvě možnosti"
   choiceN: "Volba {n}"
   noMore: "Více už přidat nemůžete"
@@ -1807,6 +1930,7 @@ _poll:
   remainingMinutes: "Zbývá {m} minut/a a {s} sekund/a"
   remainingSeconds: "Zbývá {s} sekund/a"
 _visibility:
+
   public: "Veřejný"
   publicDescription: "Vaše poznámka bude viditelná pro všechny uživatele"
   home: "Domů"
@@ -1818,10 +1942,12 @@ _visibility:
   disableFederation: "Defederace"
   disableFederationDescription: "Nepřenášet do jiných instancí"
 _postForm:
+
   replyPlaceholder: "Odpovědět na tuto poznámku..."
   quotePlaceholder: "Citovat tuto poznámku..."
   channelPlaceholder: "Zveřejnit příspěvek do kanálu..."
   _placeholders:
+
     a: "Co máte v plánu?"
     b: "Co se děje kolem vás?"
     c: "Co máte na mysli?"
@@ -1829,6 +1955,7 @@ _postForm:
     e: "Začít psát..."
     f: "Čekám, až něco napíšete..."
 _profile:
+
   name: "Jméno"
   username: "Uživatelské jméno"
   description: "O mně"
@@ -1841,6 +1968,7 @@ _profile:
   changeAvatar: "Změnit avatara"
   changeBanner: "Změnit banner"
 _exportOrImport:
+
   allNotes: "Všechny poznámky"
   favoritedNotes: "Oblíbené poznámky"
   clips: "Oříznout"
@@ -1851,6 +1979,7 @@ _exportOrImport:
   excludeMutingUsers: "Vyloučit ztlumené uživatele"
   excludeInactiveUsers: "Vyloučit neaktivní uživatele"
 _charts:
+
   federation: "Federace"
   apRequest: "Požadavek"
   usersIncDec: "Rozdíl v počtech uživatelů"
@@ -1865,6 +1994,7 @@ _charts:
   storageUsageIncDec: "Rozdíl ve využití úložiště"
   storageUsageTotal: "Celkové využití úložiště"
 _instanceCharts:
+
   requests: "Požadavky"
   users: "Rozdíl v počtech uživatelů"
   usersTotal: "Kumulativní počet uživatelů"
@@ -1877,11 +2007,13 @@ _instanceCharts:
   files: "Rozdíl v počtu souborů"
   filesTotal: "Kumulativní počet souborů"
 _timelines:
+
   home: "Domů"
   local: "Místní"
   social: "Sociální síť"
   global: "Globální"
 _play:
+
   new: "Vytvořit Play"
   edit: "Upravit Play"
   created: "Play vytvořen"
@@ -1897,6 +2029,7 @@ _play:
   script: "Skript"
   summary: "Popis"
 _pages:
+
   newPage: "Vytvořit novou stránku"
   editPage: "Upravit stránku"
   readPage: "Prohlížení zdroje této stránky"
@@ -1932,6 +2065,7 @@ _pages:
   inputBlocks: "Vstup"
   specialBlocks: "Speciální"
   blocks:
+
     text: "Text"
     textarea: "Textové pole"
     section: "Sekce"
@@ -1939,14 +2073,17 @@ _pages:
     button: "Tlačítko"
     note: "Vestavěná poznámka"
     _note:
+
       id: "ID poznámky"
       idDescription: "Adresu URL poznámky můžete vložit také sem."
       detailed: "Podrobné zobrazení"
 _relayStatus:
+
   requesting: "Čeká se"
   accepted: "Schváleno"
   rejected: "Odmítnuto"
 _notification:
+
   fileUploaded: "Soubor úspěšně nahrán"
   youGotMention: "{name} vás zmínil"
   youGotReply: "{name} vám odpověděl"
@@ -1960,6 +2097,7 @@ _notification:
   emptyPushNotificationMessage: "Push oznámení byla aktualizována"
   achievementEarned: "Úspěch odemčen"
   _types:
+
     all: "Vše"
     follow: "Sledovaní"
     mention: "Zmínění"
@@ -1974,10 +2112,12 @@ _notification:
     login: "Přihlásit se"
     app: "Oznámení z propojených aplikací"
   _actions:
+
     followBack: "vás začal sledovat zpět"
     reply: "Odpovědět"
     renote: "Přeposlat"
 _deck:
+
   alwaysShowMainColumn: "Vždy zobrazovat hlavní sloupec"
   columnAlign: "Zarovnat sloupce"
   addColumn: "Přidat sloupec"
@@ -1996,6 +2136,7 @@ _deck:
   widgetsIntroduction: "V nabídce sloupce vyberte možnost \"Upravit widgety\" a přidejte widget."
   useSimpleUiForNonRootPages: "Použít zjednodušené uživatelské rozhraní pro navigaci na stránkách"
   _columns:
+
     main: "Hlavní"
     widgets: "Widgety"
     notifications: "Oznámení"
@@ -2007,20 +2148,25 @@ _deck:
     direct: "Přímý"
     roleTimeline: "Časová osa role"
 _dialog:
+
   charactersExceeded: "Překročili jste maximální počet znaků! V současné době je na hodnotě {current} z {max}."
   charactersBelow: "Nedosahujete minimálního limitu znaků! V současné době je na {current} z {min}."
 _disabledTimeline:
+
   title: "Časová osa vypnuta"
   description: "Tuto časovou osu nemůžete používat v rámci svých současných rolí."
 _drivecleaner:
+
   orderBySizeDesc: "Sestupná velikost souborů"
   orderByCreatedAtAsc: "Vzestupné datumy"
 _webhookSettings:
+
   createWebhook: "Vytvořit Webhook"
   name: "Jméno"
   secret: "Tajné"
   active: "Zapnuto"
   _events:
+
     follow: "Při sledování uživatele"
     followed: "Při sledování"
     note: "Při zveřejňování poznámky"
@@ -2029,19 +2175,27 @@ _webhookSettings:
     reaction: "Při obdržení reakce"
     mention: "Při zmínce"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "Email"
 _moderationLogTypes:
+
   suspend: "Zmrazit"
   resetPassword: "Resetovat heslo"
   createInvitation: "Vygenerovat pozvánku"
 _reversi:
+
   total: "Celkem"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Nenalezeno"
 _search:
+
   searchScopeAll: "Vše"
   searchScopeLocal: "Místní"
   searchScopeUser: "Upřesnit uživatele"

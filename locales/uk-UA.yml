@@ -1,8 +1,8 @@
 ---
 _lang_: "Українська"
 headlineMisskey: "Мережа, з’єднана нотатками"
-introMisskey: "Ласкаво просимо! Misskey - децентралізована служба мікроблогів з відкритим кодом.\nСтворюйте \"нотатки\", щоб поділитися тим, що відбувається, і розповісти всім про себе 📡\nЗа допомогою \"реакцій\" ви також можете швидко висловити свої почуття щодо нотаток інших 👍\nДосліджуймо новий світ! 🚀"
-poweredByMisskeyDescription: "{name} є одним із сервісів (які називаються інстансами Misskey), що використовують платформу з відкритим вихідним кодом <b>Misskey</b>."
+introMisskey: "Ласкаво просимо! Tribe - децентралізована служба мікроблогів з відкритим кодом.\nСтворюйте \"нотатки\", щоб поділитися тим, що відбувається, і розповісти всім про себе 📡\nЗа допомогою \"реакцій\" ви також можете швидко висловити свої почуття щодо нотаток інших 👍\nДосліджуймо новий світ! 🚀"
+poweredByMisskeyDescription: "{name} є одним із сервісів (які називаються інстансами Tribe), що використовують платформу з відкритим вихідним кодом <b>Tribe</b>."
 monthAndDay: "{month}/{day}"
 search: "Пошук"
 notifications: "Сповіщення"
@@ -149,7 +149,7 @@ settingGuide: "Рекомендована конфігурація"
 cacheRemoteFiles: "Кешувати дані з інших інстансів"
 cacheRemoteFilesDescription: "Якщо кешування вимкнено, віддалені файли завантажуються безпосередньо з віддаленого інстансу. Це зменшує використання сховища, але збільшує трафік, оскільки не генеруются ескізи."
 flagAsBot: "Акаунт бота"
-flagAsBotDescription: "Ввімкніть якщо цей обліковий запис використовується ботом. Ця опція позначить обліковий запис як бота. Це потрібно щоб виключити безкінечну інтеракцію між ботами а також відповідного підлаштування Misskey."
+flagAsBotDescription: "Ввімкніть якщо цей обліковий запис використовується ботом. Ця опція позначить обліковий запис як бота. Це потрібно щоб виключити безкінечну інтеракцію між ботами а також відповідного підлаштування Tribe."
 flagAsCat: "Акаунт кота"
 flagAsCatDescription: "Ввімкніть, щоб позначити, що обліковий запис є котиком."
 flagShowTimelineReplies: "Показувати відповіді на нотатки на часовій шкалі"
@@ -208,7 +208,7 @@ noUsers: "Немає користувачів"
 editProfile: "Редагувати обліковий запис"
 noteDeleteConfirm: "Ви дійсно хочете видалити цей запис?"
 pinLimitExceeded: "Більше записів не можна закріпити"
-intro: "Встановлення Misskey завершено! Будь ласка, створіть обліковий запис адміністратора."
+intro: "Встановлення Tribe завершено! Будь ласка, створіть обліковий запис адміністратора."
 done: "Готово"
 processing: "Обробка"
 preview: "Попередній перегляд"
@@ -389,7 +389,7 @@ exploreFediverse: "Огляд федіверсу"
 popularTags: "Популярні теги"
 userList: "Списки"
 about: "Інформація"
-aboutMisskey: "Про Misskey"
+aboutMisskey: "Про Tribe"
 administrator: "Адмін"
 token: "Токен"
 2fa: "Двофакторна аутентифікація"
@@ -519,7 +519,7 @@ sort: "Сортування"
 ascendingOrder: "За зростанням"
 descendingOrder: "За спаданням"
 scratchpad: "Scratchpad"
-scratchpadDescription: "Scratchpad надає середовище для експериментів з AiScript. Ви можете писати, виконувати його і тестувати взаємодію з Misskey."
+scratchpadDescription: "Scratchpad надає середовище для експериментів з AiScript. Ви можете писати, виконувати його і тестувати взаємодію з Tribe."
 output: "Вихід"
 script: "Скрипт"
 disablePagesScript: "Вимкнути AiScript на Сторінках"
@@ -644,7 +644,7 @@ unclip: "Незакріплений"
 confirmToUnclipAlreadyClippedNote: "Ця нотатка вже включена до кліпу \"{name}\". Ви хочете виключити нотатку з цього кліпу?"
 public: "Публічний"
 private: "Приватне"
-i18nInfo: "Misskey перекладається на різні мови волонтерами. Ви можете допомогти: {link}"
+i18nInfo: "Tribe перекладається на різні мови волонтерами. Ви можете допомогти: {link}"
 manageAccessTokens: "Керування токенами доступу"
 accountInfo: "Інформація про акаунт"
 notesCount: "Кількість нотаток"
@@ -695,7 +695,7 @@ onlineUsersCount: "{n} користувачів онлайн"
 nUsers: "{n} Користувачів"
 nNotes: "{n} Записів"
 sendErrorReports: "Надіслати звіт про помилки"
-sendErrorReportsDescription: "При увімкненні детальна інформація про помилки буде надана Misskey у разі виникнення проблем, що дасть можливість покращити Misskey."
+sendErrorReportsDescription: "При увімкненні детальна інформація про помилки буде надана Tribe у разі виникнення проблем, що дасть можливість покращити Tribe."
 myTheme: "Моя тема"
 backgroundColor: "Фон"
 accentColor: "Акцент"
@@ -786,7 +786,7 @@ hashtags: "Хештеґ"
 troubleshooting: "Усунення проблем"
 useBlurEffect: "Ефекти розмиття в інтерфейсі"
 learnMore: "Докладніше"
-misskeyUpdated: "Misskey оновлено!"
+misskeyUpdated: "Tribe оновлено!"
 whatIsNew: "Показати зміни"
 translate: "Переклад"
 translatedFrom: "Переклад з {x}"
@@ -908,236 +908,313 @@ lastNDays: "Останні {n} днів"
 postForm: "Створення нотатки"
 information: "Інформація"
 _chat:
+
   invitations: "Запросити"
   noHistory: "Історія порожня"
   members: "Учасники"
   home: "Домівка"
   send: "Відправити"
 _delivery:
+
   stop: "Призупинено"
   _type:
+
     none: "Публікація"
 _achievements:
+
   earnedAt: "Відкрито"
   _types:
+
     _notes1:
-      title: "Привіт, Misskey!"
+
+      title: "Привіт, Tribe!"
       description: "Перша нотатка"
-      flavor: "Приємного часу з Misskey!"
+      flavor: "Приємного часу з Tribe!"
     _notes10:
+
       title: "Декілька нотаток"
       description: "10 нотаток відправлено"
     _notes100:
+
       title: "Купа нотаток"
       description: "100 нотаток відправлено"
     _notes500:
+
       title: "Все в нотатках"
       description: "500 нотаток відправлено"
     _notes1000:
+
       title: "Гора нотаток"
       description: "1 000 нотаток відправлено"
     _notes5000:
+
       title: "Переповнюючі нотатки"
       description: "5 000 нотаток відправлено"
     _notes10000:
+
       title: "Супернотатка"
       description: "10 000 нотаток відправлено"
     _notes20000:
+
       title: "Треба Більше Нотаток"
       description: "20 000 нотаток відправлено"
     _notes30000:
+
       title: "Нотатки нотатки нотатки"
       description: "30 000 нотаток відправлено"
     _notes40000:
+
       title: "Фабрика нотаток"
       description: "40 000 нотаток відправлено"
     _notes50000:
+
       title: "Планета нотаток"
       description: "50 000 нотаток відправлено"
     _notes60000:
+
       title: "Нотатковий квазар"
       description: "60 000 нотаток відправлено"
     _notes70000:
+
       title: "Чорна нотаткова діра"
       description: "70 000 нотаток відправлено"
     _notes80000:
+
       title: "Галактика нотаток"
       description: "80 000 нотаток відправлено"
     _notes90000:
+
       title: "Нотатковерс"
       description: "90 000 нотаток відправлено"
     _notes100000:
+
       title: "ALL YOUR NOTE ARE BELONG TO US"
       description: "100 000 нотаток відправлено"
       flavor: "Так багато потрібно сказати?"
     _login3:
+
       title: "Новачок I"
       description: "3 дні користування загально"
       flavor: "Відсьогодні називайте мене \"Місскіст\""
     _login7:
+
       title: "Новачок II"
       description: "7 днів користування загально"
       flavor: "Ви звикли до цього?"
     _login15:
+
       title: "Новачок III"
       description: "15 днів користування загально"
     _login30:
+
       title: "Міскієць I"
       description: "30 днів користування загально"
     _login60:
+
       title: "Міскієць II"
       description: "60 днів користування загально"
     _login100:
+
       title: "Міскієць III"
       description: "100 днів користування загально"
       flavor: "Цей юзер лютий місскіст"
     _login200:
+
       title: "Завсідник I"
       description: "200 днів користування загально"
     _login300:
+
       title: "Завсідник II"
       description: "300 днів користування загально"
     _login400:
+
       title: "Завсідник III"
       description: "400 днів користування загально"
     _login500:
+
       title: "Ветеран I"
       description: "500 днів користування загально"
       flavor: "Meine Kameraden, ich liebe sie, die Notizen."
     _login600:
+
       title: "Ветеран II"
       description: "600 днів користування загально"
     _login700:
+
       title: "Ветеран III"
       description: "700 днів користування загально"
     _login800:
+
       title: "Майстер нотаток I"
       description: "800 днів користування загально"
     _login900:
+
       title: "Майстер нотаток II"
       description: "900 днів користування загально"
     _login1000:
+
       title: "Майстер нотаток III"
       description: "1000 днів користування загально"
-      flavor: "Дякуємо, що користуєтеся Misskey!"
+      flavor: "Дякуємо, що користуєтеся Tribe!"
     _noteClipped1:
+
       title: "Не можна не зберегти"
       description: "Перша нотатка у добірці"
     _noteFavorited1:
+
       title: "Дивитися на зірки"
     _myNoteFavorited1:
+
       title: "У пошуках зірок"
     _profileFilled:
+
       title: "Повна готовність"
       description: "Профіль заповнено"
     _markedAsCat:
+
       title: "Я кіт"
       description: "Позначено як акаунт кота"
       flavor: "Я дам тобі ім'я пізніше"
     _following1:
+
       title: "Перша підписка"
     _following10:
+
       title: "Продовжуй, продовжуй"
     _following50:
+
       title: "Багато друзів"
       description: "Кількість підписок сягнула 50"
     _following100:
+
       title: "100 друзів"
       description: "Кількість підписок сягнула 100"
     _following300:
+
       title: "Надлишок друзів"
       description: "Кількість підписок сягнула 300"
     _followers1:
+
       title: "Перший підписник"
       description: "З'явився перший підписник"
     _followers10:
+
       title: "Follow me!"
       description: "Кількість підписників досягла 10"
     _followers50:
+
       description: "Кількість підписників досягла 50"
     _followers100:
+
       title: "Популярна особа"
       description: "Кількість підписників досягла 100"
     _followers300:
+
       title: "Ставайте в чергу"
       description: "Кількість підписників досягла 300"
     _followers500:
+
       title: "Радіовежа"
       description: "Кількість підписників досягла 500"
     _followers1000:
+
       title: "Інфлюенсер"
       description: "Кількість підписників досягла 1000"
     _collectAchievements30:
+
       title: "Збирач досягнень"
       description: "Отримано 30 досягнень"
     _viewAchievements3min:
+
       title: "Шанувальник досягнень"
       description: "Переглядати список досягнень принаймні 3 хвилини"
     _iLoveMisskey:
-      title: "I Love Misskey"
-      description: "Відправлено \"I ❤ #Misskey\""
-      flavor: "Дякуємо вам, що користуєтесь Misskey!  – команда розробників"
+
+      title: "I Love Tribe"
+      description: "Відправлено \"I ❤ #Tribe\""
+      flavor: "Дякуємо вам, що користуєтесь Tribe!  – команда розробників"
     _foundTreasure:
+
       title: "Пошуки скарбів"
       description: "Ви знайшли прихований скарб"
     _client30min:
+
       title: "Коротка перерва"
       description: "З моменту запуску клієнта минуло 30 хвилин"
     _noteDeletedWithin1min:
+
       title: "Не зважай"
       description: "Допис видалено протягом 1 хвилини після публікації"
     _postedAtLateNight:
+
       title: "Нічне життя"
       description: "Відправити нотатку посеред ночі"
       flavor: "Час лягати спати"
     _postedAt0min0sec:
+
       title: "Сигнал часу"
       description: "Відправити нотатку о 00:00"
     _selfQuote:
+
       title: "Самопосилання"
       description: "Процитувати власну нотатку"
     _htl20npm:
+
       title: "Плинна стрічка"
       description: "Перевищити швидкість домашньої стрічки 20npm (нотаток на хвилину)"
     _viewInstanceChart:
+
       title: "Аналітик"
     _outputHelloWorldOnScratchpad:
+
       title: "Hello, world!"
       description: "Вивести \"hello world\" у Скретчпаді"
     _reactWithoutRead:
+
       title: "Прочитали як слід?"
       description: "Реакція на нотатку, що містить понад 100 символів, протягом 3 секунд після її публікації"
     _clickedClickHere:
+
       title: "Натисніть тут"
       description: "Натиснуто тут"
     _justPlainLucky:
+
       title: "Просто вдача"
       description: "Можна отримати з ймовірністю 0,01% кожні 10 секунд"
     _setNameToSyuilo:
+
       title: "Комплекс бога"
       description: "Встановлено ім'я \"syuilo\""
     _passedSinceAccountCreated1:
+
       title: "Перша річниця"
       description: "Минув рік з моменту створення акаунта"
     _passedSinceAccountCreated2:
+
       title: "Друга річниця"
       description: "Минуло 2 роки з моменту створення акаунта"
     _passedSinceAccountCreated3:
+
       title: "Третя річниця"
       description: "Минуло 3 роки з моменту створення акаунта"
     _loggedInOnBirthday:
+
       title: "З Днем народження!"
       description: "Увійти у свій день народження"
     _loggedInOnNewYearsDay:
+
       title: "З Новим роком!"
       description: "Увійшли в перший день року"
     _cookieClicked:
+
       flavor: "Чекайте, це вірний сайт?"
     _brainDiver:
+
       title: "Brain Diver"
       description: "Відправити посилання на \"Brain Diver\""
-      flavor: "Misskey-Misskey La-Tu-Ma"
+      flavor: "Tribe-Tribe La-Tu-Ma"
 _role:
+
   new: "Нова роль"
   edit: "Змінити роль"
   name: "Назва ролі"
@@ -1147,51 +1224,64 @@ _role:
   manual: "Вручну"
   priority: "Пріоритет"
   _priority:
+
     low: "Низький"
     middle: "Середній"
     high: "Високий"
 _sensitiveMediaDetection:
+
   sensitivity: "Чутливість детектування"
   setSensitiveFlagAutomatically: "Позначити як NSFW"
   analyzeVideos: "Увімкнути аналіз відео"
 _emailUnavailable:
+
   used: "Ця email адреса вже використовується"
   format: "Невірний формат"
   disposable: "Одноразові email-адреси використовувати не можна"
   mx: "Цей email сервер недійсний"
   smtp: "Цей email-сервер не відповідає"
 _ffVisibility:
+
   public: "Опублікувати"
   followers: "Видно лише підписникам"
   private: "Приватне"
 _signup:
+
   almostThere: "Майже готово"
   emailAddressInfo: "Будь ласка, введіть вашу email-адресу. Вона не буде оприлюднена."
 _accountDelete:
+
   accountDelete: "Видалити акаунт"
   requestAccountDelete: "Запит на видалення акаунту"
   started: "Видалення розпочато."
   inProgress: "Наразі триває видалення"
 _ad:
+
   back: "Назад"
   reduceFrequencyOfThisAd: "Показувати цю рекламу менше"
   hide: "Не відображати"
 _gallery:
+
   my: "Моя галерея"
   liked: "Вподобане"
   like: "Вподобати"
   unlike: "Не вподобати"
 _email:
+
   _follow:
+
     title: "Новий підписник"
   _receiveFollowRequest:
+
     title: "Отримано запит на підписку"
 _plugin:
+
   install: "Встановити плагін"
   installWarn: "Будь ласка, не встановлюйте плагінів, яким ви не довіряєте."
   manage: "Керування плагінами"
   viewSource: "Переглянути вихідний код"
 _preferencesBackups:
+
   list: "Створені бекапи"
   saveNew: "Зберегти як новий"
   loadFile: "Завантажити з файлу"
@@ -1203,29 +1293,34 @@ _preferencesBackups:
   cannotLoad: "Не вдалося завантажити"
   invalidFile: "Невірний формат файлу"
 _registry:
+
   scope: "Область дії"
   key: "Ключ"
   keys: "Ключі"
   domain: "Домен"
   createKey: "Створити ключ"
 _aboutMisskey:
-  about: "Misskey - це програмне забезпечення з відкритим кодом, яке розробляє syuilo з 2014 року."
+
+  about: "Tribe - це програмне забезпечення з відкритим кодом, яке розробляє syuilo з 2014 року."
   contributors: "Головні помічники"
   allContributors: "Всі помічники"
   source: "Вихідний код"
-  translation: "Перекладати Misskey"
-  donate: "Пожертвувати Misskey"
+  translation: "Перекладати Tribe"
+  donate: "Пожертвувати Tribe"
   morePatrons: "Ми дуже цінуємо підтримку багатьох інших помічників, не перелічених тут. Дякуємо! 🥰"
   patrons: "Підтримали"
 _instanceTicker:
+
   none: "Не відображати"
   remote: "Відображати для віддалених користувачів"
   always: "Відображати завжди"
 _serverDisconnectedBehavior:
+
   reload: "Автоматично перезавантажити"
   dialog: "Показати діалогове вікно"
   quiet: "Показати ненав’язливе попередження"
 _channel:
+
   create: "Створити канал"
   edit: "Редагувати канал"
   setBanner: "Встановити банер"
@@ -1235,19 +1330,23 @@ _channel:
   usersCount: "{n} учасників"
   notesCount: "{n} дописів"
 _menuDisplay:
+
   sideFull: "Збоку"
   sideIcon: "Збоку (значки)"
   top: "Зверху"
   hide: "Сховати"
 _wordMute:
+
   muteWords: "Заглушені слова"
   muteWordsDescription: "Розділення ключових слів пробілами для \"І\" або з нової лінійки для \"АБО\""
   muteWordsDescription2: "Для використання RegEx, ключові слова потрібно вписати поміж слешів \"/\"."
 _instanceMute:
+
   instanceMuteDescription2: "Розділяйте новими рядками"
   title: "Приховує нотатки з перелічених інстансів."
   heading: "Список заглушених інстансів"
 _theme:
+
   explore: "Оглянути теми"
   install: "Встановити тему"
   manage: "Керування темами"
@@ -1273,6 +1372,7 @@ _theme:
   importInfo: "Вставляючи сюди код теми, ви можете добавити її до редактору тем"
   deleteConstantConfirm: "Ви дійсно бажаєте видалити константу \"{const}\"?"
   keys:
+
     accent: "Акцент"
     bg: "Фон"
     fg: "Текст"
@@ -1309,10 +1409,12 @@ _theme:
     messageBg: "Фон переписки"
     fgHighlighted: "Виділений текст"
 _sfx:
+
   note: "Нотатки"
   noteMy: "Мої нотатки"
   notification: "Сповіщення"
 _ago:
+
   future: "Майбутнє"
   justNow: "Щойно"
   secondsAgo: "{n}с тому"
@@ -1324,11 +1426,13 @@ _ago:
   yearsAgo: "{n} р. тому"
   invalid: "Тут нічого немає"
 _time:
+
   second: "с"
   minute: "х"
   hour: "г"
   day: "д"
 _2fa:
+
   alreadyRegistered: "Двофакторна автентифікація вже налаштована."
   step1: "Спершу встановіть на свій пристрій програму автентифікації (наприклад {a} або {b})."
   step2: "Потім відскануйте QR-код, який відображається на цьому екрані."
@@ -1336,6 +1440,7 @@ _2fa:
   step4: "Відтепер будь-які майбутні спроби входу вимагатимуть такого токена."
   renewTOTPCancel: "Не зараз"
 _permissions:
+
   "read:account": "Переглядати дані профілю"
   "write:account": "Змінити дані акаунту"
   "read:blocks": "Переглянути список заблокованих"
@@ -1350,7 +1455,7 @@ _permissions:
   "write:messaging": "Створювати та видаляти повідомлення"
   "read:mutes": "Переглядати список ігнорованих"
   "write:mutes": "Змінювати список ігнорованих"
-  "write:notes": "Писати і видаляти нотатки"
+  "write:sparks": "Писати і видаляти нотатки"
   "read:notifications": "Переглядати сповіщення"
   "write:notifications": "Керування сповіщеннями"
   "read:reactions": "Переглядати реакції"
@@ -1367,13 +1472,16 @@ _permissions:
   "read:gallery": "Перегляд галереї"
   "write:chat": "Створювати та видаляти повідомлення"
 _auth:
+
   shareAccess: "Ви хочете надати \"{name}\" доступ до цього акаунту?"
   shareAccessAsk: "Ви впевнені, що хочете надати цій програмі доступ до вашого акаунту?"
   denied: "У доступі відмовлено"
 _antennaSources:
+
   all: "Всі нотатки"
   homeTimeline: "Нотатки тих, на кого ви підписані"
 _weekday:
+
   sunday: "Неділя"
   monday: "Понеділок"
   tuesday: "Вівторок"
@@ -1382,6 +1490,7 @@ _weekday:
   friday: "П'ятниця"
   saturday: "Субота"
 _widgets:
+
   profile: "Профіль"
   instanceInfo: "Про цей інстанс"
   memo: "Нагадування"
@@ -1407,13 +1516,16 @@ _widgets:
   aichan: "Ai"
   userList: "Список користувачів"
   _userList:
+
     chooseList: "Виберіть список"
 _cw:
+
   hide: "Сховати"
   show: "Показати більше"
   chars: "{count} символів"
   files: "{count} файлів"
 _poll:
+
   noOnlyOneChoice: "Потрібні принаймні два варіанти."
   choiceN: "Варіант {n}"
   noMore: "Більше варіантів додати не можна"
@@ -1436,6 +1548,7 @@ _poll:
   remainingMinutes: "Залишилось {m} хвилин {s} секунд"
   remainingSeconds: "Залишилось {s} секунд"
 _visibility:
+
   public: "Публічний"
   publicDescription: "Для всіх користувачів"
   home: "Домівка"
@@ -1445,10 +1558,12 @@ _visibility:
   specified: "Особисто"
   specifiedDescription: "Лише для певних користувачів"
 _postForm:
+
   replyPlaceholder: "Відповідь на цю нотатку..."
   quotePlaceholder: "Прокоментуйте цю нотатку..."
   channelPlaceholder: "Опублікувати в каналі"
   _placeholders:
+
     a: "Чим займаєтесь?"
     b: "Що відбувається навколо вас?"
     c: "Що у вас на думці?"
@@ -1456,6 +1571,7 @@ _postForm:
     e: "Напишіть тут, будь ласка..."
     f: "Чекаю коли ви напишете..."
 _profile:
+
   name: "Ім'я"
   username: "Ім'я користувача"
   description: "Про себе"
@@ -1468,6 +1584,7 @@ _profile:
   changeAvatar: "Змінити аватар"
   changeBanner: "Змінити банер"
 _exportOrImport:
+
   allNotes: "Всі нотатки"
   clips: "Добірка"
   followingList: "Підписки"
@@ -1477,6 +1594,7 @@ _exportOrImport:
   excludeMutingUsers: "Виключити ігнорованих користувачів"
   excludeInactiveUsers: "Виключити неактивних користувачів"
 _charts:
+
   federation: "Федіверс"
   apRequest: "Запити"
   usersIncDec: "Зміни кількості користувачів"
@@ -1489,6 +1607,7 @@ _charts:
   filesIncDec: "Зміни кількості файлів"
   filesTotal: "Загальна кількість файлів"
 _instanceCharts:
+
   requests: "Запити"
   users: "Зміни кількості користувачів"
   usersTotal: "Сумарна кількість користувачів"
@@ -1500,17 +1619,20 @@ _instanceCharts:
   files: "Різниця в кількості файлів"
   filesTotal: "Сумарна кількість файлів"
 _timelines:
+
   home: "Домівка"
   local: "Локальна"
   social: "Соціальна"
   global: "Глобальна"
 _play:
+
   viewSource: "Переглянути вихідний код"
   featured: "Популярні"
   title: "Заголовок"
   script: "Скрипт"
   summary: "Опис"
 _pages:
+
   newPage: "Створити сторінку"
   editPage: "Редагувати сторінку"
   readPage: "Перегляд вихідного коду"
@@ -1546,6 +1668,7 @@ _pages:
   inputBlocks: "Ввід"
   specialBlocks: "Особливе"
   blocks:
+
     text: "Текст"
     textarea: "Текстова область"
     section: "Розділ"
@@ -1553,14 +1676,17 @@ _pages:
     button: "Кнопка"
     note: "Вбудована нотатка"
     _note:
+
       id: "Ідентифікатор нотатки"
       idDescription: "Також можна вказати посилання на нотатку"
       detailed: "Детальний вигляд"
 _relayStatus:
+
   requesting: "Очікує затвердження"
   accepted: "Затверджено"
   rejected: "Відхилено"
 _notification:
+
   fileUploaded: "Файл успішно завантажено"
   youGotMention: "{name} згадує вас"
   youGotReply: "{name} відповідає"
@@ -1571,6 +1697,7 @@ _notification:
   yourFollowRequestAccepted: "Запит на підписку прийнято"
   achievementEarned: "Досягнення відкрито"
   _types:
+
     all: "Все"
     follow: "Підписки"
     mention: "Згадка"
@@ -1583,9 +1710,11 @@ _notification:
     login: "Увійти"
     app: "Сповіщення від додатків"
   _actions:
+
     reply: "Відповісти"
     renote: "Поширити"
 _deck:
+
   alwaysShowMainColumn: "Завжди показувати головну колонку"
   columnAlign: "Вирівняти стовпці"
   addColumn: "Додати стовпець"
@@ -1601,6 +1730,7 @@ _deck:
   introduction: "Створіть для себе ідеальний інтерфейс, вільно розташувавши стовпці!"
   widgetsIntroduction: "Будь ласка, виберіть «Редагувати віджети» в меню стовпців і додайте віджет."
   _columns:
+
     main: "Головна"
     widgets: "Віджети"
     notifications: "Сповіщення"
@@ -1611,20 +1741,29 @@ _deck:
     mentions: "Згадки"
     direct: "Особисте"
 _webhookSettings:
+
   name: "Ім'я"
   active: "Увімкнено"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "E-mail"
 _moderationLogTypes:
+
   suspend: "Призупинити"
   resetPassword: "Скинути пароль"
 _reversi:
+
   total: "Всього"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Не знайдено"
 _search:
+
   searchScopeAll: "Всі"
   searchScopeLocal: "Локальна"

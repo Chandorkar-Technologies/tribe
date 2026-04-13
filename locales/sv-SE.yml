@@ -1,8 +1,8 @@
 ---
 _lang_: "Svenska"
 headlineMisskey: "Ett nätverk kopplat av noter"
-introMisskey: "Välkommen! Misskey är en öppen och decentraliserad mikrobloggningstjänst.\nSkapa en \"not\" och dela dina tankar med alla runtomkring dig. 📡\nMed \"reaktioner\" kan du snabbt uttrycka dina känslor kring andras noter. 👍\nLåt oss utforska en ny värld! 🚀"
-poweredByMisskeyDescription: "{name} är en tjänst driven av den öppna källkodsplatformen <b>Misskey</b> (benämns \"Misskey instans\")."
+introMisskey: "Välkommen! Tribe är en öppen och decentraliserad mikrobloggningstjänst.\nSkapa en \"not\" och dela dina tankar med alla runtomkring dig. 📡\nMed \"reaktioner\" kan du snabbt uttrycka dina känslor kring andras noter. 👍\nLåt oss utforska en ny värld! 🚀"
+poweredByMisskeyDescription: "{name} är en tjänst driven av den öppna källkodsplatformen <b>Tribe</b> (benämns \"Tribe instans\")."
 monthAndDay: "{day}/{month}"
 search: "Sök"
 notifications: "Notifikationer"
@@ -211,7 +211,7 @@ noUsers: "Det finns inga användare"
 editProfile: "Redigera profil"
 noteDeleteConfirm: "Är du säker på att du vill ta bort denna not?"
 pinLimitExceeded: "Du kan inte fästa fler noter"
-intro: "Misskey har installerats! Vänligen skapa en adminanvändare."
+intro: "Tribe har installerats! Vänligen skapa en adminanvändare."
 done: "Klar"
 processing: "Bearbetar..."
 preview: "Förhandsvisning"
@@ -372,7 +372,7 @@ exploreFediverse: "Utforska Fediverse"
 popularTags: "Populära taggar"
 userList: "Listor"
 about: "Om"
-aboutMisskey: "Om Misskey"
+aboutMisskey: "Om Tribe"
 administrator: "Administratör"
 2fa: "Tvåfaktorsautentisering"
 totp: "Autentiseringsapp"
@@ -462,7 +462,7 @@ send: "Skicka"
 openInNewTab: "Öppna i ny flik"
 createNew: "Skapa ny"
 private: "Privat"
-i18nInfo: "Misskey översätts till många olika språk av volontärer. Du kan hjälpa till med översättningen på {link}."
+i18nInfo: "Tribe översätts till många olika språk av volontärer. Du kan hjälpa till med översättningen på {link}."
 accountInfo: "Kontoinformation"
 followersCount: "Antal följare"
 yes: "Ja"
@@ -500,7 +500,7 @@ squareAvatars: "Visa fyrkantiga profilbilder"
 sent: "Skicka"
 searchResult: "Sökresultat"
 learnMore: "Läs mer"
-misskeyUpdated: "Misskey har uppdaterats!"
+misskeyUpdated: "Tribe har uppdaterats!"
 translate: "Översätt"
 controlPanel: "Kontrollpanel"
 manageAccounts: "Hantera konton"
@@ -538,7 +538,7 @@ windowMinimize: "Minimera"
 windowRestore: "Återställ"
 tools: "Verktyg"
 like: "Gilla"
-pleaseDonate: "Misskey är en gratis programvara som används på {host}. Donera gärna för att göra utvecklingen ständigt, tack!"
+pleaseDonate: "Tribe är en gratis programvara som används på {host}. Donera gärna för att göra utvecklingen ständigt, tack!"
 roles: "Roll"
 role: "Roll"
 color: "Färg"
@@ -561,73 +561,100 @@ signinWithPasskey: "Logga in med nyckel"
 unknownWebAuthnKey: "Okänd nyckel"
 information: "Om"
 _chat:
+
   invitations: "Inbjudan"
   members: "Medlemmar"
   home: "Hem"
   send: "Skicka"
 _delivery:
+
   stop: "Suspenderad"
   _type:
+
     none: "Publiceras"
 _initialAccountSetting:
+
   profileSetting: "Profilinställningar"
 _initialTutorial:
+
   _reaction:
+
     title: "Vad är reaktioner?"
 _achievements:
+
   _types:
+
     _open3windows:
+
       title: "Flera Fönster"
       description: "Ha minst 3 fönster öppna samtidigt"
 _role:
+
   edit: "Redigera roll"
 _ffVisibility:
+
   public: "Publicera"
   private: "Privat"
 _accountDelete:
+
   accountDelete: "Radera konto"
 _ad:
+
   back: "Tillbaka"
 _gallery:
+
   like: "Gilla"
 _email:
+
   _follow:
+
     title: "följde dig"
 _aboutMisskey:
+
   source: "Källkod"
   projectMembers: "Projektmedlemmar"
 _channel:
+
   setBanner: "Välj banner"
   removeBanner: "Ta bort banner"
   nameAndDescription: "Namn och beskrivning"
 _menuDisplay:
+
   hide: "Dölj"
 _theme:
+
   description: "Beskrivning"
   color: "Färg"
   keys:
+
     mention: "Nämn"
     renote: "Omnotera"
 _sfx:
+
   note: "Noter"
   notification: "Notifikationer"
 _ago:
+
   justNow: "Just nu"
 _2fa:
+
   step3Title: "Ange en autentiseringskod"
   renewTOTPCancel: "Nej tack"
 _permissions:
+
   "read:reactions": "Visa dina reaktioner"
   "write:reactions": "Redigera dina reaktioner"
   "write:admin:delete-account": "Radera användarkonto"
   "write:admin:roles": "Hantera roller"
   "read:admin:roles": "Visa roller"
 _antennaSources:
+
   all: "Alla noter"
   homeTimeline: "Noter från följda användare"
   users: "Noter från specifika användare"
   userList: "Noter från en specificerad lista av användare"
 _widgets:
+
   profile: "Profil"
   instanceInfo: "Instansinformation"
   notifications: "Notifikationer"
@@ -636,44 +663,57 @@ _widgets:
   federation: "Federation"
   jobQueue: "Jobbkö"
   _userList:
+
     chooseList: "Välj lista"
 _cw:
+
   hide: "Dölj"
   show: "Ladda mer"
   chars: "{count} tecken"
   files: "{count} fil(er)"
 _poll:
+
   infinite: "Aldrig"
 _visibility:
+
   home: "Hem"
   followers: "Följare"
 _profile:
+
   name: "Namn"
   username: "Användarnamn"
   metadataLabel: "Etikett"
   changeAvatar: "Ändra profilbild"
   changeBanner: "Ändra banner"
 _exportOrImport:
+
   allNotes: "Alla noter"
   followingList: "Följer"
   muteList: "Tysta"
   blockingList: "Blockera"
   userLists: "Listor"
 _charts:
+
   federation: "Federation"
   activeUsers: "Aktiva användare"
 _timelines:
+
   home: "Hem"
   global: "Global"
 _play:
+
   summary: "Beskrivning"
 _pages:
+
   blocks:
+
     image: "Bilder"
 _notification:
+
   youWereFollowed: "följde dig"
   unreadAntennaNote: "Antenn {name}"
   _types:
+
     follow: "Följer"
     mention: "Nämn"
     renote: "Omnotera"
@@ -681,12 +721,15 @@ _notification:
     reaction: "Reaktioner"
     login: "Logga in"
   _actions:
+
     reply: "Svara"
     renote: "Omnotera"
 _deck:
+
   addColumn: "Lägg till kolumn"
   deleteProfile: "Radera profil"
   _columns:
+
     notifications: "Notifikationer"
     tl: "Tidslinje"
     antenna: "Antenner"
@@ -694,21 +737,29 @@ _deck:
     channel: "kanal"
     mentions: "Omnämningar"
 _webhookSettings:
+
   name: "Namn"
   active: "Aktiverad"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "E-post"
 _moderationLogTypes:
+
   suspend: "Suspendera"
   resetPassword: "Återställ Lösenord"
 _reversi:
+
   blackOrWhite: "Svart/Vit"
   rules: "Regler"
   black: "Svart"
   white: "Vit"
 _selfXssPrevention:
+
   warning: "VARNING"
 _search:
+
   searchScopeAll: "Allt"

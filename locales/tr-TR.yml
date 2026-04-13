@@ -1,8 +1,8 @@
 ---
 _lang_: "Türkçe"
 headlineMisskey: "Notlarla bağlanmış bir ağ"
-introMisskey: "Açık kaynaklı bir dağıtılmış mikroblog hizmeti olan Misskey'e hoş geldiniz.\nMisskey, neler olup bittiğini paylaşmak ve herkese sizden bahsetmek için \"notlar\" oluşturmanıza olanak tanıyan, açık kaynaklı, dağıtılmış bir mikroblog hizmetidir.\nHerkesin notlarına kendi tepkilerinizi hızlıca eklemek için \"Tepkiler\" özelliğini de kullanabilirsiniz👍.\nYeni bir dünyayı keşfedin🚀."
-poweredByMisskeyDescription: "name}Açık kaynak bir platform\n<b>Misskey</b>Dünya'nın en sunucularında biri。"
+introMisskey: "Açık kaynaklı bir dağıtılmış mikroblog hizmeti olan Tribe'e hoş geldiniz.\nMisskey, neler olup bittiğini paylaşmak ve herkese sizden bahsetmek için \"notlar\" oluşturmanıza olanak tanıyan, açık kaynaklı, dağıtılmış bir mikroblog hizmetidir.\nHerkesin notlarına kendi tepkilerinizi hızlıca eklemek için \"Tepkiler\" özelliğini de kullanabilirsiniz👍.\nYeni bir dünyayı keşfedin🚀."
+poweredByMisskeyDescription: "name}Açık kaynak bir platform\n<b>Tribe</b>Dünya'nın en sunucularında biri。"
 monthAndDay: "{month}Ay {day}Gün"
 search: "Arama"
 notifications: "Bildirim"
@@ -112,7 +112,7 @@ renoted: "yeniden adlandırılmış"
 cantRenote: "Ayrılamama"
 cantReRenote: "not alabilirmiyim"
 quote: "alıntı"
-inChannelRenote: "Kanal içi Renote"
+inChannelRenote: "Kanal içi Re-spark"
 inChannelQuote: "Kanal içi Alıntı"
 pinnedNote: "Sabitlenen"
 pinned: "Sabitlenmiş"
@@ -161,7 +161,7 @@ youCanCleanRemoteFilesCache: ""
 cacheRemoteSensitiveFiles: "Hassas uzak dosyalar ön belleğe alınsın"
 cacheRemoteSensitiveFilesDescription: "Bu ayar kapalı olduğunda hassas uzak dosyalar ön belleğe alınmadan doğrudan uzak sunucudan yüklenecektir."
 flagAsBot: "Bot olarak işaretle"
-flagAsBotDescription: "Bu seçeneği hesap bir program tarafından kontrol ediliyorsa işaretleyin. Bu, diğer geliştiricilerin sonsuz etkileşim zincirleri oluşturmasını engellemeye yardımcı olur ve Misskey'in iç sisteminin hesaba bir bot gibi davranmasını sağlar."
+flagAsBotDescription: "Bu seçeneği hesap bir program tarafından kontrol ediliyorsa işaretleyin. Bu, diğer geliştiricilerin sonsuz etkileşim zincirleri oluşturmasını engellemeye yardımcı olur ve Tribe'in iç sisteminin hesaba bir bot gibi davranmasını sağlar."
 flagAsCat: "Kedi hesabı"
 flagAsCatDescription: "Kedi hesabı"
 flagShowTimelineReplies: "Zaman akışında notlara gelen cevapları göster"
@@ -224,7 +224,7 @@ noUsers: "Kullanıcı yok"
 editProfile: "Profili düzenle"
 noteDeleteConfirm: "Bu notu silmek istediğinizden emin misiniz?"
 pinLimitExceeded: "Daha fazla not sabitlenemez"
-intro: "Misskey yüklemesi tamamlandı! Lütfen yönetici hesabını oluşturun."
+intro: "Tribe yüklemesi tamamlandı! Lütfen yönetici hesabını oluşturun."
 done: "Tamamlandı"
 preview: "Önizleme"
 default: "Varsayılan"
@@ -376,30 +376,42 @@ icon: "Avatar"
 replies: "yanıt"
 renotes: "vazgeçme"
 _chat:
+
   home: "Ana sayfa"
 _delivery:
+
   stop: "Askıya alınmış"
   _type:
+
     none: "Paylaşım"
 _accountDelete:
+
   started: "Silme işlemi başlatıldı"
 _email:
+
   _follow:
+
     title: "seni takip etti"
 _theme:
+
   color: "Renk"
   keys:
+
     mention: "Bahset"
     renote: "vazgeçme"
 _sfx:
+
   note: "notlar"
   notification: "Bildirim"
 _2fa:
+
   renewTOTPCancel: "Hayır, teşekkürler"
 _permissions:
+
   "read:blocks": "Engellenen hesapları gör"
   "write:blocks": "Engellenen hesap listesini düzenle"
 _widgets:
+
   profile: "Profil"
   instanceInfo: "Sunucu Bilgisi"
   notifications: "Bildirim"
@@ -410,34 +422,46 @@ _widgets:
   federation: "Federasyon"
   jobQueue: "İşlem sırası"
   _userList:
+
     chooseList: "Bir liste seç"
 _cw:
+
   show: "Devamını yükle"
 _poll:
+
   vote: "Oy kullan"
 _visibility:
+
   publicDescription: "Herkese açık"
   home: "Ana sayfa"
   followers: "takipçi"
 _profile:
+
   username: "Kullanıcı Adı"
 _exportOrImport:
+
   followingList: "takipçi"
   muteList: "Gizle"
   blockingList: "engelle"
   userLists: "Listeler"
 _charts:
+
   federation: "Federasyon"
 _timelines:
+
   home: "Ana sayfa"
   global: "Küresel"
 _pages:
+
   blocks:
+
     image: "Görseller"
 _notification:
+
   youWereFollowed: "seni takip etti"
   unreadAntennaNote: "{name} anteni"
   _types:
+
     follow: "takipçi"
     mention: "Bahset"
     renote: "vazgeçme"
@@ -447,17 +471,22 @@ _notification:
     followRequestAccepted: "Takip isteği kabul edildi"
     login: "Giriş Yap "
   _actions:
+
     reply: "yanıt"
     renote: "vazgeçme"
 _deck:
+
   configureColumn: "Sütun seçenekleri"
   _columns:
+
     notifications: "Bildirim"
     tl: "Zaman çizelgesi"
     list: "Listeler"
     mentions: "Bahsetmeler"
 _moderationLogTypes:
+
   suspend: "askıya al"
   resetPassword: "Şifre sıfırlama"
 _search:
+
   searchScopeAll: "Tümü"

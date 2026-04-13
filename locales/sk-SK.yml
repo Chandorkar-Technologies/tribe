@@ -1,8 +1,8 @@
 ---
 _lang_: "Slovenčina"
 headlineMisskey: "Sieť prepojená poznámkami"
-introMisskey: "Vitajte! Misskey je otvorená a decentralizovaná mikroblogovacia služba.\n\"Poznámkami\" môžete zdieľať svoje myšlienky so všetkými okolo. 📡\nPomocou \"reakcií\" môžete rýchlo vyjadri svoje pocity o každého poznámkach. 👍\nPoďte objavovať svet! 🚀"
-poweredByMisskeyDescription: "{name} je jedným zo serverov využívajúcich open source platformu <b>Misskey</b> (nazývaných Misskey inštancia)."
+introMisskey: "Vitajte! Tribe je otvorená a decentralizovaná mikroblogovacia služba.\n\"Poznámkami\" môžete zdieľať svoje myšlienky so všetkými okolo. 📡\nPomocou \"reakcií\" môžete rýchlo vyjadri svoje pocity o každého poznámkach. 👍\nPoďte objavovať svet! 🚀"
+poweredByMisskeyDescription: "{name} je jedným zo serverov využívajúcich open source platformu <b>Tribe</b> (nazývaných Tribe inštancia)."
 monthAndDay: "{day}. {month}."
 search: "Hľadať"
 notifications: "Oznámenia"
@@ -145,7 +145,7 @@ settingGuide: "Odporúčané nastavenia"
 cacheRemoteFiles: "Cachovanie vzdialených súborov"
 cacheRemoteFilesDescription: "Zakázanie tohoto nastavenia spôsobí, že vzdialené súbory budú odkazované priamo, namiesto ukladania do cache. Ušetrí sa tak miesto na serveri, ale zvýši sa dátový tok, pretože sa negenerujú miniatúry."
 flagAsBot: "Tento účet je bot"
-flagAsBotDescription: "Ak je tento účet ovládaný programom, zaškrtnite túto voľbu. Ostatní uvidia, že je to bot a zabráni nekonečným interakciám s ďalšími botmi a upraví interné systémy Misskey, aby ho považoval za bota."
+flagAsBotDescription: "Ak je tento účet ovládaný programom, zaškrtnite túto voľbu. Ostatní uvidia, že je to bot a zabráni nekonečným interakciám s ďalšími botmi a upraví interné systémy Tribe, aby ho považoval za bota."
 flagAsCat: "Tento účet je mačka"
 flagAsCatDescription: "Zvoľte túto voľbu, aby bol tento účet označený ako mačka."
 flagShowTimelineReplies: "Zobraziť odpovede na poznámky v časovej osi"
@@ -204,7 +204,7 @@ noUsers: "Žiadni používatelia"
 editProfile: "Upraviť profil"
 noteDeleteConfirm: "Naozaj chcete odstrániť túto poznámku?"
 pinLimitExceeded: "Ďalšie poznámky už nemôžete pripnúť."
-intro: "Inštalácia Misskey je dokončená! Prosím vytvorte administrátora."
+intro: "Inštalácia Tribe je dokončená! Prosím vytvorte administrátora."
 done: "Hotovo"
 processing: "Pracujem..."
 preview: "Náhľad"
@@ -386,7 +386,7 @@ exploreFediverse: "Objavovať Fediverzum"
 popularTags: "Populárne značky"
 userList: "Zoznamy"
 about: "Informácie"
-aboutMisskey: "O Misskey"
+aboutMisskey: "O Tribe"
 administrator: "Administrátor"
 token: "Token"
 2fa: "Dvojfaktorové overenie (2FA)"
@@ -522,7 +522,7 @@ sort: "Zoradiť"
 ascendingOrder: "Vzostupne"
 descendingOrder: "Zostupne"
 scratchpad: "Zápisník"
-scratchpadDescription: "Zápisník poskytuje prostredia pre experimenty s AiScriptom. Môžete písať, spúšťať a skúšať vysledky pri interakcii s Misskey."
+scratchpadDescription: "Zápisník poskytuje prostredia pre experimenty s AiScriptom. Môžete písať, spúšťať a skúšať vysledky pri interakcii s Tribe."
 output: "Výstup"
 script: "Skript"
 disablePagesScript: "Vypnúť AiScript na stránkach"
@@ -645,7 +645,7 @@ unclip: "Odopnúť"
 confirmToUnclipAlreadyClippedNote: "Táto poznámka je už pripnutá ako \"{name}\". Naozaj ju chcete odopnúť?"
 public: "Verejné"
 private: "Súkromné"
-i18nInfo: "Misskey je prekladaný do rôznych jazykov dobrovoľníkmi. Pomôcť môžete na {link}."
+i18nInfo: "Tribe je prekladaný do rôznych jazykov dobrovoľníkmi. Pomôcť môžete na {link}."
 manageAccessTokens: "Spravovať prístupové tokeny"
 accountInfo: "Informácie o účte"
 notesCount: "Počet poznámok"
@@ -696,7 +696,7 @@ onlineUsersCount: "{n} používateľov je online"
 nUsers: "{n} používateľov"
 nNotes: "{n} poznámok"
 sendErrorReports: "Poslať nahlásenie chyby"
-sendErrorReportsDescription: "Keď je zapnuté, v prípade problému sa odošlú podrobné informácie o chybe do Misskey. Pomôžete tak zvýšiť kvalitu Misskey.\nTieto informácie zahŕňajú verziu vášho OS, použitý prehliadač, históriu aktivít, atď."
+sendErrorReportsDescription: "Keď je zapnuté, v prípade problému sa odošlú podrobné informácie o chybe do Tribe. Pomôžete tak zvýšiť kvalitu Tribe.\nTieto informácie zahŕňajú verziu vášho OS, použitý prehliadač, históriu aktivít, atď."
 myTheme: "Moja téma"
 backgroundColor: "Pozadie"
 accentColor: "Akcent"
@@ -789,7 +789,7 @@ hashtags: "Hashtagy"
 troubleshooting: "Riešenie problémov"
 useBlurEffect: "Používať efekty rozmazania v UI"
 learnMore: "Zistiť viac"
-misskeyUpdated: "Misskey sa aktualizoval!"
+misskeyUpdated: "Tribe sa aktualizoval!"
 whatIsNew: "Čo je nové?"
 translate: "Preložiť"
 translatedFrom: "Preložené z {x}"
@@ -902,8 +902,8 @@ like: "Páči sa mi"
 show: "Zobraziť"
 neverShow: "Nabudúce nezobrazovať"
 remindMeLater: "Pripomenúť neskôr"
-didYouLikeMisskey: "Páči sa vám Misskey?"
-pleaseDonate: "Misskey je bezplatný softvér, ktorý používa {host}. Prosím, prispejte, aby sme ho mohli ďalej rozvíjať!"
+didYouLikeMisskey: "Páči sa vám Tribe?"
+pleaseDonate: "Tribe je bezplatný softvér, ktorý používa {host}. Prosím, prispejte, aby sme ho mohli ďalej rozvíjať!"
 color: "Farba"
 horizontal: "Strana"
 youFollowing: "Sledované"
@@ -916,22 +916,28 @@ lastNDays: "Posledných {n} dní"
 postForm: "Napísať poznámku"
 information: "Informácie"
 _chat:
+
   invitations: "Pozvať"
   noHistory: "Žiadna história"
   members: "Členovia"
   home: "Domov"
   send: "Poslať"
 _delivery:
+
   stop: "Zmrazené"
   _type:
+
     none: "Zverejňovanie"
 _role:
+
   priority: "Priorita"
   _priority:
+
     low: "Málo"
     middle: "Stredné"
     high: "Vysoká"
 _sensitiveMediaDetection:
+
   description: "Strojové učenie sa použije na automatickú detekciu citlivých médií na účely ich moderovania. Mierne sa zvýši zaťaženie servera."
   sensitivity: "Citlivosť detekcie"
   sensitivityDescription: "Nižšia citlivosť znižuje počet falošne pozitívnych výsledkov (false positives). Vyššia citlivosť znižuje počet falošne negatívnych výsledkov (false negatives)."
@@ -940,20 +946,24 @@ _sensitiveMediaDetection:
   analyzeVideos: "Zapnúť analýzu videa"
   analyzeVideosDescription: "Okrem obrázkov zapne detekciu aj pre videá. Zaťaženie servera sa mierne zvýši."
 _emailUnavailable:
+
   used: "Táto emailová adresa sa už používa"
   format: "Formát emailovej adresy je nesprávny"
   disposable: "Jednorázové emailové adresy sa nemôžu používať."
   mx: "Tento emailový server nefunguje."
   smtp: "Tento emailový server neodpovedá."
 _ffVisibility:
+
   public: "Zverejniť"
   followers: "Len viditeľní sledujúci"
   private: "Súkromné"
 _signup:
+
   almostThere: "Skoro na konci"
   emailAddressInfo: "Prosím zadajte svoju emailovú adresu!"
   emailSent: "Na vašu emailovú adresu ({email}) sme odoslali email. Vytvorenie účtu dokončíte kliknutím na odkaz v emaili."
 _accountDelete:
+
   accountDelete: "Odstrániť účet"
   mayTakeTime: "Keďže odstránenie účtu je náročný proces, môže to nejaký čas trvať. Záleží koľko obsahu ste vytvorili a koľko súborov ste nahrali."
   sendEmail: "Po odstránení účtu vám pošleme email na emailovú adresu zadanú pri registrácii tohoto účtu."
@@ -961,29 +971,37 @@ _accountDelete:
   started: "Odstraňovanie začalo."
   inProgress: "Odstraňovanie prebieha"
 _ad:
+
   back: "Späť"
   reduceFrequencyOfThisAd: "Túto reklamu zobrazovať menej"
   hide: "Nikdy nezobrazovať"
 _forgotPassword:
+
   enterEmail: "Zadajte emailovú adresu, ktorú ste použili pri registrácii. Pošleme vám na ňu odkaz, cez ktorý si môžete obnoviť heslo."
   ifNoEmail: "Ak ste pri registrácii nepoužili email, prosím kontaktujte administrátora."
   contactAdmin: "Tento server nepodporuje používanie emailových adries, prosím kontaktuje administrátor, ktorý vám resetuje heslo."
 _gallery:
+
   my: "Moja galéria"
   liked: "Obľúbené príspevky"
   like: "Páči sa mi"
   unlike: "Nepáči sa mi"
 _email:
+
   _follow:
+
     title: "Máte nového sledujúceho"
   _receiveFollowRequest:
+
     title: "Dostali ste žiadosť o sledovanie"
 _plugin:
+
   install: "Inštalova pluginy"
   installWarn: "Prosím neinštalujte nedôveryhodné pluginy."
   manage: "Spravovanie pluginov"
   viewSource: "Ukázať zdroj"
 _preferencesBackups:
+
   list: "Vytvorené zálohy"
   saveNew: "Uložiť novú"
   loadFile: "Nahrať súbor"
@@ -1002,29 +1020,34 @@ _preferencesBackups:
   cannotLoad: "Nedá sa nahrať"
   invalidFile: "Neplatný formát súboru"
 _registry:
+
   scope: "Oblasť"
   key: "Kľúč"
   keys: "Kľúče"
   domain: "Doména"
   createKey: "Vytvoriť kľúč"
 _aboutMisskey:
-  about: "Misskey je open-source softvér, ktorý vyvíja syuilo od 2014."
+
+  about: "Tribe je open-source softvér, ktorý vyvíja syuilo od 2014."
   contributors: "Hlavní prispievatelia"
   allContributors: "Všetci prispievatelia"
   source: "Zdrojový kód"
-  translation: "Preložiť Misskey"
-  donate: "Podporiť Misskey"
+  translation: "Preložiť Tribe"
+  donate: "Podporiť Tribe"
   morePatrons: "Takisto oceňujeme podporu mnoých ďalších, ktorí tu nie sú uvedení. Ďakujeme! 🥰"
   patrons: "Prispievatelia"
 _instanceTicker:
+
   none: "Nikdy nezobrazovať"
   remote: "Zobraziť pre vzdialených používateľov"
   always: "Zobraziť vždy"
 _serverDisconnectedBehavior:
+
   reload: "Automaticky obnoviť"
   dialog: "Zobraziť okno s varovaním"
   quiet: "Zobraziť nerušivé varovanie"
 _channel:
+
   create: "Vytvoriť kanál"
   edit: "Upraviť kanál"
   setBanner: "Nastaviť banner"
@@ -1035,20 +1058,24 @@ _channel:
   usersCount: "{n} účastníkov"
   notesCount: "{n} poznámok"
 _menuDisplay:
+
   sideFull: "Strana"
   sideIcon: "Strana (Ikony)"
   top: "Hore"
   hide: "Skryť"
 _wordMute:
+
   muteWords: "Umlčané slová"
   muteWordsDescription: "Medzerami oddeľte pre podmienku AND a novými riadkami pre podmienku OR."
   muteWordsDescription2: "Regulárne výrazy sa použijú keď použijete okolo lomítka."
 _instanceMute:
+
   instanceMuteDescription: "Toto umlčí všetky poznámky/preposlania zo zoznamu serverov, vrátane tých, na ktoré používatelia odpovedajú z umlčaného servera."
   instanceMuteDescription2: "Oddeľte novými riadkami"
   title: "Skryje poznámky z uvedených serverov."
   heading: "Zoznam umlčaných inštancií"
 _theme:
+
   explore: "Objavovať témy"
   install: "Nainštalovať tému"
   manage: "Spravovať témy"
@@ -1079,6 +1106,7 @@ _theme:
   importInfo: "Ak sem zadáte kód témy, môžete ju importovať do editora tém."
   deleteConstantConfirm: "Naozaj chcete odstrániť konštantu {const}?"
   keys:
+
     accent: "Akcent"
     bg: "Pozadie"
     fg: "Text"
@@ -1115,10 +1143,12 @@ _theme:
     messageBg: "Pozadie chatu"
     fgHighlighted: "Zvýraznený text"
 _sfx:
+
   note: "Poznámky"
   noteMy: "Vlastná poznámka"
   notification: "Oznámenia"
 _ago:
+
   future: "Budúcnosť"
   justNow: "Teraz"
   secondsAgo: "pred {n} sekundami"
@@ -1130,11 +1160,13 @@ _ago:
   yearsAgo: "pred {n} rokmi"
   invalid: "Nič tu nie je"
 _time:
+
   second: "s"
   minute: "min"
   hour: "hod"
   day: "dní"
 _2fa:
+
   alreadyRegistered: "Už ste zaregistrovali 2-faktorové autentifikačné zariadenie."
   step1: "Najprv si nainštalujte autentifikačnú aplikáciu (napríklad {a} alebo {b}) na svoje zariadenie."
   step2: "Potom, naskenujte QR kód zobrazený na obrazovke."
@@ -1144,6 +1176,7 @@ _2fa:
   removeKeyConfirm: "Naozaj chcete odstrániť \"{name}\"?"
   renewTOTPCancel: "Nie, ďakujem"
 _permissions:
+
   "read:account": "Vidieť informácie o vašom účte"
   "write:account": "Upraviť informácie o vašom účte"
   "read:blocks": "Vidieť zoznam blokovaných používateľov"
@@ -1158,7 +1191,7 @@ _permissions:
   "write:messaging": "Písať alebo odstraňovať správy v chate"
   "read:mutes": "Vidieť váš zoznam stíšených používateľov"
   "write:mutes": "Upravovať zoznam stíšených používateľov"
-  "write:notes": "Písať alebo odstrániť poznámky"
+  "write:sparks": "Písať alebo odstrániť poznámky"
   "read:notifications": "Vidieť vaše oznámenia"
   "write:notifications": "Pracovať s vašimi notifikáciami"
   "read:reactions": "Vidieť vaše reakcie"
@@ -1178,6 +1211,7 @@ _permissions:
   "write:gallery-likes": "Upraviť zoznam obľúbených príspevov z galérie"
   "write:chat": "Písať alebo odstraňovať správy v chate"
 _auth:
+
   shareAccess: "Prajete si povoliť \"{name}\", aby mal prístup k tomuto účtu?"
   shareAccessAsk: "Naozaj chcete povoliť tejto aplikácii prístup k tomuto účtu?"
   permissionAsk: "Táto aplikácia vyžaduje nasledujúce nastavenia"
@@ -1185,11 +1219,13 @@ _auth:
   callback: "Vraciam sa späť na aplikáciu"
   denied: "Prístup zamietnutý"
 _antennaSources:
+
   all: "Všetky poznámky"
   homeTimeline: "Poznámky od sledovaného používateľa"
   users: "Poznámky od konkrétneho používateľa"
   userList: "Poznámky od používateľov v zozname"
 _weekday:
+
   sunday: "Nedeľa"
   monday: "Pondelok"
   tuesday: "Utorok"
@@ -1198,6 +1234,7 @@ _weekday:
   friday: "Piatok"
   saturday: "Sobota"
 _widgets:
+
   profile: "Profil"
   instanceInfo: "Informácie o serveri"
   memo: "Prilepené poznámky"
@@ -1223,13 +1260,16 @@ _widgets:
   aiscript: "Konzola AiScript"
   aichan: "Ai"
   _userList:
+
     chooseList: "Vyberte zoznam"
 _cw:
+
   hide: "Skryť"
   show: "Zobraziť viac"
   chars: "{count} znakov"
   files: "{count} súbor/ov"
 _poll:
+
   noOnlyOneChoice: "Treba aspoň dve voľby"
   choiceN: "Voľba {n}"
   noMore: "Nemôžete pridať viac volieb"
@@ -1252,6 +1292,7 @@ _poll:
   remainingMinutes: "zostáva {m} minút {s} sekúnd"
   remainingSeconds: "zostáva {s} sekúnd"
 _visibility:
+
   public: "Verejné"
   publicDescription: "Vaša poznámku bude viditeľná všetkým používateľom"
   home: "Domov"
@@ -1261,10 +1302,12 @@ _visibility:
   specified: "Priame"
   specifiedDescription: "Viditeľné iba pre konkrétnych používateľov"
 _postForm:
+
   replyPlaceholder: "Odpoveď na túto poznámku..."
   quotePlaceholder: "Citovanie tejto poznámky..."
   channelPlaceholder: "Poslať do kanála..."
   _placeholders:
+
     a: "Čo máte v pláne?"
     b: "Čo sa deje?"
     c: "O čom rozmýšľaš?"
@@ -1272,6 +1315,7 @@ _postForm:
     e: "Začnite písať..."
     f: "Čaká sa na písanie..."
 _profile:
+
   name: "Názov"
   username: "Meno používateľa"
   description: "Bio"
@@ -1284,6 +1328,7 @@ _profile:
   changeAvatar: "Zmeniť avatara"
   changeBanner: "Zmeniť banner"
 _exportOrImport:
+
   allNotes: "Všetky poznámky"
   clips: "Klip"
   followingList: "Sledujete"
@@ -1293,6 +1338,7 @@ _exportOrImport:
   excludeMutingUsers: "Vylúčiť stíšených používateľov"
   excludeInactiveUsers: "Vylúčiť neaktívnych používateľov"
 _charts:
+
   federation: "Federácia"
   apRequest: "Žiadosti"
   usersIncDec: "Rozdiel v počte používateľov"
@@ -1307,6 +1353,7 @@ _charts:
   storageUsageIncDec: "Rozdiel využitého úložiska"
   storageUsageTotal: "Celkové využité úložisko"
 _instanceCharts:
+
   requests: "Žiadosti"
   users: "Rozdiel v počte používateľov"
   usersTotal: "Celkom spolu počet používateľov"
@@ -1319,17 +1366,20 @@ _instanceCharts:
   files: "Rozdiel v počte súborov"
   filesTotal: "Celkom spolu počet súborov"
 _timelines:
+
   home: "Domov"
   local: "Lokálne"
   social: "Sociálne"
   global: "Globálne"
 _play:
+
   viewSource: "Ukázať zdroj"
   featured: "Význačné"
   title: "Nadpis"
   script: "Skript"
   summary: "Popis"
 _pages:
+
   newPage: "Vytvoriť novú stránku"
   editPage: "Upraviť túto stránku"
   readPage: "Zobrazenie zdroja aktívne"
@@ -1365,6 +1415,7 @@ _pages:
   inputBlocks: "Vstup"
   specialBlocks: "Špeciálne"
   blocks:
+
     text: "Text"
     textarea: "Textové pole"
     section: "Sekcia"
@@ -1372,14 +1423,17 @@ _pages:
     button: "Tlačidlo"
     note: "Vložená poznámka"
     _note:
+
       id: "ID poznámky"
       idDescription: "Alebo môžete vložiť URL poznámky sem"
       detailed: "Podrobný pohľad"
 _relayStatus:
+
   requesting: "Čaká sa"
   accepted: "Akceptované"
   rejected: "Odmietnuté"
 _notification:
+
   fileUploaded: "Súbor sa úspešne nahral"
   youGotMention: "{name} vás spomenul/a"
   youGotReply: "{name} vám odpovedal/a"
@@ -1392,6 +1446,7 @@ _notification:
   unreadAntennaNote: "Anténa {name}"
   emptyPushNotificationMessage: "Push notifikácie aktualizované"
   _types:
+
     all: "Všetky"
     follow: "Sledujete"
     mention: "Zmienka"
@@ -1405,10 +1460,12 @@ _notification:
     login: "Prihlásiť sa"
     app: "Oznámenia z prepojených aplikácií"
   _actions:
+
     followBack: "Sledovať späť\n"
     reply: "Odpovedať"
     renote: "Preposlať"
 _deck:
+
   alwaysShowMainColumn: "Vždy zobraziť v hlavnom stĺpci"
   columnAlign: "Zarovnať stĺpce"
   addColumn: "Pridať stĺpec"
@@ -1426,6 +1483,7 @@ _deck:
   introduction2: "Stlačením tlačidla + v pravej časti obrazovky môžete kedykoľvek pridať stĺpce."
   widgetsIntroduction: "V ponuke stĺpca vyberte možnosť \"Upraviť widget\" a pridajte widget"
   _columns:
+
     main: "Hlavný"
     widgets: "Widgety"
     notifications: "Oznámenia"
@@ -1436,20 +1494,29 @@ _deck:
     mentions: "Zmienky"
     direct: "Priame poznámky"
 _webhookSettings:
+
   name: "Názov"
   active: "Zapnuté"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "Email"
 _moderationLogTypes:
+
   suspend: "Zmraziť"
   resetPassword: "Resetovať heslo"
 _reversi:
+
   total: "Celkom"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Nenájdené"
 _search:
+
   searchScopeAll: "Všetko"
   searchScopeLocal: "Lokálne"

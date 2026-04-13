@@ -289,22 +289,30 @@ renotes: "Κοινοποίηση σημειώματος"
 postForm: "Φόρμα δημοσίευσης"
 information: "Πληροφορίες"
 _chat:
+
   members: "Μέλη"
   home: "Κεντρικό"
 _email:
+
   _follow:
+
     title: "Έχετε ένα νέο ακόλουθο"
 _channel:
+
   featured: "Δημοφιλή"
 _theme:
+
   keys:
+
     panel: "Πίνακας"
     mention: "Επισήμανση"
     renote: "Κοινοποίηση σημειώματος"
 _sfx:
+
   note: "Σημειώματα"
   notification: "Ειδοποιήσεις"
 _ago:
+
   future: "Μελλοντικό"
   justNow: "Μόλις τώρα"
   secondsAgo: "{n} δευτερόλεπτο(α) πριν"
@@ -315,6 +323,7 @@ _ago:
   monthsAgo: "{n} μήνα(ες) πριν"
   yearsAgo: "{n} έτος(η) πριν"
 _permissions:
+
   "write:drive": "Επεξεργαστείτε ή διαγράψτε τα αρχεία και τους φακέλους του Αποθηκευτικού Χώρου σας"
   "read:favorites": "Δείτε τη λίστα των αγαπημένων σας"
   "write:favorites": "Επεξεργαστείτε τη λίστα των αγαπημένων σας"
@@ -326,11 +335,13 @@ _permissions:
   "write:pages": "Επεξεργαστείτε ή διαγράψτε τις σελίδες σας"
   "write:chat": "Γράψτε ή διαγράψτε μηνύματα συνομιλίας"
 _antennaSources:
+
   all: "Όλα τα σημειώματα"
   homeTimeline: "Σημειώματα από μέλη που ακολουθείτε"
   users: "Σημειώματα από συγκεκριμένα μέλη"
   userList: "Σημειώματα από καθορισμένη λίστα μελών"
 _widgets:
+
   profile: "Προφίλ"
   instanceInfo: "Πληροφορίες του instance"
   notifications: "Ειδοποιήσεις"
@@ -346,17 +357,22 @@ _widgets:
   button: "Κουμπί"
   onlineUsers: "Συνδεδεμένα μέλη"
   _userList:
+
     chooseList: "Επιλέξτε μία λίστα"
 _cw:
+
   show: "Δείτε περισσότερα"
 _visibility:
+
   home: "Κεντρικό"
   homeDescription: "Δημοσίευση στο κεντρικό χρονολόγιο μόνο"
   followers: "Ακολουθούν"
 _profile:
+
   name: "Όνομα"
   username: "Όνομα μέλους"
 _exportOrImport:
+
   allNotes: "Όλα τα σημειώματα"
   clips: "Κλιπ"
   followingList: "Ακολουθεί"
@@ -364,19 +380,25 @@ _exportOrImport:
   blockingList: "Μπλοκαρισμένα μέλη"
   userLists: "Λίστες"
 _charts:
+
   federation: "Ομοσπονδία"
 _timelines:
+
   home: "Κεντρικό"
   local: "Τοπικό"
   social: "Κοινωνικό"
   global: "Παγκόσμιο"
 _pages:
+
   viewPage: "Δείτε τις Σελίδες σας"
   blocks:
+
     image: "Εικόνες"
 _notification:
+
   youWereFollowed: "σε ακολούθησε"
   _types:
+
     follow: "Νέοι ακόλουθοι"
     mention: "Επισήμανση"
     renote: "Κοινοποίηση σημειώματος"
@@ -384,11 +406,14 @@ _notification:
     reaction: "Αντιδράσεις"
     login: "Σύνδεση"
   _actions:
+
     reply: "Απάντηση"
     renote: "Κοινοποίηση σημειώματος"
 _deck:
+
   widgetsIntroduction: "Παρακαλούμε επιλέξτε \"Επεξεργασία μαραφετίων\" στο μενού και προσθέστε μαραφέτι."
   _columns:
+
     widgets: "Μαραφέτια"
     notifications: "Ειδοποιήσεις"
     tl: "Χρονολόγιο"
@@ -396,10 +421,14 @@ _deck:
     list: "Λίστα"
     mentions: "Επισημάνσεις"
 _webhookSettings:
+
   name: "Όνομα"
 _moderationLogTypes:
+
   suspend: "Αποβολή"
 _reversi:
+
   total: "Σύνολο"
 _search:
+
   searchScopeLocal: "Τοπικό"

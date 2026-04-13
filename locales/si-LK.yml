@@ -14,9 +14,13 @@ smtpUser: "පරිශීලක නාමය"
 smtpPass: "මුරපදය"
 user: "පරිශීලක"
 _sfx:
+
   note: "නෝට්"
 _profile:
+
   username: "පරිශීලක නාමය"
 _notification:
+
   _types:
+
     login: "පිවිසෙන්න"

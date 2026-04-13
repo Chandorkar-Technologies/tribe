@@ -5,6 +5,8 @@ forwardReportIsAnonymous: "Untuk melindungi privasi akun kamu, akun anonim dari 
 abuseMarkAsResolved: "Tandai laporan sebagai selesai"
 replies: "Balasan"
 _initialTutorial:
+
   _reaction:
+
     letsTryReacting: "Reaksi dapat ditambahkan dengan mengklik tombol '{reaction}' pada catatan. Coba lakukan mereaksi contoh catatan ini!"
     reactDone: "Kamu dapat mengurungkan reaksi dengan menekan tombol '{undo}'."

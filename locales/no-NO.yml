@@ -1,7 +1,7 @@
 ---
 _lang_: "Norsk Bokmål"
-headlineMisskey: "Et nettverk forbundet med Notes"
-introMisskey: "Velkommen! Misskey er en desentralisert mikrobloggtjeneste med åpen kildekode.\nOpprett \"Notes\" for å dele tankene dine med alle rundt deg. 📡\nMed \"reaksjoner\" kan du også raskt gi uttrykk for hva du synes om alles Notes. 👍\nLa oss utforske en ny verden! 🚀"
+headlineMisskey: "Et nettverk forbundet med Sparks"
+introMisskey: "Velkommen! Tribe er en desentralisert mikrobloggtjeneste med åpen kildekode.\nOpprett \"Sparks\" for å dele tankene dine med alle rundt deg. 📡\nMed \"reaksjoner\" kan du også raskt gi uttrykk for hva du synes om alles Sparks. 👍\nLa oss utforske en ny verden! 🚀"
 monthAndDay: "{day}-{month}"
 search: "Søk"
 notifications: "Varsler"
@@ -14,8 +14,8 @@ gotIt: "Skjønner"
 cancel: "Avbryt"
 noThankYou: "Ikke nå"
 enterUsername: "Skriv inn brukernavn"
-renotedBy: "Renotes av {user}"
-noNotes: "Ingen Notes"
+renotedBy: "Re-sparks av {user}"
+noNotes: "Ingen Sparks"
 noNotifications: "Ingen varsler"
 instance: "Server"
 settings: "Innstillinger"
@@ -46,7 +46,7 @@ copyContent: "Kopier innhold"
 copyLink: "Kopier lenke"
 delete: "Slett"
 deleteAndEdit: "Slett og rediger"
-deleteAndEditConfirm: "Er du sikker på at du vil slette denne Noten og redigere den? Du vil miste alle reaksjoner, Renotes og svar på den."
+deleteAndEditConfirm: "Er du sikker på at du vil slette denne Noten og redigere den? Du vil miste alle reaksjoner, Re-sparks og svar på den."
 addToList: "Legg til i liste"
 sendMessage: "Send en melding"
 copyRSS: "Kopier RSS"
@@ -68,8 +68,8 @@ unfollowConfirm: "Er du sikker på at du vil slutte å følge {name}?"
 importRequested: "Du har bedt om import. Dette kan ta en stund."
 lists: "Lister"
 noLists: "Ingen lister"
-note: "Note"
-notes: "Notes"
+note: "Spark"
+notes: "Sparks"
 following: "Følger"
 followers: "Følgere"
 followsYou: "Følger deg"
@@ -88,14 +88,14 @@ followRequests: "Følgeforespørsel"
 unfollow: "Avfølg"
 followRequestPending: "Venter på godkjenning"
 enterEmoji: "Skriv inn en emoji"
-renote: "Renote"
+renote: "Re-spark"
 renoted: "Renotet."
-cantRenote: "Dette innlegget kan ikke renotes."
-cantReRenote: "En Renote kan ikke renotes."
+cantRenote: "Dette innlegget kan ikke re-sparks."
+cantReRenote: "En Re-spark kan ikke re-sparks."
 quote: "Sitat"
-inChannelRenote: "Renote kun for kanal"
+inChannelRenote: "Re-spark kun for kanal"
 inChannelQuote: "Sitat kun for kanal"
-pinnedNote: "Festet Note"
+pinnedNote: "Festet Spark"
 pinned: "Fest til profil"
 you: "Du"
 clickToShow: "Klikk for å vise"
@@ -103,13 +103,13 @@ add: "Legg til"
 reaction: "Reaksjon"
 reactions: "Reaksjoner"
 reactionSettingDescription2: "Dra for å endre rekkefølgen, klikk for å slette, trykk \"+\" for å legge til."
-rememberNoteVisibility: "Husk innstillingene for synlighet av Notes"
+rememberNoteVisibility: "Husk innstillingene for synlighet av Sparks"
 attachCancel: "Fjern vedlegg"
 enterFileName: "Skriv inn filnavn"
 mute: "Skjul"
 unmute: "Vis"
-renoteMute: "Skjul Renotes"
-renoteUnmute: "Vis Renotes"
+renoteMute: "Skjul Re-sparks"
+renoteUnmute: "Vis Re-sparks"
 block: "Blokker"
 unblock: "Opphev blokkering"
 suspend: "Suspender"
@@ -171,7 +171,7 @@ noUsers: "Det er ingen brukere"
 editProfile: "Rediger profil"
 noteDeleteConfirm: "Er du sikker på at du vil slette denne Noten?"
 pinLimitExceeded: "Du kan ikke feste flere."
-intro: "Installasjonen av Misskey er ferdig! Vennligst opprett en administratorkonto."
+intro: "Installasjonen av Tribe er ferdig! Vennligst opprett en administratorkonto."
 done: "Ferdig"
 default: "Standard"
 defaultValueIs: "Standard: {value}"
@@ -265,7 +265,7 @@ basicInfo: "Grunnleggende informasjon"
 pinnedUsers: "Festede brukrere"
 pinnedUsersDescription: "Liste over brukernavn atskilt med linjeskift som skal festes i \"Utforsk\" fanen."
 pinnedPages: "Festede sider"
-pinnedNotes: "Festet Note"
+pinnedNotes: "Festet Spark"
 hcaptcha: "hCaptcha"
 enableHcaptcha: "Aktiver hCaptcha"
 recaptcha: "reCAPTCHA"
@@ -275,20 +275,20 @@ enableTurnstile: "Aktiver Turnstile"
 antennas: "Antenner"
 name: "Navn"
 antennaSource: "Antennekilde"
-notifyAntenna: "Varsle om nye Notes"
-withFileAntenna: "Bare Notes med filer"
-notesAndReplies: "Notes og svar"
+notifyAntenna: "Varsle om nye Sparks"
+withFileAntenna: "Bare Sparks med filer"
+notesAndReplies: "Sparks og svar"
 popularUsers: "Populære brukere"
 exploreUsersCount: "Det finnes {count} brukere"
 exploreFediverse: "Utforsk Fediverse"
 userList: "Lister"
 about: "Informasjon"
-aboutMisskey: "Om Misskey"
+aboutMisskey: "Om Tribe"
 newPasswordIs: "Det nye passordet er \"{password}\"."
 share: "Del"
 notFound: "Ikke funnet"
 markAsReadAllNotifications: "Merk alle varsler som lest"
-markAsReadAllUnreadNotes: "Merk alle Notes som lest"
+markAsReadAllUnreadNotes: "Merk alle Sparks som lest"
 help: "Hjelp"
 inputMessageHere: "Skriv inn melding her"
 close: "Lukk"
@@ -322,7 +322,7 @@ objectStorageRegion: "Region"
 objectStorageUseSSL: "Bruk SSL"
 objectStorageUseProxy: "Bruk Proxy"
 deleteAll: "Slett alt"
-newNoteRecived: "Det er nye Notes"
+newNoteRecived: "Det er nye Sparks"
 listen: "Lytt"
 none: "Ingen"
 volume: "Volum"
@@ -365,7 +365,7 @@ waitingFor: "Venter på {x}"
 random: "Tilfeldig"
 system: "System"
 desktop: "Skrivebord"
-i18nInfo: "Misskey oversettes til flere språk av frivillige. Du kan hjelpe til på {link}."
+i18nInfo: "Tribe oversettes til flere språk av frivillige. Du kan hjelpe til på {link}."
 followingCount: "Følger"
 followersCount: "Følgere"
 yes: "Ja"
@@ -375,7 +375,7 @@ developer: "Utvikler"
 makeExplorable: "Gjør konto synlig i \"Utforsk\""
 makeExplorableDescription: "Hvis du slår av dette, vises ikke kontoen din i \"Utforsk\" delen."
 left: "Venstre"
-nNotes: "{n} Notes"
+nNotes: "{n} Sparks"
 saveAs: "Lagre som"
 value: "Verdi"
 deleteConfirm: "Vil du slette?"
@@ -400,7 +400,7 @@ low: "Lav"
 sent: "Sendt"
 received: "Mottatt"
 learnMore: "Les mer"
-misskeyUpdated: "Misskey har blitt oppdatert!"
+misskeyUpdated: "Tribe har blitt oppdatert!"
 translate: "Oversett"
 translatedFrom: "Oversatt fra {x}"
 unread: "Ulest"
@@ -439,7 +439,7 @@ numberOfLikes: "Likerklikk"
 show: "Vis"
 neverShow: "Ikke vis igjen"
 remindMeLater: "Kanskje senere"
-didYouLikeMisskey: "Likte du Misskey?"
+didYouLikeMisskey: "Likte du Tribe?"
 roles: "Roller"
 role: "Rolle"
 color: "Farge"
@@ -459,138 +459,192 @@ youFollowing: "Følger"
 options: "Alternativ"
 icon: "Avatar"
 replies: "Svar"
-renotes: "Renote"
+renotes: "Re-spark"
 surrender: "Avbryt"
 information: "Informasjon"
 _chat:
+
   invitations: "Inviter"
   members: "Medlemmer"
   home: "Hjem"
   send: "Send"
 _delivery:
+
   stop: "Suspendert"
 _initialAccountSetting:
+
   theseSettingsCanEditLater: "Du kan endre disse innstillingene senere."
 _achievements:
+
   _types:
+
     _notes10:
-      title: "Noen Notes"
+
+      title: "Noen Sparks"
     _notes100:
-      title: "Mange Notes"
+
+      title: "Mange Sparks"
     _notes500:
-      title: "Dekket i Notes"
+
+      title: "Dekket i Sparks"
     _notes1000:
-      title: "Et fjell av Notes"
+
+      title: "Et fjell av Sparks"
     _notes5000:
-      title: "Overfylte Notes"
+
+      title: "Overfylte Sparks"
     _notes10000:
-      title: "Super Notes"
+
+      title: "Super Sparks"
     _notes20000:
-      title: "Trenger... mer... Notes..."
+
+      title: "Trenger... mer... Sparks..."
     _notes30000:
-      title: "Notes Notes Notes!"
+
+      title: "Sparks Sparks Sparks!"
     _notes40000:
-      title: "Note fabrikk"
+
+      title: "Spark fabrikk"
     _notes50000:
-      title: "Planet av Notes"
+
+      title: "Planet av Sparks"
     _notes100000:
+
       flavor: "Du har jammen mye å si."
     _noteFavorited1:
+
       title: "Stjernekikker"
     _myNoteFavorited1:
+
       title: "Jeg vil gjerne få en stjerne"
     _following50:
+
       title: "Mange venner"
     _following100:
+
       title: "100 venner"
     _following300:
+
       title: "For mange venner"
     _followers10:
+
       title: "Følg meg!"
     _followers100:
+
       title: "Populær"
     _postedAtLateNight:
+
       flavor: "Det er på tide å gå til sengs."
     _driveFolderCircularReference:
+
       title: "Rundskrivreferanse"
     _reactWithoutRead:
+
       title: "Leste du det virkelig?"
     _clickedClickHere:
+
       title: "Klikk her"
       description: "Du har klikket her"
     _justPlainLucky:
+
       title: "Rett og slett heldig"
     _setNameToSyuilo:
+
       description: "Du satte navnet ditt til \"syuilo\""
     _passedSinceAccountCreated1:
+
       title: "Ett års jubileum"
       description: "Det har gått ett år siden kontoen din ble opprettet"
     _passedSinceAccountCreated2:
+
       title: "To års jubileum"
       description: "Det har gått to år siden kontoen din ble opprettet"
     _passedSinceAccountCreated3:
+
       title: "Tre års jubileum"
       description: "Det har gått tre år siden kontoen din ble opprettet"
     _loggedInOnBirthday:
+
       title: "Gratulerer med dagen"
       description: "Du logget inn på bursdagen din"
     _loggedInOnNewYearsDay:
+
       title: "Godt nytt år"
       description: "Du logget inn på årets første dag"
     _cookieClicked:
+
       description: "Du klikket på kjeksen"
       flavor: "Er du på riktig nettsted?"
     _brainDiver:
+
       title: "Brain Diver"
-      flavor: "Misskey-Misskey La-Tu-Ma"
+      flavor: "Tribe-Tribe La-Tu-Ma"
 _role:
+
   options: "Alternativ"
   _priority:
+
     low: "Lav"
     high: "Høy"
 _emailUnavailable:
+
   used: "Allerede brukt"
 _accountDelete:
+
   accountDelete: "Slett konto"
 _ad:
+
   hide: "Ikke vis"
 _gallery:
+
   like: "Liker!"
   unlike: "Liker ikke"
 _email:
+
   _follow:
+
     title: "fulgte deg"
 _preferencesBackups:
+
   saveNew: "Lagre som ny"
   cannotSave: "Kunne ikke lagre"
 _registry:
+
   key: "Nøkkel"
   keys: "Nøkler"
 _aboutMisskey:
-  about: "Misskey er programvare med åpen kildekode som har blitt utviklet av syuilo siden 2014."
-  translation: "Oversett Misskey"
+
+  about: "Tribe er programvare med åpen kildekode som har blitt utviklet av syuilo siden 2014."
+  translation: "Oversett Tribe"
 _instanceTicker:
+
   none: "Ikke vis"
   always: "Alltid vis"
 _channel:
+
   create: "Opprett kanal"
   edit: "Rediger kanal"
   featured: "Populært"
   following: "Følger"
   nameAndDescription: "Navn og beskrivelse"
 _menuDisplay:
+
   hide: "Skjul"
 _theme:
+
   description: "Beskrivelse"
   color: "Farge"
   key: "Nøkkel"
   keys:
+
     link: "Lenke"
-    renote: "Renote"
+    renote: "Re-spark"
 _sfx:
-  note: "Notes"
+
+  note: "Sparks"
   notification: "Varsler"
 _ago:
+
   future: "Fremitid"
   justNow: "Akkurat nå"
   secondsAgo: "{n}s siden"
@@ -602,13 +656,16 @@ _ago:
   yearsAgo: "{n} år siden"
   invalid: "Ingenting"
 _time:
+
   second: "Sekunder"
   minute: "Minutter"
   hour: "Timer"
   day: "Dager"
 _2fa:
+
   renewTOTPCancel: "Avbryt"
 _weekday:
+
   sunday: "Søndag"
   monday: "Mandag"
   tuesday: "Tirsdag"
@@ -617,6 +674,7 @@ _weekday:
   friday: "Fredag"
   saturday: "Lørdag"
 _widgets:
+
   profile: "Profil"
   instanceInfo: "Serverinformasjon"
   notifications: "Varsler"
@@ -631,11 +689,14 @@ _widgets:
   aiscriptApp: "AiScript App"
   userList: "Brukerliste"
   _userList:
+
     chooseList: "Velg liste"
 _cw:
+
   hide: "Skjul"
   show: "Vis mer"
 _poll:
+
   noOnlyOneChoice: "Trenger minst to valger."
   choiceN: "Valg {n}"
   noMore: "Du kan ikke legge til flere."
@@ -646,37 +707,47 @@ _poll:
   voted: "Stemt"
   closed: "Avsluttet"
 _visibility:
+
   home: "Hjem"
   followers: "Følgere"
 _postForm:
+
   _placeholders:
+
     a: "Hva skjer?"
 _profile:
+
   name: "Navn"
   username: "Brukernavn"
   description: "Biografi"
   metadataContent: "Innhold"
 _exportOrImport:
+
   followingList: "Følg"
   muteList: "Skjul"
   blockingList: "Blokker"
   userLists: "Lister"
 _charts:
+
   federation: "Føderasjon"
   filesIncDec: "Forskjell på antall filer"
 _instanceCharts:
+
   users: "Forskjell på antall brukere"
   ff: "Forskjell på antall Følg/Følgere"
   files: "Forskjell på antall filer"
 _timelines:
+
   home: "Hjem"
 _play:
+
   new: "Opprett Play"
   edit: "Rediger Play"
   featured: "Populært"
   title: "Tittel"
   summary: "Beskrivelse"
 _pages:
+
   invalidNameText: "Pass på at sidetittelen ikke er tom"
   like: "Liker"
   unlike: "Liker ikke"
@@ -690,25 +761,30 @@ _pages:
   fontSansSerif: "Sans Serif"
   selectType: "Velg type"
   blocks:
+
     text: "Tekst"
     section: "Seksjon"
     image: "Bilde"
     button: "Knapp"
 _notification:
+
   youWereFollowed: "fulgte deg"
   unreadAntennaNote: "Antenne {name}"
   achievementEarned: "Prestasjon låst opp"
   _types:
+
     follow: "Nye følgere"
     reply: "Svar"
-    renote: "Renotes"
+    renote: "Re-sparks"
     quote: "Sitater"
     reaction: "Reaksjoner"
     login: "Logg inn"
   _actions:
+
     reply: "Svar"
-    renote: "Renote"
+    renote: "Re-spark"
 _deck:
+
   swapLeft: "Flytt til venstre"
   swapRight: "Flytt til høyre"
   swapUp: "Flytt opp"
@@ -717,6 +793,7 @@ _deck:
   newProfile: "Ny profil"
   deleteProfile: "Slett profil"
   _columns:
+
     notifications: "Varsler"
     tl: "Tidslinje"
     antenna: "Antenner"
@@ -724,15 +801,23 @@ _deck:
     channel: "Kanaler"
     direct: "Direkte"
 _webhookSettings:
+
   name: "Navn"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "E-post"
 _moderationLogTypes:
+
   suspend: "Suspender"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Ikke funnet"
 _search:
+
   searchScopeAll: "Alle"

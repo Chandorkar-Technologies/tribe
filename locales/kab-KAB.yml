@@ -58,32 +58,45 @@ file: "Ifuyla"
 account: "Imiḍan"
 replies: "Err"
 _email:
+
   _follow:
+
     title: "Yeṭṭafaṛ-ik·em-id"
 _theme:
+
   keys:
+
     mention: "Bder"
 _sfx:
+
   notification: "Ilɣuyen"
 _permissions:
+
   "write:account": "Ẓreg talɣut n umiḍan-ik·im"
 _widgets:
+
   profile: "Amaɣnu"
   notifications: "Ilɣuyen"
   _userList:
+
     chooseList: "Fren tabdart"
 _cw:
+
   show: "Wali ugar"
 _visibility:
+
   followers: "Imeḍfaṛen"
 _profile:
+
   username: "Isem n umseqdac"
 _exportOrImport:
+
   followingList: "Ig ṭṭafaṛ"
   muteList: "Sgugem"
   blockingList: "Seḥbes"
   userLists: "Tibdarin"
 _pages:
+
   contents: "Agbur"
   font: "Tasefsit"
   fontSerif: "Serif"
@@ -94,17 +107,25 @@ _pages:
   inputBlocks: "Anekcum"
   specialBlocks: "Uzzig"
 _notification:
+
   youWereFollowed: "Yeṭṭafaṛ-ik·em-id"
   _types:
+
     follow: "Ig ṭṭafaṛ"
     mention: "Bder"
   _actions:
+
     reply: "Err"
 _deck:
+
   _columns:
+
     notifications: "Ilɣuyen"
     list: "Tibdarin"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "Imayl"

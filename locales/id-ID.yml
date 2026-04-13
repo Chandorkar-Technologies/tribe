@@ -1,8 +1,8 @@
 ---
 _lang_: "Bahasa Indonesia"
 headlineMisskey: "Jaringan terhubung melalui catatan"
-introMisskey: "Selamat datang! Misskey adalah perangkat mikroblog tercatu bersifat sumber terbuka.\nMulailah menuliskan catatan, bagikan peristiwa terkini, serta ceritakan segala tentangmu.📡\nTunjukkan juga reaksimu pada catatan pengguna lain.👍\nMari jelajahi dunia baru🚀"
-poweredByMisskeyDescription: "{name} adalah sebuah layanan (instance) yang menggunakan platform sumber terbuka <b>Misskey</b>."
+introMisskey: "Selamat datang! Tribe adalah perangkat mikroblog tercatu bersifat sumber terbuka.\nMulailah menuliskan catatan, bagikan peristiwa terkini, serta ceritakan segala tentangmu.📡\nTunjukkan juga reaksimu pada catatan pengguna lain.👍\nMari jelajahi dunia baru🚀"
+poweredByMisskeyDescription: "{name} adalah sebuah layanan (instance) yang menggunakan platform sumber terbuka <b>Tribe</b>."
 monthAndDay: "{day} {month}"
 search: "Penelusuran"
 notifications: "Notifikasi"
@@ -45,10 +45,10 @@ pin: "Sematkan ke profil"
 unpin: "Lepas sematan dari profil"
 copyContent: "Salin konten"
 copyLink: "Salin tautan"
-copyLinkRenote: "Salin tautan renote"
+copyLinkRenote: "Salin tautan re-spark"
 delete: "Hapus"
 deleteAndEdit: "Hapus dan sunting"
-deleteAndEditConfirm: "Apakah kamu yakin ingin menghapus note ini dan menyuntingnya? Kamu akan kehilangan semua reaksi, renote dan balasan di note ini."
+deleteAndEditConfirm: "Apakah kamu yakin ingin menghapus spark ini dan menyuntingnya? Kamu akan kehilangan semua reaksi, re-spark dan balasan di spark ini."
 addToList: "Tambahkan ke daftar"
 addToAntenna: "Tambahkan ke Antena"
 sendMessage: "Kirim pesan"
@@ -106,17 +106,17 @@ followRequests: "Permintaan mengikuti"
 unfollow: "Berhenti mengikuti"
 followRequestPending: "Permintaan mengikuti yang menunggu"
 enterEmoji: "Masukkan emoji"
-renote: "Renote"
-unrenote: "Hapus renote"
+renote: "Re-spark"
+unrenote: "Hapus re-spark"
 renoted: "Telah direnote"
 renotedToX: "{name} telah merenote"
 cantRenote: "Postingan ini tidak dapat direnote"
-cantReRenote: "Renote tidak dapat direnote"
+cantReRenote: "Re-spark tidak dapat direnote"
 quote: "Kutip"
-inChannelRenote: "Hanya renote dalam kanal"
+inChannelRenote: "Hanya re-spark dalam kanal"
 inChannelQuote: "Hanya kutip dalam kanal"
-renoteToChannel: "Renote ke kanal"
-renoteToOtherChannel: "Renote ke kanal lainnya"
+renoteToChannel: "Re-spark ke kanal"
+renoteToOtherChannel: "Re-spark ke kanal lainnya"
 pinnedNote: "Catatan yang disematkan"
 pinned: "Sematkan ke profil"
 you: "Kamu"
@@ -140,8 +140,8 @@ unmarkAsSensitive: "Hapus tanda konten sensitif"
 enterFileName: "Masukkan nama berkas"
 mute: "Bisukan"
 unmute: "Hapus bisukan"
-renoteMute: "Matikan renote"
-renoteUnmute: "Batal mematikan renote"
+renoteMute: "Matikan re-spark"
+renoteUnmute: "Batal mematikan re-spark"
 block: "Blokir"
 unblock: "Buka blokir"
 suspend: "Tangguhkan"
@@ -172,7 +172,7 @@ youCanCleanRemoteFilesCache: "Kamu dapat mengosongkan tembolok dengan mengeklik 
 cacheRemoteSensitiveFiles: "Tembolokkan berkas dari instansi luar"
 cacheRemoteSensitiveFilesDescription: "Menonaktifkan pengaturan ini menyebabkan berkas sensitif dari instansi luar ditautkan secara langsung, bukan ditembolok."
 flagAsBot: "Atur akun ini sebagai Bot"
-flagAsBotDescription: "Jika akun ini dikendalikan oleh program, tetapkanlah opsi ini. Jika diaktifkan, ini akan berfungsi sebagai tanda bagi pengembang lain untuk mencegah interaksi berantai dengan bot lain dan menyesuaikan sistem internal Misskey untuk memperlakukan akun ini sebagai bot."
+flagAsBotDescription: "Jika akun ini dikendalikan oleh program, tetapkanlah opsi ini. Jika diaktifkan, ini akan berfungsi sebagai tanda bagi pengembang lain untuk mencegah interaksi berantai dengan bot lain dan menyesuaikan sistem internal Tribe untuk memperlakukan akun ini sebagai bot."
 flagAsCat: "Atur akun ini sebagai kucing"
 flagAsCatDescription: "Nyalakan tanda ini untuk menandai akun ini sebagai kucing."
 flagShowTimelineReplies: "Tampilkan balasan di lini masa"
@@ -183,7 +183,7 @@ reloadAccountsList: "Muat ulang daftar akun"
 loginFailed: "Gagal untuk masuk"
 showOnRemote: "Lihat profil asli"
 continueOnRemote: "Lihat di peladen asal"
-chooseServerOnMisskeyHub: "Pilih peladen dari Misskey Hub"
+chooseServerOnMisskeyHub: "Pilih peladen dari Tribe Hub"
 specifyServerHost: "Tentukan domain peladen"
 inputHostName: "Masukkan nama domain"
 general: "Umum"
@@ -241,7 +241,7 @@ noUsers: "Tidak ada pengguna"
 editProfile: "Sunting profil"
 noteDeleteConfirm: "Apakah kamu yakin ingin menghapus catatan ini?"
 pinLimitExceeded: "Kamu tidak dapat menyematkan catatan lagi"
-intro: "Instalasi Misskey telah selesai! Mohon untuk membuat pengguna admin."
+intro: "Instalasi Tribe telah selesai! Mohon untuk membuat pengguna admin."
 done: "Selesai"
 processing: "Memproses"
 preview: "Pratinjau"
@@ -434,7 +434,7 @@ exploreFediverse: "Jelajahi Fediverse"
 popularTags: "Tag populer"
 userList: "Daftar"
 about: "Informasi"
-aboutMisskey: "Tentang Misskey"
+aboutMisskey: "Tentang Tribe"
 administrator: "Admin"
 token: "Token"
 2fa: "Autentikasi 2-faktor"
@@ -569,7 +569,7 @@ popout: "Pop-out"
 volume: "Volume"
 masterVolume: "Master volume"
 notUseSound: "Tidak ada keluaran suara"
-useSoundOnlyWhenActive: "Hanya keluarkan suara jika Misskey sedang aktif"
+useSoundOnlyWhenActive: "Hanya keluarkan suara jika Tribe sedang aktif"
 details: "Selengkapnya"
 chooseEmoji: "Pilih emoji"
 unableToProcess: "Operasi tersebut tidak dapat diselesaikan."
@@ -585,7 +585,7 @@ sort: "Urutkan"
 ascendingOrder: "Urutkan naik"
 descendingOrder: "Urutkan menurun"
 scratchpad: "Scratchpad"
-scratchpadDescription: "Scratchpad menyediakan lingkungan eksperimen untuk AiScript. Kamu  bisa menulis, mengeksuksi, serta mengecek hasil yang berinteraksi dengan Misskey."
+scratchpadDescription: "Scratchpad menyediakan lingkungan eksperimen untuk AiScript. Kamu  bisa menulis, mengeksuksi, serta mengecek hasil yang berinteraksi dengan Tribe."
 output: "Keluaran"
 script: "Script"
 disablePagesScript: "Nonaktifkan script pada halaman"
@@ -695,7 +695,7 @@ behavior: "Perilaku"
 sample: "Contoh"
 abuseReports: "Laporkan"
 reportAbuse: "Laporkan"
-reportAbuseRenote: "Laporkan renote"
+reportAbuseRenote: "Laporkan re-spark"
 reportAbuseOf: "Laporkan {name}"
 fillAbuseReportDescription: "Mohon isi rincian laporan. Jika laporan ini mengenai catatan yang spesifik, mohon lampirkan serta URL catatan tersebut."
 abuseReported: "Laporan kamu telah dikirimkan. Terima kasih."
@@ -721,14 +721,14 @@ unclip: "Batalkan klip"
 confirmToUnclipAlreadyClippedNote: "Catatan ini sudah disertakan di klip \"{name}\". Yakin ingin membatalkan catatan dari klip ini?"
 public: "Publik"
 private: "Tersembunyi"
-i18nInfo: "Misskey diterjemahkan ke dalam banyak bahasa oleh sukarelawan. Kamu juga dapat ikut membantu menerjemahkannya di {link}."
+i18nInfo: "Tribe diterjemahkan ke dalam banyak bahasa oleh sukarelawan. Kamu juga dapat ikut membantu menerjemahkannya di {link}."
 manageAccessTokens: "Kelola token akses"
 accountInfo: "Informasi akun"
 notesCount: "Jumlah catatan"
 repliesCount: "Jumlah balasan terkirim"
-renotesCount: "Jumlah renote terkirim"
+renotesCount: "Jumlah re-spark terkirim"
 repliedCount: "Jumlah balasan diterima"
-renotedCount: "Jumlah renote diterima"
+renotedCount: "Jumlah re-spark diterima"
 followingCount: "Jumlah akun yang diikuti"
 followersCount: "Jumlah pengikut"
 sentReactionsCount: "Jumlah reaksi yang terkirim"
@@ -775,7 +775,7 @@ onlineUsersCount: "{n} orang sedang daring"
 nUsers: "{n} Pengguna"
 nNotes: "{n} Catatan"
 sendErrorReports: "Kirim laporan kesalahan"
-sendErrorReportsDescription: "Ketika dinyalakan, informasi kesalahan rinci akan dibagikan dengan Misskey ketika masalah terjadi, hal ini untuk membantu kualitas Misskey. Fitur ini memungkinkan memuat informasi seperti sistem operasi yang kamu gunakan dan versinya, aplikasi peramban yang kamu gunakan, riwayat aktivitas kamu, dll."
+sendErrorReportsDescription: "Ketika dinyalakan, informasi kesalahan rinci akan dibagikan dengan Tribe ketika masalah terjadi, hal ini untuk membantu kualitas Tribe. Fitur ini memungkinkan memuat informasi seperti sistem operasi yang kamu gunakan dan versinya, aplikasi peramban yang kamu gunakan, riwayat aktivitas kamu, dll."
 myTheme: "Tema saya"
 backgroundColor: "Latar Belakang"
 accentColor: "Aksen"
@@ -869,7 +869,7 @@ hashtags: "Tagar"
 troubleshooting: "Penyelesaian Masalah"
 useBlurEffect: "Gunakan efek blur pada antarmuka"
 learnMore: "Pelajari lebih lanjut"
-misskeyUpdated: "Misskey telah dimutakhirkan!"
+misskeyUpdated: "Tribe telah dimutakhirkan!"
 whatIsNew: "Lihat perubahan pemutakhiran"
 translate: "Terjemahkan"
 translatedFrom: "Terjemahkan dari {x}"
@@ -1001,8 +1001,8 @@ numberOfLikes: "Jumlah yang disukai"
 show: "Tampilkan"
 neverShow: "Jangan tampilkan lagi"
 remindMeLater: "Mungkin nanti"
-didYouLikeMisskey: "Apakah kamu mulai menyukai Misskey?"
-pleaseDonate: "{host} menggunakan perangkat lunak bebas yaitu Misskey. Kami sangat mengapresiasi sekali donasi dari kamu agar pengembangan Misskey tetap dapat berlanjut!"
+didYouLikeMisskey: "Apakah kamu mulai menyukai Tribe?"
+pleaseDonate: "{host} menggunakan perangkat lunak bebas yaitu Tribe. Kami sangat mengapresiasi sekali donasi dari kamu agar pengembangan Tribe tetap dapat berlanjut!"
 correspondingSourceIsAvailable: "Sumber kode terkait tersedia di {anchor}"
 roles: "Peran"
 role: "Peran"
@@ -1030,7 +1030,7 @@ thisPostMayBeAnnoying: "Catatan ini mungkin dapat mengganggu orang lain."
 thisPostMayBeAnnoyingHome: "Catat ke lini masa beranda"
 thisPostMayBeAnnoyingCancel: "Batalkan"
 thisPostMayBeAnnoyingIgnore: "Tetap catat"
-collapseRenotes: "Tutup renote yang sudah kamu lihat"
+collapseRenotes: "Tutup re-spark yang sudah kamu lihat"
 internalServerError: "Kesalahan internal peladen"
 internalServerErrorDescription: "Peladen sedang mengalami galat tak terduga"
 copyErrorInfo: "Salin detil galat"
@@ -1086,7 +1086,7 @@ forceShowAds: "Selalu tampilkan iklan"
 addMemo: "Tambahkan memo"
 editMemo: "Sunting memo"
 reactionsList: "Reaksi"
-renotesList: "Renote"
+renotesList: "Re-spark"
 notificationDisplay: "Notifikasi"
 leftTop: "Kiri atas"
 rightTop: "Kanan atas"
@@ -1124,7 +1124,7 @@ rolesThatCanBeUsedThisEmojiAsReactionPublicRoleWarn: "Peran ini harus publik."
 cancelReactionConfirm: "Yakin untuk menghapus reaksimu?"
 changeReactionConfirm: "Yakin untuk mengganti reaksimu?"
 later: "Nanti saja"
-goToMisskey: "Ke Misskey"
+goToMisskey: "Ke Tribe"
 additionalEmojiDictionary: "Kamus emoji tambahan"
 installed: "Terpasang"
 branding: "Merek"
@@ -1159,7 +1159,7 @@ pastAnnouncements: "Pengumuman Terdahulu"
 youHaveUnreadAnnouncements: "Terdapat pengumuman yang belum dibaca"
 useSecurityKey: "Mohon ikuti instruksi peramban atau perangkat kamu untuk menggunakan kunci pengaman atau passkey."
 replies: "Balas"
-renotes: "Renote"
+renotes: "Re-spark"
 loadReplies: "Tampilkan balasan"
 loadConversation: "Tampilkan percakapan"
 pinnedList: "Daftar yang dipin"
@@ -1170,7 +1170,7 @@ unnotifyNotes: "Berhenti memberitahu mengenai catatan baru"
 authentication: "Autentikasi"
 authenticationRequiredToContinue: "Mohon autentikasikan terlebih dahulu sebelum melanjutkan"
 dateAndTime: "Tanggal dan Waktu"
-showRenotes: "Tampilkan renote"
+showRenotes: "Tampilkan re-spark"
 edited: "Telah disunting"
 notificationRecieveConfig: "Pengaturan notifikasi"
 mutualFollow: "Saling mengikuti"
@@ -1186,7 +1186,7 @@ externalServices: "Layanan eksternal"
 sourceCode: "Sumber kode"
 sourceCodeIsNotYetProvided: "Sumber kode belum tersedia. Hubungi admin untuk memperbaiki masalah ini."
 repositoryUrl: "URL Repositori"
-repositoryUrlDescription: "Jika kamu menggunakan Misskey begitu saja (tanpa ada perubahan dalam kode sumber), masukkan https://github.com/misskey-dev/misskey"
+repositoryUrlDescription: "Jika kamu menggunakan Tribe begitu saja (tanpa ada perubahan dalam kode sumber), masukkan https://github.com/misskey-dev/misskey"
 repositoryUrlOrTarballRequired: "Apabila kamu masih mempublikasikan repositori, kamu setidaknya harus menyediakan berkas tarball. Lihat .config/example.yml untuk informasi lebih lanjut."
 feedback: "Umpan balik"
 feedbackUrl: "URL Umpan balik"
@@ -1260,29 +1260,36 @@ prohibitedWordsForNameOfUser: "Kata yang dilarang untuk nama pengguna"
 postForm: "Buat catatan"
 information: "Informasi"
 _chat:
+
   invitations: "Undang"
   noHistory: "Tidak ada riwayat"
   members: "Anggota"
   home: "Beranda"
   send: "Kirim"
 _settings:
+
   webhook: "Webhook"
 _abuseUserReport:
+
   accept: "Setuju"
   reject: "Tolak"
 _delivery:
+
   status: "Status pengiriman"
   stop: "Ditangguhkan"
   resume: "Lanjutkan pengiriman"
   _type:
+
     none: "Sedang menyiarkan langsung"
     manuallySuspended: "Ditangguhkan manual"
     goneSuspended: "Sedang ditangguhkan untuk penghapusan peladen"
     autoSuspendedForNotResponding: "Sedang ditangguhkan karena peladen tidak menjawab"
 _bubbleGame:
+
   howToPlay: "Cara bermain"
   hold: "Tahan"
   _score:
+
     score: "Skor"
     scoreYen: "Jumlah uang didapat"
     highScore: "Skor tertinggi"
@@ -1291,10 +1298,12 @@ _bubbleGame:
     estimatedQty: "{qty} buah"
     scoreSweets: "{onigiriQtyWithUnit} onigiri"
   _howToPlay:
+
     section1: "Atur posisi dan jatuhkan obyek ke dalam kotak."
     section2: "Ketika dua obyek menyentuh tipe yang sama satu sama lain, obyek tersebut akan berganti dan kamu mendapatkan poin skor."
     section3: "Permainan berakhir jika obyek memenuhi kotak. Capai skor tertinggi dengan menggabungkan obyek bersama sambil menghindari obyek tersebut memenuhi kotak permainan!"
 _announcement:
+
   forExistingUsers: "Hanya pengguna yang telah ada"
   forExistingUsersDescription: "Pengumuman ini akan dimunculkan ke pengguna yang sudah ada dari titik waktu publikasi jika dinyalakan. Apabila dimatikan, mereka yang baru mendaftar setelah publikasi ini akan juga melihatnya."
   needConfirmationToRead: "Membutuhkan konfirmasi terpisah bahwa telah dibaca"
@@ -1308,6 +1317,7 @@ _announcement:
   silence: "Tiada notifikasi"
   silenceDescription: "Apabila diaktifkan, notifikasi dari pengumuman ini akan dilewatkan dan pengguna tidak perlu membacanya."
 _initialAccountSetting:
+
   accountCreated: "Akun kamu telah sukses dibuat!"
   letsStartAccountSetup: "Untuk pemula, ayo atur profilmu dulu."
   letsFillYourProfile: "Pertama, ayo atur profilmu dulu."
@@ -1319,26 +1329,30 @@ _initialAccountSetting:
   pushNotificationDescription: "Menyalakan notifikasi dorong akan membuatmu menerima notifikasi dari {name} secara langsung ke perangkatmu."
   initialAccountSettingCompleted: "Pengaturan profil selesai!"
   haveFun: "Selamat menikmati, {name}!"
-  youCanContinueTutorial: "Kamu dapat menjutkan ke tutorial dalam bagaimana menggunakan {name} (Misskey) atau kamu dapat keluar dari pemasangan ini dan langsung menggunakannya segera."
+  youCanContinueTutorial: "Kamu dapat menjutkan ke tutorial dalam bagaimana menggunakan {name} (Tribe) atau kamu dapat keluar dari pemasangan ini dan langsung menggunakannya segera."
   startTutorial: "Mulai Tutorial"
   skipAreYouSure: "Yakin melewati atur profil?"
   laterAreYouSure: "Yakin banget untuk atur profil nanti?"
 _initialTutorial:
+
   launchTutorial: "Lihat Tutorial"
   title: "Tutorial"
   wellDone: "Kerja bagus!"
   skipAreYouSure: "Berhenti dari Tutorial?"
   _landing:
+
     title: "Selamat datang di Tutorial"
-    description: "Di sini kamu dapat mempelajari dasar-dasar dari penggunaan Misskey dan fitur-fiturnya."
+    description: "Di sini kamu dapat mempelajari dasar-dasar dari penggunaan Tribe dan fitur-fiturnya."
   _note:
+
     title: "Apa itu Catatan?"
-    description: "Postingan di Misskey disebut sebagai 'Catatan'. Catatan ditampilkan secara kronologis pada lini masa dan dimutakhirkan secara real-time."
+    description: "Postingan di Tribe disebut sebagai 'Catatan'. Catatan ditampilkan secara kronologis pada lini masa dan dimutakhirkan secara real-time."
     reply: "Klik pada tombol ini untuk membalas ke sebuah pesan. Bisa juga untuk membalas ke sebuah balasan dan melanjutkannya seperti percakapan selayaknya utas."
     renote: "Kamu dapat membagikan catatan ke lini masa milikmu. Kamu juga dapat mengutipnya dengan komentarmu."
     reaction: "Kamu dapat menambahkan reaksi ke Catatan. Detil lebih lanjut akan dijelaskan di halaman berikutnya."
     menu: "Kamu dapat melihat detil catatan, menyalin tautan, dan melakukan aksi lainnya."
   _reaction:
+
     title: "Apa itu Reaksi?"
     description: "Catatan dapat direaksi dengan berbagai emoji. Reaksi memperbolehkan kamu untuk mengekspresikan nuansa yang tidak dapat disampaikan hanya dengan sebuah \"suka\"."
     letsTryReacting: "Reaksi dapat ditambahkan dengan mengklik tombol '+' pada catatan. Coba lakukan mereaksi contoh catatan ini!"
@@ -1346,8 +1360,9 @@ _initialTutorial:
     reactNotification: "Kamu akan menerima notifikasi real0time ketika seseorang mereaksi catatan kamu."
     reactDone: "Kamu dapat mengurungkan reaksi dengan menekan tombol '-'."
   _timeline:
+
     title: "Konsep Lini Masa"
-    description1: "Misskey menyediakan berbagai lini masa sesuai dengan penggunaan (beberapa mungkin tidak tersedia karena bergantung dengan kebijakan peladen)."
+    description1: "Tribe menyediakan berbagai lini masa sesuai dengan penggunaan (beberapa mungkin tidak tersedia karena bergantung dengan kebijakan peladen)."
     home: "Kamu dapat melihat catatan dari akun yang kamu ikuti."
     local: "Kamu dapat melihat catatan dari semua pengguna yang ada pada peladen ini."
     social: "Catatan dari linimasa Beranda dan Lokal akan ditampilkan."
@@ -1355,44 +1370,54 @@ _initialTutorial:
     description2: "Kamu dapat mengganti linimasa di bagian atas layar kamu kapan saja."
     description3: "Sebagai tambahan, terdapat juga linimasa daftar dan linimasa kanal. Untuk detil lebih lanjut, silahkan melihat ke tautan berikut: {link}."
   _postNote:
+
     title: "Pengaturan posting Catatan"
-    description1: "Ketika memposting catatan ke Misskey, terdapat beberapa opsi yang tersedia. Form posting terlihat seperti ini."
+    description1: "Ketika memposting catatan ke Tribe, terdapat beberapa opsi yang tersedia. Form posting terlihat seperti ini."
     _visibility:
+
       description: "Kamu dapat membatasi siapa yang dapat melihat catatan kamu."
       public: "Perlihatkan catatan ke semua pengguna."
-      home: "Hanya publik ke lini masa Beranda. Pengguna yang mengunjungi profilmu melalui pengikut dan renote dapat melihatnya."
+      home: "Hanya publik ke lini masa Beranda. Pengguna yang mengunjungi profilmu melalui pengikut dan re-spark dapat melihatnya."
       followers: "Perlihatkan ke pengikut saja. Hanya pengikut yang dapat melihat postinganmu dan tidak dapat direnote oleh siapapun."
       direct: "Hanya perlihatkan ke pengguna spesifik dan penerima akan diberi tahu. Dapat juga digunakan sebagai alternatif dari pesan langsung."
       doNotSendConfidencialOnDirect1: "Hati-hati ketika mengirim informasi yang sensitif!"
       doNotSendConfidencialOnDirect2: "Admin dari peladen dapat melihat apa yang kamu tulis. Hati-hati dengan informasi sensitif ketika mengirimkan catatan langsung kepada pengguna pada peladen yang tidak dipercaya."
       localOnly: "Memposting dengan opsi ini tidak akan memfederasi catatan ke peladen lain. Pengguna pada peladen lain tidak akan dapat melihat catatan ini secara langsung, meskipun dengan pengaturan visibilitas yang sudah diatur di atas."
     _cw:
+
       title: "Peringatan Konten (CW)"
       description: "Alih-alih isinya, konten yang ditulis dalam kolom 'komentar' akan ditampilkan. Menekan 'Selebihnya' akan menampilkan isi konten."
       _exampleNote:
+
         cw: "Peringatan: Bikin Lapar!"
         note: "Baru aja makan donat berlapis coklat 🍩😋"
       useCases: "Fungsi ini digunakan ketika mengikutik panduan peladen untuk catatan yang dibutuhkan atau untuk membatasi diri dari teks sensitif atau spoiler."
   _howToMakeAttachmentsSensitive:
+
     title: "Bagaimana menandai lampiran sebagai sensitif?"
     description: "Fungsi ini digunakan untuk lampiran yang dibutuhkan oleh panduan peladen atau sesuatu yang seharusnya tidak boleh dibiarkan begitu saja dengan cara menambahkan penanda \"sensitif\"."
     tryThisFile: "Coba tandai gambar yang dilampirkan pada form ini sebagai sensitif!"
     _exampleNote:
+
       note: "Ups, kesalahan banget buka penutup wadah natto..."
     method: "Untuk menandai lampiran sebagai sensitif, klik gambar pada berkas, buka menu, lalu klik \"Tandai sebagai sensitif\"."
     sensitiveSucceeded: "Ketika melampirkan berkas, mohon atur sensitifitas sesuai dengan panduan peladen."
     doItToContinue: "Tandai berkas terlampir sebagai sensitif untuk melanjutkan."
   _done:
+
     title: "Kamu telah menyelesaikan tutorial! 🎉"
-    description: "Fungsi yang diperkenalkan di sini merupakan sebagian kecil dari fitur yang ada. Untuk pemahaman lebih detil dalam menggunakan Misskey, kamu dapat merujuk ke {link}."
+    description: "Fungsi yang diperkenalkan di sini merupakan sebagian kecil dari fitur yang ada. Untuk pemahaman lebih detil dalam menggunakan Tribe, kamu dapat merujuk ke {link}."
 _timelineDescription:
+
   home: "Pada linimasa Beranda, kamu dapat melihat catatan dari akun yang kamu ikuti."
   local: "Pada linimasa Lokal, kamu dapat melihat catatan dari semua pengguna yang ada pada peladen ini."
   social: "Linimasa sosial menampilkan catatan dari kedua linimasa Beranda dan Lokal."
   global: "Pada linimasa Global, kamu dapat melihat catatan dari semua peladen yang terhubung."
 _serverRules:
+
   description: "Daftar peraturan akan ditampilkan sebelum pendaftaran. Mengatur ringkasan dari Syarat dan Ketentuan sangat direkomendasikan."
 _serverSettings:
+
   iconUrl: "URL ikon"
   appIconDescription: "Tentukan ikon yang digunakan ketika {host} ditampilkan sebagai aplikasi."
   appIconUsageExample: "Contoh: Sebagai PWA, atau ketika ditampilkan sebagai markah layar beranda pada ponsel"
@@ -1405,6 +1430,7 @@ _serverSettings:
   fanoutTimelineDbFallback: "Fallback ke database"
   fanoutTimelineDbFallbackDescription: "Ketika diaktifkan, lini masa akan fallback ke database untuk melakukan kueri tambahan apabila linimasa tidak disimpan dalam cache. Menonaktifkan ini dapat mengurangi beban server dengan mengeliminasi proses fallback, namun dapat berakibat membatasi jarak data dari lini masa yang dapat diambil."
 _accountMigration:
+
   moveFrom: "Pindahkan akun lain ke akun ini"
   moveFromSub: "Buat alias ke akun lain"
   moveFromLabel: "Akun asli #{n}"
@@ -1412,7 +1438,7 @@ _accountMigration:
   moveTo: "Pindahkan akun ini ke akun lain"
   moveToLabel: "Akun tujuan pindah:"
   moveCannotBeUndone: "Pemindahan akun tidak dapat diurungkan."
-  moveAccountDescription: "Hal ini akan memindahkan akun kamu ke akun lain.\n　・Pengikut dari akun ini akan secara otomatis dipindahkan ke akun baru\n　・Akun ini akan berhenti mengikuti dari semua pengguna yang sedang kamu ikuti\n　・Kamu akan tidak dapat membuat catatan baru dan lain-lain pada akun ini\n\nMeskipun pemindahan pengikut dilakukan secara otomatis, kamu harus mempersiapkan beberapa langkah secara manual untuk memindahkan daftar pengguna yang sedang kamu ikuti. Untuk melakukan tersebut, lakukan ekspor daftar ikuti yang nantinya dapat kamu impor pada menu pengaturan di akun baru kamu. Prosedur yang sama juga dapat diterapkan pada daftar seperti pengguna yang kamu bisukan atau blokir.\n\n(Penjelasan ini hanya berlaku pada Misskey versi 13.12.0 dan setelahnya. Perangkat lunak ActivityPub lainnya seperti Mastodon berkemungkinan befungsi berbeda.)"
+  moveAccountDescription: "Hal ini akan memindahkan akun kamu ke akun lain.\n　・Pengikut dari akun ini akan secara otomatis dipindahkan ke akun baru\n　・Akun ini akan berhenti mengikuti dari semua pengguna yang sedang kamu ikuti\n　・Kamu akan tidak dapat membuat catatan baru dan lain-lain pada akun ini\n\nMeskipun pemindahan pengikut dilakukan secara otomatis, kamu harus mempersiapkan beberapa langkah secara manual untuk memindahkan daftar pengguna yang sedang kamu ikuti. Untuk melakukan tersebut, lakukan ekspor daftar ikuti yang nantinya dapat kamu impor pada menu pengaturan di akun baru kamu. Prosedur yang sama juga dapat diterapkan pada daftar seperti pengguna yang kamu bisukan atau blokir.\n\n(Penjelasan ini hanya berlaku pada Tribe versi 13.12.0 dan setelahnya. Perangkat lunak ActivityPub lainnya seperti Mastodon berkemungkinan befungsi berbeda.)"
   moveAccountHowTo: "Untuk pindah, pertama buat alias untuk akun ini pada akun tujuan kamu berpindah.\nSetelah kamu membuat alias, masukkan akun tujuan kamu berpindah ke dalam format berikut:\n@namapengguna@nama.server.com"
   startMigration: "Pindahkan"
   migrationConfirm: "Yakin untuk memindahkan akun ini ke {account}? Sekali dimulai, proses ini tidak dapat dihentikan atau ditarik kembali, dan kamu tidak dapat menggunakan akun ini lagi dalam keadaan asli semula."
@@ -1420,258 +1446,339 @@ _accountMigration:
   postMigrationNote: "24 jam setelah pemindahan akun selesai, akun ini akan berhenti mengikuti semua akun yang sedang diikuti. Angka mengikut dan pengikut akan menjadi nol. Untuk menghindari pengikut kamu tidak dapat melihat postingan hanya pengikut saja dalam postingan ini, mereka akan tetap mengikuti akun ini."
   movedTo: "Akun baru tujuan pindah:"
 _achievements:
+
   earnedAt: "Terbuka pada"
   _types:
+
     _notes1:
-      title: "Cus, baru gabung Misskey nih!"
+
+      title: "Cus, baru gabung Tribe nih!"
       description: "Catat catatan pertama kamu"
-      flavor: "Selamat bersenang-senang dengan Misskey!"
+      flavor: "Selamat bersenang-senang dengan Tribe!"
     _notes10:
+
       title: "Beberapa catatan"
       description: "Catat 10 catatan"
     _notes100:
+
       title: "Banyak catatan"
       description: "Catat 100 catatan"
     _notes500:
+
       title: "Tertumpuk catatan"
       description: "Catat 500 catatan"
     _notes1000:
+
       title: "Gunung catatan"
       description: "Catat 1000 catatan"
     _notes5000:
+
       title: "Luapan catatan"
       description: "Catat 5000 catatan"
     _notes10000:
+
       title: "Catatan super"
       description: "Catat 10 ribu catatan"
     _notes20000:
+
       title: "Butuh... banyak... catatan..."
       description: "Catat 20 ribu catatan"
     _notes30000:
+
       title: "Catat, catat, catat !"
       description: "Catat 30 ribu catatan"
     _notes40000:
+
       title: "Pabrik catatan"
       description: "Catat 40 ribu catatan"
     _notes50000:
+
       title: "Planet catatan"
       description: "Catat 50 ribu catatan"
     _notes60000:
+
       title: "Kuasar catatan"
       description: "Catat 60 ribu catatan"
     _notes70000:
+
       title: "Lubang hitam catatan"
       description: "Catat 70 ribu catatan"
     _notes80000:
+
       title: "Galaksi catatan"
       description: "Catat 80 ribu catatan"
     _notes90000:
+
       title: "Semesta catatan"
       description: "Catat 90 ribu catatan"
     _notes100000:
+
       title: "ALL YOUR NOTE ARE BELONG TO US"
       description: "Catat 100 ribu catatan"
       flavor: "Banyak bacot ya kamu."
     _login3:
+
       title: "Pemula I"
       description: "Login selama 3 hari"
       flavor: "Mulai hari ini, panggil gue Misskist"
     _login7:
+
       title: "Pemula II"
       description: "Login selama 7 hari"
       flavor: "Sudah mulai terbiasa?"
     _login15:
+
       title: "Pemula III"
       description: "Login selama 15 hari"
     _login30:
+
       title: "Misskist I"
       description: "Login selama 30 hari"
     _login60:
+
       title: "Misskist II"
       description: "Login selama 60 hari"
     _login100:
+
       title: "Misskist III"
       description: "Login selama 100 hari"
       flavor: "Violent Misskist"
     _login200:
+
       title: "Reguler I"
       description: "Login selama 200 hari"
     _login300:
+
       title: "Reguler II"
       description: "Login selama 300 hari"
     _login400:
+
       title: "Reguler III"
       description: "Login selama 400 hari"
     _login500:
+
       title: "Veteran I"
       description: "Login selama 500 hari"
       flavor: "Kawanku, aku suka catatan."
     _login600:
+
       title: "Veteran II"
       description: "Login selama 600 hari"
     _login700:
+
       title: "Veteran III"
       description: "Login selama 700 hari"
     _login800:
+
       title: "Sepuh Catatan I"
       description: "Login selama 800 hari"
     _login900:
+
       title: "Sepuh Catatan II"
       description: "Login selama 900 hari"
     _login1000:
+
       title: "Sepuh Catatan III"
       description: "Login selama 1000 hari"
-      flavor: "Terima kasih telah menggunakan Misskey!"
+      flavor: "Terima kasih telah menggunakan Tribe!"
     _noteClipped1:
+
       title: "Harus... Ngeklip..."
       description: "Klip catatan pertamamu"
     _noteFavorited1:
+
       title: "Pengamat Bintang"
       description: "Favoritkan catatan pertamamu"
     _myNoteFavorited1:
+
       title: "Pencari Bintang"
       description: "Minta orang lain memfavoritkan salah satu catatanmu"
     _profileFilled:
+
       title: "Siap Sedia"
       description: "Atur profil kamu"
     _markedAsCat:
+
       title: "Aku Seekor Kucing"
       description: "Tandai akunmu sebagai kucing"
       flavor: "Aku beri kamu nama nanti"
     _following1:
+
       title: "Ikuti pengguna lain pertamamu"
       description: "Ikuti pengguna"
     _following10:
+
       title: "Terusin... terusin..."
       description: "Ikuti 10 pengguna lain"
     _following50:
+
       title: "Banyak teman"
       description: "Ikuti 50 pengguna lain"
     _following100:
+
       title: "100 Teman"
       description: "Ikuti 100 pengguna lain"
     _following300:
+
       title: "Kelebihan teman"
       description: "Mengikuti 300 pengguna lain"
     _followers1:
+
       title: "Pengikut pertama"
       description: "Dapatkan 1 pengikut"
     _followers10:
+
       title: "Ikuti aku!"
       description: "Dapatkan 10 pengikut"
     _followers50:
+
       title: "Rame-rame"
       description: "Dapatkan 50 pengikut"
     _followers100:
+
       title: "Terkenal"
       description: "Dapatkan 100 pengikut"
     _followers300:
+
       title: "Mohon antri satu baris"
       description: "Dapatkan 300 pengikut"
     _followers500:
+
       title: "Stasiun Informasi"
       description: "Dapatkan 500 pengikut"
     _followers1000:
+
       title: "Influencer"
       description: "Dapatkan 1000 pengikut"
     _collectAchievements30:
+
       title: "Kolektor pencapaian"
       description: "Dapatkan 30 pencapaian"
     _viewAchievements3min:
+
       title: "Suka Pencapaian"
       description: "Lugat daftar pencapaianmu setidaknya 3 menit"
     _iLoveMisskey:
-      title: "I Love Misskey"
-      description: "Catat \"I ❤ #Misskey\""
+
+      title: "I Love Tribe"
+      description: "Catat \"I ❤ #Tribe\""
       flavor: "Tim pengembang misskey sangat mengapresiasi dukungan kamu!"
     _foundTreasure:
+
       title: "Berburu Harta Karun"
       description: "Kamu telah menemukan harta karun tersembunyi"
     _client30min:
+
       title: "Istirahat pendek"
-      description: "Habiskan waktu 30 menit di Misskey"
+      description: "Habiskan waktu 30 menit di Tribe"
     _client60min:
-      title: "Tidak ada \"Miss\" dalam Misskey"
-      description: "Biarkan Misskey tetap terbuka setidaknya selama 60 menit"
+
+      title: "Tidak ada \"Miss\" dalam Tribe"
+      description: "Biarkan Tribe tetap terbuka setidaknya selama 60 menit"
     _noteDeletedWithin1min:
+
       title: "Eh, salah coy!"
       description: "Hapus catatan kurang dari semenit kamu catat"
     _postedAtLateNight:
+
       title: "Nokturnal"
       description: "Catat catatan di tengah malam hari"
       flavor: "Udah waktunya boboq."
     _postedAt0min0sec:
+
       title: "Jam ngomong"
       description: "Catat catatan di jam 00.00"
       flavor: "Tik Tok Tik Toeeeng"
     _selfQuote:
+
       title: "Rujukan mandiri"
       description: "Kutip catatanmu sendiri"
     _htl20npm:
+
       title: "Lini masa mengalir"
       description: "Memiliki lini masa beranda dengan kecepatan melebihi 20 cpm (catatan per menit)"
     _viewInstanceChart:
+
       title: "Analis"
       description: "Lihat bagan instansimu"
     _outputHelloWorldOnScratchpad:
+
       title: "Halo, dunia!"
       description: "Munculkan \"hello world\" di Scratchpad"
     _open3windows:
+
       title: "Jendela ganda"
       description: "Memiliki setidaknya 3 jendela yang terbuka secara bersamaan"
     _driveFolderCircularReference:
+
       title: "Referensi Siklus"
       description: "Mencoba membuat folder bersarang rekursif di Drive"
     _reactWithoutRead:
+
       title: "Beneran udah dibaca?"
       description: "Mereaksi catatan dengan 100 karakter panjangnya dalam 3 detik setelah dicatat"
     _clickedClickHere:
+
       title: "Klik di sini"
       description: "Kamu telah mengeklik disini"
     _justPlainLucky:
+
       title: "Lagi Beruntung"
       description: "Mendapatkan kesempatan dengan kemungkinan 0.01% setiap 10 detik"
     _setNameToSyuilo:
+
       title: "God Complex"
       description: "Atur namamu jadi \"syuilo\""
     _passedSinceAccountCreated1:
+
       title: "Perayaan Satu Tahun"
       description: "Satu tahun telah lewat sejak akunmu dibuat"
     _passedSinceAccountCreated2:
+
       title: "Perayaan Dua Tahun"
       description: "Dua tahun telah lewat sejak akunmu dibuat"
     _passedSinceAccountCreated3:
+
       title: "Perayaan Tiga Tahun"
       description: "Tiga tahun telah lewat sejak akunmu dibuat"
     _loggedInOnBirthday:
+
       title: "Selamat Ulang Tahun"
       description: "Login di hari ulang tahunmu"
     _loggedInOnNewYearsDay:
+
       title: "Selamat Tahun Baru!"
       description: "Login di hari pertama tahun baru"
       flavor: "Untuk tahun baru yang berkah bagi instansi ini"
     _cookieClicked:
+
       title: "Permainan dimana kamu mengeklik kue"
       description: "Mengeklik kue"
       flavor: "Tunggu, apakah kamu sedang berada di website yang benar?"
     _brainDiver:
+
       title: "Brain Diver"
       description: "Posting tautan mengenai Brain Diver"
-      flavor: "Misskey-Misskey La-Tu-Ma"
+      flavor: "Tribe-Tribe La-Tu-Ma"
     _smashTestNotificationButton:
+
       title: "Tes overflow"
       description: "Picu tes notifikasi secara berulang dalam waktu yang sangat pendek"
     _tutorialCompleted:
-      title: "Ijazah Sekolah Dasar Misskey"
+
+      title: "Ijazah Sekolah Dasar Tribe"
       description: "Tutorial selesai"
     _bubbleGameExplodingHead:
+
       title: "🤯"
       description: "Obyek paling terbesar di permainan gelembung"
     _bubbleGameDoubleExplodingHead:
+
       title: "Ganda 🤯"
       description: "Dua dari obyek paling terbesar pada permainan gelembung di waktu yang sama"
       flavor: "Kamu dapat mengisi kotak makan siang seperti ini 🤯 🤯."
 _role:
+
   new: "Buat peran"
   edit: "Sunting peran"
   name: "Nama peran"
@@ -1704,10 +1811,12 @@ _role:
   descriptionOfCanEditMembersByModerator: "Ketika dinyalakan, moderator beserta administrator dapat menugaskan ataupun mencabut pengguna ke peran ini. Ketika dimatikan, hanya administrator saja yang dapat menugaskan pengguna ke peran ini."
   priority: "Prioritas"
   _priority:
+
     low: "Rendah"
     middle: "Sedang"
     high: "Tinggi"
   _options:
+
     gtlAvailable: "Dapat melihat lini masa global"
     ltlAvailable: "Dapat melihat lini masa lokal"
     canPublicNote: "Dapat mengirim catatan publik"
@@ -1737,6 +1846,7 @@ _role:
     canImportAntennas: "Izinkan mengimpor antena"
     canImportUserLists: "Izinkan mengimpor senarai"
   _condition:
+
     roleAssignedTo: "Ditugaskan ke peran manual"
     isLocal: "Pengguna lokal"
     isRemote: "Pengguna remote"
@@ -1757,6 +1867,7 @@ _role:
     or: "Kondisi-OR"
     not: "Kondisi-NOT"
 _sensitiveMediaDetection:
+
   description: "Mengurangi usaha moderasi peladen dengan mengenali media NSFW secara otomatis menggunakan Pembelajaran Mesin. Fungsi ini akan sedikit menaikkan beban peladen."
   sensitivity: "Sensitivitas deteksi"
   sensitivityDescription: "Mengurangi sensitivitas akan mengurangi misdeteksi (false positive) sedangkan meningkatkannya akan menambah misdeteksi (false positive)."
@@ -1765,6 +1876,7 @@ _sensitiveMediaDetection:
   analyzeVideos: "Nyalakan analisis terhadap video"
   analyzeVideosDescription: "Analisa video sebagai tambahan dari gambar. Ini akan sedikit meningkatkan beban ke peladen."
 _emailUnavailable:
+
   used: "Alamat surel ini telah digunakan"
   format: "Format tidak valid."
   disposable: "Alamat surel temporer tidak dapat digunakan"
@@ -1772,14 +1884,17 @@ _emailUnavailable:
   smtp: "Peladen alamat surel ini tidak merespon"
   banned: "Kamu tidak dapat mendaftar dengan alamat surel ini"
 _ffVisibility:
+
   public: "Publik"
   followers: "Tampil untuk pengikut saja"
   private: "Tersembunyi"
 _signup:
+
   almostThere: "Hampir selesai"
   emailAddressInfo: "Mohon masukkan alamat surel kamu."
   emailSent: "Konfirmasi surel telah dikirimkan ke alamat surel kamu ({email}). Mohon klik tautan yang tercantum di dalamnya untuk menyelesaikan pembuatan akun."
 _accountDelete:
+
   accountDelete: "Hapus akun"
   mayTakeTime: "Karena penghapusan akun merupakan proses yang berat dan intensif, kemungkinan dapat membutuhkan waktu untuk menyelesaikan tergantung daripada berapa banyak konten yang kamu buat dan berapa banyak berkas yang telah kamu unggah."
   sendEmail: "Setelah penghapusan akun selesai, pemberitahuan akan dikirimkan ke alamat surel yang terdaftarkan pada akun ini."
@@ -1787,6 +1902,7 @@ _accountDelete:
   started: "Penghapusan telah dimulai"
   inProgress: "Penghapusan sedang dalam proses"
 _ad:
+
   back: "Kembali"
   reduceFrequencyOfThisAd: "Tampilkan iklan ini lebih sedikit"
   hide: "Jangan tampilkan"
@@ -1796,26 +1912,33 @@ _ad:
   setZeroToDisable: "Atur nilai ini ke 0 untuk menonaktifkan pemutakhiran iklan secara real-time"
   adsTooClose: "Interval iklan saat ini kemungkinan memperburuk pengalaman pengguna secara signifikan karena diatur pada nilai yang terlalu rendah."
 _forgotPassword:
+
   enterEmail: "Masukkan alamat surel yang kamu gunakan pada saat mendaftar. Sebuah tautan untuk mengatur ulang kata sandi kamu akan dikirimkan ke alamat surel tersebut."
   ifNoEmail: "Apabila kamu tidak menggunakan surel pada saat pendaftaran, mohon hubungi admin segera."
   contactAdmin: "Instansi ini tidak mendukung menggunakan alamat surel, mohon kontak admin untuk mengatur ulang password kamu."
 _gallery:
+
   my: "Postingan saya"
   liked: "Postingan yang disukai"
   like: "Suka"
   unlike: "Hapus suka"
 _email:
+
   _follow:
+
     title: "Mengikuti kamu"
   _receiveFollowRequest:
+
     title: "Kamu menerima permintaan mengikuti"
 _plugin:
+
   install: "Memasang plugin"
   installWarn: "Mohon jangan memasang plugin yang tidak dapat dipercayai."
   manage: "Manajemen plugin"
   viewSource: "Lihat sumber"
   viewLog: "Tampilkan log"
 _preferencesBackups:
+
   list: "Cadangan yang dibuat"
   saveNew: "Simpan cadangan baru"
   loadFile: "Muat dari berkas"
@@ -1834,36 +1957,42 @@ _preferencesBackups:
   cannotLoad: "Gagal memuat"
   invalidFile: "Format berkas tidak valid"
 _registry:
+
   scope: "Lingkup"
   key: "Kunci"
   keys: "Kunci"
   domain: "Domain"
   createKey: "Buat kunci"
 _aboutMisskey:
-  about: "Misskey adalah perangkat lunak sumber terbuka yang sedang dikembangkan oleh syuilo sejak 2014."
+
+  about: "Tribe adalah perangkat lunak sumber terbuka yang sedang dikembangkan oleh syuilo sejak 2014."
   contributors: "Kontributor utama"
   allContributors: "Seluruh kontributor"
   source: "Sumber kode"
   original: "Asli"
-  thisIsModifiedVersion: "{name} menggunakan versi modifikasi dari Misskey yang asli."
-  translation: "Terjemahkan Misskey"
-  donate: "Donasi ke Misskey"
+  thisIsModifiedVersion: "{name} menggunakan versi modifikasi dari Tribe yang asli."
+  translation: "Terjemahkan Tribe"
+  donate: "Donasi ke Tribe"
   morePatrons: "Kami sangat mengapresiasi dukungan dari banyak penolong lain yang tidak tercantum disini. Terima kasih! 🥰"
   patrons: "Pendukung"
   projectMembers: "Anggota proyek"
 _displayOfSensitiveMedia:
+
   respect: "Sembunyikan media yang ditandai sensitif"
   ignore: "Tampilkan media yang ditandai sensitif"
   force: "Sembunyikan semua media"
 _instanceTicker:
+
   none: "Jangan tampilkan"
   remote: "Tampilkan untuk pengguna instansi luar"
   always: "Selalu tampilkan"
 _serverDisconnectedBehavior:
+
   reload: "Muat ulang otomatis"
   dialog: "Tampilkan dialog peringatan"
   quiet: "Tampilkan peringatan tidak mengganggu"
 _channel:
+
   create: "Buat Kanal"
   edit: "Sunting Kanal"
   setBanner: "Setel banner"
@@ -1877,20 +2006,24 @@ _channel:
   nameOnly: "Hanya nama"
   allowRenoteToExternal: "Perbolehkan catat ulang dan kutipan di luar dari kanal"
 _menuDisplay:
+
   sideFull: "Horisontal"
   sideIcon: "Horisontal (Ikon)"
   top: "Atas"
   hide: "Sembunyikan"
 _wordMute:
+
   muteWords: "Kata yang dibisukan"
   muteWordsDescription: "Pisahkan dengan spasi untuk kondisi AND. Pisahkan dengan baris baru untuk kondisi OR."
   muteWordsDescription2: "Kurung kata kunci dengan garis miring untuk menggunakan ekspresi reguler."
 _instanceMute:
-  instanceMuteDescription: "Pengaturan ini akan membisukan note/renote apa saja dari instansi yang terdaftar, termasuk pengguna yang membalas pengguna lain dalam instansi yang dibisukan."
+
+  instanceMuteDescription: "Pengaturan ini akan membisukan spark/re-spark apa saja dari instansi yang terdaftar, termasuk pengguna yang membalas pengguna lain dalam instansi yang dibisukan."
   instanceMuteDescription2: "Pisah dengan baris baru"
-  title: "Sembunyikan note dari instansi terdaftar."
+  title: "Sembunyikan spark dari instansi terdaftar."
   heading: "Daftar instansi yang akan dibisukan"
 _theme:
+
   explore: "Jelajahi tema"
   install: "Pasang tema"
   manage: "Manajer tema"
@@ -1921,6 +2054,7 @@ _theme:
   importInfo: "Jika kamu memasukkan kode tema disini, kamu dapat mengimpornya ke penyunting tema"
   deleteConstantConfirm: "apakah kamu ingin menghapus konstanta {const}?"
   keys:
+
     accent: "Aksen"
     bg: "Latar belakang"
     fg: "Teks"
@@ -1937,7 +2071,7 @@ _theme:
     hashtag: "Tagar"
     mention: "Sebut"
     mentionMe: "Sebutan (saya)"
-    renote: "Renote"
+    renote: "Re-spark"
     modalBg: "Latar belakang modal"
     divider: "Pembagi"
     scrollbarHandle: "Pegangan bilah gulir"
@@ -1957,19 +2091,22 @@ _theme:
     messageBg: "Latar belakang obrolan"
     fgHighlighted: "Teks yang disorot"
 _sfx:
+
   note: "Catatan"
   noteMy: "Catatan (Saya)"
   notification: "Notifikasi"
   reaction: "Ketika memilih reaksi"
 _soundSettings:
+
   driveFile: "Menggunakan berkas audio dalam Drive"
   driveFileWarn: "Pilih berkas audio dari Drive"
   driveFileTypeWarn: "Berkas ini tidak didukung"
   driveFileTypeWarnDescription: "Pilih berkas audio"
   driveFileDurationWarn: "Audio ini terlalu panjang"
-  driveFileDurationWarnDescription: "Audio panjang dapat mengganggu penggunaan Misskey. Masih ingin melanjutkan?"
+  driveFileDurationWarnDescription: "Audio panjang dapat mengganggu penggunaan Tribe. Masih ingin melanjutkan?"
   driveFileError: "Tak bisa memuat audio. Mohon ubah pengaturan"
 _ago:
+
   future: "Masa depan"
   justNow: "Baru saja"
   secondsAgo: "{n} detik lalu"
@@ -1981,6 +2118,7 @@ _ago:
   yearsAgo: "{n} tahun lalu"
   invalid: "Tidak ada sama sekali disini"
 _timeIn:
+
   seconds: "dalam {n} detik"
   minutes: "dalam {n} menit"
   hours: "dalam {n} jam"
@@ -1989,11 +2127,13 @@ _timeIn:
   months: "dalam {n} bulan"
   years: "dalam {n} tahun"
 _time:
+
   second: "detik"
   minute: "menit"
   hour: "jam"
   day: "hari"
 _2fa:
+
   alreadyRegistered: "Kamu telah mendaftarkan perangkat autentikasi 2-faktor."
   registerTOTP: "Daftarkan aplikasi autentikator"
   step1: "Pertama, pasang aplikasi autentikasi (seperti {a} atau {b}) di perangkat kamu."
@@ -2023,6 +2163,7 @@ _2fa:
   backupCodesExhaustedWarning: "Semua kode cadangan telah digunakan. Apabila kamu kehilangan akses pada aplikasi autentikasi 2-faktor milikmu, kamu tidak dapat mengakses akun ini lagi. Mohon atur ulang autentikasi 2-faktor kamu."
   moreDetailedGuideHere: "Berikut panduan detilnya"
 _permissions:
+
   "read:account": "Lihat informasi akun"
   "write:account": "Sunting informasi akun"
   "read:blocks": "Lihat daftar orang yang diblokir"
@@ -2037,7 +2178,7 @@ _permissions:
   "write:messaging": "Buat atau hapus obrolan"
   "read:mutes": "Lihat daftar orang yang dibisukan"
   "write:mutes": "Sunting daftar orang yang dibisukan"
-  "write:notes": "Buat atau hapus catatan"
+  "write:sparks": "Buat atau hapus catatan"
   "read:notifications": "Lihat notifikasi"
   "write:notifications": "Sunting notifikasi"
   "read:reactions": "Lihat reaksi"
@@ -2077,7 +2218,7 @@ _permissions:
   "write:admin:unset-user-banner": "Hapus banner pengguna"
   "write:admin:unsuspend-user": "Batalkan penangguhan pengguna"
   "write:admin:meta": "Kelola metadata instansi"
-  "write:admin:user-note": "Kelola moderasi catatan"
+  "write:admin:user-spark": "Kelola moderasi catatan"
   "write:admin:roles": "Kelola peran"
   "read:admin:roles": "Lihat peran"
   "write:admin:relays": "Kelola relay"
@@ -2109,6 +2250,7 @@ _permissions:
   "write:report-abuse": "Melaporkan pelanggaran"
   "write:chat": "Buat atau hapus obrolan"
 _auth:
+
   shareAccessTitle: "Mendapatkan ijin akses aplikasi"
   shareAccess: "Apakah kamu ingin mengijinkan \"{name}\" untuk mengakses akun ini?"
   shareAccessAsk: "Apakah kamu ingin mengijinkan aplikasi ini untuk mengakses akun kamu?"
@@ -2119,12 +2261,14 @@ _auth:
   denied: "Akses ditolak"
   pleaseLogin: "Mohon masuk untuk otorisasi aplikasi."
 _antennaSources:
+
   all: "Semua catatan"
   homeTimeline: "Catatan dari pengguna yang diikuti"
   users: "Catatan dari pengguna tertentu"
   userList: "Catatan dari daftar tertentu"
   userBlacklist: "Semua catatan kecuali untuk satu pengguna atau lebih yang telah ditentukan"
 _weekday:
+
   sunday: "Minggu"
   monday: "Senin"
   tuesday: "Selasa"
@@ -2133,6 +2277,7 @@ _weekday:
   friday: "Jumat"
   saturday: "Sabtu"
 _widgets:
+
   profile: "Profil"
   instanceInfo: "Informasi Instansi"
   memo: "Catatan memo"
@@ -2160,15 +2305,18 @@ _widgets:
   aichan: "Ai"
   userList: "Daftar pengguna"
   _userList:
+
     chooseList: "Pilih daftar"
   clicker: "Pengeklik"
   birthdayFollowings: "Pengguna yang merayakan hari ulang tahunnya hari ini"
 _cw:
+
   hide: "Sembunyikan"
   show: "Lihat konten"
   chars: "{count} karakter"
   files: "{count} berkas"
 _poll:
+
   noOnlyOneChoice: "Dibutuhkan sedikitnya dua pilihan"
   choiceN: "Pilihan {n}"
   noMore: "Kamu tidak dapat menambahkan pilihan lagi"
@@ -2191,6 +2339,7 @@ _poll:
   remainingMinutes: "Berakhir dalam {m} menit {s} detik"
   remainingSeconds: "Berakhir dalam {s} detik"
 _visibility:
+
   public: "Publik"
   publicDescription: "Catat ke lini masa global"
   home: "Beranda"
@@ -2202,10 +2351,12 @@ _visibility:
   disableFederation: "Matikan federasi"
   disableFederationDescription: "Jangan kirimkan ke instansi lain"
 _postForm:
+
   replyPlaceholder: "Balas ke catatan ini..."
   quotePlaceholder: "Kutip catatan ini..."
   channelPlaceholder: "Posting ke kanal"
   _placeholders:
+
     a: "Sedang apa kamu saat ini?"
     b: "Apa yang terjadi di sekitarmu?"
     c: "Apa yang sedang kamu pikirkan?"
@@ -2213,6 +2364,7 @@ _postForm:
     e: "Tuliskan yang kamu ingin sampaikan..."
     f: "Menunggu kamu untuk menulis...."
 _profile:
+
   name: "Nama"
   username: "Nama Pengguna"
   description: "Bio"
@@ -2227,6 +2379,7 @@ _profile:
   verifiedLinkDescription: "Dengan memasukkan URL yang mengandung tautan ke profil kamu di sini, ikon verifikasi kepemilikan dapat ditampilkan di sebelah kolom ini."
   avatarDecorationMax: "Dapat ditambahkan hingga {max} dekorasi."
 _exportOrImport:
+
   allNotes: "Semua catatan"
   favoritedNotes: "Catatan favorit"
   clips: "Klip"
@@ -2238,6 +2391,7 @@ _exportOrImport:
   excludeInactiveUsers: "Kecualikan pengguna tidak aktif"
   withReplies: "Termasuk balasan dari pengguna yang diimpor ke dalam lini masa"
 _charts:
+
   federation: "Federasi"
   apRequest: "Permintaan"
   usersIncDec: "Perbedaan dalam # pengguna"
@@ -2252,6 +2406,7 @@ _charts:
   storageUsageIncDec: "Perbedaan dalam penggunaan penyimpanan"
   storageUsageTotal: "Jumlah penggunaan penyimpanan"
 _instanceCharts:
+
   requests: "Permintaan"
   users: "Perbedaan dalam # pengguna"
   usersTotal: "Jumlah # pengguna kumulatif"
@@ -2264,11 +2419,13 @@ _instanceCharts:
   files: "Perbedaan dalam # berkas"
   filesTotal: "Jumlah # berkas kumulatif"
 _timelines:
+
   home: "Beranda"
   local: "Lokal"
   social: "Sosial"
   global: "Global"
 _play:
+
   new: "Membuat Permainan"
   edit: "Menyunting Permainan"
   created: "Permainan sudah dibuat"
@@ -2285,6 +2442,7 @@ _play:
   summary: "Deskripsi"
   visibilityDescription: "Membuat catatan ini privat berarti tidak akan terlihat pada profil kamu, namun siapapun yang memiliki URL dari catatan ini akan dapat mengaksesnya."
 _pages:
+
   newPage: "Buat halaman baru"
   editPage: "Sunting halaman"
   readPage: "Lihat sumber kode aktif"
@@ -2320,6 +2478,7 @@ _pages:
   inputBlocks: "Masukan"
   specialBlocks: "Khusus"
   blocks:
+
     text: "Teks"
     textarea: "Area teks"
     section: "Bagian"
@@ -2329,19 +2488,22 @@ _pages:
     dynamicDescription: "Blok ini telah dihapus. Mohon gunakan {play} dari sekarang."
     note: "Catatan yang ditanam"
     _note:
+
       id: "ID Catatan"
       idDescription: "Kamu dapat menyetel ini dengan menempelkan tautan URL Catatan."
       detailed: "Tampilan rincian"
 _relayStatus:
+
   requesting: "Menunggu"
   accepted: "Disetujui"
   rejected: "Ditolak"
 _notification:
+
   fileUploaded: "Berkas telah berhasil diunggah"
   youGotMention: "{name} meyebut kamu"
   youGotReply: "{name} membalas kamu"
   youGotQuote: "{name} mengutip kamu"
-  youRenoted: "{name} me-renote kamu"
+  youRenoted: "{name} me-re-spark kamu"
   youWereFollowed: "Mengikuti kamu"
   youReceivedFollowRequest: "Kamu menerima permintaan mengikuti"
   yourFollowRequestAccepted: "Permintaan mengikuti kamu telah diterima"
@@ -2361,12 +2523,13 @@ _notification:
   followedBySomeUsers: "{n} orang telah mengikuti"
   flushNotification: "Bersihkan notifikasi"
   _types:
+
     all: "Semua"
     note: "Catatan baru"
     follow: "Ikuti"
     mention: "Sebut"
     reply: "Balasan"
-    renote: "Renote"
+    renote: "Re-spark"
     quote: "Kutip"
     reaction: "Reaksi"
     pollEnded: "Jajak pendapat berakhir"
@@ -2377,10 +2540,12 @@ _notification:
     login: "Masuk"
     app: "Notifikasi dari aplikasi tertaut"
   _actions:
+
     followBack: "Ikuti Kembali"
     reply: "Balas"
-    renote: "Renote"
+    renote: "Re-spark"
 _deck:
+
   alwaysShowMainColumn: "Selalu tampilkan kolom utama"
   columnAlign: "Luruskan kolom"
   addColumn: "Tambahkan kolom"
@@ -2401,6 +2566,7 @@ _deck:
   usedAsMinWidthWhenFlexible: "Lebar minimum akan digunakan untuk ini ketika opsi \"Atur-otomatis lebar\" dinyalakan"
   flexible: "Atur-otomatis lebar"
   _columns:
+
     main: "Utama"
     widgets: "Widget"
     notifications: "Notifikasi"
@@ -2412,21 +2578,26 @@ _deck:
     direct: "Langsung"
     roleTimeline: "Lini masa peran"
 _dialog:
+
   charactersExceeded: "Kamu telah melebihi batas karakter maksimum! Saat ini pada {current} dari {max}."
   charactersBelow: "Kamu berada di bawah batas minimum karakter! Saat ini pada {current} dari {min}."
 _disabledTimeline:
+
   title: "Lini masa dinonaktifkan"
   description: "Saat ini kamu tidak dapat menggunakan lini masa ini karena peran kamu saat ini."
 _drivecleaner:
+
   orderBySizeDesc: "Ukuran berkas (Turun)"
   orderByCreatedAtAsc: "Tanggal (Naik)"
 _webhookSettings:
+
   createWebhook: "Buat Webhook"
   modifyWebhook: "Sunting Webhook"
   name: "Nama"
   secret: "Secret"
   active: "Aktif"
   _events:
+
     follow: "Ketika mengikuti pengguna"
     followed: "Ketika diikuti pengguna"
     note: "Ketika memposting catatan"
@@ -2436,12 +2607,16 @@ _webhookSettings:
     mention: "Ketika sedang disebut"
   deleteConfirm: "Apakah kamu yakin ingin menghapus Webhook?"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "Surel"
       webhook: "Webhook"
     keywords: "Kata kunci"
 _moderationLogTypes:
+
   createRole: "Peran telah dibuat"
   deleteRole: "Peran telah dihapus"
   updateRole: "Peran telah diperbaharui"
@@ -2480,6 +2655,7 @@ _moderationLogTypes:
   unsetUserBanner: "Hapus banner pengguna"
   deleteAccount: "Akun dihapus"
 _fileViewer:
+
   title: "Rincian berkas"
   type: "Jenis berkas"
   size: "Ukuran berkas"
@@ -2488,62 +2664,83 @@ _fileViewer:
   attachedNotes: "Catatan yang dilampirkan"
   thisPageCanBeSeenFromTheAuthor: "Halaman ini hanya dapat dilihat oleh pengguna yang mengunggah bekas ini."
 _externalResourceInstaller:
+
   title: "Pasang dari situs eksternal"
   checkVendorBeforeInstall: "Pastikan sumber dari sumber daya ini terpercaya sebelum melakukan pemasangan."
   _plugin:
+
     title: "Apakah kamu ingin memasang plugin ini?"
   _theme:
+
     title: "Apakah kamu ingin memasang tema ini?"
   _meta:
+
     base: "Skema warna dasar"
   _vendorInfo:
+
     title: "Informasi sumber"
     endpoint: "Referensi Endpoint"
     hashVerify: "Verifikasi hash"
   _errors:
+
     _invalidParams:
+
       title: "Parameter tidak valid"
       description: "Tidak cukup informasi untuk memuat data dari situs eksternal. Mohon konfirmasi kembali URL yang dimasukkan."
     _resourceTypeNotSupported:
+
       title: "Sumber daya eksternal ini tidak didukung"
       description: "Tipe sumber daya eksternal ini tidak didukung. Mohon kontak administrator dari situs tersebut."
     _failedToFetch:
+
       title: "Gagal memuat data"
       fetchErrorDescription: "Kesalahan terjadi ketika menghubungkan dengan situs eksternal. Jika percobaan kembali tidak dapat memperbaiki masalah ini, mohon hubungi administrator dari situs tersebut."
       parseErrorDescription: "Kesalahan terjadi dalam memproses data yang dimuat dari situs eksternal. Mohon hubungi administrator dari situs tersebut."
     _hashUnmatched:
+
       title: "Verifikasi data gagal"
       description: "Kesalahan terjadi dalam memverifikasi integritas data yang diambil. Sebagai pencegahan keamanan, pemasangan tidak dapat dilanjutkan. Mohon hubungi administrator dari situs tersebut."
     _pluginParseFailed:
+
       title: "Kesalahan AiScript"
       description: "Data yang diminta telah diambil dengan sukses, namun kesalahan terjadi ketika AiScript melakukan parsing. Mohon hubungi pembuat plugin. Detil kesalahan dapat dilihat pada konsol Javascript."
     _pluginInstallFailed:
+
       title: "Pemasangan plugin gagal"
       description: "Kesalahan terjadi ketika pemasangan plugin. Mohon coba lagi. Detil kesalahan dapat dilihat pada konsol Javascript."
     _themeParseFailed:
+
       title: "Parsing tema gagal"
       description: "Data yang diminta telah diambil dengan sukses, namun kesalahan terjadi ketika tema melakukan parsing. Mohon hubungi pembuat tema. Detil kesalahan dapat dilihat pada konsol Javascript."
     _themeInstallFailed:
+
       title: "Pemasangan tema gagal"
       description: "Kesalahan terjadi ketika pemasangan tema. Mohon coba lagi. Detil kesalahan dapat dilihat pada konsol Javascript."
 _dataSaver:
+
   _media:
+
     title: "Memuat media"
     description: "Mencegah gambar/video dimuat secara otomatis. Menyembunyikan gambar/video dan akan dimuat ketika diketuk."
   _avatar:
+
     title: "Gambar avatar"
     description: "Hentikan animasi gambar avatar. Gambar animasi dapat berukuran lebih besar dari gambar biasa, berpotensi pada pengurangan lalu lintas data lebih jauh."
   _urlPreview:
+
     title: "Gambar kecil URL pratinjau"
     description: "Gambar kecil URL pratinjau tidak akan dimuat lagi."
   _code:
+
     title: "Penyorotan kode"
     description: "Jika notasi penyorotan kode digunakan di MFM, dll. Fungsi tersebut tidak akan dimuat apabila tidak diketuk. Penyorotan sintaks membutuhkan pengunduhan berkas definisi penyorotan untuk setiap bahasa pemrograman. Oleh sebab itu, menonaktifkan pemuatan otomatis dari berkas ini dilakukan untuk mengurangi jumlah komunikasi data."
 _hemisphere:
+
   N: "Bumi belahan utara"
   S: "Bumi belahan selatan"
   caption: "Digunakan dalam beberapa pengaturan klien untuk menentukan musim."
 _reversi:
+
   reversi: "Reversi"
   gameSettings: "Pengaturan permainan"
   chooseBoard: "Pilih papan"
@@ -2588,9 +2785,11 @@ _reversi:
   showBoardLabels: "Tampilkan penomoran baris dan kolom pada papan"
   useAvatarAsStone: "Ubah batu menjadi avatar pengguna"
 _offlineScreen:
+
   title: "Luring - tidak dapat terhubung ke peladen"
   header: "Tidak dapat tersambung ke server"
 _urlPreviewSetting:
+
   title: "Pengaturan pratinjau URL"
   enable: "Aktifkan pratinjau URL"
   timeout: "Waktu timeout pratinjau URL (ms)"
@@ -2602,16 +2801,20 @@ _urlPreviewSetting:
   userAgent: "User-Agent"
   userAgentDescription: "Atur User-Agent yang digunakan untuk mengambil pratinjau. Apabila dibiarkan kosong, User-Agent bawaan akan digunakan."
   summaryProxy: "Titik akhir proksi yang membuat pratinjau"
-  summaryProxyDescription: "Bukan untuk Misskey, namun untuk menghasilkan pratinjau menggunakan Summaly Proxy."
+  summaryProxyDescription: "Bukan untuk Tribe, namun untuk menghasilkan pratinjau menggunakan Summaly Proxy."
   summaryProxyDescription2: "Parameter berikut tertautkan dengan proksi sebagai string kueri. Apabila proksi tidak mendukung tersebut, nilai di dalamnya diabaikan."
 _mediaControls:
+
   pip: "Gambar dalam Gambar"
   playbackRate: "Kecepatan Pemutaran"
   loop: "Ulangi Pemutaran"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Tidak dapat ditemukan"
 _search:
+
   searchScopeAll: "Semua"
   searchScopeLocal: "Lokal"
   searchScopeUser: "Pengguna spesifik"

@@ -215,7 +215,7 @@ noUsers: "ليس هناك مستخدمون"
 editProfile: "تعديل الملف التعريفي"
 noteDeleteConfirm: "هل تريد حذف هذه الملاحظة؟"
 pinLimitExceeded: "لا يمكنك تثبيت الملاحظات بعد الآن."
-intro: "لقد انتهت عملية تنصيب Misskey. الرجاء إنشاء حساب إداري."
+intro: "لقد انتهت عملية تنصيب Tribe. الرجاء إنشاء حساب إداري."
 done: "تمّ"
 processing: "المعالجة جارية"
 preview: "معاينة"
@@ -396,7 +396,7 @@ exploreFediverse: "استكشف الفديفرس"
 popularTags: "الوسوم الرائجة"
 userList: "القوائم"
 about: "عن"
-aboutMisskey: "عن Misskey"
+aboutMisskey: "عن Tribe"
 administrator: "المدير"
 token: "الرمز المميز"
 2fa: "الاستيثاق بعاملَيْن"
@@ -1011,14 +1011,17 @@ surrender: "ألغِ"
 postForm: "أنشئ ملاحظة"
 information: "عن"
 _chat:
+
   invitations: "دعوة"
   noHistory: "السجل فارغ"
   members: "الأعضاء"
   home: "الرئيسي"
   send: "أرسل"
 _delivery:
+
   stop: "مُعلّق"
 _initialAccountSetting:
+
   accountCreated: "نجح إنشاء حسابك!"
   letsStartAccountSetup: "إذا كنت جديدًا لنعدّ حسابك الشخصي."
   letsFillYourProfile: "أولًا لنعد ملفك الشخصي."
@@ -1028,8 +1031,10 @@ _initialAccountSetting:
   skipAreYouSure: "أتريد تخطي إعداد الملف الشخصي؟"
   laterAreYouSure: "أتريد إعداد الملف الشخصي لاحقًا؟"
 _serverRules:
+
   description: "مجموعة من القواعد لعرضها عند التسجيل، من المستحسن كتابة ملخصٍ للشروط الخدمة."
 _accountMigration:
+
   moveFrom: "انقل حسابًا آخر لهذا الحساب"
   moveFromLabel: "الحساب الأصلي #{n}"
   moveTo: "انقل هذا الحساب لحساب آخر"
@@ -1037,66 +1042,90 @@ _accountMigration:
   moveCannotBeUndone: "لا يمكن التراجع عن نقل الحساب."
   movedTo: "الحساب الوجهة:"
 _achievements:
+
   _types:
+
     _notes1:
+
       description: "انشر ملاحظتك الأولى"
       flavor: "تمتع باستخدام ميسكي!"
     _notes10:
+
       title: "بعض الملاحظات"
       description: "انشر 10 ملاحظات"
     _notes100:
+
       title: "كثير من الملاحظات"
       description: "انشر 100 ملاحظة"
     _notes500:
+
       description: "انشر 500 ملاحظة"
     _notes1000:
+
       title: "جبل ملاحظات"
       description: "انشر 1000 ملاحظة"
     _notes5000:
+
       description: "انشر 5000 ملاحظة"
     _notes10000:
+
       description: "انشر 10000 ملاحظة"
     _notes20000:
+
       title: "أريد...ملاحظات...أكثر"
       description: "انشر 20000 ملاحظة"
     _notes30000:
+
       title: "ملاحظات وملاحظات وملاحظات"
       description: "انشر 30000 ملاحظة"
     _notes40000:
+
       title: "مصنع ملاحظات"
       description: "انشر 40000 ملاحظة"
     _notes50000:
+
       title: "كوكب ملاحظات"
       description: "انشر 50000 ملاحظة"
     _notes60000:
+
       title: "نجم ملاحظات"
       description: "انشر 60000 ملاحظة"
     _notes70000:
+
       title: "ثقب أسود للملاحظات"
       description: "انشر 70000 ملاحظة"
     _notes80000:
+
       title: "مجرة ملاحظات"
       description: "انشر 80000 ملاحظة"
     _notes90000:
+
       title: "كوْن ملاحظات"
       description: "انشر 90000 ملاحظة"
     _notes100000:
+
       title: "كل ملاحظاتك لنا"
       description: "انشر 100000 ملاحظة"
       flavor: "حقًا لديك الكثير من القصص"
     _login3:
+
       title: "مبتدأ I"
     _noteFavorited1:
+
       description: "فضًِل ملاحظتك الأولى"
     _myNoteFavorited1:
+
       title: "ساعٍ للنجوم"
       description: "أعجب شخص آخر بإحدى ملاحظاتك"
     _profileFilled:
+
       title: "مستعد"
       description: "أعدّ حسابك"
     _markedAsCat:
+
       title: "أنا قط"
 _role:
+
   new: "دور جديد"
   edit: "حرر الأدوار"
   name: "اسم الدور"
@@ -1108,29 +1137,36 @@ _role:
   policies: "السياسة العامة"
   priority: "الأولوية"
   _priority:
+
     low: "منخفضة"
     middle: "متوسط"
     high: "عالية"
   _options:
+
     canManageCustomEmojis: "إدارة الإيموجي المخصصة"
     pinMax: "حد عدد الملاحظات المثبتة"
   _condition:
+
     isLocal: "مستخدم محلي"
     isRemote: "مستخدم بعيد"
 _emailUnavailable:
+
   used: "هذا البريد الإلكتروني مستخدم"
   format: "صيغة البريد الإلكتروني غير صالحة"
   mx: "خادم البريد الإلكتروني غير صالح"
   smtp: "خادم البريد الإلكتروتي لا يستجيب"
 _ffVisibility:
+
   public: "علني"
   followers: "مرئية لمتابِعيك فقط"
   private: "خاص"
 _signup:
+
   almostThere: "كدت تنتهي"
   emailAddressInfo: "رجاءً أدخل بريدك الإلكتروني."
   emailSent: "أرسلت رسالة تأكيد إلى بريدك الإلكتروني ({email})، أنقر على الرابط الموجود فيها لإكمال التسجيل."
 _accountDelete:
+
   accountDelete: "احذف الحساب"
   mayTakeTime: "نظرًا لأن حذف الحساب يحتاج موارد كثيرة فقد يستغرق وقتًا طويلاً ليكتمل وذلك بناءً على كمية المحتوى الموجود في الحساب وعدد الملفات المرفوعة."
   sendEmail: "عند إنتهاء الحذف سترسل رسالة إلى البريد الإلكتروني المرتبط بهذا الحساب."
@@ -1138,38 +1174,48 @@ _accountDelete:
   started: "بدأت عملية الحذف."
   inProgress: "عملية الحذف جارية"
 _ad:
+
   back: "رجوع"
   reduceFrequencyOfThisAd: "قلل عرض هذا الإعلان"
   hide: "لا تظهره بتاتًا"
 _forgotPassword:
+
   enterEmail: "أدخل البريد الإلكتروني المرتبط بحسابك لكي يرسل إليك رابط لإعادة تعيين كلمة المرور."
   ifNoEmail: "إذا لم تربط حسابك ببريد إلكتروني سيتوجب عليك التواصل مع مدير الموقع."
   contactAdmin: "هذا المثيل لا يدعم استخدام البريد الإلكتروني، إن أردت إعادة تعيين كلمة المرور تواصل مع المدير."
 _gallery:
+
   my: "معرضي"
   liked: "المشاركات المُعجب بها"
   like: "أعجبني"
   unlike: "أزل الإعجاب"
 _email:
+
   _follow:
+
     title: "يتابعك"
   _receiveFollowRequest:
+
     title: "استلمت طلب متابعة"
 _plugin:
+
   install: "ثبّت إضافات"
   installWarn: "رجاءً لا تثبت إضافات غير موثوقة."
   manage: "إدارة الإضافات"
   viewSource: "اظهر المصدر"
 _preferencesBackups:
+
   createdAt: "تم إنشاؤه: {date} {time}"
   updatedAt: "آخر تحديث: {date} {time}"
 _registry:
+
   scope: "الحيّز"
   key: "مفتاح"
   keys: "المفاتيح"
   domain: "النّطاق"
   createKey: "أنشئ مفتاحًا"
 _aboutMisskey:
+
   about: "ميسكي هو برمجية مفتوحة المصدر يطورها syuilo منذ 2014."
   contributors: "المساهمون الرئيسيون"
   allContributors: "كل المساهمين"
@@ -1179,13 +1225,16 @@ _aboutMisskey:
   morePatrons: "نحن نقدر الدعم الذي قدمه العديد من الأشخاص الذين لم نذكرهم. شكرًا لكم 🥰"
   patrons: "الداعمون"
 _instanceTicker:
+
   none: "لا تظهره بتاتًا"
   remote: "أظهر للمستخدمين البِعاد"
   always: "أظهره دائمًا"
 _serverDisconnectedBehavior:
+
   reload: "إعادة تحميل تلقائية"
   dialog: "أظهر مربع حوار التحذيرات"
 _channel:
+
   create: "أنشئ قناة"
   edit: "عدّل قناة"
   setBanner: "عيّن اللافتة"
@@ -1196,19 +1245,23 @@ _channel:
   usersCount: "{n} منتسب"
   notesCount: "{n} ملاحظة"
 _menuDisplay:
+
   sideFull: "جانبي"
   top: "الأعلى"
   hide: "إخفاء"
 _wordMute:
+
   muteWords: "الكلمات المحظورة"
   muteWordsDescription: "افصل بينهم بمسافة لاستخدام معامل \"و\" أو بسطر لاستخدام معامل \"أو\"."
   muteWordsDescription2: "احصر الكلمات المفتاحية بين بين شرطتين مائلتين لاستخدامها كتعابير نمطية"
 _instanceMute:
+
   instanceMuteDescription: "هذه سيحجب كل ملاحظات الخوادم المحجوبة ومشاركاتها والردود على تلك الملاحظات حتى وإن كانت من خادم غير محجوب."
   instanceMuteDescription2: "مدخلة لكل سطر"
   title: "يخفي ملاحظات الخوادم المسرودة."
   heading: "قائمة الخوادم المحجوبة"
 _theme:
+
   explore: "استكشف قوالب المظهر"
   install: "تنصيب قالب"
   manage: "إدارة القوالب"
@@ -1232,6 +1285,7 @@ _theme:
   inputConstantName: "أدخل اسمًا للثابت"
   deleteConstantConfirm: "أمتأكد من حذف الثابت {const}؟"
   keys:
+
     accent: "طابع لوني"
     bg: "الخلفية"
     fg: "النص"
@@ -1257,10 +1311,12 @@ _theme:
     driveFolderBg: "خلفية مجلد قرص التخزين"
     messageBg: "خلفية المحادثة"
 _sfx:
+
   note: "الملاحظات"
   noteMy: "ملاحظتي"
   notification: "الإشعارات"
 _ago:
+
   future: "المستقبَل"
   justNow: "اللحظة"
   secondsAgo: "منذ {n} ثوانٍ"
@@ -1272,11 +1328,13 @@ _ago:
   yearsAgo: "منذ {n} سنوات"
   invalid: "لا يوجد شيء هنا"
 _time:
+
   second: "ثا"
   minute: "د"
   hour: "سا"
   day: "ي"
 _2fa:
+
   alreadyRegistered: "سجلت سلفًا جهازًا للاستيثاق بعاملين."
   step1: "أولًا ثبّت تطبيق استيثاق على جهازك (مثل {a} و{b})."
   step2: "امسح رمز الاستجابة السريعة الموجد على الشاشة."
@@ -1284,6 +1342,7 @@ _2fa:
   step4: "من هذه اللحظة أثناء ولوجك سيُطلب منك الرمز."
   renewTOTPCancel: "ليس اﻵن"
 _permissions:
+
   "read:account": "اعرض معلومات حسابك"
   "write:account": "تعديل معلومات حسابك"
   "read:blocks": "اعرض قائمة المستخدمين المحجوبين"
@@ -1298,7 +1357,7 @@ _permissions:
   "write:messaging": "اكتب أو احذف رسائل محادثة"
   "read:mutes": "اعرض قائمة المستخدمين المكتومين"
   "write:mutes": "عدّل قائمة المستخدمين المكتومين"
-  "write:notes": "أنشئ أو احذف ملاحظات"
+  "write:sparks": "أنشئ أو احذف ملاحظات"
   "read:notifications": "اظهر الإشعارات"
   "write:notifications": "إدارة الإشعارات"
   "read:reactions": "اعرض تفاعلاتك"
@@ -1316,6 +1375,7 @@ _permissions:
   "read:gallery-likes": "يعرض ما أعجبك من مشاركات المعرض"
   "write:chat": "اكتب أو احذف رسائل محادثة"
 _auth:
+
   shareAccess: "أتريد التفويض لـ \"{name}\" بالوصول لحسابك؟"
   shareAccessAsk: "هل تخول لهذا التطبيق الوصول لحسابك؟"
   permissionAsk: "يطلب التطبيق الأذون التالية"
@@ -1323,10 +1383,12 @@ _auth:
   callback: "العودة للتطبيق"
   denied: "رُفض الوصول"
 _antennaSources:
+
   all: "كل الملاحظات"
   homeTimeline: "ملاحظات المستخدمين المتابَعين"
   users: "ملاحظات مستخدمين محددين"
 _weekday:
+
   sunday: "الأحد"
   monday: "الإثنين"
   tuesday: "الثلاثاء"
@@ -1335,6 +1397,7 @@ _weekday:
   friday: "الجمعة"
   saturday: "السبت"
 _widgets:
+
   profile: "الملف التعريفي"
   instanceInfo: "معلومات مثيل الخادم"
   memo: "ملاحظة لاصقة"
@@ -1356,13 +1419,16 @@ _widgets:
   serverMetric: "إحصائيات الخادم"
   userList: "قائمة المستخدمين"
   _userList:
+
     chooseList: "اختر قائمة"
 _cw:
+
   hide: "إخفاء"
   show: "عرض المزيد"
   chars: "{count} أحرف"
   files: "{count} ملفات"
 _poll:
+
   noOnlyOneChoice: "تحتاج إلى خيارَين على الأقل"
   choiceN: "الخيار {n}"
   noMore: "لا يمكنك إضافة خيارات أخرى"
@@ -1385,6 +1451,7 @@ _poll:
   remainingMinutes: "{m} دقائق و {s} ثوانٍ متبقية"
   remainingSeconds: "{s} ثوانٍ متبقية"
 _visibility:
+
   public: "علني"
   publicDescription: "ستكون ملاحظتك مرئية لكل المستخدمين"
   home: "الرئيسي"
@@ -1394,10 +1461,12 @@ _visibility:
   specified: "مباشرة"
   specifiedDescription: "اجعلها مرئية لمستخدمين محددين"
 _postForm:
+
   replyPlaceholder: "رد على هذه الملاحظة…"
   quotePlaceholder: "اقتبس هذه الملاحظة…"
   channelPlaceholder: "انشر في قناة..."
   _placeholders:
+
     a: "ما الذي تنوي فعله؟"
     b: "ماذا يحدث حولك ؟"
     c: "ما الذي تفكر فيه؟"
@@ -1405,6 +1474,7 @@ _postForm:
     e: "أكتب..."
     f: "بانتظارك لتكتب..."
 _profile:
+
   name: "الإسم"
   username: "اسم المستخدم"
   description: "السيرة"
@@ -1417,6 +1487,7 @@ _profile:
   changeAvatar: "غيّر الصورة الرمزية"
   changeBanner: "غيّر اللافتة"
 _exportOrImport:
+
   allNotes: "كل الملاحظات"
   favoritedNotes: " الملاحظات المفضلة"
   clips: "مِشبك"
@@ -1427,6 +1498,7 @@ _exportOrImport:
   excludeMutingUsers: "استثن الحسابات المكتومة"
   excludeInactiveUsers: "استثن المستخدمين الخاملين"
 _charts:
+
   federation: "الفديرالية"
   apRequest: "الطلبات"
   usersIncDec: "تباين عدد المستخدمين"
@@ -1441,6 +1513,7 @@ _charts:
   storageUsageIncDec: "التباين في استغلال مساحة التخزين"
   storageUsageTotal: "اجمالي مساحة التخزين المستغلة"
 _instanceCharts:
+
   requests: "الطلبات"
   users: "تباين عدد المستخدمين"
   usersTotal: "تباين عدد المستخدمين"
@@ -1451,16 +1524,19 @@ _instanceCharts:
   files: "تباين عدد الملفات"
   filesTotal: "تباين عدد الملفات"
 _timelines:
+
   home: "الرئيسي"
   local: "المحلي"
   social: "الاجتماعي"
   global: "الشامل"
 _play:
+
   viewSource: "اظهر المصدر"
   featured: "الأكثر شعبية"
   title: "العنوان"
   summary: "الوصف"
 _pages:
+
   newPage: "أنشئ صفحة جديدة"
   editPage: "عدّل الصفحة"
   readPage: "نُشّط عرض المصدر"
@@ -1494,6 +1570,7 @@ _pages:
   inputBlocks: "مُدخل"
   specialBlocks: "خاص"
   blocks:
+
     text: "نص"
     textarea: "حقل نصي"
     section: "قسم"
@@ -1501,14 +1578,17 @@ _pages:
     button: "زرّ"
     note: "ملاحظة مضمّنة"
     _note:
+
       id: "معرّف الملاحظة"
       idDescription: "كبديل يمكنك إدخال رابك الملاحظة هنا"
       detailed: "عرض مفصّل"
 _relayStatus:
+
   requesting: "مُعلّق"
   accepted: "مقبول"
   rejected: "مرفوض"
 _notification:
+
   fileUploaded: "نجح رفع الملف"
   youGotMention: "{name} أشار إليك"
   youGotReply: "ردّ عليك {name}"
@@ -1520,6 +1600,7 @@ _notification:
   pollEnded: "انتهى الاستطلاع"
   unreadAntennaNote: "هوائي {name}"
   _types:
+
     all: "الكل"
     follow: "متابِعون جدد"
     mention: "الإشارات"
@@ -1532,10 +1613,12 @@ _notification:
     login: "لِج"
     app: "إشعارات التطبيقات المرتبطة"
   _actions:
+
     followBack: "تابعك بالمثل"
     reply: "رد"
     renote: "أعد النشر"
 _deck:
+
   alwaysShowMainColumn: "أظهر العمود الأساسي دائمًا"
   columnAlign: "محاذاة الأعمدة"
   addColumn: "إضافة عمود"
@@ -1547,6 +1630,7 @@ _deck:
   newProfile: "ملف تعريفي جديد"
   deleteProfile: "حذف الملف التعريفي"
   _columns:
+
     main: "الرئيسية"
     widgets: "التطبيقات المُصغّرة"
     notifications: "الإشعارات"
@@ -1557,15 +1641,21 @@ _deck:
     mentions: "الإشارات"
     direct: "مباشرة"
 _webhookSettings:
+
   name: "الاسم"
   active: "مُفعّل"
   _events:
+
     reaction: "عند التفاعل"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "البريد الإلكتروني "
 _moderationLogTypes:
+
   suspend: "علِق"
   deleteDriveFile: "حُذف الملف"
   deleteNote: "حُذفت الملاحظة"
@@ -1576,6 +1666,7 @@ _moderationLogTypes:
   resetPassword: "أعد تعيين كلمتك السرية"
   createInvitation: "ولِّد دعوة"
 _reversi:
+
   total: "المجموع"
   lookingForPlayer: "يبحث عن خصم..."
   gameCanceled: "أُلغيت اللعبة."
@@ -1583,12 +1674,16 @@ _reversi:
   showBoardLabels: "اعرض ترقيم الصفوف والأعمدة على اللوح"
   useAvatarAsStone: "حوَل الحجارة إلى صور مستخدمين"
 _offlineScreen:
+
   title: "غير متصل - يتعذر الاتصال بالخادم"
   header: "يتعذر الاتصال بالخادم"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "غير موجود"
 _search:
+
   searchScopeAll: "الكل"
   searchScopeLocal: "المحلي"
   searchScopeUser: "مستخدم محدد"

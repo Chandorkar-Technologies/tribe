@@ -1,10 +1,10 @@
 ---
-introMisskey: "Welcome! Sharkey is an open source, decentralized microblogging service.\nCreate \"notes\" to share your thoughts with everyone around you. 📡\nWith \"reactions\", you can also quickly express your feelings about everyone's notes. 👍\nLet's explore a new world! 🚀"
+introMisskey: "Welcome! Sharkey is an open source, decentralized microblogging service.\nCreate \"sparks\" to share your thoughts with everyone around you. 📡\nWith \"reactions\", you can also quickly express your feelings about everyone's sparks. 👍\nLet's explore a new world! 🚀"
 poweredByMisskeyDescription: "{name} is one of the services powered by the open source platform <b>Sharkey</b> which is based on Misskey (referred to as a \"Misskey instance\")."
 renotedBy: "Boosted by {user}"
 approvals: "Approvals"
 copyLinkRenote: "Copy boost link"
-deleteAndEditConfirm: "Are you sure you want to redraft this note? This means you will lose all reactions, boosts, and replies to it."
+deleteAndEditConfirm: "Are you sure you want to redraft this spark? This means you will lose all reactions, boosts, and replies to it."
 openRemoteProfile: "Open remote profile"
 trustedLinkUrlPatterns: "Link to external site warning exclusion list"
 trustedLinkUrlPatternsDescription: "Separate with spaces for an AND condition or with line breaks for an OR condition. Using surrounding keywords with slashes will turn them into a regular expression. If you write only the domain name, it will be a backward match."
@@ -31,14 +31,14 @@ muted: "Muted"
 renoteMute: "Mute Boosts"
 renoteMuted: "Boosts muted"
 renoteUnmute: "Unmute Boosts"
-muteNote: "Mute note"
-unmuteNote: "Unmute note"
+muteNote: "Mute spark"
+unmuteNote: "Unmute spark"
 userSaysSomethingInMutedNote: "{name} said something in a muted post"
 userSaysSomethingInMutedThread: "{name} said something in a muted thread"
 silencedUserSaysSomething: "{name} has been silenced by {host} staff"
 silencedInstanceSaysSomething: "{name} has been silenced by {host} staff"
 userIsFlaggedAs: "{name} is flagged: \"{cw}\""
-noteIsFlaggedAs: "Note is flagged: \"{cw}\""
+noteIsFlaggedAs: "Spark is flagged: \"{cw}\""
 instanceIsFlaggedAs: "{name} is flagged: \"{cw}\""
 markAsNSFW: "Mark all media from user as NSFW"
 markInstanceAsNSFW: "Mark as NSFW"
@@ -47,7 +47,7 @@ unNsfwConfirm: "Are you sure that you want to unmark all media from this account
 approveConfirm: "Are you sure that you want to approve this account?"
 flagAsBotDescription: "Enable this option if this account is controlled by a program. If enabled, it will act as a flag for other developers to prevent endless interaction chains with other bots and adjust Sharkey's internal systems to treat this account as a bot."
 flagSpeakAsCat: "Speak as a cat"
-flagSpeakAsCatDescription: "Your posts will get nyanified when in cat mode. If this isn't working, then please check that you dont have 'Disable cat speak' on under General/Note Display"
+flagSpeakAsCatDescription: "Your posts will get nyanified when in cat mode. If this isn't working, then please check that you dont have 'Disable cat speak' on under General/Spark Display"
 continueOnRemote: "Continue on remote instance"
 chooseServerOnMisskeyHub: "Choose a instance from Misskey Hub"
 mediaSilenceThisInstance: "Silence media from this instance"
@@ -74,7 +74,7 @@ collapseAllCws: "Hide content for all replies"
 attachAsFileQuestion: "The text in clipboard is long. Would you like to attach it as a text file?"
 signinOrContinueOnRemote: "To continue, you need to go to your instance to perform this action or sign up / log in to the instance you are trying to interact with."
 disableDrawer: "Don't use drawer-style menus"
-showReactionsCount: "Show the number of reactions in notes"
+showReactionsCount: "Show the number of reactions in sparks"
 cornerRadius: "Corner roundness"
 warnForMissingAltText: "Warn you when you forget to put alt text"
 deeplFreeMode: "Use DeepLX-JS (No Auth Key)"
@@ -103,10 +103,10 @@ searchEngine: "Search Engine For Search MFM"
 searchEngineOther: "Other"
 searchEngineCustomURIDescription: "The custom URI must be input in the format like \"https://www.google.com/search?q=\\{query}\" or \"https://www.google.com/search?q=%s\"."
 searchEngineCusomURI: "Custom URI"
-makeIndexable: "Make public notes not indexable"
-makeIndexableDescription: "Stop note search from indexing your public notes."
+makeIndexable: "Make public sparks not indexable"
+makeIndexableDescription: "Stop spark search from indexing your public sparks."
 enableRss: "Enable RSS feed"
-enableRssDescription: "Generate an RSS feed containing your basic profile details and public notes. Users can subscribe to the feed without a follow request or approval."
+enableRssDescription: "Generate an RSS feed containing your basic profile details and public sparks. Users can subscribe to the feed without a follow request or approval."
 sendErrorReportsDescription: "When turned on, detailed error information will be shared with Sharkey when a problem occurs, helping to improve the quality of Sharkey.\nThis will include information such the version of your OS, what browser you're using, your activity in Sharkey, etc."
 noInquiryUrlWarning: "Contact URL is not set."
 misskeyUpdated: "Sharkey has been updated!"
@@ -134,11 +134,11 @@ thisPostIsMissingAltTextIgnore: "Post anyway"
 thisPostIsMissingAltText: "One of the files attached to this post is missing alt text. Please ensure all the attachments have alt text."
 collapseRenotes: "Collapse boosts you've already seen"
 collapseRenotesDescription: "Collapse boosts that you have boosted or reacted to"
-collapseNotesRepliedTo: "Collapse notes replied to"
+collapseNotesRepliedTo: "Collapse sparks replied to"
 collapseFiles: "Collapse files"
 clone: "Clone"
-uncollapseCW: "Uncollapse CWs on notes"
-expandLongNote: "Always expand long notes"
+uncollapseCW: "Uncollapse CWs on sparks"
+expandLongNote: "Always expand long sparks"
 autoloadConversation: "Load conversation on replies"
 approvalRequiredToRegister: "This instance is only accepting users who specify a reason for registration."
 limitWidthOfReaction: "Limits the maximum width of reactions and display them in reduced size."
@@ -155,7 +155,7 @@ enableBotTrending: "Populate Hashtags with Bots"
 turnOffBotTrending: "Turning this off will stop Bots from populating Hashtags"
 replies: "Replies"
 renotes: "Boosts"
-clickToOpen: "Click to open notes"
+clickToOpen: "Click to open sparks"
 showBots: "Show bots in timeline"
 showRenotes: "Show boosts"
 sourceCodeIsNotYetProvided: "The source code is not yet available. Please contact your administrator to fix this problem."
@@ -181,10 +181,11 @@ warnExternalUrl: "Show warning when opening external URLs"
 flash: "Flash"
 filesRemoved: "Files removed"
 fileImported: "File imported"
-cannotLoadNote: "Failed to load note"
+cannotLoadNote: "Failed to load spark"
 clickToUnsubscribe: "Please click [OK] to unsubscribe from announcement e-mails."
 unsubscribeError: "There was a problem unsubscribing."
 _flash:
+
   contentHidden: "Flash Content Hidden"
   poweredByRuffle: "Powered by Ruffle."
   arbitraryCodeExecutionWarning: "Always be wary of arbitrary code execution!"
@@ -194,32 +195,44 @@ _flash:
   loadingFlashFile: "Loading Flash file"
   cspError: "raw.esm.sh could not be accessed, meaning this instance's Content Security Policy is likely out of date. Please contact your instance administrators."
 _delivery:
+
   stop: "Suspend delivery"
   resume: "Resume delivery"
 _initialAccountSetting:
+
   youCanContinueTutorial: "You can proceed to a tutorial on how to use {name} (Sharkey) or you can exit the setup here and start using it immediately."
 _initialTutorial:
+
   _landing:
+
     description: "Here, you can learn the basics of using Sharkey and its features."
   _note:
-    description: "Posts on Sharkey are called 'Notes.' Notes are arranged chronologically on the timeline and are updated in real-time."
+
+    description: "Posts on Sharkey are called 'Sparks.' Sparks are arranged chronologically on the timeline and are updated in real-time."
   _reaction:
-    letsTryReacting: "Reactions can be added by clicking the '{reaction}' button on the note. Try reacting to this sample note!"
+
+    letsTryReacting: "Reactions can be added by clicking the '{reaction}' button on the spark. Try reacting to this sample spark!"
     reactDone: "You can undo a reaction by pressing the '{undo}' button."
   _timeline:
+
     description1: "Sharkey provides multiple timelines based on usage (some may not be available depending on the server's policies)."
-    bubble: "You can view notes from connected servers picked by your admins."
+    bubble: "You can view sparks from connected servers picked by your admins."
   _postNote:
-    description1: "When posting a note on Sharkey, various options are available. The posting form looks like this."
+
+    description1: "When posting a spark on Sharkey, various options are available. The posting form looks like this."
     _visibility:
+
       home: "Public only on the Home timeline. People visiting your profile, via followers, and through boosts can see it."
       followers: "Visible to followers only. Only followers can see it and no one else, and it cannot be boosted by others."
   _done:
+
     title: "The tutorial is complete! 🎉"
     description: "The functions introduced here are just a small part. For a more detailed understanding of using Sharkey, please refer to {link}."
 _timelineDescription:
-  bubble: "In the Bubble timeline, you can see notes from connected servers picked by your admins."
+
+  bubble: "In the Bubble timeline, you can see sparks from connected servers picked by your admins."
 _serverSettings:
+
   sidebarLogoUrl: "Logo URL"
   sidebarLogoDescription: "Specifies the logo to use instead of the regular icon in high definition, dynamic-width scenarios."
   sidebarLogoUsageExample: "E.g. In the sidebar, to visitors and in the \"About\" page."
@@ -229,36 +242,49 @@ _serverSettings:
   aboutInstanceDescription: "A longer description that will be displayed in the 'Instance Information' page, going in place of the regular instance description. Supports HTML."
   deliverSuspendedSoftwareDescription: "You can specify a range of names and versions of the server's software to stop delivery for vulnerability or other reasons. This version information is provided by the server and is not guaranteed to be reliable. A semver range specification can be used to specify the version, but specifying >= 2024.3.1 will not include custom versions such as 2024.3.1-custom.0, so it is recommended that a prerelease specification be used, such as >= 2024.3.1-0. Specifying * will match any name or version, even when the server doesn't provide one. You can also provide a regular expression like /^sharkey-/i or /^1-/"
 _accountMigration:
-  moveAccountDescription: "This will migrate your account to a different one.\n　・Followers from this account will automatically be migrated to the new account\n　・This account will unfollow all users it is currently following\n　・You will be unable to create new notes etc. on this account\n\nWhile migration of followers is automatic, you must manually prepare some steps to migrate the list of users you are following. To do so, carry out a follows export that you will later import on the new account in the settings menu. The same procedure applies to your lists as well as your muted and blocked users.\n\n(This explanation applies to Sharkey v13.12.0 and later. Other ActivityPub software, such as Mastodon, might function differently.)"
+
+  moveAccountDescription: "This will migrate your account to a different one.\n　・Followers from this account will automatically be migrated to the new account\n　・This account will unfollow all users it is currently following\n　・You will be unable to create new sparks etc. on this account\n\nWhile migration of followers is automatic, you must manually prepare some steps to migrate the list of users you are following. To do so, carry out a follows export that you will later import on the new account in the settings menu. The same procedure applies to your lists as well as your muted and blocked users.\n\n(This explanation applies to Sharkey v13.12.0 and later. Other ActivityPub software, such as Mastodon, might function differently.)"
 _achievements:
+
   _types:
+
     _notes1:
-      title: "just setting up my shonk"
-      flavor: "Have a good time with Sharkey!"
+
+      title: "First Strike"
+      flavor: "Welcome to the bonfire."
     _login1000:
-      flavor: "Thank you for using Sharkey!"
+
+      flavor: "Thank you for being part of Tribe."
     _iLoveMisskey:
-      title: "I Love Sharkey"
-      description: "Post \"I ❤ #Sharkey\""
-      flavor: "Sharkey's development team greatly appreciates your support!"
+
+      title: "I Love Tribe"
+      description: "Post \"I ❤ #Tribe\""
+      flavor: "Tribe's team greatly appreciates your support!"
     _client30min:
-      description: "Keep Sharkey opened for at least 30 minutes"
+
+      description: "Keep Tribe open for at least 30 minutes"
     _client60min:
-      title: "No \"Miss\" in Sharkey"
-      description: "Keep Sharkey opened for at least 60 minutes"
+
+      title: "Always By the Fire"
+      description: "Keep Tribe open for at least 60 minutes"
     _brainDiver:
-      flavor: "Sharkey-Sharkey La-Tu-Ma"
+
+      flavor: "Tribe-Tribe La-Tu-Ma"
     _tutorialCompleted:
-      title: "Sharkey Elementary Course Diploma"
+
+      title: "Tribe 101 Diploma"
 _role:
+
   _options:
+
     btlAvailable: "Can view the bubble timeline"
-    canImportNotes: "Can import notes"
+    canImportNotes: "Can import sparks"
     canUpdateBioMedia: "Allow users to edit their avatar or banner"
-    scheduleNoteMax: "Maximum number of scheduled notes"
-    canTrend: "Can appear in trending notes / users"
+    scheduleNoteMax: "Maximum number of scheduled sparks"
+    canTrend: "Can appear in trending sparks / users"
     canViewFederation: "Can view federation stats and details of remote instances"
   _condition:
+
     isLocked: "Private account"
     isExplorable: "Account is discoverable"
     isFromInstance: "Is from a specific instance"
@@ -276,11 +302,14 @@ _role:
   remoteDataWarning: "This condition may be incorrect for remote users."
   selectTestUser: "Select a user to test the condition."
 _emailUnavailable:
+
   banned: "This email address is banned"
 _signup:
+
   approvalPending: "Your account has been created and is awaiting approval."
   reasonInfo: "Please enter a reason as to why you want to join the instance."
 _aboutMisskey:
+
   about: "Sharkey is open-source software based on Misskey which has been in development by syuilo since 2014."
   original: "Misskey original"
   original_sharkey: "Sharkey original"
@@ -291,24 +320,34 @@ _aboutMisskey:
   misskeyContributors: "Misskey Contributors"
   ourLovelySponsors: "Our lovely Sponsors"
 _serverDisconnectedBehavior:
+
   disabled: "Disable warning"
 _channel:
+
   allowRenoteToExternal: "Allow boosts and quote outside the channel"
 _instanceMute:
-  instanceMuteDescription: "This will mute any notes/boosts from the listed instances, including those of users replying to a user from a muted instance."
+
+  instanceMuteDescription: "This will mute any sparks/boosts from the listed instances, including those of users replying to a user from a muted instance."
 _theme:
+
   keys:
+
     renote: "Boost"
 _soundSettings:
+
   driveFileDurationWarnDescription: "Long audio may disrupt using Sharkey. Still continue?"
   driveFileError: "The audio couldn't be loaded. Please make sure you selected an audio file."
 _2fa:
+
   moreDetailedGuideHere: "Click here for a detailed guide"
 _widgets:
+
   search: "Search"
 _poll:
+
   multiple: "Multiple choices"
 _profile:
+
   updateAvatar: "Update avatar"
   removeAvatar: "Remove avatar"
   updateBanner: "Update banner"
@@ -318,44 +357,58 @@ _profile:
   removeBackground: "Remove background"
   listenbrainz: "ListenBrainz username"
 _timelines:
+
   bubble: "Bubble"
 _pages:
+
   blocks:
+
     dynamicDescription: "This block type has been removed. Please use {play} from now on."
 _notification:
+
   youRenoted: "Boost from {name}"
   renotedBySomeUsers: "Boosted by {n} users"
-  edited: "Note got edited"
-  scheduledNoteFailed: "Posting scheduled note failed"
-  scheduledNotePosted: "Scheduled Note was posted"
+  edited: "Spark got edited"
+  scheduledNoteFailed: "Posting scheduled spark failed"
+  scheduledNotePosted: "Scheduled Spark was posted"
   importOfXCompleted: "Import of {x} has been completed"
   sharedAccessGranted: "Shared access granted"
   sharedAccessRevoked: "Shared access revoked"
   sharedAccessLogin: "Shared access login"
   _types:
+
     renote: "Boosts"
     edited: "Edits"
-    scheduledNoteFailed: "Posting scheduled note failed"
-    scheduledNotePosted: "Scheduled note was posted"
+    scheduledNoteFailed: "Posting scheduled spark failed"
+    scheduledNotePosted: "Scheduled spark was posted"
     importCompleted: "The import has been completed"
   _actions:
+
     renote: "Boost"
 _webhookSettings:
+
   _events:
+
     renote: "When boosted"
   _systemEvents:
+
     abuseReportResolved: "When resolved abuse reports"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       _captions:
+
         mail: "Send an email to the moderators when an abuse report is received."
         webhook: "Send a notification to the SystemWebhook when an abuse report is received or resolved."
 _moderationLogTypes:
+
   approve: "Approved"
   decline: "Declined"
   setMandatoryCW: "Set content warning for user"
-  setMandatoryCWForNote: "Set content warning for note"
+  setMandatoryCWForNote: "Set content warning for spark"
   setMandatoryCWForInstance: "Set content warning for instance"
   rejectRemoteInstanceReports: "Rejected reports from remote instance"
   acceptRemoteInstanceReports: "Accepted reports from remote instance"
@@ -373,13 +426,14 @@ _moderationLogTypes:
   importCustomEmojis: "Imported custom emojis"
   clearInstanceFiles: "Cleared an instance's drive files"
   severFollowRelations: "Severed follow relations with an instance"
-  createPromo: "Created a note promo"
+  createPromo: "Created a spark promo"
   addRelay: "Added a relay"
   removeRelay: "Removed a relay"
   restartMigration: "Restarted migration for a user"
   setRoot: "Set the root user"
 
 _mfm:
+
   uncommonFeature: "This is not a widespread feature, it may not display properly on most other fedi software, including other Misskey forks"
   intro: "MFM is a markup language used on Misskey, Sharkey, Firefish, Akkoma, and more that can be used in many places. Here you can view a list of all available MFM syntax."
   dummy: "Sharkey expands the world of the Fediverse"
@@ -464,26 +518,33 @@ _mfm:
   plain: "Plain"
   plainDescription: "Deactivates the effects of all MFM contained within this MFM effect."
 _animatedMFM:
+
   play: "Play MFM Animation"
   stop: "Stop MFM Animation"
   _alert:
+
     text: "Animated MFMs could include flashing lights and fast moving text/emojis."
     confirm: "Animate"
 _dataRequest:
+
   title: "Request Data"
   warn: "Data requests are only possible every 3 days."
   text: "Once the data is ready to download, an email will be sent to the email address registered to this account."
   button: "Request"
 _dataSaver:
+
   _avatar:
+
     description: "Stop avatar image animation. Animated images can be larger in file size than normal images, potentially leading to further reductions in data traffic."
 _urlPreviewSetting:
+
   timeoutDescription: "If it takes longer than this value to get the preview, the preview won't be generated."
   requireContentLength: "Generate the preview only if we can get Content-Length"
   summaryProxy: "Endpoint for proxy to generate previews"
   summaryProxyDescription: "Generate previews using Summaly Proxy, instead of Sharkey itself."
   summaryProxyDescription2: "The following parameters are sent to the proxy as a query string. If the proxy does not support them, the values are ignored."
 _externalNavigationWarning:
+
   title: "Navigate to an external site"
   description: "Leave {host} and go to an external site"
   trustThisDomain: "Trust this domain on this device in the future"
@@ -491,8 +552,10 @@ _externalNavigationWarning:
 remoteFollowersWarning: "Remote followers may have incomplete or outdated activity"
 
 _auth:
+
   allowed: "Allowed"
 _announcement:
+
   new: "New"
   onlyForRoles: "Restrict to roles"
   onlyForRolesChange: "Change role restrictions"
@@ -501,29 +564,32 @@ _announcement:
   confetti: "Throw confetti"
   confettiDescription: "If enabled, the announcement will display a confetti effect when viewed."
 _deck:
+
   _columns:
+
     following: "Following"
 
 selectFollowRelationship: "Select a follow relationship..."
 
-schedulePost: "Schedule a note"
-schedulePostList: "List of scheduled notes"
+schedulePost: "Schedule a spark"
+schedulePostList: "List of scheduled sparks"
 postOn: "Post on"
-scheduledNotes: "Scheduled Notes"
+scheduledNotes: "Scheduled Sparks"
 
 _permissions:
+
   "write:admin:approve-user": "Approve new users"
   "write:admin:decline-user": "Decline new users"
   "write:admin:nsfw-user": "Mark users as NSFW"
   "write:admin:unnsfw-user": "Mark users as not NSFW"
   "write:admin:cw-user": "Apply mandatory CW on users"
-  "write:admin:cw-note": "Apply mandatory CW on notes"
+  "write:admin:cw-spark": "Apply mandatory CW on sparks"
   "write:admin:cw-instance": "Apply mandatory CW on instances"
   "write:admin:silence-user": "Silence users"
   "write:admin:unsilence-user": "Un-silence users"
   "write:admin:reject-quotes": "Allow/Prohibit quote posts from a user"
-  "read:notes-schedule": "View your list of scheduled notes"
-  "write:notes-schedule": "Compose or delete scheduled notes"
+  "read:sparks-schedule": "View your list of scheduled sparks"
+  "write:sparks-schedule": "Compose or delete scheduled sparks"
   "read:admin:abuse-report:notification-recipient": "Read abuse report notification recipients"
   "write:admin:abuse-report:notification-recipient": "Edit abuse report notification recipients"
 
@@ -535,6 +601,7 @@ defaultCWDescription: "The value here will be auto-filled as the content warning
 defaultCWPriority: "Automatic CW priority"
 defaultCWPriorityDescription: "Select preferred action when default CW and keep CW settings are both enabled at the same time."
 _defaultCWPriority:
+
   default: "Use Default (use the default CW, ignoring the inherited CW)"
   parent: "Use Parent (use the inherited CW, ignoring the default CW)"
   defaultParent: "Use Default, then Parent (use the default CW, and append the inherited CW)"
@@ -542,13 +609,16 @@ _defaultCWPriority:
 
 genKeys: "Generate Keys"
 _genKeysDialog:
+
   text: "Are you sure that you want to generate new keys? This will stop push notifications for all users who have already enabled them."
   title: "Generate new keys"
 
 _noteSearch:
+
   newestToOldest: "Sort by newest to oldest"
   fileType: "File Type"
   _fileType:
+
     none: "None"
     image: "Images"
     video: "Videos"
@@ -563,12 +633,13 @@ mandatoryCWDescription: "Applies a content warning to all posts created by this 
 mandatoryCWForNote: "Force content warning"
 mandatoryCWForNoteDescription: "Applies an additional content warning to this post. The new warning will appear like a word mute to distinguish it from the author's own content warning."
 mandatoryCWForInstance: "Force content warning"
-mandatoryCWForInstanceDescription: "Applies a content warning to all posts originating from this instance. The forced warnings will appear like a word mute to distinguish them from the notes' own content warnings."
-fetchLinkedNote: "Fetch linked note"
-showTranslationButtonInNoteFooter: "Add \"Translate\" to note action menu"
-translationFailed: "Failed to translate note. Please try again later or contact an administrator for assistance."
+mandatoryCWForInstanceDescription: "Applies a content warning to all posts originating from this instance. The forced warnings will appear like a word mute to distinguish them from the sparks' own content warnings."
+fetchLinkedNote: "Fetch linked spark"
+showTranslationButtonInNoteFooter: "Add \"Translate\" to spark action menu"
+translationFailed: "Failed to translate spark. Please try again later or contact an administrator for assistance."
 
 _processErrors:
+
   quoteUnavailable: "Unable to process quote. This post may be missing context."
   attachmentFailed: "One or more media attachments are unavailable and cannot be shown."
 
@@ -576,11 +647,13 @@ authorizedFetchSection: "Authorized Fetch"
 authorizedFetchLabel: "Allow unsigned ActivityPub requests:"
 authorizedFetchDescription: "This setting controls the behavior when a remote instance or user attempts to access your content without verifying their identity. If disabled, any remote user can access your profile and posts - even one who has been blocked or defederated."
 _authorizedFetchValue:
+
   never: "Never"
   always: "Always"
   essential: "Only for essential metadata"
   staff: "Use staff recommendation"
 _authorizedFetchValueDescription:
+
   never: "Block all unsigned requests. Improves privacy and makes blocks more effective, but is not compatible with some very old or uncommon instance software."
   always: "Allow all unsigned requests. Provides the greatest compatibility with other instances, but reduces privacy and weakens blocks."
   essential: "Allow some limited unsigned requests. Provides a hybrid between \"Never\" and \"Always\" by exposing only the minimum profile metadata that is required for federation with older software."
@@ -588,15 +661,17 @@ _authorizedFetchValueDescription:
 authorizedFetchLegacyWarning: "The configuration property 'checkActivityPubGetSignature' has been deprecated and replaced with the new Authorized Fetch setting. Please remove it from your configuration file."
 
 _followRequest:
+
   recieved: "Received"
   sent: "Sent"
 
 deleted: "Deleted"
 
 enableProxyAccount: "Enable the proxy account."
-enableProxyAccountDescription: "If disabled, then the proxy account will not be used. User lists will only include notes from local or followed users."
+enableProxyAccountDescription: "If disabled, then the proxy account will not be used. User lists will only include sparks from local or followed users."
 
 _confirmPollEdit:
+
   title: Are you sure you want to edit this poll
   text: Editing this poll will cause it to lose all previous votes
 
@@ -610,7 +685,7 @@ wordMuteWarning: "All word mutes are *case-sensitive* and match on any substring
 
 bubbleTimeline: "Bubble timeline"
 bubbleTimelineDescription: "Choose which instances should be displayed in the bubble."
-bubbleTimelineMustBeEnabled: "Note: the bubble timeline is hidden by default, and must be enabled via roles."
+bubbleTimelineMustBeEnabled: "Spark: the bubble timeline is hidden by default, and must be enabled via roles."
 
 popularUsersGlobal: "Users popular on the global network"
 popularUsersLocal: "Users popular on {name}"
@@ -639,7 +714,7 @@ roleAutomatic: "automatic"
 translationTimeoutLabel: "Translation timeout"
 translationTimeoutCaption: "Timeout in milliseconds for translation API requests."
 
-staffNotes: "Staff notes"
+staffNotes: "Staff sparks"
 instanceIconAlt: "Icon of {name}"
 
 attributionDomains: "Attribution Domains"
@@ -664,7 +739,7 @@ keepCwDisabled: "Disabled (do not copy CWs)"
 keepCwEnabled: "Enabled (copy CWs verbatim)"
 keepCwPrependRe: "Enabled (copy CW and prepend \"RE:\")"
 
-noteFooterLabel: "Note controls"
+noteFooterLabel: "Spark controls"
 
 rawUserDescription: "Packed user data in its raw form. Most of these fields are public and visible to all users."
 rawInfoDescription: "Extended user data in its raw form. These fields are private and can only be accessed by moderators."
@@ -673,6 +748,7 @@ rawApDescription: "ActivityPub user data in its raw form. These fields are publi
 signupReason: "Signup Reason"
 
 clearCachedFilesOptions:
+
   title: "Delete all cached remote files"
   olderThan: "Only delete files older than:"
   now: "now"
@@ -704,6 +780,7 @@ overrideRank: "Limit rank"
 overrideRankDescription: "Limits the user rank (admin, moderator, or user) for apps using this token."
 rank: "Rank"
 _ranks:
+
   admin: "Admin"
   mod: "Moderator"
   user: "User"
@@ -735,6 +812,7 @@ restartMigrationConfirm: "Are you sure you want to restart this account migratio
 
 backgroundQueue: "Background queue"
 _header:
+
   browse: "Browse"
   manage: "Manage"
 

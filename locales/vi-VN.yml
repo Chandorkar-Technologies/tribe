@@ -1,8 +1,8 @@
 ---
 _lang_: "Tiếng Việt "
 headlineMisskey: "Mạng xã hội liên hợp"
-introMisskey: "Xin chào! Misskey là một nền tảng tiểu blog phi tập trung mã nguồn mở.\nViết \"tút\" để chia sẻ những suy nghĩ của bạn 📡\nBằng \"biểu cảm\", bạn có thể bày tỏ nhanh chóng cảm xúc của bạn với các tút 👍\nHãy khám phá một thế giới mới! 🚀"
-poweredByMisskeyDescription: "{name} là một trong những chủ máy của <b>Misskey</b> là nền tảng mã nguồn mở"
+introMisskey: "Xin chào! Tribe là một nền tảng tiểu blog phi tập trung mã nguồn mở.\nViết \"tút\" để chia sẻ những suy nghĩ của bạn 📡\nBằng \"biểu cảm\", bạn có thể bày tỏ nhanh chóng cảm xúc của bạn với các tút 👍\nHãy khám phá một thế giới mới! 🚀"
+poweredByMisskeyDescription: "{name} là một trong những chủ máy của <b>Tribe</b> là nền tảng mã nguồn mở"
 monthAndDay: "{day} tháng {month}"
 search: "Tìm kiếm"
 reset: "cài lại"
@@ -11,7 +11,7 @@ username: "Tên người dùng"
 password: "Mật khẩu"
 initialPasswordForSetup: "Mật khẩu ban đầu để thiết lập"
 initialPasswordIsIncorrect: "Mật khẩu ban đầu đã nhập sai"
-initialPasswordForSetupDescription: "Nếu bạn tự cài đặt Misskey, hãy sử dụng mật khẩu ban đầu của bạn đã nhập trong tệp cấu hình.\nNếu bạn đang sử dụng dịch vụ nào đó giống như dịch vụ lưu trữ của Misskey, hãy sử dụng mật khẩu ban đầu được cung cấp.\nNếu bạn chưa đặt mật khẩu ban đầu, vui lòng để trống và tiếp tục."
+initialPasswordForSetupDescription: "Nếu bạn tự cài đặt Tribe, hãy sử dụng mật khẩu ban đầu của bạn đã nhập trong tệp cấu hình.\nNếu bạn đang sử dụng dịch vụ nào đó giống như dịch vụ lưu trữ của Tribe, hãy sử dụng mật khẩu ban đầu được cung cấp.\nNếu bạn chưa đặt mật khẩu ban đầu, vui lòng để trống và tiếp tục."
 forgotPassword: "Quên mật khẩu"
 fetchingAsApObject: "Đang nạp dữ liệu từ Fediverse..."
 ok: "Đồng ý"
@@ -145,8 +145,8 @@ unmarkAsSensitive: "Bỏ đánh dấu nhạy cảm"
 enterFileName: "Nhập tên tập tin"
 mute: "Ẩn"
 unmute: "Bỏ ẩn"
-renoteMute: "Mute Renotes"
-renoteUnmute: "Unmute Renotes"
+renoteMute: "Mute Re-sparks"
+renoteUnmute: "Unmute Re-sparks"
 block: "Chặn"
 unblock: "Bỏ chặn"
 suspend: "Vô hiệu hóa"
@@ -177,7 +177,7 @@ youCanCleanRemoteFilesCache: "Bạn có thể xoá bộ nhớ đệm bằng các
 cacheRemoteSensitiveFiles: "Lưu các tập tin nhạy cảm vào bộ nhớ tạm từ xa"
 cacheRemoteSensitiveFilesDescription: "Khi bạn tắt tính năng này, các tệp nhạy cảm sẽ được tải trực tiếp từ máy chủ và không được lưu vào bộ nhớ tạm"
 flagAsBot: "Đánh dấu đây là tài khoản bot"
-flagAsBotDescription: "Bật tùy chọn này nếu tài khoản này được kiểm soát bởi một chương trình. Nếu được bật, nó sẽ được đánh dấu để các nhà phát triển khác ngăn chặn chuỗi tương tác vô tận với các bot khác và điều chỉnh hệ thống nội bộ của Misskey để coi tài khoản này như một bot."
+flagAsBotDescription: "Bật tùy chọn này nếu tài khoản này được kiểm soát bởi một chương trình. Nếu được bật, nó sẽ được đánh dấu để các nhà phát triển khác ngăn chặn chuỗi tương tác vô tận với các bot khác và điều chỉnh hệ thống nội bộ của Tribe để coi tài khoản này như một bot."
 flagAsCat: "Chế độ Mèeeeeeeeeeo!!"
 flagAsCatDescription: "Nếu mà em là một con mèo thì cứ bật nó kiu mèo mèo mèeeeeeeo!! "
 flagShowTimelineReplies: "Hiện lượt trả lời trong bảng tin"
@@ -188,7 +188,7 @@ reloadAccountsList: "Cập nhật danh sách tài khoản"
 loginFailed: "Đăng nhập không thành công"
 showOnRemote: "Truy cập trang của người này"
 continueOnRemote: "Tiếp tục trên phiên bản từ xa"
-chooseServerOnMisskeyHub: "Chọn một máy chủ từ Misskey Hub"
+chooseServerOnMisskeyHub: "Chọn một máy chủ từ Tribe Hub"
 specifyServerHost: "Thiết lập một máy chủ"
 inputHostName: "Nhập địa chỉ máy chủ"
 general: "Tổng quan"
@@ -250,7 +250,7 @@ noUsers: "Chưa có ai"
 editProfile: "Sửa hồ sơ"
 noteDeleteConfirm: "Bạn có chắc muốn xóa tút này?"
 pinLimitExceeded: "Bạn không thể ghim bài viết nữa"
-intro: "Đã cài đặt Misskey! Xin hãy tạo tài khoản admin."
+intro: "Đã cài đặt Tribe! Xin hãy tạo tài khoản admin."
 done: "Xong"
 processing: "Đang xử lý"
 preview: "Xem trước"
@@ -445,7 +445,7 @@ exploreFediverse: "Khám phá Fediverse"
 popularTags: "Hashtag thông dụng"
 userList: "Danh sách"
 about: "Giới thiệu"
-aboutMisskey: "Về Misskey"
+aboutMisskey: "Về Tribe"
 administrator: "Quản trị viên"
 token: "Token"
 2fa: "Xác thực 2 yếu tố"
@@ -584,7 +584,7 @@ popout: "Pop-out"
 volume: "Âm lượng"
 masterVolume: "Âm thanh chung"
 notUseSound: "Tắt tiếng"
-useSoundOnlyWhenActive: "Chỉ phát âm thanh khi Misskey đang được hiển thị"
+useSoundOnlyWhenActive: "Chỉ phát âm thanh khi Tribe đang được hiển thị"
 details: "Chi tiết"
 renoteDetails: "Tìm hiểu thêm về đăng lại "
 chooseEmoji: "Chọn emoji"
@@ -601,7 +601,7 @@ sort: "Sắp xếp"
 ascendingOrder: "Tăng dần"
 descendingOrder: "Giảm dần"
 scratchpad: "Scratchpad"
-scratchpadDescription: "Scratchpad cung cấp môi trường cho các thử nghiệm AiScript. Bạn có thể viết, thực thi và kiểm tra kết quả tương tác với Misskey trong đó."
+scratchpadDescription: "Scratchpad cung cấp môi trường cho các thử nghiệm AiScript. Bạn có thể viết, thực thi và kiểm tra kết quả tương tác với Tribe trong đó."
 uiInspector: "Trình kiểm tra UI"
 output: "Nguồn ra"
 script: "Kịch bản"
@@ -743,7 +743,7 @@ unclip: "Bỏ ghim"
 confirmToUnclipAlreadyClippedNote: "Bài đăng này là một phần của \"{name}\" ghim. Bạn có muốn bỏ khỏi ghim?"
 public: "Công khai"
 private: "Riêng tư"
-i18nInfo: "Misskey đang được các tình nguyện viên dịch sang nhiều thứ tiếng khác nhau. Bạn có thể hỗ trợ tại {link}."
+i18nInfo: "Tribe đang được các tình nguyện viên dịch sang nhiều thứ tiếng khác nhau. Bạn có thể hỗ trợ tại {link}."
 manageAccessTokens: "Tạo mã truy cập"
 accountInfo: "Thông tin tài khoản"
 notesCount: "Số lượng tút"
@@ -797,7 +797,7 @@ onlineUsersCount: "{n} người đang online"
 nUsers: "{n} Người"
 nNotes: "{n} Tút"
 sendErrorReports: "Báo lỗi"
-sendErrorReportsDescription: "Khi được bật, thông tin chi tiết về lỗi sẽ được chia sẻ với Misskey khi xảy ra sự cố, giúp nâng cao chất lượng của Misskey.\nBao gồm thông tin như phiên bản hệ điều hành của bạn, trình duyệt bạn đang sử dụng, hoạt động của bạn trong Misskey, v.v."
+sendErrorReportsDescription: "Khi được bật, thông tin chi tiết về lỗi sẽ được chia sẻ với Tribe khi xảy ra sự cố, giúp nâng cao chất lượng của Tribe.\nBao gồm thông tin như phiên bản hệ điều hành của bạn, trình duyệt bạn đang sử dụng, hoạt động của bạn trong Tribe, v.v."
 myTheme: "Theme của tôi"
 backgroundColor: "Màu nền"
 accentColor: "Màu phụ"
@@ -892,7 +892,7 @@ hashtags: "Hashtag"
 troubleshooting: "Khắc phục sự cố"
 useBlurEffect: "Dùng hiệu ứng làm mờ trong giao diện"
 learnMore: "Tìm hiểu thêm"
-misskeyUpdated: "Misskey vừa được cập nhật!"
+misskeyUpdated: "Tribe vừa được cập nhật!"
 whatIsNew: "Hiện những thay đổi"
 translate: "Dịch"
 translatedFrom: "Dịch từ {x}"
@@ -1027,7 +1027,7 @@ show: "Hiển thị"
 neverShow: "Không hiển thị nữa"
 remindMeLater: "Để sau"
 didYouLikeMisskey: "Bạn có ưa thích Mískey không?"
-pleaseDonate: "Misskey là phần mềm miễn phí mà {host} đang sử dụng. Xin mong bạn quyên góp cho chúng tôi để chúng tôi có thể tiếp tục phát triển dịch vụ này. Xin cảm ơn!!"
+pleaseDonate: "Tribe là phần mềm miễn phí mà {host} đang sử dụng. Xin mong bạn quyên góp cho chúng tôi để chúng tôi có thể tiếp tục phát triển dịch vụ này. Xin cảm ơn!!"
 correspondingSourceIsAvailable: "Mã nguồn có thể được xem tại {anchor}"
 roles: "Vai trò"
 role: "Vai trò"
@@ -1129,7 +1129,7 @@ update: "Cập nhật"
 cancelReactionConfirm: "Bạn có muốn hủy phản ứng của mình không?"
 changeReactionConfirm: "Bạn có muốn thay đổi phản ứng của mình không?"
 later: "Để sau"
-goToMisskey: "Tới Misskey"
+goToMisskey: "Tới Tribe"
 installed: "Đã tải xuống"
 branding: "Thương hiệu"
 turnOffToImprovePerformance: "Tắt mục này có thể cải thiện hiệu năng."
@@ -1176,7 +1176,7 @@ mutualFollow: "Theo dõi lẫn nhau"
 followingOrFollower: "Đang theo dõi hoặc người theo dõi"
 externalServices: "Các dịch vụ bên ngoài"
 sourceCode: "Mã nguồn"
-repositoryUrlDescription: "Nếu bạn có kho lưu trữ mã nguồn có thể truy cập công khai, hãy nhập URL. Nếu bạn đang sử dụng Misskey theo mặc định (không thực hiện bất kỳ thay đổi nào đối với mã nguồn), hãy nhập https://github.com/misskey-dev/misskey."
+repositoryUrlDescription: "Nếu bạn có kho lưu trữ mã nguồn có thể truy cập công khai, hãy nhập URL. Nếu bạn đang sử dụng Tribe theo mặc định (không thực hiện bất kỳ thay đổi nào đối với mã nguồn), hãy nhập https://github.com/misskey-dev/misskey."
 feedback: "Phản hồi"
 feedbackUrl: "URL phản hồi"
 privacyPolicy: "Chính sách bảo mật"
@@ -1208,19 +1208,24 @@ paste: "dán"
 postForm: "Mẫu đăng"
 information: "Giới thiệu"
 _chat:
+
   invitations: "Mời"
   noHistory: "Không có dữ liệu"
   members: "Thành viên"
   home: "Trang chính"
   send: "Gửi"
 _accountSettings:
+
   requireSigninToViewContents: "Yêu cầu đăng nhập để xem nội dung"
   requireSigninToViewContentsDescription1: "Yêu cầu đăng nhập để xem tất cả ghi chú và nội dung khác mà bạn tạo. Điều này được kỳ vọng sẽ có hiệu quả trong việc ngăn chặn thông tin bị thu thập bởi các trình thu thập thông tin."
 _delivery:
+
   stop: "Đã vô hiệu hóa"
   _type:
+
     none: "Đang đăng"
 _announcement:
+
   forExistingUsers: "Chỉ những người dùng đã tồn tại"
   forExistingUsersDescription: "Nếu được bật, thông báo này sẽ chỉ hiển thị với những người dùng đã tồn tại vào lúc thông báo được tạo. Nếu tắt đi, những tài khoản mới đăng ký sau khi thông báo được đăng lên cũng sẽ thấy nó."
   end: "Lưu trữ thông báo"
@@ -1228,6 +1233,7 @@ _announcement:
   readConfirmTitle: "Đánh dấu là đã đọc?"
   readConfirmText: "Điều này sẽ đánh dấu nội dung của \"{title}\" là đã đọc."
 _initialAccountSetting:
+
   accountCreated: "Tài khoản của bạn đã được tạo thành công!"
   letsStartAccountSetup: "Để bắt đầu, hãy cùng thiết lập tài khoản nhé."
   letsFillYourProfile: "Đầu tiên, hãy thiết lập hồ sơ của bạn."
@@ -1239,239 +1245,313 @@ _initialAccountSetting:
   pushNotificationDescription: "Bật thông báo đẩy sẽ cho phép bạn nhận thông báo từ {name} trực tiếp từ thiết bị của bạn."
   initialAccountSettingCompleted: "Thiết lập tài khoản thành công!"
   haveFun: "Hãy tận hưởng {name} nhé!"
-  youCanContinueTutorial: "Bạn có thể tiếp tục xem hướng dẫn về cách sử dụng {name} (Misskey) hoặc bạn có thể thoát khỏi phần thiết lập tại đây và bắt đầu sử dụng ngay lập tức."
+  youCanContinueTutorial: "Bạn có thể tiếp tục xem hướng dẫn về cách sử dụng {name} (Tribe) hoặc bạn có thể thoát khỏi phần thiết lập tại đây và bắt đầu sử dụng ngay lập tức."
   startTutorial: "Bắt đầu hướng dẫn"
   skipAreYouSure: "Bạn thực sự muốn bỏ qua mục thiết lập tài khoản?"
   laterAreYouSure: "Bạn thực sự muốn thiết lập tài khoản vào lúc khác?"
 _initialTutorial:
+
   launchTutorial: "Bắt đầu hướng dẫn"
   title: "Hướng dẫn"
   wellDone: "Làm tốt!"
   skipAreYouSure: "Thoát khỏi hướng dẫn?"
   _landing:
+
     title: "Chào mừng đến với Hướng dẫn"
-    description: "Tại đây, bạn có thể tìm hiểu những điều cơ bản về cách sử dụng Misskey và các tính năng của nó."
+    description: "Tại đây, bạn có thể tìm hiểu những điều cơ bản về cách sử dụng Tribe và các tính năng của nó."
   _note:
+
     title: "Bài Viết là gì?"
-    description: "Các bài đăng trên Misskey được gọi là 'Bài Viết'. Ghi chú được sắp xếp theo thứ tự thời gian trên dòng thời gian và được cập nhật theo thời gian thực."
+    description: "Các bài đăng trên Tribe được gọi là 'Bài Viết'. Ghi chú được sắp xếp theo thứ tự thời gian trên dòng thời gian và được cập nhật theo thời gian thực."
   _timeline:
+
     home: "Bạn có thể xem ghi chú từ những tài khoản bạn theo dõi."
     local: "Bạn có thể xem ghi chú từ tất cả người dùng trên máy chủ này."
     social: "Ghi chú từ dòng thời gian Trang chủ và Địa phương sẽ được hiển thị."
     global: "Bạn có thể xem ghi chú từ tất cả các máy chủ được kết nối."
   _postNote:
+
     _visibility:
+
       home: "Chỉ công khai trên dòng thời gian Trang chủ. Những người truy cập trang cá nhân của bạn, thông qua người theo dõi và thông qua ghi chú lại có thể thấy thông tin đó."
 _timelineDescription:
+
   home: "Trong dòng thời gian Trang chính, bạn có thể xem ghi chú từ các tài khoản bạn theo dõi."
   local: "Trong dòng thời gian cục bộ, bạn có thể xem ghi chú từ tất cả người dùng trên máy chủ này."
   social: "Dòng thời gian Xã hội hiển thị các ghi chú từ cả dòng thời gian Trang chủ và Địa phương."
 _serverSettings:
+
   iconUrl: "Biểu tượng URL"
   appIconResolutionMustBe: "Độ phân giải tối thiểu là {resolution}."
   manifestJsonOverride: "Ghi đè manifest.json"
 _accountMigration:
+
   moveFrom: "Chuyển một tài khoản khác vào tài khoản này"
   moveFromLabel: "Tài khoản gốc #{n}"
   moveTo: "Chuyển tài khoản này vào một tài khoản khác"
   moveCannotBeUndone: "Việc chuyển tài khoản không thể huỷ."
-  moveAccountDescription: "Điều này sẽ chuyển tài khoản này sang một tài khoản khác.\n　・Những người theo dõi sẽ tự động được chuyển sang tài khoản mới\n　・Tài khoản này sẽ tự bỏ theo dõi những người mà bạn đã theo dõi trước đây\n　・Bạn sẽ không thể đăng tút mới, v.v trên tài khoản này\n\nDù việc chuyển người theo dõi được diễn ra tự động, bạn vẫn phải tự chuẩn bị một vài bước để chuyển danh sách những người dùng bạn đang theo dõi. Để làm vậy, vui lòng thực hiện việc xuất dữ liệu những người dùng đã theo dõi mà sau này bạn sẽ dùng để nhập vào tài khoản mới ở menu Cài đặt. Hành động tương tự áp dụng với danh sách những người dùng bị chặn hoặc tắt tiếng.\n\n(Điều này áp dụng cho phiên bản Misskey v13.12.0 và sau này. Các phần mềm ActivityPub khác , ví dụ như Mastodon, sẽ có thể hoạt động khác đi.)"
+  moveAccountDescription: "Điều này sẽ chuyển tài khoản này sang một tài khoản khác.\n　・Những người theo dõi sẽ tự động được chuyển sang tài khoản mới\n　・Tài khoản này sẽ tự bỏ theo dõi những người mà bạn đã theo dõi trước đây\n　・Bạn sẽ không thể đăng tút mới, v.v trên tài khoản này\n\nDù việc chuyển người theo dõi được diễn ra tự động, bạn vẫn phải tự chuẩn bị một vài bước để chuyển danh sách những người dùng bạn đang theo dõi. Để làm vậy, vui lòng thực hiện việc xuất dữ liệu những người dùng đã theo dõi mà sau này bạn sẽ dùng để nhập vào tài khoản mới ở menu Cài đặt. Hành động tương tự áp dụng với danh sách những người dùng bị chặn hoặc tắt tiếng.\n\n(Điều này áp dụng cho phiên bản Tribe v13.12.0 và sau này. Các phần mềm ActivityPub khác , ví dụ như Mastodon, sẽ có thể hoạt động khác đi.)"
   startMigration: "Chuyển"
   movedAndCannotBeUndone: "\nTài khoản này đã được chuyển đi.\nViệc di chuyển tài khoản không thể bị huỷ bỏ."
   movedTo: "Tài khoản mới:"
 _achievements:
+
   earnedAt: "Ngày thu nhận"
   _types:
+
     _notes1:
+
       title: "just setting up my msky"
       description: "Lần đầu tiên đăng bài"
       flavor: "Chúc bạn trên Miskey vui vẻ nha!!"
     _notes10:
+
       title: "Một số bài viết"
       description: "Đăng bài 10 lần"
     _notes100:
+
       title: "Rất nhiều bài biết"
       description: "Đăng bài 100 lần"
     _notes500:
+
       title: "Như đầy bài viết"
       description: "Đăng bài 500 lần"
     _notes1000:
+
       title: "Ngọn núi bài viết"
       description: "Đăng bài 1000 lần"
     _notes5000:
+
       title: "Bài viết chảy như suối"
       description: "Đăng bài 5000 lần"
     _notes10000:
+
       title: "Bài Viết siu nhìu"
       description: "Đăng bài 10000 lần"
     _notes20000:
-      title: "Need more note"
+
+      title: "Need more spark"
       description: "Đã đăng bài 20,000 lần rồi"
     _notes30000:
+
       title: "ĐĂNG VỚI BÀI"
       description: "Đã đăng bài 30,000 lần rồi"
     _notes40000:
+
       title: "Nhà xưởng dăng bài"
       description: "Đã đăng bài 40,000 lần rồi"
     _notes50000:
+
       title: "Hàng tinh đăng bài"
       description: "Đã đăng bài 50,000 lần rồi"
     _notes100000:
+
       title: "ALL YOUR NOTE ARE BELONG TO US"
       description: "Đăng 100,000 tút"
       flavor: "Liệu viết bài gì tầm này vậy? "
     _login3:
+
       title: "Sơ cấp I"
       description: "Tổng số ngày đăng nhập đạt 3 ngày"
       flavor: "Từ nay các bạn cứ xem như mình là một Misskist đó"
     _login7:
+
       title: "Sơ cấp II"
       description: "Tổng số ngày đăng nhập đạt 7 ngày"
       flavor: "Bạn dần quen chưa? "
     _login15:
+
       title: "Sơ cấp III"
       description: "Tổng số ngày đăng nhập đạt 7 ngày"
     _login30:
+
       title: "Misskist cấp I"
       description: "Tổng số ngày đăng nhập đạt 30 ngày"
     _login60:
+
       title: "Misskist cấp II"
       description: "Tổng số ngày đăng nhập đạt 60 ngày"
     _login100:
+
       title: "Misskist cấp III"
       description: "Tổng số ngày đăng nhập đạt 100 ngày"
       flavor: "Người dùng này, chính vì đó là một Misskist"
     _login200:
+
       title: "Khách hàng thường xuyên cấp I"
       description: "Tổng số ngày đăng nhập đạt 200 ngày"
     _login300:
+
       title: "Khách hàng thường xuyên cấp II"
       description: "Tổng số ngày đăng nhập đạt 300 ngày"
     _login400:
+
       title: "Khách hàng thường xuyên cấp III"
       description: "Tổng số ngày đăng nhập đạt 400 ngày"
     _login1000:
-      flavor: "Cảm ơn bạn đã sử dụng Misskey!"
+
+      flavor: "Cảm ơn bạn đã sử dụng Tribe!"
     _noteFavorited1:
+
       title: "Nhà thiên văn học"
     _myNoteFavorited1:
+
       title: "Đi tìm những ngôi sao"
     _profileFilled:
+
       title: "Luôn sẵn sàng"
       description: "Thiết lập tài khoản của bạn"
     _markedAsCat:
+
       title: "Tôi là một con mèo"
       description: "Bật chế độ mèo"
       flavor: "Mà tên chưa có"
     _following1:
+
       title: "Theo dõi đầu tiên"
       description: "Lần đầu tiên theo dõi "
     _following10:
+
       title: "Cứ theo dõi và theo dõi"
       description: "Vừa theo dõi hơn 10 người"
     _following50:
+
       title: "Bạn bè nhiều quá"
       description: "Vừa theo dõi hơn 50 người"
     _following100:
+
       title: "Trăm bạn bè"
       description: "Vừa theo dõi vượt lên 100 người"
     _following300:
+
       title: "Quá nhiều bạn bè"
       description: "Vừa theo dõi vượt lên 300 người"
     _followers1:
+
       title: "Ai đầu tiên theo dõi bạn"
       description: "Lần đầu tiên được theo dõi"
     _followers10:
+
       title: "FOLLOW ME!!"
       description: "Người theo dõi bạn vượt lên 10 người"
     _followers50:
+
       title: "Từng chút một"
       description: "Đạt được 50 lượt theo dõi"
     _followers100:
+
       title: "Người nổi tiếng"
       description: "Đạt được 100 lượt theo dõi"
     _followers300:
+
       title: "Vui lòng xếp thành hàng nào"
       description: "Đạt được 300 lượt theo dõi"
     _followers500:
+
       title: "Trạm phát sóng"
       description: "Đạt được 500 lượt theo dõi"
     _followers1000:
+
       title: "Người có tầm ảnh hưởng"
       description: "Người theo dõi bạn vượt lên 1000 người"
     _collectAchievements30:
+
       title: "Người sưu tập thành tích"
       description: "Vừa lấy thành tích hơn 30 cái"
     _viewAchievements3min:
+
       title: "Yêu Thành tích"
       description: "Ngắm danh sách thành tích đến tận hơn 3 phút"
     _iLoveMisskey:
-      title: "Tôi Yêu Misskey"
-      description: "Đăng lời nói \"I ❤ #Misskey\""
-      flavor: "Xin chân thành cảm ơn bạn đã sử dụng Misskey!!  by Đội ngũ phát triển"
+
+      title: "Tôi Yêu Tribe"
+      description: "Đăng lời nói \"I ❤ #Tribe\""
+      flavor: "Xin chân thành cảm ơn bạn đã sử dụng Tribe!!  by Đội ngũ phát triển"
     _foundTreasure:
+
       title: "Tìm kiếm kho báu"
       description: "Tìm thấy được những kho báu cất giấu"
     _client30min:
+
       title: "Giải lao xỉu"
-      description: "Giữ Misskey mở trong ít nhất 30 phút"
+      description: "Giữ Tribe mở trong ít nhất 30 phút"
     _client60min:
-      description: "Giữ Misskey mở trong ít nhất 60 phút"
+
+      description: "Giữ Tribe mở trong ít nhất 60 phút"
     _noteDeletedWithin1min:
+
       title: "Xem như không có gì đâu nha"
     _postedAtLateNight:
+
       title: "Loài ăn đêm"
       description: "Đăng bài trong đêm khuya "
       flavor: "Đến giờ đi ngủ rồi."
     _postedAt0min0sec:
+
       title: "Tín hiệu báo giờ"
       description: "Đăng bài vào 0 phút 0 giây"
       flavor: "Pin pop pop pop"
     _selfQuote:
+
       title: "Nói đến bản thân"
       description: "Trích dẫn bài viết của mình"
     _htl20npm:
+
       title: "Timeline trôi như con sông"
       description: "Timeline trang chính tốc độ vượt lên 20npm"
     _viewInstanceChart:
+
       title: "Nhà phân tích"
       description: "Xem biểu đồ của chủ máy"
     _outputHelloWorldOnScratchpad:
+
       title: "Chào thế giới!"
     _open3windows:
+
       title: "Nhiều cửa sổ"
       description: "Mở cửa sổ hơn 3 cửa sổ"
     _reactWithoutRead:
+
       title: "Bài này bạn đọc kỹ chứ? "
       description: "Phản hồi trong vọng 3 giây sau bài viết có hơn 100 ký tự mới được đăng lên"
     _clickedClickHere:
+
       title: "Bấm đây"
       description: "Bấm chỗ này"
     _justPlainLucky:
+
       title: "Chỉ là một cuộc máy mắn"
       description: "Mỗi 10 giây thu nhận được với tỷ lệ  0.005%"
     _setNameToSyuilo:
+
       title: "Ngưỡng mộ với vị thần"
       description: "Đạt tên là syuilo"
     _passedSinceAccountCreated1:
+
       title: "Kỷ niệm một năm"
     _loggedInOnBirthday:
+
       title: "Sinh nhật vủi vẻ"
       description: "Đăng nhập vào ngày sinh"
     _loggedInOnNewYearsDay:
+
       title: "Chức mừng năm mới"
       description: "Đăng nhập vào Tết Nguyên đàn dương lịch"
       flavor: "Chúc bạn năm mới AN KHANG THỊNH VƯỢNG, VẠN SỰ NHƯ Ý!!"
     _cookieClicked:
+
       flavor: "Bạn nhầm phầm mềm chứ?"
 _role:
+
   assignTarget: "Phân công"
   priority: "Ưu tiên"
   _priority:
+
     low: "Thấp"
     middle: "Vừa"
     high: "Cao"
   _options:
+
     gtlAvailable: "Xem Timeline xã hội"
     ltlAvailable: "Xem Timeline trong máy chủ này"
     canPublicNote: "Cho phép đăng bài công khai"
@@ -1482,6 +1562,7 @@ _role:
     antennaMax: "Giới hạn tạo ăng ten"
     canHideAds: "Tắt quảng cáo"
   _condition:
+
     createdMoreThan: "Trôi qua ～ sau khi lập tài khoản"
     followersLessThanOrEq: "Người theo dõi ít hơn ～"
     followersMoreThanOrEq: "Người theo dõi có ～ trở lên"
@@ -1491,6 +1572,7 @@ _role:
     or: "～ hay là ～"
     not: "Không phải ～"
 _sensitiveMediaDetection:
+
   description: "Giảm nỗ lực kiểm duyệt máy chủ thông qua việc tự động nhận dạng media NSFW thông qua học máy. Điều này sẽ làm tăng một chút áp lực trên máy chủ."
   sensitivity: "Phát hiện nhạy cảm"
   sensitivityDescription: "Giảm độ nhạy sẽ dẫn đến ít phát hiện sai hơn (dương tính giả), tăng nó sẽ dẫn đến ít phát hiện sai hơn (âm tính giả)."
@@ -1499,20 +1581,24 @@ _sensitiveMediaDetection:
   analyzeVideos: "Bật chuẩn đoán video"
   analyzeVideosDescription: "Phân tích video bên cạnh hình ảnh. Điều này sẽ làm tăng một chút áp lực trên máy chủ."
 _emailUnavailable:
+
   used: "Địa chỉ email đã được sử dụng"
   format: "Địa chỉ email không hợp lệ"
   disposable: "Cấm sử dụng địa chỉ email dùng một lần"
   mx: "Máy chủ email không hợp lệ"
   smtp: "Máy chủ email không phản hồi"
 _ffVisibility:
+
   public: "Đăng"
   followers: "Chỉ người theo dõi mới xem được"
   private: "Riêng tư"
 _signup:
+
   almostThere: "Gần xong rồi"
   emailAddressInfo: "Hãy điền địa chỉ email của bạn. Nó sẽ không được công khai."
   emailSent: "Một email xác minh đã được gửi đến địa chỉ email ({email}) của bạn. Vui lòng nhấn vào liên kết trong đó để hoàn tất việc tạo tài khoản."
 _accountDelete:
+
   accountDelete: "Xóa tài khoản"
   mayTakeTime: "Vì xóa tài khoản là một quá trình tốn nhiều tài nguyên nên có thể mất một khoảng thời gian để hoàn thành, tùy thuộc vào lượng nội dung bạn đã tạo và số lượng tập tin bạn đã tải lên."
   sendEmail: "Sau khi hoàn tất việc xóa tài khoản, một email sẽ được gửi đến địa chỉ email đã đăng ký tài khoản này."
@@ -1520,29 +1606,37 @@ _accountDelete:
   started: "Đang bắt đầu xóa tài khoản."
   inProgress: "Đang xóa dần tài khoản."
 _ad:
+
   back: "Quay lại"
   reduceFrequencyOfThisAd: "Hiện ít lại"
   hide: "Không hiển thị"
 _forgotPassword:
+
   enterEmail: "Nhập địa chỉ email bạn đã sử dụng để đăng ký. Một liên kết mà bạn có thể đặt lại mật khẩu của mình sau đó sẽ được gửi đến nó."
   ifNoEmail: "Nếu bạn không sử dụng email lúc đăng ký, vui lòng liên hệ với quản trị viên."
   contactAdmin: "Máy chủ này không hỗ trợ sử dụng địa chỉ email, vui lòng liên hệ với quản trị viên để đặt lại mật khẩu của bạn."
 _gallery:
+
   my: "Kho Ảnh"
   liked: "Tút Đã Thích"
   like: "Thích"
   unlike: "Bỏ thích"
 _email:
+
   _follow:
+
     title: "đã theo dõi bạn"
   _receiveFollowRequest:
+
     title: "Chấp nhận yêu cầu theo dõi"
 _plugin:
+
   install: "Cài đặt tiện ích"
   installWarn: "Vui lòng không cài đặt những tiện ích đáng ngờ."
   manage: "Quản lý plugin"
   viewSource: "Xem mã nguồn"
 _preferencesBackups:
+
   list: "Tạo sao lưu"
   saveNew: "Lưu bản sao lưu"
   loadFile: "Nhập tập tin"
@@ -1561,29 +1655,34 @@ _preferencesBackups:
   cannotLoad: "Tải thất bại"
   invalidFile: "Sai định dạng tập tin"
 _registry:
+
   scope: "Phạm vi"
   key: "Mã"
   keys: "Các mã"
   domain: "Tên miền"
   createKey: "Tạo mã"
 _aboutMisskey:
-  about: "Misskey là phần mềm mã nguồn mở được phát triển bởi syuilo từ năm 2014."
+
+  about: "Tribe là phần mềm mã nguồn mở được phát triển bởi syuilo từ năm 2014."
   contributors: "Những người đóng góp nổi bật"
   allContributors: "Toàn bộ người đóng góp"
   source: "Mã nguồn"
-  translation: "Dịch Misskey"
-  donate: "Ủng hộ Misskey"
+  translation: "Dịch Tribe"
+  donate: "Ủng hộ Tribe"
   morePatrons: "Chúng tôi cũng trân trọng sự hỗ trợ của nhiều người đóng góp khác không được liệt kê ở đây. Cảm ơn! 🥰"
   patrons: "Người ủng hộ"
 _instanceTicker:
+
   none: "Không hiển thị"
   remote: "Hiện cho người dùng từ máy chủ khác"
   always: "Luôn hiện"
 _serverDisconnectedBehavior:
+
   reload: "Tự động tải lại"
   dialog: "Hiện hộp thoại cảnh báo"
   quiet: "Hiển thị cảnh báo không phô trương"
 _channel:
+
   create: "Tạo kênh"
   edit: "Chỉnh sửa kênh"
   setBanner: "Đặt ảnh bìa"
@@ -1594,20 +1693,24 @@ _channel:
   usersCount: "{n} Thành viên"
   notesCount: "{n} Tút"
 _menuDisplay:
+
   sideFull: "Thanh bên"
   sideIcon: "Thanh bên (Biểu tượng)"
   top: "Trên cùng"
   hide: "Ẩn"
 _wordMute:
+
   muteWords: "Ẩn từ ngữ"
   muteWordsDescription: "Separate with spaces for an AND condition or with line breaks for an OR condition."
   muteWordsDescription2: "Bao quanh các từ khóa bằng dấu gạch chéo để sử dụng cụm từ thông dụng."
 _instanceMute:
+
   instanceMuteDescription: "Thao tác này sẽ ẩn mọi tút/lượt đăng lại từ các máy chủ được liệt kê, bao gồm cả những tút  dạng trả lời từ máy chủ bị ẩn."
   instanceMuteDescription2: "Tách bằng cách xuống dòng"
   title: "Ẩn tút từ những máy chủ đã liệt kê."
   heading: "Danh sách những máy chủ bị ẩn"
 _theme:
+
   explore: "Khám phá theme"
   install: "Cài đặt theme"
   manage: "Quản lý theme"
@@ -1638,6 +1741,7 @@ _theme:
   importInfo: "Nếu bạn nhập mã theme ở đây, bạn có thể nhập mã đó vào trình chỉnh sửa theme"
   deleteConstantConfirm: "Bạn có chắc muốn xóa hằng số {const} không?"
   keys:
+
     accent: "Màu phụ"
     bg: "Màu nền"
     fg: "Màu chữ"
@@ -1674,10 +1778,12 @@ _theme:
     messageBg: "Nền chat"
     fgHighlighted: "Chữ nổi bật"
 _sfx:
+
   note: "Tút"
   noteMy: "Tút của tôi"
   notification: "Thông báo"
 _ago:
+
   future: "Tương lai"
   justNow: "Vừa xong"
   secondsAgo: "{n}s trước"
@@ -1689,11 +1795,13 @@ _ago:
   yearsAgo: "{n} năm trước"
   invalid: "Không có gì ở đây"
 _time:
+
   second: "s"
   minute: "phút"
   hour: "giờ"
   day: "ngày"
 _2fa:
+
   alreadyRegistered: "Bạn đã đăng ký thiết bị xác minh 2 bước."
   registerTOTP: "Đăng ký ứng dụng xác thực"
   step1: "Trước tiên, hãy cài đặt một ứng dụng xác minh (chẳng hạn như {a} hoặc {b}) trên thiết bị của bạn."
@@ -1714,6 +1822,7 @@ _2fa:
   renewTOTPOk: "Cài đặt lại"
   renewTOTPCancel: "Không, cảm ơn"
 _permissions:
+
   "read:account": "Xem thông tin tài khoản của bạn"
   "write:account": "Sửa thông tin tài khoản của bạn"
   "read:blocks": "Xem danh sách người bạn chặn"
@@ -1728,7 +1837,7 @@ _permissions:
   "write:messaging": "Soạn hoặc xóa tin nhắn"
   "read:mutes": "Xem những người bạn ẩn"
   "write:mutes": "Sửa những người bạn ẩn"
-  "write:notes": "Soạn hoặc xóa tút"
+  "write:sparks": "Soạn hoặc xóa tút"
   "read:notifications": "Xem thông báo của tôi"
   "write:notifications": "Quản lý thông báo của tôi"
   "read:reactions": "Xem lượt biểu cảm của tôi"
@@ -1748,6 +1857,7 @@ _permissions:
   "write:gallery-likes": "Sửa danh sách các tút đã thích trong thư viện của tôi"
   "write:chat": "Soạn hoặc xóa tin nhắn"
 _auth:
+
   shareAccessTitle: "Cho phép truy cập app"
   shareAccess: "Bạn có muốn cho phép \"{name}\" truy cập vào tài khoản này không?"
   shareAccessAsk: "Bạn có chắc muốn cho phép ứng dụng này truy cập vào tài khoản của mình không?"
@@ -1758,11 +1868,13 @@ _auth:
   denied: "Truy cập bị từ chối"
   pleaseLogin: "Bạn phải đăng nhập để cho ứng dụng phép truy cập"
 _antennaSources:
+
   all: "Toàn bộ tút"
   homeTimeline: "Tút từ những người đã theo dõi"
   users: "Tút từ những người cụ thể"
   userList: "Tút từ danh sách người dùng cụ thể"
 _weekday:
+
   sunday: "Chủ Nhật"
   monday: "Thứ Hai"
   tuesday: "Thứ Ba"
@@ -1771,6 +1883,7 @@ _weekday:
   friday: "Thứ Sáu"
   saturday: "Thứ Bảy"
 _widgets:
+
   profile: "Trang cá nhân"
   instanceInfo: "Thông tin máy chủ"
   memo: "Tút đã ghim"
@@ -1798,14 +1911,17 @@ _widgets:
   aichan: "Ai"
   userList: "Danh sách người dùng"
   _userList:
+
     chooseList: "Chọn danh sách"
   clicker: "clicker"
 _cw:
+
   hide: "Ẩn"
   show: "Tải thêm"
   chars: "{count} ký tự"
   files: "{count} tập tin"
 _poll:
+
   noOnlyOneChoice: "Cần ít nhất hai lựa chọn."
   choiceN: "Lựa chọn {n}"
   noMore: "Bạn không thể thêm lựa chọn"
@@ -1828,6 +1944,7 @@ _poll:
   remainingMinutes: "{m} phút {s}s còn lại"
   remainingSeconds: "{s}s còn lại"
 _visibility:
+
   public: "Công khai"
   publicDescription: "Mọi người đều có thể đọc tút của bạn"
   home: "Trang chính"
@@ -1839,10 +1956,12 @@ _visibility:
   disableFederation: "Không liên hợp"
   disableFederationDescription: "Không đưa tin cho chủ máy khác"
 _postForm:
+
   replyPlaceholder: "Trả lời tút này"
   quotePlaceholder: "Trích dẫn tút này"
   channelPlaceholder: "Đăng lên một kênh"
   _placeholders:
+
     a: "Bạn đang định làm gì?"
     b: "Hôm nay bạn có gì vui?"
     c: "Bạn đang nghĩ gì?"
@@ -1850,6 +1969,7 @@ _postForm:
     e: "Cứ viết trên đây"
     f: "Đang chờ bạn viết..."
 _profile:
+
   name: "Tên"
   username: "Tên người dùng"
   description: "Tiểu sử"
@@ -1862,6 +1982,7 @@ _profile:
   changeAvatar: "Đổi ảnh đại diện"
   changeBanner: "Đổi ảnh bìa"
 _exportOrImport:
+
   allNotes: "Toàn bộ tút"
   favoritedNotes: "Bài viết đã thích"
   clips: "Lưu bài viết"
@@ -1872,6 +1993,7 @@ _exportOrImport:
   excludeMutingUsers: "Loại trừ những người dùng bị ẩn"
   excludeInactiveUsers: "Loại trừ những người dùng không hoạt động"
 _charts:
+
   federation: "Liên hợp"
   apRequest: "Yêu cầu"
   usersIncDec: "Sự khác biệt về số lượng người dùng"
@@ -1886,6 +2008,7 @@ _charts:
   storageUsageIncDec: "Sự khác biệt về dung lượng lưu trữ"
   storageUsageTotal: "Tổng dung lượng lưu trữ"
 _instanceCharts:
+
   requests: "Lượt yêu cầu"
   users: "Sự khác biệt về số lượng người dùng"
   usersTotal: "Số lượng người dùng tích lũy"
@@ -1898,11 +2021,13 @@ _instanceCharts:
   files: "Sự khác biệt về số lượng tập tin"
   filesTotal: "Số lượng tập tin tích lũy"
 _timelines:
+
   home: "Trang chính"
   local: "Máy chủ này"
   social: "Xã hội"
   global: "Liên hợp"
 _play:
+
   new: "Tạo Play mới"
   edit: "Edit play"
   created: "Bạn vừa tạo play rồi"
@@ -1918,6 +2043,7 @@ _play:
   script: "Kịch bản"
   summary: "Mô tả"
 _pages:
+
   newPage: "Tạo Trang mới"
   editPage: "Sửa Trang này"
   readPage: "Xem mã nguồn Trang này"
@@ -1953,6 +2079,7 @@ _pages:
   inputBlocks: "Nhập"
   specialBlocks: "Đặc biệt"
   blocks:
+
     text: "Văn bản"
     textarea: "Khu vực văn bản"
     section: "Mục "
@@ -1960,14 +2087,17 @@ _pages:
     button: "Nút"
     note: "Tút đã nhúng"
     _note:
+
       id: "ID tút"
       idDescription: "Ngoài ra, bạn có thể dán URL tút vào đây."
       detailed: "Xem chi tiết"
 _relayStatus:
+
   requesting: "Đang chờ"
   accepted: "Đã duyệt"
   rejected: "Đã từ chối"
 _notification:
+
   fileUploaded: "Đã tải lên tập tin"
   youGotMention: "{name} nhắc đến bạn"
   youGotReply: "{name} trả lời bạn"
@@ -1981,6 +2111,7 @@ _notification:
   emptyPushNotificationMessage: "Đã cập nhật thông báo đẩy"
   achievementEarned: "Hoàn thành Achievement"
   _types:
+
     all: "Toàn bộ"
     follow: "Đang theo dõi"
     mention: "Nhắc đến"
@@ -1995,10 +2126,12 @@ _notification:
     login: "Đăng nhập"
     app: "Từ app liên kết"
   _actions:
+
     followBack: "đã theo dõi lại bạn"
     reply: "Trả lời"
     renote: "Đăng lại"
 _deck:
+
   alwaysShowMainColumn: "Luôn hiện cột chính"
   columnAlign: "Căn cột"
   addColumn: "Thêm cột"
@@ -2016,6 +2149,7 @@ _deck:
   introduction2: "Bạn có thể thêm cột bất kỳ lúc nào bằng cách nhấn + ở bên phải màn hình."
   widgetsIntroduction: "Chọn \"Sửa widget\" trong menu cột và thêm một widget."
   _columns:
+
     main: "Chính"
     widgets: "Tiện ích"
     notifications: "Thông báo"
@@ -2026,21 +2160,28 @@ _deck:
     mentions: "Lượt nhắc"
     direct: "Nhắn riêng"
 _dialog:
+
   charactersExceeded: "Bạn nhắn quá giới hạn ký tự!! Hiện nay {current} / giới hạn {max}"
   charactersBelow: "Bạn nhắn quá ít tối thiểu ký tự!! Hiện nay {current} / Tối thiểu {min}"
 _webhookSettings:
+
   createWebhook: "Tạo Webhook"
   name: "Tên"
   secret: "Mã bí mật"
   active: "Đã bật"
   _events:
+
     reaction: "Khi nhận được sự kiện"
     mention: "Khi có người nhắc tới bạn"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "Email"
 _moderationLogTypes:
+
   createRole: "Tạo một vai trò"
   deleteRole: "Xóa vai trò"
   updateRole: "Cập nhật vai trò"
@@ -2051,15 +2192,22 @@ _moderationLogTypes:
   resetPassword: "Đặt lại mật khẩu"
   createInvitation: "Tạo lời mời"
 _reversi:
+
   total: "Tổng cộng"
 _customEmojisManager:
+
   _local:
+
     _list:
+
       confirmDeleteEmojisDescription: "Xóa các biểu tượng cảm xúc {count} đã chọn. Bạn có muốn chạy nó không?"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Không tìm thấy"
 _search:
+
   searchScopeAll: "Tất cả"
   searchScopeLocal: "Máy chủ này"
   searchScopeUser: "Người dùng chỉ định"

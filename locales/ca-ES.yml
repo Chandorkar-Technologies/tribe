@@ -1,8 +1,8 @@
 ---
 _lang_: "Català"
-headlineMisskey: "Una xarxa connectada per notes"
-introMisskey: "Benvingut! Misskey és un servei de microblogging descentralitzat de codi obert.\nCrea \"notes\" per compartir els teus pensaments amb tots els que t'envolten. 📡\nAmb \"reaccions\", també pots expressar ràpidament els teus sentiments sobre les notes de tothom. 👍\nExplorem un món nou! 🚀"
-poweredByMisskeyDescription: "{name} És un dels serveis (anomenats instàncies de Misskey) que utilitzen la plataforma de codi obert <b>Misskey</b>."
+headlineMisskey: "Una xarxa connectada per sparks"
+introMisskey: "Benvingut! Tribe és un servei de microblogging descentralitzat de codi obert.\nCrea \"sparks\" per compartir els teus pensaments amb tots els que t'envolten. 📡\nAmb \"reaccions\", també pots expressar ràpidament els teus sentiments sobre les sparks de tothom. 👍\nExplorem un món nou! 🚀"
+poweredByMisskeyDescription: "{name} És un dels serveis (anomenats instàncies de Tribe) que utilitzen la plataforma de codi obert <b>Tribe</b>."
 monthAndDay: "{day}/{month}"
 search: "Cercar"
 reset: "Reiniciar"
@@ -11,7 +11,7 @@ username: "Nom d'usuari"
 password: "Contrasenya"
 initialPasswordForSetup: "Contrasenya inicial per fer la primera configuració "
 initialPasswordIsIncorrect: "La contrasenya no és correcta."
-initialPasswordForSetupDescription: "Fes servir la contrasenya que has fet servir al fitxer de configuració, si tu mateix has instal·lat Misskey.\nSi fas servir una empresa d'allotjament de Misskey, fes servir la contrasenya que t'han donat.\nSi no has posat cap contrasenya deixar l'espai en blanc."
+initialPasswordForSetupDescription: "Fes servir la contrasenya que has fet servir al fitxer de configuració, si tu mateix has instal·lat Tribe.\nSi fas servir una empresa d'allotjament de Tribe, fes servir la contrasenya que t'han donat.\nSi no has posat cap contrasenya deixar l'espai en blanc."
 forgotPassword: "Restableix la contrasenya "
 fetchingAsApObject: "Cercant al Fediverse..."
 ok: "OK"
@@ -75,20 +75,20 @@ receiveFollowRequest: "Has rebut una sol·licitud de seguiment"
 followRequestAccepted: "Sol·licitud de seguiment acceptada"
 mention: "Menció"
 mentions: "Mencions"
-directNotes: "Notes directes"
+directNotes: "Sparks directes"
 importAndExport: "Importar / Exportar"
 import: "Importar"
 export: "Exporta"
 files: "Fitxers"
 download: "Descarregar"
-driveFileDeleteConfirm: "Estàs segur que vols suprimir el fitxer \"{name}\"? Les notes associades a aquest fitxer també seran esborrades."
+driveFileDeleteConfirm: "Estàs segur que vols suprimir el fitxer \"{name}\"? Les sparks associades a aquest fitxer també seran esborrades."
 unfollowConfirm: "Segur que vols deixar de seguir a {name}?"
 exportRequested: "Has sol·licitat una exportació de dades. Això pot trigar una estona. S'afegirà a la teva unitat de disc un cop estigui completada."
 importRequested: "Has sol·licitat una importació de dades. Això pot trigar una estona."
 lists: "Llistes"
 noLists: "No tens cap llista"
 note: "Nota"
-notes: "Notes"
+notes: "Sparks"
 following: "Segueixes "
 followers: "Seguidors"
 followsYou: "Et segueix"
@@ -137,7 +137,7 @@ emojiPickerDisplay: "Mostrar el selector d'emojis"
 overwriteFromPinnedEmojisForReaction: "Reemplaça els emojis de la reacció"
 overwriteFromPinnedEmojis: "Sobreescriu els emojis fixats al panel de reaccions"
 reactionSettingDescription2: "Arrossega per reordenar, fes clic per suprimir, prem \"+\" per afegir."
-rememberNoteVisibility: "Recorda la configuració de visibilitat de les notes"
+rememberNoteVisibility: "Recorda la configuració de visibilitat de les sparks"
 attachCancel: "Eliminar el fitxer adjunt"
 deleteFile: "Esborrar l'arxiu "
 markAsSensitive: "Marcar com a sensible"
@@ -177,18 +177,18 @@ youCanCleanRemoteFilesCache: "Pots netejar la memòria cau fent clic al botó de
 cacheRemoteSensitiveFiles: "Posar a la memòria cau arxius remots sensibles"
 cacheRemoteSensitiveFilesDescription: "Quan aquesta opció és desactiva, els arxius remots sensibles es carregant directament del servidor d'origen sense que es guardin a la memòria cau."
 flagAsBot: "Marca aquest compte com a bot"
-flagAsBotDescription: "Activa aquesta opció si el compte el controla un programa. Si s'activa, actuarà com un senyal per altres desenvolupadors per prevenir cadenes d'interacció sense fi i ajustar els paràmetres interns de Misskey pe tractar el compte com un bot."
+flagAsBotDescription: "Activa aquesta opció si el compte el controla un programa. Si s'activa, actuarà com un senyal per altres desenvolupadors per prevenir cadenes d'interacció sense fi i ajustar els paràmetres interns de Tribe pe tractar el compte com un bot."
 flagAsCat: "Marca aquest compte com a gat"
 flagAsCatDescription: "Activeu aquesta opció per marcar aquest compte com a gat."
 flagShowTimelineReplies: "Mostra les respostes a la línia de temps"
-flagShowTimelineRepliesDescription: "Mostra les respostes dels usuaris a les notes d'altres usuaris a la línia de temps."
+flagShowTimelineRepliesDescription: "Mostra les respostes dels usuaris a les sparks d'altres usuaris a la línia de temps."
 autoAcceptFollowed: "Aprova automàticament les sol·licituds de seguiment dels usuaris que segueixes"
 addAccount: "Afegeix un compte"
 reloadAccountsList: "Recarregar la llista de contactes"
 loginFailed: "S'ha produït un error al accedir."
 showOnRemote: "Navega més en el perfil original"
 continueOnRemote: "Veure perfil original"
-chooseServerOnMisskeyHub: "Escull un servidor des del Hub de Misskey"
+chooseServerOnMisskeyHub: "Escull un servidor des del Hub de Tribe"
 specifyServerHost: "Especifica un servidor directament"
 inputHostName: "Introdueix el domini"
 general: "General"
@@ -233,7 +233,7 @@ instanceInfo: "Informació del fitxer d'instal·lació"
 statistics: "Estadístiques"
 clearQueue: "Esborra la cua de feina"
 clearQueueConfirmTitle: "Esteu segur que voleu esborrar la cua?"
-clearQueueConfirmText: "Les notes no lliurades que quedin a la cua no es federaran. Normalment aquesta operació no és necessària."
+clearQueueConfirmText: "Les sparks no lliurades que quedin a la cua no es federaran. Normalment aquesta operació no és necessària."
 clearCachedFiles: "Esborra la memòria cau"
 clearCachedFilesConfirm: "Segur que voleu eliminar tots els fitxers de la memòria cau?"
 blockedInstances: "Instàncies bloquejades"
@@ -251,7 +251,7 @@ noUsers: "No hi ha usuaris"
 editProfile: "Edita el perfil"
 noteDeleteConfirm: "Segur que voleu eliminar aquesta publicació?"
 pinLimitExceeded: "No podeu fixar més publicacions"
-intro: "La instal·lació de Misskey ha acabat! Crea un usuari d'administrador."
+intro: "La instal·lació de Tribe ha acabat! Crea un usuari d'administrador."
 done: "Fet"
 processing: "S'està processant..."
 preview: "Vista prèvia"
@@ -307,7 +307,7 @@ nUsersRead: "Vist per {n}"
 agreeTo: "Accepto que {0}"
 agree: "Hi estic d'acord"
 agreeBelow: "Hi estic d'acord amb el següent"
-basicNotesBeforeCreateAccount: "Notes importants"
+basicNotesBeforeCreateAccount: "Sparks importants"
 termsOfService: "Condicions d'ús"
 start: "Comença"
 home: "Inici"
@@ -425,7 +425,7 @@ antennaExcludeBots: "Exclou els bots"
 antennaKeywordsDescription: "Separar amb espais per la condició AND o amb salts de línia per la condició OR."
 notifyAntenna: "Notifica'm les publicacions noves"
 withFileAntenna: "Només les publicacions amb fitxers"
-excludeNotesInSensitiveChannel: "Excloure notes a canals sensibles"
+excludeNotesInSensitiveChannel: "Excloure sparks a canals sensibles"
 enableServiceworker: "Activar les notificacions al navegador"
 antennaUsersDescription: "Llistar un nom d'usuari per línia"
 caseSensitive: "Sensible a majúscules i minúscules "
@@ -446,7 +446,7 @@ exploreFediverse: "Explora el fedivers"
 popularTags: "Etiquetes populars"
 userList: "Llistes"
 about: "Informació"
-aboutMisskey: "Quant a Misskey"
+aboutMisskey: "Quant a Tribe"
 administrator: "Administrador/a"
 token: "Codi de verificació"
 2fa: "Autenticació de doble factor"
@@ -456,7 +456,7 @@ totpDescription: "Escriu una contrasenya d'un sol us fent servir l'aplicació d'
 moderator: "Moderador/a"
 moderation: "Moderació"
 moderationNote: "Nota de moderació "
-moderationNoteDescription: "Pots escriure notes que es compartiran entre els moderadors."
+moderationNoteDescription: "Pots escriure sparks que es compartiran entre els moderadors."
 addModerationNote: "Afegeix una nota de moderació "
 moderationLogs: "Registre de moderació "
 nUsersMentioned: "{n} usuaris mencionats"
@@ -585,7 +585,7 @@ popout: "Finestra emergent"
 volume: "Volum"
 masterVolume: "Volum principal"
 notUseSound: "Sense so"
-useSoundOnlyWhenActive: "Reproduir sons només quan Misskey estigui actiu"
+useSoundOnlyWhenActive: "Reproduir sons només quan Tribe estigui actiu"
 details: "Detalls"
 renoteDetails: "Més informació sobre l'impuls "
 chooseEmoji: "Tria un emoji"
@@ -602,7 +602,7 @@ sort: "Ordena"
 ascendingOrder: "Ascendent"
 descendingOrder: "Descendent"
 scratchpad: "Bloc de proves"
-scratchpadDescription: "El bloc de proves proporciona un entorn experimental per AiScript. Pot escriure i verificar els resultats que interactuen amb Misskey."
+scratchpadDescription: "El bloc de proves proporciona un entorn experimental per AiScript. Pot escriure i verificar els resultats que interactuen amb Tribe."
 uiInspector: "Inspector de la interfície"
 uiInspectorDescription: "Podeu visualitzar una llista d'elements UI presents en la memòria. Els components de la interfície d'usuari són generats per les funcions Ui:C:."
 output: "Sortida"
@@ -685,10 +685,10 @@ smtpSecure: "Fes servir SSL/TLS per connexions SMTP"
 smtpSecureInfo: "Desactiva això quan facis servir connexions STARTTLS"
 testEmail: "Prova l'enviament de correu "
 wordMute: "Silenciar paraules "
-wordMuteDescription: "Minimitza les notes que contenen la paraula o frase especificada. Les notes minimitzades poden visualitzar-se fent clic sobre elles."
+wordMuteDescription: "Minimitza les sparks que contenen la paraula o frase especificada. Les sparks minimitzades poden visualitzar-se fent clic sobre elles."
 hardWordMute: "Silenciar paraules fortes"
 showMutedWord: "Mostrar paraules silenciades"
-hardWordMuteDescription: "Oculta les notes que contenen la paraula o frase especificada. A diferència de Silenciar paraula, la nota quedarà completament oculta a la vista."
+hardWordMuteDescription: "Oculta les sparks que contenen la paraula o frase especificada. A diferència de Silenciar paraula, la nota quedarà completament oculta a la vista."
 regexpError: "Error de l'expressió regular "
 regexpErrorDescription: "S'ha produït un error a l'expressió regular a la línia {line} de les paraules silenciades {tab}:"
 instanceMute: "Silenciar servidor"
@@ -731,7 +731,7 @@ openInNewTab: "Obre a una pestanya nova"
 openInSideView: "Obre a una vista lateral"
 defaultNavigationBehaviour: "Navegació per defecte"
 editTheseSettingsMayBreakAccount: "Editar aquestes opcions pot deixar inoperatiu el teu compte"
-instanceTicker: "Informació de notes de la instància "
+instanceTicker: "Informació de sparks de la instància "
 waitingFor: "Esperant {x}"
 random: "Aleatori "
 system: "Sistema"
@@ -745,10 +745,10 @@ unclip: "Treure Retall"
 confirmToUnclipAlreadyClippedNote: "Aquesta nota ja és inclosa al Retall \"{name}\". Vols treure-la d'aquest retall?"
 public: "Públic "
 private: "Privat"
-i18nInfo: "Misskey està sent traduït a diferents idiomes per voluntaris. Pots ajudar aquí {link}."
+i18nInfo: "Tribe està sent traduït a diferents idiomes per voluntaris. Pots ajudar aquí {link}."
 manageAccessTokens: "Administrar claus de seguretat d'accés "
 accountInfo: "Informació del compte"
-notesCount: "Comptador de notes"
+notesCount: "Comptador de sparks"
 repliesCount: "Nombre de respostes"
 renotesCount: "Impulsos fets"
 repliedCount: "Nombre de respostes rebudes"
@@ -764,8 +764,8 @@ no: "No"
 driveFilesCount: "Nombre de fitxers al Disc"
 driveUsage: "Utilització de l'espai del Disc"
 noCrawle: "Rebutjar la indexació dels buscadors"
-noCrawleDescription: "No permetis que els buscadors indexin el teu perfil, notes, pàgines, etc."
-lockedAccountInfo: "Tret que establiu la visibilitat de la nota a \"Només seguidors\", les vostres notes seran visibles per qualsevol persona, fins i tot si heu d'aprovar els seguidors manualment"
+noCrawleDescription: "No permetis que els buscadors indexin el teu perfil, sparks, pàgines, etc."
+lockedAccountInfo: "Tret que establiu la visibilitat de la nota a \"Només seguidors\", les vostres sparks seran visibles per qualsevol persona, fins i tot si heu d'aprovar els seguidors manualment"
 alwaysMarkSensitive: "Marcar com a sensible per defecte"
 loadRawImages: "Carregar les imatges originals en comptes de miniatures "
 disableShowingAnimatedImages: "No reproduir imatges animades"
@@ -773,7 +773,7 @@ highlightSensitiveMedia: "Ressalta els medis marcats com a sensibles"
 verificationEmailSent: "S'ha enviat un correu electrònic de verificació. Fes clic a l'enllaç per completar la verificació."
 notSet: "Sense definir"
 emailVerified: "El correu electrònic s'ha verificat"
-noteFavoritesCount: "Nombre de notes favorites "
+noteFavoritesCount: "Nombre de sparks favorites "
 pageLikesCount: "Nombre de Pàgines que t'agraden "
 pageLikedCount: "Nombre d'agraïments rebuts a les Pàgines "
 contact: "Contacte"
@@ -785,7 +785,7 @@ thisIsExperimentalFeature: "Aquesta és una característica experimental. La sev
 developer: "Programador"
 makeExplorable: "Fes que el compte sigui visible a la secció \"Explorar\""
 makeExplorableDescription: "Si desactives aquesta opció, el teu compte no sortirà a la secció \"Explorar\""
-showGapBetweenNotesInTimeline: "Notes separades a la línia de temps"
+showGapBetweenNotesInTimeline: "Sparks separades a la línia de temps"
 duplicate: "Duplicat"
 left: "Esquerra"
 center: "Centre"
@@ -797,9 +797,9 @@ showTitlebar: "Mostra la barra del títol "
 clearCache: "Esborra la memòria cau"
 onlineUsersCount: "{n} Usuaris es troben en línia "
 nUsers: "{n} Usuaris"
-nNotes: "{n} Notes"
+nNotes: "{n} Sparks"
 sendErrorReports: "Enviar informes d'error "
-sendErrorReportsDescription: "Quan s'activa, es compartirà amb Misskey informació detallada de l'error quan es trobi un problema això farà pujar la qualitat de Misskey.\nAixò inclourà informació com la versió del SO que fas servir, el navegador web que fas servir, la teva activitat a Misskey, etc."
+sendErrorReportsDescription: "Quan s'activa, es compartirà amb Tribe informació detallada de l'error quan es trobi un problema això farà pujar la qualitat de Tribe.\nAixò inclourà informació com la versió del SO que fas servir, el navegador web que fas servir, la teva activitat a Tribe, etc."
 myTheme: "El meu tema"
 backgroundColor: "Color de fons"
 accentColor: "Color principal"
@@ -839,7 +839,7 @@ unlikeConfirm: "Vols esborrar el teu m'agrada?"
 fullView: "Vista completa."
 quitFullView: "Sortir de la vista completa"
 addDescription: "Afegeix una descripció "
-userPagePinTip: "Podeu seleccionar \"Fixar al perfil\" del menú de notes individuals per mostrar les notes aquí."
+userPagePinTip: "Podeu seleccionar \"Fixar al perfil\" del menú de sparks individuals per mostrar les sparks aquí."
 notSpecifiedMentionWarning: "Aquesta nota esmenta usuaris que no es troben com a destinataris"
 info: "Informació"
 userInfo: "Informació de l'usuari"
@@ -894,7 +894,7 @@ hashtags: "Etiquetes"
 troubleshooting: "Solucionar problemes"
 useBlurEffect: "Fes servir efectes de desenfocament a la interfície"
 learnMore: "Saber més "
-misskeyUpdated: "Misskey s'ha actualitzat "
+misskeyUpdated: "Tribe s'ha actualitzat "
 whatIsNew: "Mostra canvis"
 translate: "Traduir "
 translatedFrom: "Traduït del {x}"
@@ -1028,8 +1028,8 @@ numberOfLikes: "M'agraden "
 show: "Veure"
 neverShow: "No mostrar més "
 remindMeLater: "Recorda-m'ho més tard"
-didYouLikeMisskey: "T'està agradant Misskey?"
-pleaseDonate: "A {host} fem servir el software lliure Misskey. Considera fer un donatiu a Misskey perquè pugui continuar el seu desenvolupament!"
+didYouLikeMisskey: "T'està agradant Tribe?"
+pleaseDonate: "A {host} fem servir el software lliure Tribe. Considera fer un donatiu a Tribe perquè pugui continuar el seu desenvolupament!"
 correspondingSourceIsAvailable: "El codi font corresponent està disponible a {anchor}."
 roles: "Rols"
 role: "Rols"
@@ -1057,8 +1057,8 @@ thisPostMayBeAnnoying: "Aquesta nota pot ser molesta per algú."
 thisPostMayBeAnnoyingHome: "Publicar a la línia de temps d'Inici"
 thisPostMayBeAnnoyingCancel: "Cancel·lar "
 thisPostMayBeAnnoyingIgnore: "Publicar de totes maneres"
-collapseRenotes: "Col·lapsar les renotes que ja has vist"
-collapseRenotesDescription: "Col·lapse les notes a les quals ja has reaccionat o que ja has renotat"
+collapseRenotes: "Col·lapsar les re-sparks que ja has vist"
+collapseRenotesDescription: "Col·lapse les sparks a les quals ja has reaccionat o que ja has renotat"
 internalServerError: "Error intern del servidor"
 internalServerErrorDescription: "El servidor ha fallat de manera inexplicable."
 copyErrorInfo: "Copiar la informació de l'error "
@@ -1080,14 +1080,14 @@ nonSensitiveOnlyForLocalLikeOnlyForRemote: "Només contingut no sensible (Només
 rolesAssignedToMe: "Rols assignats "
 resetPasswordConfirm: "Vols canviar la teva contrasenya?"
 sensitiveWords: "Paraules sensibles"
-sensitiveWordsDescription: "La visibilitat de totes les notes que continguin qualsevol de les paraules configurades seran, automàticament, afegides a \"Inici\". Pots llistar diferents paraules separant les per línies noves."
+sensitiveWordsDescription: "La visibilitat de totes les sparks que continguin qualsevol de les paraules configurades seran, automàticament, afegides a \"Inici\". Pots llistar diferents paraules separant les per línies noves."
 sensitiveWordsDescription2: "Fent servir espais crearà expressions AND si l'expressió s'envolta amb barres inclinades es converteix en una expressió regular."
 prohibitedWords: "Paraules prohibides"
 prohibitedWordsDescription: "Quan intenteu publicar una Nota que conté una paraula prohibida, feu que es converteixi en un error. Es poden dividir i establir múltiples línies."
 prohibitedWordsDescription2: "Fent servir espais crearà expressions AND si l'expressió s'envolta amb barres inclinades es converteix en una expressió regular."
 hiddenTags: "Etiquetes ocultes"
-hiddenTagsDescription: "La visibilitat de totes les notes que continguin qualsevol de les paraules configurades seran, automàticament, afegides a \"Inici\". Pots llistar diferents paraules separant les per línies noves."
-notesSearchNotAvailable: "La cerca de notes no es troba disponible."
+hiddenTagsDescription: "La visibilitat de totes les sparks que continguin qualsevol de les paraules configurades seran, automàticament, afegides a \"Inici\". Pots llistar diferents paraules separant les per línies noves."
+notesSearchNotAvailable: "La cerca de sparks no es troba disponible."
 license: "Llicència"
 unfavoriteConfirm: "Esborrar dels favorits?"
 myClips: "Els meus retalls"
@@ -1138,7 +1138,7 @@ unarchive: "Desarxivar"
 channelArchiveConfirmTitle: "Vols arxivar {name}?"
 channelArchiveConfirmDescription: "Un Canal arxivat no apareixerà a la llista de canals o als resultats de cerca. Tampoc es poden afegir noves entrades."
 thisChannelArchived: "Aquest Canal ha sigut arxivat."
-displayOfNote: "Mostrar notes"
+displayOfNote: "Mostrar sparks"
 initialAccountSetting: "Configuració del perfil"
 youFollowing: "Segueixes "
 preventAiLearning: "Descartar l'ús d'aprenentatge automàtic (IA Generativa)"
@@ -1156,7 +1156,7 @@ rolesThatCanBeUsedThisEmojiAsReactionPublicRoleWarn: "Aquests rols han de ser p�
 cancelReactionConfirm: "Vols esborrar la teva reacció?"
 changeReactionConfirm: "Vols canviar la teva reacció?"
 later: "Més tard"
-goToMisskey: "Ves a Misskey"
+goToMisskey: "Ves a Tribe"
 additionalEmojiDictionary: "Diccionari d'emojis adicionals"
 installed: "Instal·lats "
 branding: "Marca"
@@ -1197,8 +1197,8 @@ loadConversation: "Mostrar la conversació "
 pinnedList: "Llista fixada"
 keepScreenOn: "Mantenir la pantalla encesa"
 verifiedLink: "La propietat de l'enllaç ha sigut verificada"
-notifyNotes: "Notificar quan hi hagi notes noves"
-unnotifyNotes: "Deixar de notificar quan hi hagi notes noves"
+notifyNotes: "Notificar quan hi hagi sparks noves"
+unnotifyNotes: "Deixar de notificar quan hi hagi sparks noves"
 authentication: "Autenticació "
 authenticationRequiredToContinue: "Si us plau autentificat per continuar"
 dateAndTime: "Data i hora"
@@ -1207,7 +1207,7 @@ edited: "Editat"
 notificationRecieveConfig: "Paràmetres de notificacions"
 mutualFollow: "Seguidor mutu"
 followingOrFollower: "Seguint o seguidor"
-fileAttachedOnly: "Només notes amb adjunts"
+fileAttachedOnly: "Només sparks amb adjunts"
 showRepliesToOthersInTimeline: "Mostrar les respostes a altres a la línia de temps"
 hideRepliesToOthersInTimeline: "Amagar les respostes a altres a la línia de temps"
 showRepliesToOthersInTimelineAll: "Mostrar les respostes a altres a usuaris que segueixes a la línia de temps"
@@ -1218,7 +1218,7 @@ externalServices: "Serveis externs"
 sourceCode: "Codi font"
 sourceCodeIsNotYetProvided: "El codi font encara no es troba disponible. Contacta amb l'administrador per solucionar aquest problema."
 repositoryUrl: "URL del repositori"
-repositoryUrlDescription: "Si estàs fent servir Misskey tal com és (sense cap canvi al codi font), introdueix https://github.com/misskey-dev/misskey"
+repositoryUrlDescription: "Si estàs fent servir Tribe tal com és (sense cap canvi al codi font), introdueix https://github.com/misskey-dev/misskey"
 repositoryUrlOrTarballRequired: "Si no ofereixes cap repositori, publica un fitxer tarball. Dona una ullada a .config/example.yml per a més informació."
 feedback: "Opinió"
 feedbackUrl: "URL per a opinar"
@@ -1263,7 +1263,7 @@ ranking: "Classificació"
 lastNDays: "Últims {n} dies"
 backToTitle: "Torna al títol"
 hemisphere: "Geolocalització"
-withSensitive: "Incloure notes amb fitxers sensibles"
+withSensitive: "Incloure sparks amb fitxers sensibles"
 userSaysSomethingSensitive: "La publicació de {name} conte material sensible"
 enableHorizontalSwipe: "Lliscar per canviar de pestanya"
 loading: "S’està carregant"
@@ -1286,8 +1286,8 @@ createdLists: "Llistes creades "
 createdAntennas: "Antenes creades"
 fromX: "De {x}"
 genEmbedCode: "Obtenir el codi per incrustar"
-noteOfThisUser: "Notes d'aquest usuari"
-clipNoteLimitExceeded: "No es poden afegir més notes a aquest clip."
+noteOfThisUser: "Sparks d'aquest usuari"
+clipNoteLimitExceeded: "No es poden afegir més sparks a aquest clip."
 performance: "Rendiment"
 modified: "Modificat"
 discard: "Descarta"
@@ -1347,9 +1347,10 @@ settingsMigrating: "Estem migrant la teva configuració. Si us plau espera un mo
 readonly: "Només lectura"
 goToDeck: "Tornar al tauler"
 federationJobs: "Treballs sindicats "
-driveAboutTip: "Al Disc veure's una llista de tots els arxius que has anat pujant.<br>\nPots tornar-los a fer servir adjuntant-los a notes noves o pots adelantar-te i pujar arxius per publicar-los més tard!<br>\n<b>Tingués en compte que si esborres un arxiu també desapareixerà de tots els llocs on l'has fet servir (notes, pàgines, avatars, imatges de capçalera, etc.)</b><br>\nTambé pots crear carpetes per organitzar les."
+driveAboutTip: "Al Disc veure's una llista de tots els arxius que has anat pujant.<br>\nPots tornar-los a fer servir adjuntant-los a sparks noves o pots adelantar-te i pujar arxius per publicar-los més tard!<br>\n<b>Tingués en compte que si esborres un arxiu també desapareixerà de tots els llocs on l'has fet servir (sparks, pàgines, avatars, imatges de capçalera, etc.)</b><br>\nTambé pots crear carpetes per organitzar les."
 scrollToClose: "Desplaçar per tancar"
 _chat:
+
   noMessagesYet: "Encara no tens missatges "
   newMessage: "Missatge nou"
   individualChat: "Xat individual "
@@ -1390,17 +1391,20 @@ _chat:
   chatAllowedUsers: "Usuaris que poden xatejar"
   chatAllowedUsers_note: "Pots xatejar amb qualsevol usuari a qui hagis enviat un missatge de xat, independentment d'aquesta configuració."
   _chatAllowedUsers:
+
     everyone: "Tothom"
     followers: "Només els teus seguidors"
     following: "Només usuaris als que segueixes"
     mutual: "Només seguidors mutus"
     none: "Ningú "
 _emojiPalette:
+
   palettes: "Calaixos d'emojis"
   enableSyncBetweenDevicesForPalettes: "Activa la sincronització dels calaixos d'emojis entre dispositius"
   paletteForMain: "Calaix d'emojis principal"
   paletteForReaction: "Calaix d'emojis per reaccions"
 _settings:
+
   driveBanner: "Pots gestionar i configurar el Disc, comprovar el seu ús i establir una configuració per a la càrrega d'arxius."
   pluginBanner: "Els complements poden fer-se servir per ampliar les funcionalitats del client. Els complements poden instal·lar-se, configurar-se individualment i gestionar-se."
   notificationsBanner: "Pots configurar el tipus i l'abast de les notificacions que es rebran del servidor, també les notificacions emergents."
@@ -1428,13 +1432,16 @@ _settings:
   enablePullToRefresh: "Lliscar i actualitzar "
   enablePullToRefresh_description: "Amb el ratolí, llisca mentre prems la roda."
   _chat:
+
     showSenderName: "Mostrar el nom del remitent"
     sendOnEnter: "Introdueix per enviar"
 _preferencesProfile:
+
   profileName: "Nom del perfil"
   profileNameDescription: "Estableix un nom que identifiqui aquest dispositiu."
   profileNameDescription2: "Per exemple: \"PC Principal\", \"Smartphone\", etc"
 _preferencesBackup:
+
   autoBackup: "Còpia de seguretat automàtica "
   restoreFromBackup: "Restaurar des d'una còpia de seguretat"
   noBackupsFoundTitle: "No s'ha trobat cap còpia de seguretat"
@@ -1444,19 +1451,21 @@ _preferencesBackup:
   autoPreferencesBackupIsNotEnabledForThisDevice: "La còpia de seguretat automàtica no es troba activada en aquest dispositiu."
   backupFound: "Còpia de seguretat de la configuració trobada"
 _accountSettings:
+
   requireSigninToViewContents: "És obligatori l'inici de sessió per poder veure el contingut"
-  requireSigninToViewContentsDescription1: "Es requereix l'inici de sessió per poder veure totes les notes i el contingut que has creat. Amb això esperem evitar que els rastrejadors recopilin informació."
-  requireSigninToViewContentsDescription2: "També es desactivaran les vistes prèvies d'URLS (OGP), la incrustació a pàgines web i la visualització des de servidors que no admetin la citació de notes."
+  requireSigninToViewContentsDescription1: "Es requereix l'inici de sessió per poder veure totes les sparks i el contingut que has creat. Amb això esperem evitar que els rastrejadors recopilin informació."
+  requireSigninToViewContentsDescription2: "També es desactivaran les vistes prèvies d'URLS (OGP), la incrustació a pàgines web i la visualització des de servidors que no admetin la citació de sparks."
   requireSigninToViewContentsDescription3: "Aquestes restriccions pot ser que no s'apliquin als continguts federats en servidors remots."
-  makeNotesFollowersOnlyBefore: "Permetre que les notes antigues només es mostrin als seguidors."
-  makeNotesFollowersOnlyBeforeDescription: "Mentre aquesta funció estigui activada, les notes que hagin passat la data i hora fixada o hagi passat els temps establert seran visibles només per als teus seguidors. Quan es desactivi, també es restableix l'estat públic de la nota."
-  makeNotesHiddenBefore: "Fes que les notes antigues siguin privades"
-  makeNotesHiddenBeforeDescription: "Mentres aquesta funció estigui activada les notes que hagin superat una data i hora fixada o hagi passat el temps establert només seran visibles per a tu. Si la desactives es restablirà també l'estat públic de les notes."
-  mayNotEffectForFederatedNotes: "Això pot ser que no afecti les notes federades."
+  makeNotesFollowersOnlyBefore: "Permetre que les sparks antigues només es mostrin als seguidors."
+  makeNotesFollowersOnlyBeforeDescription: "Mentre aquesta funció estigui activada, les sparks que hagin passat la data i hora fixada o hagi passat els temps establert seran visibles només per als teus seguidors. Quan es desactivi, també es restableix l'estat públic de la nota."
+  makeNotesHiddenBefore: "Fes que les sparks antigues siguin privades"
+  makeNotesHiddenBeforeDescription: "Mentres aquesta funció estigui activada les sparks que hagin superat una data i hora fixada o hagi passat el temps establert només seran visibles per a tu. Si la desactives es restablirà també l'estat públic de les sparks."
+  mayNotEffectForFederatedNotes: "Això pot ser que no afecti les sparks federades."
   mayNotEffectSomeSituations: "Aquestes restriccions són simplificades. Pot ser que no s'apliquin en determinades situacions, com quan es modera o visualitza un servidor remot."
-  notesHavePassedSpecifiedPeriod: "Notes publicades durant un període de temps especificat."
-  notesOlderThanSpecifiedDateAndTime: "Notes més antigues de la data i temps especificat "
+  notesHavePassedSpecifiedPeriod: "Sparks publicades durant un període de temps especificat."
+  notesOlderThanSpecifiedDateAndTime: "Sparks més antigues de la data i temps especificat "
 _abuseUserReport:
+
   forward: "Reenviar "
   forwardDescription: "Reenvia l'informe a una altra instància com un compte del sistema anònima."
   resolve: "Solució "
@@ -1464,19 +1473,23 @@ _abuseUserReport:
   reject: "Rebutjar"
   resolveTutorial: "Si l'informe és legítim selecciona \"Acceptar\" per resoldre'l positivament. Però si l'informe no és legítim selecciona \"Rebutjar\" per resoldre'l negativament."
 _delivery:
+
   status: "Estat d'entrega "
   stop: "Anul·lar subscripció "
   resume: "Torna a enviar"
   _type:
+
     none: "S'està publicant"
     manuallySuspended: "Suspendre manualment"
     goneSuspended: "Servidor suspès perquè el servidor s'ha esborrat"
     autoSuspendedForNotResponding: "Servidor suspès perquè el servidor no respon"
     softwareSuspended: "Suspès perquè el programari ha deixat de desenvolupar-se "
 _bubbleGame:
+
   howToPlay: "Com es juga"
   hold: "Mantenir"
   _score:
+
     score: "Puntuació "
     scoreYen: "Diners guanyats"
     highScore: "Millor puntuació "
@@ -1485,10 +1498,12 @@ _bubbleGame:
     estimatedQty: "{qty}peces"
     scoreSweets: "{onigiriQtyWithUnit}ongiris"
   _howToPlay:
+
     section1: "Ajusta la posició i deixa caure l'objecte dintre la caixa."
     section2: "Quan dos objectes del mateix tipus es toquen, canviaran en un objecte diferent i guanyares punts."
     section3: "El joc s'acabarà quan els objectes sobresurtin de la caixa. Intenta aconseguir la puntuació més gran possible fusionant objectes mentre impedeixes que sobresurtin de la caixa!"
 _announcement:
+
   forExistingUsers: "Anunci per usuaris registrats"
   forExistingUsersDescription: "Aquest avís només es mostrarà als usuaris existents fins al moment de la publicació. Si no també es mostrarà als usuaris que es registrin després de la publicació."
   needConfirmationToRead: "Es necessita confirmació de lectura de la notificació "
@@ -1502,6 +1517,7 @@ _announcement:
   silence: "Sense notificacions"
   silenceDescription: "Activant aquesta opció la notificació no es mostrarà ni l'usuari l'haurà de llegir."
 _initialAccountSetting:
+
   accountCreated: "S'ha completat la creació del compte!"
   letsStartAccountSetup: "Posem ràpidament la configuració inicial del compte."
   letsFillYourProfile: "Comencem establint el teu perfil."
@@ -1518,75 +1534,90 @@ _initialAccountSetting:
   skipAreYouSure: "Et vols saltar la configuració del perfil?"
   laterAreYouSure: "Vols continuar la configuració del perfil més tard?"
 _initialTutorial:
+
   launchTutorial: "Començar tutorial"
   title: "Tutorial"
   wellDone: "Ben fet!"
   skipAreYouSure: "Sortir del tutorial?"
   _landing:
+
     title: "Benvingut al tutorial"
-    description: "Aquí aprendràs el bàsic per poder fer servir Misskey i les seves característiques."
+    description: "Aquí aprendràs el bàsic per poder fer servir Tribe i les seves característiques."
   _note:
+
     title: "Què és una Nota?"
-    description: "Les publicacions a Misskey es diuen 'Notes'. Les Notes s'ordenen cronològicament a la línia de temps i s'actualitzen de forma automàtica."
+    description: "Les publicacions a Tribe es diuen 'Sparks'. Les Sparks s'ordenen cronològicament a la línia de temps i s'actualitzen de forma automàtica."
     reply: "Fes clic en aquest botó per contestar a un missatge. També és possible contestar a una contestació, continuant la conversació en forma de fil."
     renote: "Pots compartir una Nota a la teva pròpia línia de temps. Inclús pots citar-les amb els teus comentaris."
-    reaction: "Pots afegir reaccions a les Notes. Entrarem més en detall a la pròxima pàgina."
-    menu: "Pots veure els detalls de les Notes, copiar enllaços i fer diferents accions."
+    reaction: "Pots afegir reaccions a les Sparks. Entrarem més en detall a la pròxima pàgina."
+    menu: "Pots veure els detalls de les Sparks, copiar enllaços i fer diferents accions."
   _reaction:
+
     title: "Què són les Reaccions?"
-    description: "Es poden reaccionar a les Notes amb diferents emoticones. Les reaccions et permeten expressar matisos que hi són més enllà d'un simple m'agrada."
+    description: "Es poden reaccionar a les Sparks amb diferents emoticones. Les reaccions et permeten expressar matisos que hi són més enllà d'un simple m'agrada."
     letsTryReacting: "Es poden afegir reaccions fent clic al botó '+'. Prova reaccionant a aquesta nota!"
     reactToContinue: "Afegeix una reacció per continuar."
-    reactNotification: "Rebràs notificacions en temps real quan un usuari reaccioni a les teves notes."
+    reactNotification: "Rebràs notificacions en temps real quan un usuari reaccioni a les teves sparks."
     reactDone: "Pots desfer una reacció fent clic al botó '-'."
   _timeline:
+
     title: "El concepte de les línies de temps"
-    description1: "Misskey mostra diferents línies de temps basades en l'ús (algunes poden no estar disponibles depenent de la política del servidor)"
-    home: "Pots veure notes dels comptes que segueixes"
-    local: "Pots veure les notes dels usuaris del servidor."
-    social: "Es mostren les notes de les línies de temps d'Inici i Local."
-    global: "Pots veure les notes de tots els servidors connectats."
+    description1: "Tribe mostra diferents línies de temps basades en l'ús (algunes poden no estar disponibles depenent de la política del servidor)"
+    home: "Pots veure sparks dels comptes que segueixes"
+    local: "Pots veure les sparks dels usuaris del servidor."
+    social: "Es mostren les sparks de les línies de temps d'Inici i Local."
+    global: "Pots veure les sparks de tots els servidors connectats."
     description2: "Pots canviar la línia de temps en qualsevol moment fent servir la barra de la pantalla superior."
     description3: "A més hi ha línies de temps per llistes i per canals. Si vols saber més {link}."
   _postNote:
-    title: "Configuració de la publicació de les notes"
-    description1: "Quan públiques una nota a Misskey hi ha diferents opcions disponibles. El formulari de publicació es veu així"
+
+    title: "Configuració de la publicació de les sparks"
+    description1: "Quan públiques una nota a Tribe hi ha diferents opcions disponibles. El formulari de publicació es veu així"
     _visibility:
-      description: "Pots limitar qui pot veure les teves notes."
+
+      description: "Pots limitar qui pot veure les teves sparks."
       public: "La teva nota serà visible per a tots els usuaris."
       home: "Publicar només a línia de temps d'Inici. La gent que visiti el teu perfil o mitjançant les remotes també la podran veure."
-      followers: "Només visible per a seguidors. Només els teus seguidors la podran veure i ningú més. Ningú més podrà fer renotes."
+      followers: "Només visible per a seguidors. Només els teus seguidors la podran veure i ningú més. Ningú més podrà fer re-sparks."
       direct: "Només visible per a alguns seguidors, el destinatari rebre una notificació. Es pot fer servir com una alternativa als missatges directes."
       doNotSendConfidencialOnDirect1: "Tingues cura quan enviïs informació sensible."
-      doNotSendConfidencialOnDirect2: "Els administradors del servidor poden veure tot el que escrius. Ves compte quan enviïs informació sensible en enviar notes directes a altres usuaris en servidors de poca confiança."
+      doNotSendConfidencialOnDirect2: "Els administradors del servidor poden veure tot el que escrius. Ves compte quan enviïs informació sensible en enviar sparks directes a altres usuaris en servidors de poca confiança."
       localOnly: "Publicar amb aquesta opció activada farà que la nota no federi amb altres servidors. Els usuaris d'altres servidors no podran veure la nota directament, sense importar les opcions de visualització."
     _cw:
+
       title: "Avís de Contingut (CW)"
       description: "En comptes del cos de la nota es mostrarà el que s'escrigui al camp de 'comentaris'. Fent clic a 'Llegir més' es mostrarà el cos."
       _exampleNote:
+
         cw: "Això et farà venir gana!"
         note: "Acabo de menjar-me un donut de xocolata 🍩😋"
-      useCases: "Això es fa servir per seguir normes del servidor sobre certes notes o per ocultar contingut sensible O revelador."
+      useCases: "Això es fa servir per seguir normes del servidor sobre certes sparks o per ocultar contingut sensible O revelador."
   _howToMakeAttachmentsSensitive:
+
     title: "Com marcar adjunts com a contingut sensible?"
     description: "Per adjunts que sigui requerit per les normes del servidor o que puguin contenir material sensible, s'ha d'afegir l'opció 'sensible'."
     tryThisFile: "Prova de marcar la imatge adjunta en aquest formulari com a sensible!"
     _exampleNote:
+
       note: "Oops! L'he fet bona en obrir la tapa de Nocilla..."
     method: "Per marcar un adjunt com a sensible, fes clic a la miniatura de l'adjunt, obre el menú i fes clic a 'Marcar com a sensible'."
     sensitiveSucceeded: "Quan adjuntis fitxers si us plau marca la sensibilitat seguint les normes del servidor."
     doItToContinue: "Marca el fitxer adjunt com a sensible per poder continuar."
   _done:
+
     title: "Has completat el tutorial 🎉"
     description: "Les funcions explicades aquí és una petita mostra. Per una explicació més detallada de com fer servir MissKey consulta {link}."
 _timelineDescription:
-  home: "A la línia de temps d'Inici pots veure les notes dels usuaris que segueixes."
-  local: "A la línia de temps Local pots veure les notes de tots els usuaris d'aquest servidor."
-  social: "La línia de temps Social mostren les notes de les línies de temps d'Inici i Local."
-  global: "A la línia de temps Global pots veure les notes de tots els servidors connectats."
+
+  home: "A la línia de temps d'Inici pots veure les sparks dels usuaris que segueixes."
+  local: "A la línia de temps Local pots veure les sparks de tots els usuaris d'aquest servidor."
+  social: "La línia de temps Social mostren les sparks de les línies de temps d'Inici i Local."
+  global: "A la línia de temps Global pots veure les sparks de tots els servidors connectats."
 _serverRules:
+
   description: "Un conjunt de regles que seran mostrades abans de registrar-se. Es recomanable configurar un resum dels termes d'ús."
 _serverSettings:
+
   iconUrl: "URL de la icona"
   appIconDescription: "Especifica la icona que es mostrarà quan el {host} es mostri en una aplicació."
   appIconUsageExample: "Per exemple com a PWA, o quan es mostri com un favorit a la pàgina d'inici del telèfon mòbil"
@@ -1607,6 +1638,7 @@ _serverSettings:
   deliverSuspendedSoftware: "Programari que ja no es distribueix"
   deliverSuspendedSoftwareDescription: "Pots especificar un rang de noms i versions del programari del servidor per detenir l'entrega, per exemple, degut a vulnerabilitats. Aquesta informació la proporciona el servidor i la seva fiabilitat no es garantitzada. Es pot fer servir una especificació de rang sencer per especificar una versió, però es recomana especificar una versió anterior, com >= 2024.3.1-0, perquè especificar  >= 2024.3.1 no incloure versions personalitzades com 2024.3.1-custom.0."
 _accountMigration:
+
   moveFrom: "Migrar un altre compte a aquest"
   moveFromSub: "Crear un àlies per un altre compte"
   moveFromLabel: "Compte original #{n}"
@@ -1614,7 +1646,7 @@ _accountMigration:
   moveTo: "Migrar aquest compte a un altre"
   moveToLabel: "Compte al qual es vol migrar:"
   moveCannotBeUndone: "Les migracions dels comptes no es poden desfer."
-  moveAccountDescription: "Això migrarà el teu compte a un altre diferent.\n　・Els seguidors d'aquest compte és passaran al compte nou de forma automàtica\n　・Es deixaran de seguir a tots els usuaris que es segueixen actualment en aquest compte\n　・No es poden crear notes noves, etc. en aquest compte\n\nSi bé la migració de seguidors es automàtica, has de preparar alguns pasos manualment per migrar la llista d'usuaris que segueixes. Per fer això has d'exportar els seguidors que després importaraes al compte nou mitjançant el menú de configuració. El mateix procediment s'ha de seguir per less teves llistes i els teus usuaris silenciats i bloquejats.\n\n(Aquesta explicació s'aplica a Misskey v13.12.0 i posteriors. Altres aplicacions, com Mastodon, poden funcionar diferent.)"
+  moveAccountDescription: "Això migrarà el teu compte a un altre diferent.\n　・Els seguidors d'aquest compte és passaran al compte nou de forma automàtica\n　・Es deixaran de seguir a tots els usuaris que es segueixen actualment en aquest compte\n　・No es poden crear sparks noves, etc. en aquest compte\n\nSi bé la migració de seguidors es automàtica, has de preparar alguns pasos manualment per migrar la llista d'usuaris que segueixes. Per fer això has d'exportar els seguidors que després importaraes al compte nou mitjançant el menú de configuració. El mateix procediment s'ha de seguir per less teves llistes i els teus usuaris silenciats i bloquejats.\n\n(Aquesta explicació s'aplica a Tribe v13.12.0 i posteriors. Altres aplicacions, com Mastodon, poden funcionar diferent.)"
   moveAccountHowTo: "Per fer la migració, primer has de crear un àlies per aquest compte al compte al qual vols migrar.\nDesprés de crear l'àlies, introdueix el compte al qual vols migrar amb el format següent: @nomusuari@servidor.exemple.com"
   startMigration: "Migrar"
   migrationConfirm: "Vols migrar aquest compte a {account}? Una vegada comenci la migració no es podrà parar O fer marxa enrere i no podràs tornar a fer servir aquest compte mai més."
@@ -1622,258 +1654,339 @@ _accountMigration:
   postMigrationNote: "Aquest compte deixarà de seguir tots els comptes que segueix 24 hores després de terminar la migració.\nEl nombre de seguidors i seguits passarà a ser de zero. Per evitar que els teus seguidors no puguin veure les publicacions marcades com a només seguidors continuaren seguint aquest compte."
   movedTo: "Nou compte:"
 _achievements:
+
   earnedAt: "Desbloquejat el"
   _types:
+
     _notes1:
+
       title: "Aquí, configurant el meu msky"
       description: "Publica la teva primera Nota"
       flavor: "Passa-t'ho bé fent servir Miskey!"
     _notes10:
-      title: "Algunes notes"
-      description: "Publica 10 notes"
+
+      title: "Algunes sparks"
+      description: "Publica 10 sparks"
     _notes100:
-      title: "Un piló de notes"
-      description: "Publica 100 notes"
+
+      title: "Un piló de sparks"
+      description: "Publica 100 sparks"
     _notes500:
-      title: "Cobert de notes"
-      description: "Publica 500 notes"
+
+      title: "Cobert de sparks"
+      description: "Publica 500 sparks"
     _notes1000:
-      title: "Un piló de notes"
-      description: "1 000 notes publicades"
+
+      title: "Un piló de sparks"
+      description: "1 000 sparks publicades"
     _notes5000:
-      title: "Desbordament de notes"
-      description: "5 000 notes publicades"
+
+      title: "Desbordament de sparks"
+      description: "5 000 sparks publicades"
     _notes10000:
+
       title: "Supernota"
-      description: "10 000 notes publicades"
+      description: "10 000 sparks publicades"
     _notes20000:
-      title: "Necessito... Més... Notes!"
-      description: "20 000 notes publicades"
+
+      title: "Necessito... Més... Sparks!"
+      description: "20 000 sparks publicades"
     _notes30000:
-      title: "Notes notes notes!"
-      description: "30 000 notes publicades"
+
+      title: "Sparks sparks sparks!"
+      description: "30 000 sparks publicades"
     _notes40000:
-      title: "Fàbrica de notes"
-      description: "40 000 notes publicades"
+
+      title: "Fàbrica de sparks"
+      description: "40 000 sparks publicades"
     _notes50000:
-      title: "Planeta de notes"
-      description: "50 000 notes publicades"
+
+      title: "Planeta de sparks"
+      description: "50 000 sparks publicades"
     _notes60000:
-      title: "Quàsar de notes"
-      description: "60 000 notes publicades"
+
+      title: "Quàsar de sparks"
+      description: "60 000 sparks publicades"
     _notes70000:
-      title: "Forat negre de notes"
-      description: "70 000 notes publicades"
+
+      title: "Forat negre de sparks"
+      description: "70 000 sparks publicades"
     _notes80000:
-      title: "Galàxia de notes"
-      description: "80 000 notes publicades"
+
+      title: "Galàxia de sparks"
+      description: "80 000 sparks publicades"
     _notes90000:
-      title: "Univers de notes"
-      description: "90 000 notes publicades"
+
+      title: "Univers de sparks"
+      description: "90 000 sparks publicades"
     _notes100000:
+
       title: "ALL YOUR NOTE ARE BELONG TO US"
-      description: "100 000 notes publicades"
+      description: "100 000 sparks publicades"
       flavor: "Segur que tens moltes coses a dir?"
     _login3:
+
       title: "Principiant I"
       description: "Vas iniciar sessió fa tres dies"
       flavor: "Des d'avui diguem Misskist"
     _login7:
+
       title: "Principiant II"
       description: "Vas iniciar sessió fa set dies"
       flavor: "Ja saps com va funcionant tot?"
     _login15:
+
       title: "Principiant III"
       description: "Vas iniciar sessió fa quinze dies"
     _login30:
+
       title: "Misskist I"
       description: "Vas iniciar sessió fa trenta dies"
     _login60:
+
       title: "Misskist II"
       description: "Vas iniciar sessió fa seixanta dies"
     _login100:
+
       title: "Misskist III"
       description: "Vas iniciar sessió fa cent dies"
       flavor: "Misskist violent"
     _login200:
+
       title: "Regular I"
       description: "Vas iniciar sessió fa dos-cents dies"
     _login300:
+
       title: "Regular II"
       description: "Vas iniciar sessió fa tres-cents dies"
     _login400:
+
       title: "Regular III"
       description: "Vas iniciar sessió fa quatre-cents dies"
     _login500:
+
       title: "Expert I"
       description: "Vas iniciar sessió fa cinc-cents dies"
-      flavor: "Amics, he dit massa vegades que soc un amant de les notes"
+      flavor: "Amics, he dit massa vegades que soc un amant de les sparks"
     _login600:
+
       title: "Expert II"
       description: "Vas iniciar sessió fa sis-cents dies"
     _login700:
+
       title: "Expert III"
       description: "Vas iniciar sessió fa set-cents dies"
     _login800:
-      title: "Mestre de les Notes I"
+
+      title: "Mestre de les Sparks I"
       description: "Vas iniciar sessió fa vuit-cents dies "
     _login900:
-      title: "Mestre de les Notes II"
+
+      title: "Mestre de les Sparks II"
       description: "Vas iniciar sessió fa nou-cents dies"
     _login1000:
-      title: "Mestre de les Notes III"
+
+      title: "Mestre de les Sparks III"
       description: "Vas iniciar sessió fa mil dies"
       flavor: "Gràcies per fer servir MissKey!"
     _noteClipped1:
+
       title: "He de retallar-te!"
       description: "Retalla la teva primera nota"
     _noteFavorited1:
+
       title: "Quan miro les estrelles"
       description: "La primera vegada que vaig registrar el meu favorit"
     _myNoteFavorited1:
+
       title: "Vull una estrella"
       description: "La meva nota va ser registrada com favorita per una de les altres persones"
     _profileFilled:
+
       title: "Estic a punt"
       description: "Vaig fer la configuració de perfil"
     _markedAsCat:
+
       title: "Soc un gat"
       description: "He establert el meu compte com si fos un Gat"
       flavor: "Encara no tinc nom"
     _following1:
+
       title: "És el meu primer seguiment"
       description: "És la primera vegada que et segueixo"
     _following10:
+
       title: "Segueix-me... Segueix-me..."
       description: "Seguir 10 usuaris"
     _following50:
+
       title: "Molts amics"
       description: "Seguir 50 comptes"
     _following100:
+
       title: "100 amics"
       description: "Segueixes 100 comptes"
     _following300:
+
       title: "Sobrecàrrega d'amics"
       description: "Segueixes 300 comptes"
     _followers1:
+
       title: "Primer seguidor"
       description: "1 seguidor guanyat"
     _followers10:
+
       title: "Segueix-me!"
       description: "10 seguidors guanyats"
     _followers50:
+
       title: "Venen en manada"
       description: "50 seguidors guanyats"
     _followers100:
+
       title: "Popular"
       description: "100 seguidors guanyats"
     _followers300:
+
       title: "Si us plau, d'un en un!"
       description: "300 seguidors guanyats"
     _followers500:
+
       title: "Torre de ràdio"
       description: "500 seguidors guanyats"
     _followers1000:
+
       title: "Influenciador"
       description: "1 000 seguidors guanyats"
     _collectAchievements30:
+
       title: "Col·leccionista d'èxits "
       description: "Desbloqueja 30 assoliments"
     _viewAchievements3min:
+
       title: "M'agraden els èxits "
       description: "Mira la teva llista d'assoliments durant més de 3 minuts"
     _iLoveMisskey:
-      title: "Estimo Misskey"
-      description: "Publica \"I ❤ #Misskey\""
-      flavor: "L'equip de desenvolupament de Misskey agraeix el vostre suport!"
+
+      title: "Estimo Tribe"
+      description: "Publica \"I ❤ #Tribe\""
+      flavor: "L'equip de desenvolupament de Tribe agraeix el vostre suport!"
     _foundTreasure:
+
       title: "A la Recerca del Tresor"
       description: "Has trobat el tresor amagat"
     _client30min:
+
       title: "Parem una estona"
-      description: "Mantingues obert Misskey per 30 minuts"
+      description: "Mantingues obert Tribe per 30 minuts"
     _client60min:
-      title: "A totes amb Misskey"
-      description: "Mantingues Misskey obert per 60 minuts"
+
+      title: "A totes amb Tribe"
+      description: "Mantingues Tribe obert per 60 minuts"
     _noteDeletedWithin1min:
+
       title: "No et preocupis"
       description: "Esborra una nota al minut de publicar-la"
     _postedAtLateNight:
+
       title: "Nocturn"
       description: "Publica una nota a altes hores de la nit "
       flavor: "És hora d'anar a dormir."
     _postedAt0min0sec:
+
       title: "Rellotge xerraire"
       description: "Publica una nota a les 0:00"
       flavor: "Tic tac, tic tac, tic tac, DING!"
     _selfQuote:
+
       title: "Autoreferència "
       description: "Cita una nota teva"
     _htl20npm:
+
       title: "Línia de temps fluida"
-      description: "La teva línia de temps va a més de 20npm (notes per minut)"
+      description: "La teva línia de temps va a més de 20npm (sparks per minut)"
     _viewInstanceChart:
+
       title: "Analista "
       description: "Mira els gràfics de la teva instància "
     _outputHelloWorldOnScratchpad:
+
       title: "Hola, món!"
-      description: "Escriu \"hola, món\" al bloc de notes"
+      description: "Escriu \"hola, món\" al bloc de sparks"
     _open3windows:
+
       title: "Multi finestres"
       description: "I va obrir més de tres finestres"
     _driveFolderCircularReference:
+
       title: "Consulteu la secció de bucle"
       description: "Intenta crear carpetes recursives al Disc"
     _reactWithoutRead:
+
       title: "De veritat has llegit això?"
       description: "Reaccions a una nota de més de 100 caràcters publicada fa menys de 3 segons "
     _clickedClickHere:
+
       title: "Fer clic"
       description: "Has fet clic aquí "
     _justPlainLucky:
+
       title: "Ha sigut sort"
       description: "Oportunitat de guanyar-lo amb una probabilitat d'un 0.005% cada 10 segons"
     _setNameToSyuilo:
+
       title: "soc millor"
       description: "Posat \"siuylo\" com a nom"
     _passedSinceAccountCreated1:
+
       title: "Primer aniversari"
       description: "Ja ha passat un any d'ençà que vas crear el teu compte"
     _passedSinceAccountCreated2:
+
       title: "Segon aniversari"
       description: "Ja han passat dos anys d'ençà que vas crear el teu compte"
     _passedSinceAccountCreated3:
+
       title: "Tres anys"
       description: "Ja han passat tres anys d'ençà que vas crear el teu compte"
     _loggedInOnBirthday:
+
       title: "Felicitats!"
       description: "T'has identificat el dia del teu aniversari"
     _loggedInOnNewYearsDay:
+
       title: "Bon any nou!"
       description: "T'has identificat el primer dia de l'any "
       flavor: "A per un altre any memorable a la teva instància   "
     _cookieClicked:
+
       title: "Un joc en què fas clic a les galetes"
       description: "Pica galetes"
       flavor: "Espera, ets al lloc web correcte?"
     _brainDiver:
+
       title: "Busseja Ments"
       description: "Publica un enllaç al Busseja Ments"
-      flavor: "Misskey-Misskey La-Tu-Ma"
+      flavor: "Tribe-Tribe La-Tu-Ma"
     _smashTestNotificationButton:
+
       title: "Sobrecàrrega de proves"
       description: "Envia moltes notificacions de prova en un període de temps molt curt"
     _tutorialCompleted:
-      title: "Diploma del Curs Elemental de Misskey"
+
+      title: "Diploma del Curs Elemental de Tribe"
       description: "Has completat el tutorial"
     _bubbleGameExplodingHead:
+
       title: "🤯"
       description: "L'objecte més gran del joc de la bombolla "
     _bubbleGameDoubleExplodingHead:
+
       title: "Doble 🤯"
       description: "Dos dels objectes més grans del joc de la bombolla al mateix temps"
       flavor: "Pots emplenar una carmanyola com aquesta 🤯🤯 una mica"
 _role:
+
   new: "Nou rol"
   edit: "Editar el rol"
   name: "Nom del rol"
@@ -1908,13 +2021,15 @@ _role:
   descriptionOfCanEditMembersByModerator: "Quan s'activa, els moderadors, així com els administradors, podran afegir i treure usuaris d'aquest rol. Si es troba desactivat, només els administradors poden assignar usuaris."
   priority: "Prioritat"
   _priority:
+
     low: "Baixa"
     middle: "Mitjà"
     high: "Alta"
   _options:
+
     gtlAvailable: "Pot veure la línia de temps global"
     ltlAvailable: "Pot veure la línia de temps local"
-    canPublicNote: "Pot enviar notes públiques"
+    canPublicNote: "Pot enviar sparks públiques"
     mentionMax: "Nombre màxim de mencions a una nota"
     canInvite: "Pot crear invitacions a la instància "
     inviteLimit: "Límit d'invitacions "
@@ -1926,18 +2041,18 @@ _role:
     maxFileSize: "Mida màxima de l'arxiu que es pot carregar"
     alwaysMarkNsfw: "Marca sempre els fitxers com a sensibles"
     canUpdateBioMedia: "Permet l'edició d'una icona o un bàner"
-    pinMax: "Nombre màxim de notes fixades"
+    pinMax: "Nombre màxim de sparks fixades"
     antennaMax: "Nombre màxim d'antenes"
     wordMuteMax: "Nombre màxim de caràcters permesos a les paraules silenciades"
     webhookMax: "Nombre màxim de Webhooks"
     clipMax: "Nombre màxim de clips"
-    noteEachClipsMax: "Nombre màxim de notes dintre d'un clip"
+    noteEachClipsMax: "Nombre màxim de sparks dintre d'un clip"
     userListMax: "Nombre màxim de llistes d'usuaris "
     userEachUserListsMax: "Nombre màxim d'usuaris dintre d'una llista d'usuaris "
     rateLimitFactor: "Limitador"
     descriptionOfRateLimitFactor: "Límits baixos són menys restrictius, límits alts són més restrictius."
     canHideAds: "Pot amagar la publicitat"
-    canSearchNotes: "Pot cercar notes"
+    canSearchNotes: "Pot cercar sparks"
     canUseTranslator: "Pot fer servir el traductor"
     avatarDecorationLimit: "Nombre màxim de decoracions que es poden aplicar els avatars"
     canImportAntennas: "Autoritza la importació d'antenes "
@@ -1947,6 +2062,7 @@ _role:
     canImportUserLists: "Autoritza la importació de llistes d'usuaris "
     chatAvailability: "Es permet xatejar"
   _condition:
+
     roleAssignedTo: "Assignat a rols manuals"
     isLocal: "Usuari local"
     isRemote: "Usuari remot"
@@ -1967,6 +2083,7 @@ _role:
     or: "OR condicional"
     not: "NOT condicional"
 _sensitiveMediaDetection:
+
   description: "Redueix els esforços de moderació gràcies al reconeixement automàtic dels fitxers amb contingut sensible mitjançant Machine Learing. Això augmentarà la càrrega del servidor."
   sensitivity: "Sensibilitat de la detecció "
   sensitivityDescription: "Reduint la sensibilitat provocarà menys falsos positius. D'altra banda incrementant-ho generarà més falsos negatius."
@@ -1975,6 +2092,7 @@ _sensitiveMediaDetection:
   analyzeVideos: "Activar anàlisis de vídeos "
   analyzeVideosDescription: "Analitzar els vídeos a més de les imatges. Això incrementarà lleugerament la càrrega del servidor."
 _emailUnavailable:
+
   used: "Aquest correu electrònic ja s'està fent servir"
   format: "El format del correu electrònic és invàlid "
   disposable: "No es poden fer servir adreces de correu electrònic d'un sol ús "
@@ -1982,14 +2100,17 @@ _emailUnavailable:
   smtp: "Aquest servidor de correu electrònic no respon"
   banned: "No pots registrar-te amb aquesta adreça de correu electrònic "
 _ffVisibility:
+
   public: "Públic "
   followers: "Visible només per a seguidors "
   private: "Privat"
 _signup:
+
   almostThere: "Ja quasi estem"
   emailAddressInfo: "Si us plau, escriu la teva adreça de correu electrònic. No es farà pública."
   emailSent: "S'ha enviat un correu de confirmació a ({email}). Si us plau, fes clic a l'enllaç per completar el registre."
 _accountDelete:
+
   accountDelete: "Eliminar el compte"
   mayTakeTime: "Com l'eliminació d'un compte consumeix bastants recursos, pot trigar un temps perquè es completi l'esborrat, depenent si tens molt contingut i la quantitat de fitxer que hagis pujat."
   sendEmail: "Una vegada hagi finalitzat l'esborrat del compte rebràs un correu electrònic a l'adreça que tinguis registrada en aquest compte."
@@ -1997,35 +2118,43 @@ _accountDelete:
   started: "Ha començat l'esborrat del compte."
   inProgress: "L'esborrat es troba en procés "
 _ad:
+
   back: "Tornar"
   reduceFrequencyOfThisAd: "Mostrar menys aquest anunci"
   hide: "No mostrar mai"
   timezoneinfo: "El dia de la setmana ve determinat del fus horari del servidor."
   adsSettings: "Configurar la publicitat"
-  notesPerOneAd: "Interval d'emplaçament publicitari en temps real (Notes per anuncis)"
+  notesPerOneAd: "Interval d'emplaçament publicitari en temps real (Sparks per anuncis)"
   setZeroToDisable: "Ajusta aquest valor a 0 per deshabilitar l'actualització d'anuncis en temps real"
   adsTooClose: "L'interval actual pot fer que l'experiència de l'usuari sigui dolenta perquè l'interval és molt baix."
 _forgotPassword:
+
   enterEmail: "Escriu l'adreça de correu electrònic amb la que et vas registrar. S'enviarà un correu electrònic amb un enllaç perquè puguis canviar-la."
   ifNoEmail: "Si no vas fer servir una adreça de correu electrònic per registrar-te, si us plau posa't en contacte amb l'administrador."
   contactAdmin: "Aquesta instància no suporta registrar-se amb correu electrònic. Si us plau, contacta amb l'administrador del servidor."
 _gallery:
+
   my: "La meva Galeria "
   liked: "Publicacions que t'han agradat"
   like: "M'agrada "
   unlike: "Ja no m'agrada"
 _email:
+
   _follow:
+
     title: "Tens un nou seguidor"
   _receiveFollowRequest:
+
     title: "Has rebut una sol·licitud  de seguiment"
 _plugin:
+
   install: "Instal·lar un afegit "
   installWarn: "Si us plau, no instal·lis afegits que no siguin de confiança."
   manage: "Gestionar els afegits"
   viewSource: "Veure l'origen "
   viewLog: "Mostra el registre"
 _preferencesBackups:
+
   list: "Llista de còpies de seguretat"
   saveNew: "Fer una còpia de seguretat nova"
   loadFile: "Carregar des d'un fitxer"
@@ -2044,36 +2173,42 @@ _preferencesBackups:
   cannotLoad: "Hi ha hagut un error al carregar"
   invalidFile: "Format del fitxer no vàlid "
 _registry:
+
   scope: "Àmbit "
   key: "Clau"
   keys: "Claus"
   domain: "Domini"
   createKey: "Crear una clau"
 _aboutMisskey:
-  about: "Misskey és un programa de codi obert desenvolupat des del 2014 per syuilo"
+
+  about: "Tribe és un programa de codi obert desenvolupat des del 2014 per syuilo"
   contributors: "Col·laboradors principals"
   allContributors: "Tots els col·laboradors "
   source: "Codi font"
   original: "Original"
-  thisIsModifiedVersion: "En {name} fa servir una versió modificada de Misskey."
-  translation: "Tradueix Misskey"
-  donate: "Fes un donatiu a Misskey"
+  thisIsModifiedVersion: "En {name} fa servir una versió modificada de Tribe."
+  translation: "Tradueix Tribe"
+  donate: "Fes un donatiu a Tribe"
   morePatrons: "També agraïm el suport d'altres col·laboradors que no surten en aquesta llista. Gràcies! 🥰"
   patrons: "Patrocinadors"
   projectMembers: "Membres del projecte"
 _displayOfSensitiveMedia:
+
   respect: "Ocultar imatges o vídeos marcats com a sensibles"
   ignore: "Mostrar imatges o vídeos marcats com a sensibles"
   force: "Ocultar totes les imatges o vídeos "
 _instanceTicker:
+
   none: "No mostrar mai"
   remote: "Mostrar per usuaris remots"
   always: "Mostrar sempre"
 _serverDisconnectedBehavior:
+
   reload: "Recarregar automàticament "
   dialog: "Mostrar finestres de confirmació "
   quiet: "Mostrar un avís que no molesti"
 _channel:
+
   create: "Crear un canal"
   edit: "Editar canal"
   setBanner: "Estableix el bàner "
@@ -2082,25 +2217,29 @@ _channel:
   owned: "Propietat"
   following: "Seguin"
   usersCount: "{n} Participants"
-  notesCount: "{n} Notes"
+  notesCount: "{n} Sparks"
   nameAndDescription: "Nom i descripció "
   nameOnly: "Nom només "
   allowRenoteToExternal: "Permet la citació i l'impuls fora del canal"
 _menuDisplay:
+
   sideFull: "Horitzontal "
   sideIcon: "Horitzontal (icones)"
   top: "A dalt"
   hide: "Amagar"
 _wordMute:
+
   muteWords: "Paraules silenciades"
   muteWordsDescription: "Separar amb espais per la condició AND o amb salts de línia per la condició OR."
   muteWordsDescription2: "Envolta les paraules amb barres per fer servir expressions regulars."
 _instanceMute:
+
   instanceMuteDescription: "Silencia tots els impulsos dels servidors seleccionats, també els usuaris que responen a altres d'un servidor silenciat."
   instanceMuteDescription2: "Separar amb salts de línia"
-  title: "Ocultar notes de les instàncies en la llista."
+  title: "Ocultar sparks de les instàncies en la llista."
   heading: "Llista d'instàncies a silenciar"
 _theme:
+
   explore: "Explorar els temes "
   install: "Instal·lar un tema"
   manage: "Gestionar els temes "
@@ -2132,6 +2271,7 @@ _theme:
   importInfo: "Si escrius el codi del tema aquí, el podràs importar a l'editor del tema"
   deleteConstantConfirm: "Vols esborrar la constant {const}?"
   keys:
+
     accent: "Accent"
     bg: "Fons"
     fg: "Text"
@@ -2168,20 +2308,23 @@ _theme:
     messageBg: "Fons del xat"
     fgHighlighted: "Text ressaltat"
 _sfx:
-  note: "Notes"
+
+  note: "Sparks"
   noteMy: "Nota (per mi)"
   notification: "Notificacions"
   reaction: "Quan se selecciona una reacció "
   chatMessage: "Missatges del xat"
 _soundSettings:
+
   driveFile: "Fer servir un fitxer d'àudio del disc"
   driveFileWarn: "Seleccionar un fitxer d'àudio del disc"
   driveFileTypeWarn: "Fitxer no suportat "
   driveFileTypeWarnDescription: "Seleccionar un fitxer d'àudio "
   driveFileDurationWarn: "L'àudio és massa llarg"
-  driveFileDurationWarnDescription: "Els àudios molt llargs pot interrompre l'ús de Misskey. Vols continuar?"
+  driveFileDurationWarnDescription: "Els àudios molt llargs pot interrompre l'ús de Tribe. Vols continuar?"
   driveFileError: "El so no es pot carregar. Canvia la configuració"
 _ago:
+
   future: "Futur "
   justNow: "Ara mateix"
   secondsAgo: "Fa {n} segons"
@@ -2193,6 +2336,7 @@ _ago:
   yearsAgo: "Fa {n} anys"
   invalid: "Res"
 _timeIn:
+
   seconds: "En {n} segons"
   minutes: "En {n} minuts"
   hours: "En {n} hores"
@@ -2201,11 +2345,13 @@ _timeIn:
   months: "En {n} mesos"
   years: "En {n} anys"
 _time:
+
   second: "Segon(s)"
   minute: "Minut(s)"
   hour: "Hor(a)(es)"
   day: "Di(a)(es)"
 _2fa:
+
   alreadyRegistered: "J has registrat un dispositiu d'autenticació de doble factor."
   registerTOTP: "Registrar una aplicació autenticadora"
   step1: "Primer instal·la una aplicació autenticadora (com {a} o {b}) al teu dispositiu."
@@ -2235,6 +2381,7 @@ _2fa:
   backupCodesExhaustedWarning: "Es van utilitzar tots els codis de còpia de seguretat. Si no es pot utilitzar l'aplicació d'autenticació, ja no es pot accedir al compte. Torna a registrar l'aplicació d'autenticació."
   moreDetailedGuideHere: "Aquí tens una guia al detall"
 _permissions:
+
   "read:account": "Veure la informació del compte."
   "write:account": "Editar la informació del compte."
   "read:blocks": "Veure la llista d'usuaris bloquejats"
@@ -2249,7 +2396,7 @@ _permissions:
   "write:messaging": "Crear o esborrar missatges de xat"
   "read:mutes": "Veure la teva llista d'usuaris silenciats"
   "write:mutes": "Editar la teva llista d'usuaris silenciats"
-  "write:notes": "Crear o esborrar notes"
+  "write:sparks": "Crear o esborrar sparks"
   "read:notifications": "Veure les teves notificacions"
   "write:notifications": "Gestionar les teves notificacions"
   "read:reactions": "Veure les teves reaccions"
@@ -2289,7 +2436,7 @@ _permissions:
   "write:admin:unset-user-banner": "Esborrar bàner de l'usuari "
   "write:admin:unsuspend-user": "Treure la suspensió d'un usuari"
   "write:admin:meta": "Gestionar les metadades de la instància"
-  "write:admin:user-note": "Gestionar les notes de moderació "
+  "write:admin:user-spark": "Gestionar les sparks de moderació "
   "write:admin:roles": "Gestionar rols"
   "read:admin:roles": "Veure rols"
   "write:admin:relays": "Gestionar relé"
@@ -2307,7 +2454,7 @@ _permissions:
   "read:admin:emoji": "Veure emojis"
   "write:admin:queue": "Gestionar la cua de feines"
   "read:admin:queue": "Veure la cua de feines"
-  "write:admin:promo": "Gestiona les notes promocionals"
+  "write:admin:promo": "Gestiona les sparks promocionals"
   "write:admin:drive": "Gestiona el disc de l'usuari"
   "read:admin:drive": "Veure la informació del disc de l'usuari"
   "read:admin:stream": "Fes servir l'API sobre Websocket per l'administració"
@@ -2322,6 +2469,7 @@ _permissions:
   "write:chat": "Crear o esborrar missatges de xat"
   "read:chat": "Explorar xats"
 _auth:
+
   shareAccessTitle: "Concedeix permisos a l'aplicació"
   shareAccess: "Vols que {name} pugui accedir al vostre compte?"
   shareAccessAsk: "Segur que vols que aquesta aplicació pugui accedir al vostre compte?"
@@ -2335,12 +2483,14 @@ _auth:
   pleaseLogin: "Si us plau, identificat per autoritzar l'aplicació."
   byClickingYouWillBeRedirectedToThisUrl: "Si es garanteix l'accés, seràs redirigit automàticament a la següent adreça URL"
 _antennaSources:
+
   all: "Totes les publicacions"
   homeTimeline: "Publicacions dels usuaris seguits"
   users: "Publicacions d'usuaris específics"
   userList: "Publicacions d'una llista d'usuaris"
-  userBlacklist: "Totes les notes excepte les d'un o alguns usuaris especificats"
+  userBlacklist: "Totes les sparks excepte les d'un o alguns usuaris especificats"
 _weekday:
+
   sunday: "Diumenge"
   monday: "Dilluns"
   tuesday: "Dimarts"
@@ -2349,9 +2499,10 @@ _weekday:
   friday: "Divendres"
   saturday: "Dissabte"
 _widgets:
+
   profile: "Perfil"
   instanceInfo: "Informació del fitxer d'instal·lació"
-  memo: "Notes adhesives"
+  memo: "Sparks adhesives"
   notifications: "Notificacions"
   timeline: "Línia de temps"
   calendar: "Calendari"
@@ -2376,16 +2527,19 @@ _widgets:
   aichan: "Ai"
   userList: "Llistat d'usuaris"
   _userList:
+
     chooseList: "Tria una llista"
   clicker: "Clicker"
   birthdayFollowings: "Usuaris que fan l'aniversari avui"
   chat: "Xat"
 _cw:
+
   hide: "Amagar"
   show: "Carregar més"
   chars: "{count} caràcters "
   files: "{count} fitxer(s)"
 _poll:
+
   noOnlyOneChoice: "Es necessita escollir dues opcions com a mínim "
   choiceN: "Opció {n}"
   noMore: "No pots afegir més opcions"
@@ -2408,6 +2562,7 @@ _poll:
   remainingMinutes: "Queden {m} minuts i {s} segons"
   remainingSeconds: "Queden {s} segons"
 _visibility:
+
   public: "Públic "
   publicDescription: "La teva nota la podrà veure tothom "
   home: "Inici"
@@ -2419,10 +2574,12 @@ _visibility:
   disableFederation: "Sense federar"
   disableFederationDescription: "No enviar a altres servidors"
 _postForm:
+
   replyPlaceholder: "Contestar..."
   quotePlaceholder: "Citar..."
   channelPlaceholder: "Publicar a un canal..."
   _placeholders:
+
     a: "Que vols dir?..."
     b: "Alguna cosa interessant al teu voltant?..."
     c: "Què et passa pel cap?..."
@@ -2430,6 +2587,7 @@ _postForm:
     e: "Escriu alguna cosa..."
     f: "Esperant que escriguis qualsevol cosa..."
 _profile:
+
   name: "Nom"
   username: "Nom d'usuari"
   description: "Biografia "
@@ -2447,8 +2605,9 @@ _profile:
   followedMessageDescription: "Es pot configurar un missatge curt que es mostra a l'altra persona quan comença a seguir-te."
   followedMessageDescriptionForLockedAccount: "Si comencen a seguir-te es mostra un missatge de quan es permet aquesta sol·licitud. "
 _exportOrImport:
+
   allNotes: "Totes les publicacions"
-  favoritedNotes: "Notes preferides"
+  favoritedNotes: "Sparks preferides"
   clips: "Retalls"
   followingList: "Seguint "
   muteList: "Silencia"
@@ -2458,25 +2617,27 @@ _exportOrImport:
   excludeInactiveUsers: "Exclou usuaris inactius"
   withReplies: "Inclou a la línia de temps les respostes d'usuaris importats"
 _charts:
+
   federation: "Federació"
   apRequest: "Peticions"
   usersIncDec: "Diferència entre el nombre d'usuaris"
   usersTotal: "Nombre total d'usuaris"
   activeUsers: "Usuaris actius"
-  notesIncDec: "Diferència entre el nombre de notes"
-  localNotesIncDec: "Diferencia en el nombre de notes locals"
-  remoteNotesIncDec: "Diferencia en el nombre de notes remotes"
-  notesTotal: "Nombre total de notes"
+  notesIncDec: "Diferència entre el nombre de sparks"
+  localNotesIncDec: "Diferencia en el nombre de sparks locals"
+  remoteNotesIncDec: "Diferencia en el nombre de sparks remotes"
+  notesTotal: "Nombre total de sparks"
   filesIncDec: "Diferencia en el nombre de fitxers"
   filesTotal: "Nombre total de fitxers"
   storageUsageIncDec: "Diferencia en l'emmagatzematge usat"
   storageUsageTotal: "Emmagatzematge usat"
 _instanceCharts:
+
   requests: "Peticions"
   users: "Diferència entre el nombre d'usuaris"
   usersTotal: "Usuaris totals acumulats"
-  notes: "Diferència entre el nombre de notes"
-  notesTotal: "Notes totals acumulades"
+  notes: "Diferència entre el nombre de sparks"
+  notesTotal: "Sparks totals acumulades"
   ff: "Diferència en nombre d'usuaris seguits / seguidors"
   ffTotal: "Nombre total acumulat d'usuaris seguits / seguidors"
   cacheSize: "Diferència a la mida de la memòria cau"
@@ -2484,11 +2645,13 @@ _instanceCharts:
   files: "Diferència al nombre d'arxius"
   filesTotal: "Nombre acumulatiu de fitxers"
 _timelines:
+
   home: "Inici"
   local: "Local"
   social: "Social"
   global: "Global"
 _play:
+
   new: "Crear un guió"
   edit: "Editar guió"
   created: "Guió creat"
@@ -2505,6 +2668,7 @@ _play:
   summary: "Descripció"
   visibilityDescription: ""
 _pages:
+
   newPage: "pa"
   editPage: "Editar la pàgina"
   readPage: "Veure el codi font d'aquesta pàgina"
@@ -2541,6 +2705,7 @@ _pages:
   inputBlocks: "Entrada "
   specialBlocks: "Especial"
   blocks:
+
     text: "Text"
     textarea: "Àrea de text"
     section: "Secció "
@@ -2550,14 +2715,17 @@ _pages:
     dynamicDescription: "Aquest bloc és antic. Ara en endavant fes servir {play}"
     note: "Incorporar una Nota"
     _note:
+
       id: "ID de la publicació"
       idDescription: "Alternativament pots enganxar l'adreça URL de la nota aquí."
       detailed: "Mostra els detalls"
 _relayStatus:
+
   requesting: "Pendent"
   accepted: "Acceptat"
   rejected: "Rebutjat"
 _notification:
+
   fileUploaded: "Fitxer pujat sense cap problema"
   youGotMention: "{name} t'ha mencionat"
   youGotReply: "{name} t'ha contestat"
@@ -2587,8 +2755,9 @@ _notification:
   createToken: "Token d'accés generat"
   createTokenDescription: "Si no saps què és, esborra el token des de {text}."
   _types:
+
     all: "Tots"
-    note: "Notes noves"
+    note: "Sparks noves"
     follow: "Segueix-me"
     mention: "Menció"
     reply: "Respostes"
@@ -2607,17 +2776,19 @@ _notification:
     test: "Prova la notificació"
     app: "Notificacions d'aplicacions"
   _actions:
+
     followBack: "També et segueix"
     reply: "Respondre"
     renote: "Impulsar"
 _deck:
+
   alwaysShowMainColumn: "Mostrar sempre la columna principal"
   columnAlign: "Alinea les columnes"
   columnGap: "Espai entre columnes"
   deckMenuPosition: "Posició del menú del tauler"
   navbarPosition: "Posició de la barra de navegació "
   addColumn: "Afegeix una columna"
-  newNoteNotificationSettings: "Configuració de notificacions per a notes noves"
+  newNoteNotificationSettings: "Configuració de notificacions per a sparks noves"
   configureColumn: "Configuració de columnes"
   swapLeft: "Mou a l’esquerra"
   swapRight: "Mou a la dreta"
@@ -2636,6 +2807,7 @@ _deck:
   flexible: "Ajust automàtic de l'amplada"
   enableSyncBetweenDevicesForProfiles: "Activar la sincronització de la informació de perfils de dispositiu a dispositiu"
   _columns:
+
     main: "Principal"
     widgets: "Ginys"
     notifications: "Notificacions"
@@ -2648,15 +2820,19 @@ _deck:
     roleTimeline: "Línia de temps dels rols"
     chat: "Xat"
 _dialog:
+
   charactersExceeded: "Has arribat al màxim de caràcters! Actualment és {current} de {max}"
   charactersBelow: "Ets per sota del mínim de caràcters! Actualment és {current} de {min}"
 _disabledTimeline:
+
   title: "Línia de tems desactivada"
   description: "No pots fer servir aquesta línia de temps amb els teus rols actuals."
 _drivecleaner:
+
   orderBySizeDesc: "Mida del fitxer descendent"
   orderByCreatedAtAsc: "Data ascendent"
 _webhookSettings:
+
   createWebhook: "Crear un Webhook"
   modifyWebhook: "Modificar un Webhook"
   name: "Nom"
@@ -2664,6 +2840,7 @@ _webhookSettings:
   trigger: "Activador"
   active: "Activat"
   _events:
+
     follow: "Quan se segueix a un usuari"
     followed: "Quan et segueixen"
     note: "Quan es publica una nota"
@@ -2672,6 +2849,7 @@ _webhookSettings:
     reaction: "Quan es rep una reacció "
     mention: "Quan et mencionen"
   _systemEvents:
+
     abuseReport: "Quan reps un nou informe de moderació "
     abuseReportResolved: "Quan resols un informe de moderació "
     userCreated: "Quan es crea un usuari"
@@ -2680,14 +2858,18 @@ _webhookSettings:
   deleteConfirm: "Segur que vols esborrar el webhook?"
   testRemarks: "Si feu clic al botó a la dreta de l'interruptor, podeu enviar un webhook de prova amb dades dummy."
 _abuseReport:
+
   _notificationRecipient:
+
     createRecipient: "Afegeix un destinatari a l'informe de moderació "
     modifyRecipient: "Editar un destinatari en l'informe de moderació "
     recipientType: "Tipus de notificació "
     _recipientType:
+
       mail: "Correu electrònic"
       webhook: "Webhook"
       _captions:
+
         mail: "Enviar un correu electrònic a tots els moderadors quan es rep un informe de moderació "
         webhook: "Enviar una notificació al SystemWebhook quan es rebi o es resolgui un informe de moderació "
     keywords: "Paraules clau"
@@ -2695,6 +2877,7 @@ _abuseReport:
     notifiedWebhook: "Webhook que s'ha de fer servir"
     deleteConfirm: "Segur que vols esborrar el destinatari de l'informe de moderació?"
 _moderationLogTypes:
+
   createRole: "Rol creat"
   deleteRole: "Rol esborrat"
   updateRole: "Rol actualitzat"
@@ -2746,70 +2929,92 @@ _moderationLogTypes:
   deleteChatRoom: "Esborra la sala de xat"
   updateProxyAccountDescription: "Actualitzar descripció del compte proxy"
 _fileViewer:
+
   title: "Detall del fitxer"
   type: "Tipus de fitxer"
   size: "Mida"
   url: "URL"
   uploadedAt: "Pujat el"
-  attachedNotes: "Notes amb aquest fitxer"
+  attachedNotes: "Sparks amb aquest fitxer"
   thisPageCanBeSeenFromTheAuthor: "Aquesta pàgina només la pot veure l'usuari que ha pujat aquest fitxer."
 _externalResourceInstaller:
+
   title: "Instal·lar des d'un lloc extern"
   checkVendorBeforeInstall: "Assegura't que qui distribueix aquest recurs és fiable abans d'instal·lar-ho."
   _plugin:
+
     title: "Vols instal·lar aquest afegit?"
   _theme:
+
     title: "Vols instal·lar aquest tema?"
   _meta:
+
     base: "Paleta de colors base"
   _vendorInfo:
+
     title: "Informació del distribuïdor "
     endpoint: "Punt final referenciat"
     hashVerify: "Verificació d'integritat "
   _errors:
+
     _invalidParams:
+
       title: "Paràmetres no vàlids "
       description: "No hi ha suficient informació per carregar les dades del lloc extern. Confirma l'URL que hi ha escrita."
     _resourceTypeNotSupported:
+
       title: "El recurs extern no està suportat."
       description: "Aquesta mena de recurs no està suportat. Contacta amb l'administrador."
     _failedToFetch:
+
       title: "Ha fallat l'obtenció de dades"
       fetchErrorDescription: "Ha aparegut un error comunicant-se amb el lloc extern. Si després d'intentar-ho un altre cop no es resol, contacta amb l'administrador."
       parseErrorDescription: "Ha aparegut un error processant les dades carregades del lloc extern. Contacta amb l'administrador."
     _hashUnmatched:
+
       title: "Ha fallat la verificació de les dades"
       description: "Ha aparegut un error verificant les dades obtingudes. Com a mesura de seguretat la instal·lació no pot continuar. Contacta amb l'administrador."
     _pluginParseFailed:
+
       title: "Error d'AiScript"
       description: "Les dades sol·licitades s'han obtingut correctament, però hem trobat un error durant el processament d'AiScript. Contacta amb l'autor de l'afegit. Detalls de l'error es pot veure a la consola JavaScript."
     _pluginInstallFailed:
+
       title: "La instal·lació de l'afegit a fallat"
       description: "Ha aparegut un error durant la instal·lació de l'afegit. Intenta-ho una altra vegada. El detall de l'error es pot veure a la consola JavaScript."
     _themeParseFailed:
+
       title: "Ha fallat el processament del tema"
       description: "Les dades sol·licitades s'han obtingut correctament, però hem trobat un error durant el processament del tema. Contacta amb l'autor de l'afegit. Detalls de l'error es pot veure a la consola JavaScript."
     _themeInstallFailed:
+
       title: "La instal·lació del tema a fallat"
       description: "Ha aparegut un error durant la instal·lació del tema. Intenta-ho una altra vegada. El detall de l'error es pot veure a la consola JavaScript."
 _dataSaver:
+
   _media:
+
     title: "Carregant multimèdia "
     description: "Desactiva la càrrega automàtica d'imatges i vídeos. Les imatges i els vídeos amagats es carregaran quan es faci clic a sobre."
   _avatar:
+
     title: "Avatars animats"
     description: "Detenir l'animació dels avatars animats. Les imatges animades solen tenir un pes més gran que les imatges normals, reduint el tràfic disponible."
   _urlPreview:
+
     title: "Miniatures vista prèvia de l'URL"
     description: "Les imatges en miniatura que serveixen com a vista prèvia de les URLs no es tornaran a carregar."
   _code:
+
     title: "Ressaltat del codi "
     description: "Quan s'utilitza codi MFM, no es llegeix fins que es copiï. En els punts destacats del codi s'han de llegir els fitxers definits per a cada llengua que resulti alt, però no es poden llegir automàticament, per la qual cosa es poden reduir les quantitats de comunicació."
 _hemisphere:
+
   N: "Hemisferi Nord "
   S: "Hemisferi Sud"
   caption: "El fan servir alguns clients per determinar l'estació de l'any."
 _reversi:
+
   reversi: "Reversi"
   gameSettings: "Opcions del joc"
   chooseBoard: "Escull un tauler"
@@ -2854,9 +3059,11 @@ _reversi:
   showBoardLabels: "Mostrar el número de línia i columna al tauler de joc"
   useAvatarAsStone: "Fer servir els avatars dels usuaris com a fitxes"
 _offlineScreen:
+
   title: "Fora de línia - No es pot connectar amb el servidor"
   header: "Impossible connectar amb el servidor"
 _urlPreviewSetting:
+
   title: "Configuració per a la previsualització de l'URL"
   enable: "Activa la previsualització de l'URL"
   timeout: "Temps màxim per carregar la previsualització de l'URL (ms)"
@@ -2868,27 +3075,34 @@ _urlPreviewSetting:
   userAgent: "User-Agent"
   userAgentDescription: "Estableix l'User-Agent que és farà servir per a la recuperació de la vista prèvia. Si és deixa en blanc es farà servir l'User-Agent per defecte."
   summaryProxy: "Proxy endpoints per generar vistes prèvies"
-  summaryProxyDescription: "La vista prèvia es genera fent servir Summaly proxy, no la genera el mateix Misskey."
+  summaryProxyDescription: "La vista prèvia es genera fent servir Summaly proxy, no la genera el mateix Tribe."
   summaryProxyDescription2: "Els següents paràmetres són passats al proxy com cadenes de consulta. Si el proxy no els admet, s'ignoren els valors configurats."
 _mediaControls:
+
   pip: "Imatge sobre impressionada "
   playbackRate: "Velocitat de reproducció "
   loop: "Reproducció en bucle"
 _contextMenu:
+
   title: "Menú contextual"
   app: "Aplicació "
   appWithShift: "Aplicació amb la tecla shift"
   native: "Interfície del navegador"
 _gridComponent:
+
   _error:
+
     requiredValue: "Aquest camp és obligatori"
     columnTypeNotSupport: "La validació d'expressions regulars només s'admet per columnes de tipus text."
     patternNotMatch: "Aquest valor no coincideix amb {pattern}"
     notUnique: "Aquest valor ha de ser únic "
 _roleSelectDialog:
+
   notSelected: "No seleccionat"
 _customEmojisManager:
+
   _gridCommon:
+
     copySelectionRows: "Copiar línies seleccionades "
     copySelectionRanges: "Copiar selecció "
     deleteSelectionRows: "Esborrar línies seleccionades"
@@ -2901,10 +3115,12 @@ _customEmojisManager:
     registrationLogsCaption: "Quan s'actualitzin o s'esborrin emojis es mostrarà un registre. Desapareixeran quan s'actualitzin, s'esborrin, visitis una nova pàgina o la recarreguis."
     alertEmojisRegisterFailedDescription: "No s'ha pogut actualitzar o esborrar l'emoji. Si us plau, dona una ullada al registre per més detalls."
   _logs:
+
     showSuccessLogSwitch: "Mostrar el registre d'èxit "
     failureLogNothing: "No hi ha registres de fallades."
     logNothing: "No hi ha registres."
   _remote:
+
     selectionRowDetail: "Detall de la línia seleccionada"
     importSelectionRows: "Importar les files seleccionades"
     importSelectionRangesRows: "Importar les files de la selecció "
@@ -2912,9 +3128,11 @@ _customEmojisManager:
     confirmImportEmojisTitle: "Importar Emojis"
     confirmImportEmojisDescription: "Importar {count} Emojis d'una adreça remota. Tingues cura de les llicències dels Emojis. Vols importar-los?"
   _local:
+
     tabTitleList: "Llistar els Emojis registrats"
     tabTitleRegister: "Registre d'Emojis"
     _list:
+
       emojisNothing: "No hi ha Emojis registrats"
       markAsDeleteTargetRows: "Files seleccionades que s'han d'esborrar "
       markAsDeleteTargetRanges: "Selecció de files per la seva eliminació "
@@ -2928,6 +3146,7 @@ _customEmojisManager:
       confirmMovePageDesciption: "S'han fet canvis als Emojis d'aquesta pàgina. Si continues navegant sense guardar els canvis, es perdran tots els canvis fets en aquesta pàgina."
       dialogSelectRoleTitle: "Buscar Emojis per rol"
     _register:
+
       uploadSettingTitle: "Actualitza la configuració "
       uploadSettingDescription: "En aquesta pantalla pots configurar el que s'ha de fer quan es puja un Emoji."
       directoryToCategoryLabel: "Escriu el nom del directori al camp de \"categoria\""
@@ -2940,6 +3159,7 @@ _customEmojisManager:
       confirmClearEmojisDescription: "Descartar els canvis i esborrar els Emojis de la llista. Vols continuar?"
       confirmUploadEmojisDescription: "Pujar els {count} fitxers que has arrossegat al disc. Vols continuar?"
 _embedCodeGen:
+
   title: "Personalitza el codi per incrustar"
   header: "Mostrar la capçalera"
   autoload: "Carregar automàticament (no recomanat)"
@@ -2954,44 +3174,58 @@ _embedCodeGen:
   codeGenerated: "Codi generat"
   codeGeneratedDescription: "Si us plau, enganxeu el codi generat al lloc web."
 _selfXssPrevention:
+
   warning: "Advertència "
   title: "\"Enganxa qualsevol cosa en aquesta finestra\"  És tot un engany."
   description1: "Si posa alguna cosa al seu compte, un usuari malintencionat podria segrestar-la o robar-li les dades."
   description2: "Si no entens que estàs fent %cpara ara mateix i tanca la finestra."
   description3: "Per obtenir més informació. {link}"
 _followRequest:
+
   recieved: "Sol·licituds rebudes"
   sent: "Sol·licituds enviades"
 _remoteLookupErrors:
+
   _federationNotAllowed:
+
     title: "No es pot establir connexió amb aquest servidor"
     description: "És possible que s'hagi desactivat la comunicació amb aquest servidor o que hagi estat bloquejat.\nPosa't en contacte amb l'administrador del servidor."
   _uriInvalid:
+
     title: "L'adreça és incorrecte"
     description: "Hi ha un problema amb l'adreça introduïda; comprova que no hagis escrit caràcters que no es puguin fer servir."
   _requestFailed:
+
     title: "La sol·licitud a fallat"
     description: "La comunicació amb aquest servidor a fallat. És possible que l'altre servidor no funcioni. Comprova també que no has posat una adreça no vàlida o inexistent."
   _responseInvalid:
+
     title: "La resposta no és correcta "
     description: "Hem pogut comunicar-nos amb aquest servidor, però les dades rebudes no són correctes."
   _noSuchObject:
+
     title: "No s'ha trobat"
     description: "No es pot trobar el recurs sol·licitat, si us plau comprova l'adreça una altra vegada."
 _captcha:
+
   verify: "Passar pel CAPTCHA"
   testSiteKeyMessage: "Pots comprovar una vista prèvia introduïnt valors de prova per la clau del lloc i la clau secreta. Si vols més informació consulteu la següent pàgina."
   _error:
+
     _requestFailed:
+
       title: "Ha fallat la sol·licitud del CAPTCHA"
       text: "Si us plau, torna a intentar-ho d'aquí una estona o comprova els ajustos de nou."
     _verificationFailed:
+
       title: "Ha fallat la validació CAPTCHA"
       text: "Comprova que els ajustos són els correctes."
     _unknown:
+
       title: "Error CAPTCHA"
       text: "S'ha produït un error inesperat."
 _bootErrors:
+
   title: "Hi ha hagut en error en carregar"
   serverError: "Si el problema persisteix després d'esperar una mica i recarregar, posa't en contacte amb l'administrador del servidor amb el següent codi d'error."
   solution: "Per intentar resoldre el problema pots fer el següent."
@@ -3004,6 +3238,7 @@ _bootErrors:
   otherOption2: "Iniciar client senzill"
   otherOption3: "Iniciar l'eina de reparació "
 _search:
+
   searchScopeAll: "Tot"
   searchScopeLocal: "Local"
   searchScopeServer: "Instància "

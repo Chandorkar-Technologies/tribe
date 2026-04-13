@@ -1,8 +1,8 @@
 ---
 _lang_: "O'zbek tili"
 headlineMisskey: "Qaydlar tarmog'i"
-introMisskey: "Xush kelibsiz! Misskey ochiq kodli, markazlashmagan mikroblogging xizmati.\nO'zingizni fikrlaringizni atrofingizdagilar bilan ulashish uchun \"Qaydlar\" yarating. 📡\nUstiga-ustak, \"Reaktsiyalar\" yordamida siz boshqalarning xatlari haqidagi o'zingizni xissiyotlaringizni bildiring. 👍\nQani, yangi dunyoni kashf qilaylik! 🚀"
-poweredByMisskeyDescription: "{name} ochiq manbali <b>Misskey</b>(\"Misskey instance\" deb ataladi) platformasi tomonidan qurilgan servislardan biri. "
+introMisskey: "Xush kelibsiz! Tribe ochiq kodli, markazlashmagan mikroblogging xizmati.\nO'zingizni fikrlaringizni atrofingizdagilar bilan ulashish uchun \"Qaydlar\" yarating. 📡\nUstiga-ustak, \"Reaktsiyalar\" yordamida siz boshqalarning xatlari haqidagi o'zingizni xissiyotlaringizni bildiring. 👍\nQani, yangi dunyoni kashf qilaylik! 🚀"
+poweredByMisskeyDescription: "{name} ochiq manbali <b>Tribe</b>(\"Tribe instance\" deb ataladi) platformasi tomonidan qurilgan servislardan biri. "
 monthAndDay: "{day}/{month}"
 search: "Izlash"
 notifications: "Xabarnomalar"
@@ -159,7 +159,7 @@ youCanCleanRemoteFilesCache: "Fayl menejeridagi 🗑️ tugmasi yordamida barcha
 cacheRemoteSensitiveFiles: "Tashqi fayllarni keshlash"
 cacheRemoteSensitiveFilesDescription: "Bu sozlama oʻchiq boʻlsa, \"barcha ko'rishi mumkin bo'lmagan\" fayllar keshlashsiz toʻgʻridan-toʻgʻri masofaviy serverdan yuklanadi."
 flagAsBot: "Ushbu akkauntni bot sifatida belgilash"
-flagAsBotDescription: "Agar bu akkaunt bot tomonidan boshqaralayotgan bo'lsa, bu sozlamani yoqing. Sozlama yoqilganda, boshqa foydalanuvchilar uchun belgi sifatida ishlaydi, va Misskey ichki tizimlari bu akkauntni bot ekanini biladi."
+flagAsBotDescription: "Agar bu akkaunt bot tomonidan boshqaralayotgan bo'lsa, bu sozlamani yoqing. Sozlama yoqilganda, boshqa foydalanuvchilar uchun belgi sifatida ishlaydi, va Tribe ichki tizimlari bu akkauntni bot ekanini biladi."
 flagAsCat: "Bu akkauntni mushuk sifatida belgilash"
 flagAsCatDescription: "Ushbu akkauntni mushuk sifatida belgilash uchun ushbu sozlamani yoqing."
 flagShowTimelineReplies: "Javoblarni xronogoliya bo'yicha ko'rsatish"
@@ -403,7 +403,7 @@ exploreFediverse: "Fediversni ko'rib chiqing"
 popularTags: "Ommabop teglar"
 userList: "Ro'yxatlar"
 about: "Haqida"
-aboutMisskey: "Misskey haqida"
+aboutMisskey: "Tribe haqida"
 administrator: "Administrator"
 token: "Tasdiqlash"
 2fa: "Ikki faktorli autentifikatsiya"
@@ -641,7 +641,7 @@ createNewClip: "Yangi klip yaratish"
 unclip: "qirqish\n"
 confirmToUnclipAlreadyClippedNote: "Ushbu xat allaqachon \"{name}\" klipga tegishli. Uni ushbu klipdan olib tashlashni xohlaysizmi?"
 public: "Ommaviy"
-i18nInfo: "Misskey bir qancha volontyorlar yordamida bir qancha tillarga tarjima qilingan. Ushbu {link} orqali ularga yordam berishingiz mumkin."
+i18nInfo: "Tribe bir qancha volontyorlar yordamida bir qancha tillarga tarjima qilingan. Ushbu {link} orqali ularga yordam berishingiz mumkin."
 manageAccessTokens: "Kirish tokenlarini boshqarish"
 accountInfo: "Akkount haqida ma'lumot"
 notesCount: "Xatlar soni"
@@ -769,7 +769,7 @@ hashtags: "Hashteglar"
 troubleshooting: "Muammolarni bartaraf qilish"
 useBlurEffect: "Interfeysda xiralashtiruvchi effektlardan foydalanish"
 learnMore: "Batafsilroq"
-misskeyUpdated: "Misskey yangilandi!"
+misskeyUpdated: "Tribe yangilandi!"
 whatIsNew: "O'zgarishlarni ko'rish"
 translate: "Tarjima qilish"
 translatedFrom: "{x} tilidan tarjima qilindi"
@@ -839,40 +839,55 @@ renotes: "Qayta qayd etish"
 flip: "Teskari"
 information: "Haqida"
 _chat:
+
   invitations: "Taklif qilish"
   noHistory: "Tarix yo'q"
   members: "A'zolar"
   home: "Bosh sahifa"
   send: "Yuborish"
 _delivery:
+
   stop: "To'xtatilgan"
   _type:
+
     none: "Yuborilmoqda"
 _achievements:
+
   _types:
+
     _viewInstanceChart:
+
       title: "Tahlilchi"
 _role:
+
   priority: "Ustuvorlik"
   _priority:
+
     low: "Quyi"
     middle: "O'rta"
     high: "Yuqori"
 _ffVisibility:
+
   public: "Chiqarish"
 _ad:
+
   back: "qaytish"
   hide: "Boshqa ko'rsatilmasin"
 _email:
+
   _follow:
+
     title: "sizga obuna bo'ldi"
 _registry:
+
   key: "Kalit"
   keys: "Kalit"
 _instanceTicker:
+
   none: "Boshqa ko'rsatilmasin"
   always: "Doimo ko'rsatilsin"
 _theme:
+
   install: "Rang sxemasini o'rnatish"
   manage: "Rang sxemalarini boshqarish"
   code: "Rang sxemasining kodi"
@@ -895,6 +910,7 @@ _theme:
   inputConstantName: "Ushbu o'zgarmas uchun nom kiriting"
   deleteConstantConfirm: "Siz rostdan ham {const} o'zgarmasni o'chirmoqchimisiz?"
   keys:
+
     accent: "Urg'u"
     bg: "Fon"
     fg: "Matn"
@@ -909,21 +925,27 @@ _theme:
     divider: "Ajratrmoq"
     fgHighlighted: "Belgilangan matn"
 _sfx:
+
   note: "Qaydlar"
   notification: "Xabarnomalar"
 _ago:
+
   minutesAgo: "{n} daqiqa oldin"
   hoursAgo: "{n} soat oldin"
   daysAgo: "{n} kun oldin"
   invalid: "Hech narsa yo'q"
 _2fa:
+
   renewTOTPCancel: "Hozir emas"
 _permissions:
+
   "read:blocks": "Bloklangan foydalanuvchilar roʻyxatini koʻring"
   "write:blocks": "Bloklangan foydalanuvchilar roʻyxatini tahrirlang"
 _weekday:
+
   saturday: "Shanba"
 _widgets:
+
   profile: "Profil"
   instanceInfo: "Instans haqida ma'lumot"
   notifications: "Xabarnomalar"
@@ -937,12 +959,15 @@ _widgets:
   button: "Tugma"
   jobQueue: "Vazifalar navbati"
   _userList:
+
     chooseList: "Ro'yxat tanlash"
 _cw:
+
   show: "Ko‘proq ko‘rish"
   chars: "{count} ta belgi(lar)"
   files: "{count} ta fayl(lar)"
 _poll:
+
   noOnlyOneChoice: "Kamida ikkita tanvol kerak"
   infinite: "Hech qachon"
   at: "...da tugatish"
@@ -960,12 +985,14 @@ _poll:
   remainingMinutes: "{m} daqiqa {s} sekund qoldi"
   remainingSeconds: "{s} sekund qoldi"
 _visibility:
+
   public: "Ommaviy"
   publicDescription: "Sizning ovozingiz barcha foydalanuvchilarga ko'rinadi"
   home: "Bosh sahifa"
   followers: "Obunachilar"
   specified: "Bevosita"
 _profile:
+
   name: "Ism"
   username: "Foydalanuvchi nomi"
   description: "Biografiya"
@@ -974,6 +1001,7 @@ _profile:
   metadataContent: "Tarkib"
   changeBanner: "Bannerni o'zgartirish"
 _exportOrImport:
+
   allNotes: "Barcha qaydlar"
   clips: "Klip"
   followingList: "Obuna bo‘lish"
@@ -981,6 +1009,7 @@ _exportOrImport:
   blockingList: "Bloklangan foydalanuvchilar"
   userLists: "Ro'yxatlar"
 _charts:
+
   federation: "Federatsiya"
   apRequest: "So'rovlar"
   usersTotal: "Foydalanuvchilarning umumiy soni"
@@ -988,21 +1017,25 @@ _charts:
   notesTotal: "Qaydlarning umumiy soni"
   filesTotal: "Fayllarning umumiy soni"
 _instanceCharts:
+
   requests: "So'rovlar"
   notes: "Qaydlar sonidagi farq"
   cacheSize: "Kesh hajmidagi farq"
   files: "Fayllar sonidagi farq"
 _timelines:
+
   home: "Bosh sahifa"
   local: "Mahalliy"
   social: "Ijtimoiy"
   global: "Global"
 _play:
+
   featured: "Mashhur"
   title: "Sarlavha"
   script: "Skript"
   summary: "Tavsif"
 _pages:
+
   newPage: "Yangi Sahifa yaratish"
   editPage: "Ushbu Sahifani tahrirlash"
   pageSetting: "Sahifa sozlamalari"
@@ -1022,6 +1055,7 @@ _pages:
   selectType: "Turni tanlang"
   contentBlocks: "Tarkib"
   blocks:
+
     text: "Matn"
     textarea: "Matn maydoni"
     section: "Bo'lim"
@@ -1029,13 +1063,16 @@ _pages:
     button: "Tugma"
     note: "Biriktirilgan qayd"
     _note:
+
       id: "Qayd ID"
       detailed: "Batafsil ko'rinishi"
 _relayStatus:
+
   requesting: "Kutilmoqda"
   accepted: "Tasdiqlandi"
   rejected: "Rad etildi"
 _notification:
+
   fileUploaded: "Fayl muvaffaqiyatli yuklandi"
   youGotMention: "{name} sizni eslab o'tdi"
   youGotReply: "{name} sizga javob berdi"
@@ -1044,6 +1081,7 @@ _notification:
   youWereFollowed: "sizga obuna bo'ldi"
   unreadAntennaNote: "Antenna {name}"
   _types:
+
     all: "Barchasi"
     follow: "Obuna bo‘lish"
     mention: "Murojat"
@@ -1053,9 +1091,11 @@ _notification:
     receiveFollowRequest: "Qabul qilingan kuzatuv so'rovlari"
     login: "Kirish"
   _actions:
+
     reply: "Javob berish"
     renote: "Qayta qayd qilish"
 _deck:
+
   alwaysShowMainColumn: "Har doim asosiy ustunni ko'rsatish"
   columnAlign: "Ustunlarni tekislash"
   addColumn: "Ustun qo'shish"
@@ -1068,6 +1108,7 @@ _deck:
   newProfile: "Yangi profil"
   deleteProfile: "Profilni o‘chirib tashlash"
   _columns:
+
     main: "Asosiy"
     notifications: "Xabarnomalar"
     tl: "Xronologiya"
@@ -1078,23 +1119,33 @@ _deck:
     direct: "Bevosita qaydlar"
     roleTimeline: "Rol xronologiyasi"
 _webhookSettings:
+
   name: "Ism"
   active: "Yoqilgan"
   _events:
+
     renote: "Qayta qayd qilinganda"
     mention: "Eslanganda"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "Email"
 _moderationLogTypes:
+
   suspend: "To'xtatish"
   resetPassword: "Parolni tiklash"
 _reversi:
+
   total: "Jami"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Topilmadi"
 _search:
+
   searchScopeAll: "Barcha"
   searchScopeLocal: "Mahalliy"

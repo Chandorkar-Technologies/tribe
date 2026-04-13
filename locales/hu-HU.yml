@@ -12,7 +12,7 @@ cancel: "Mégse"
 noThankYou: "Nem, köszönöm"
 enterUsername: "Felhasználónév megadása"
 renotedBy: "{user} Renotolta"
-noNotes: "Nincs Note"
+noNotes: "Nincs Spark"
 noNotifications: "Nincs értesítés"
 instance: "Szerver"
 settings: "Beállítások"
@@ -43,7 +43,7 @@ copyContent: "Tartalom másolása"
 copyLink: "Hivatkozás Másolása"
 delete: "Törlés"
 deleteAndEdit: "Törlés és szerkesztés"
-deleteAndEditConfirm: "Biztosan törlöd ezt a jegyzetet és újrafogalmazza? Így eveszíted az összes reakciót, renote-ot és választ."
+deleteAndEditConfirm: "Biztosan törlöd ezt a jegyzetet és újrafogalmazza? Így eveszíted az összes reakciót, re-spark-ot és választ."
 addToList: "Hozzáadás a listákhoz"
 privacy: "Adatvédelem"
 makeFollowManuallyApprove: "Csak jóváhagyással követhetnek"
@@ -54,13 +54,13 @@ followRequests: "Követési kérések"
 unfollow: "Követés visszavonása"
 followRequestPending: "Függőben levő követési kérés"
 enterEmoji: "Írj egy emoji-t"
-renote: "Renote"
-unrenote: "Renote visszavonása"
+renote: "Re-spark"
+unrenote: "Re-spark visszavonása"
 renoted: "Renotolva"
 cantRenote: "Nem lehet Renotolni"
-cantReRenote: "A Renote nem renotálható"
+cantReRenote: "A Re-spark nem renotálható"
 quote: "Idézet"
-inChannelRenote: "Csak csatornán bellüli Renote"
+inChannelRenote: "Csak csatornán bellüli Re-spark"
 inChannelQuote: "Csak csatornán bellüli idézet"
 pinnedNote: "Csatolt jegyzet"
 pinned: "Rögzítés"
@@ -77,29 +77,40 @@ smtpUser: "Felhasználónév"
 smtpPass: "Jelszó"
 user: "Felhasználók"
 searchByGoogle: "Keresés"
-renotes: "Renote"
+renotes: "Re-spark"
 _theme:
+
   keys:
-    renote: "Renote"
+
+    renote: "Re-spark"
 _sfx:
+
   notification: "Értesítések"
 _2fa:
+
   renewTOTPCancel: "Nem, köszönöm"
 _widgets:
+
   profile: "Saját profil"
   notifications: "Értesítések"
   timeline: "Idővonal"
 _profile:
+
   username: "Felhasználónév"
 _notification:
+
   _types:
-    renote: "Renote"
+
+    renote: "Re-spark"
     quote: "Idézet"
     reaction: "Reakciók"
     login: "Bejelentkezés"
   _actions:
-    renote: "Renote"
+
+    renote: "Re-spark"
 _deck:
+
   _columns:
+
     notifications: "Értesítések"
     tl: "Idővonal"

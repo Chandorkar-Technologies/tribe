@@ -1,6 +1,6 @@
 ---
-introMisskey: "Hoş geldiniz! Sharkey, açık kaynaklı, merkeziyetsiz bir mikroblog servisidir.\n\"Notlar\" oluşturarak düşüncelerinizi çevrenizdeki herkesle paylaşabilirsiniz. 📡\n\"Tepkiler\" ile de başkalarının notlarına duygularınızı hızlıca ifade edebilirsiniz. 👍\nHaydi, yeni bir dünyayı keşfedelim! 🚀"
-poweredByMisskeyDescription: "{name}, Misskey tabanlı <b>Sharkey</b> açık kaynak platformu üzerinde çalışan servislerden biridir (\"Misskey sunucusu\" olarak da anılır)."
+introMisskey: "Hoş geldiniz! Tribe, açık kaynaklı, merkeziyetsiz bir mikroblog servisidir.\n\"Notlar\" oluşturarak düşüncelerinizi çevrenizdeki herkesle paylaşabilirsiniz. 📡\n\"Tepkiler\" ile de başkalarının notlarına duygularınızı hızlıca ifade edebilirsiniz. 👍\nHaydi, yeni bir dünyayı keşfedelim! 🚀"
+poweredByMisskeyDescription: "{name}, Tribe tabanlı <b>Tribe</b> açık kaynak platformu üzerinde çalışan servislerden biridir (\"Tribe sunucusu\" olarak da anılır)."
 renotedBy: "{user} tarafından boostlandı"
 approvals: "Onaylar"
 copyLinkRenote: "Boost bağlantısını kopyala"
@@ -40,11 +40,11 @@ markInstanceAsNSFW: "NSFW olarak işaretle"
 nsfwConfirm: "Bu hesabın tüm medyasını +18 olarak işaretlemek istediğinize emin misiniz?"
 unNsfwConfirm: "Bu hesabın medyasını +18 işaretinden kaldırmak istediğinize emin misiniz?"
 approveConfirm: "Bu hesabı onaylamak istediğinize emin misiniz?"
-flagAsBotDescription: "Bu hesabın bir program tarafından kontrol edildiğini belirtmek için etkinleştirin. Etkinleştirildiğinde, diğer botlarla sonsuz etkileşim döngülerini önlemek ve Sharkey’in iç sistemlerinin bu hesabı bot olarak ele almasını sağlamak için bir işaret olarak kullanılır."
+flagAsBotDescription: "Bu hesabın bir program tarafından kontrol edildiğini belirtmek için etkinleştirin. Etkinleştirildiğinde, diğer botlarla sonsuz etkileşim döngülerini önlemek ve Tribe’in iç sistemlerinin bu hesabı bot olarak ele almasını sağlamak için bir işaret olarak kullanılır."
 flagSpeakAsCat: "Kedi gibi konuş"
 flagSpeakAsCatDescription: "Kedi modundayken gönderileriniz miyavlı hale gelir. Bu çalışmıyorsa, Genel/Not Görüntüleme altında 'Kedi konuşmasını devre dışı bırak' seçeneğinin kapalı olduğundan emin olun."
 continueOnRemote: "Uzak sunucuda devam et"
-chooseServerOnMisskeyHub: "Misskey Hub’dan bir sunucu seç"
+chooseServerOnMisskeyHub: "Tribe Hub’dan bir sunucu seç"
 mediaSilenceThisInstance: "Bu sunucudan gelen medyayı sessize al"
 rejectReports: "Bu sunucudan gelen raporları reddet"
 rejectQuotesInstance: "Bu sunucudan gelen alıntı gönderileri engelle"
@@ -55,7 +55,7 @@ allowQuotesConfirm: "Alıntı gönderilerine izin vermek istediğinize emin misi
 silencedInstancesDescription: "Sessize almak istediğiniz sunucuların ana bilgisayar adlarını her satıra bir tane olacak şekilde yazın. Bu sunuculara ait tüm hesaplar sessize alınmış gibi işlem görecektir; sadece takip isteği gönderebilirler ve takip edilmedikçe yerel hesapları mentionlayamazlar. Engellenmiş sunucular bundan etkilenmez."
 mediaSilencedInstances: "Medyası sessize alınmış sunucular"
 mediaSilencedInstancesDescription: "Medyasını sessize almak istediğiniz sunucuların ana bilgisayar adlarını her satıra bir tane olacak şekilde yazın. Bu sunuculara ait tüm hesaplar +18 olarak işaretlenir ve özel emoji kullanamazlar. Engellenmiş sunucular bundan etkilenmez."
-intro: "Sharkey kurulumu tamamlandı! Lütfen bir yönetici hesabı oluşturun."
+intro: "Tribe kurulumu tamamlandı! Lütfen bir yönetici hesabı oluşturun."
 blockedByBase: "Bu ana bilgisayar, üst alan adı engellendiği için dolaylı olarak engellenmiştir. Bu hostu engel listesinden çıkarmak için önce üst alan adını engelden kaldırın."
 silencedByBase: "Bu ana bilgisayar, üst alan adı sessize alındığı için dolaylı olarak sessize alınmıştır. Sessizden çıkarmak için önce üst alan adının sessizini kaldırın."
 mediaSilencedByBase: "Bu hostun medyası, üst alan adının medyası sessize alındığı için dolaylı olarak sessize alınmıştır. Kaldırmak için önce üst alan adının medya sessizini kaldırın."
@@ -63,7 +63,7 @@ driveSearchbarPlaceholder: "Sürücüde ara"
 fileNotSelected: "Dosya seçilmedi"
 background: "Arka plan"
 antennaUsersDescription: "Her satıra bir kullanıcı adı yazın. Bir sunucudaki tüm kullanıcılar için \"*@sunucu.com\" kullanın"
-aboutMisskey: "Sharkey Hakkında"
+aboutMisskey: "Tribe Hakkında"
 expandAllCws: "Tüm yanıtlardaki içeriği göster"
 collapseAllCws: "Tüm yanıtlardaki içeriği gizle"
 attachAsFileQuestion: "Panodaki metin uzun. Bunu bir metin dosyası olarak eklemek ister misiniz?"
@@ -74,8 +74,8 @@ cornerRadius: "Köşe yuvarlaklığı"
 warnForMissingAltText: "Alt metin eklemeyi unuttuğunuzda uyar"
 deeplFreeMode: "DeepLX-JS kullan (Auth Key olmadan)"
 deeplFreeModeDescription: "Yardım mı lazım? DeepLX-JS kurulumunu öğrenmek için belgelerimize göz atın."
-useSoundOnlyWhenActive: "Yalnızca Sharkey aktif olduğunda ses çıkar"
-scratchpadDescription: "Scratchpad, AiScript denemeleri için bir ortam sunar. Burada kod yazabilir, çalıştırabilir ve Sharkey ile etkileşimini görebilirsiniz."
+useSoundOnlyWhenActive: "Yalnızca Tribe aktif olduğunda ses çıkar"
+scratchpadDescription: "Scratchpad, AiScript denemeleri için bir ortam sunar. Burada kod yazabilir, çalıştırabilir ve Tribe ile etkileşimini görebilirsiniz."
 deleteAllFilesQueued: "Tüm dosyaların silinmesi sıraya alındı"
 systemAccountTitle: "Bu bir sistem hesabıdır"
 systemAccountDescription: "Bu hesap sistem tarafından otomatik olarak oluşturulur ve yönetilir; giriş yapılamaz."
@@ -89,7 +89,7 @@ reportAbuseRenote: "Boostu şikayet et"
 forwardReport: "Raporu uzak sunucuya ilet"
 forwardReportIsAnonymous: "Rapor uzak sunucuya iletilirken hesabınız yerine anonim bir sistem hesabı görünecektir."
 abuseMarkAsResolved: "Raporu çözüldü olarak işaretle"
-i18nInfoSharkey: "Sharkey'e özel değişiklikler kendi {link} içinde çevrilmiştir."
+i18nInfoSharkey: "Tribe'e özel değişiklikler kendi {link} içinde çevrilmiştir."
 renotesCount: "Gönderilen boost sayısı"
 renotedCount: "Alınan boost sayısı"
 showTickerOnReplies: "Yanıtlarda sunucu bilgisini göster"
@@ -102,9 +102,9 @@ makeIndexable: "Herkese açık notları dizinlenebilir yap"
 makeIndexableDescription: "Not aramasının herkese açık notlarınızı dizine eklemesini durdur."
 enableRss: "RSS beslemesini etkinleştir"
 enableRssDescription: "Temel profil bilgileriniz ve herkese açık notlarınızla bir RSS beslemesi oluşturur. Kullanıcılar takip isteği göndermeden veya onay almadan bu beslemeye abone olabilir."
-sendErrorReportsDescription: "Açık olduğunda, bir sorun meydana geldiğinde Sharkey'e ayrıntılı hata bilgileri gönderilir. Bu, Sharkey'in kalitesini artırmaya yardımcı olur.\nGönderilecek bilgiler; işletim sistemi sürümünüz, tarayıcı türünüz, Sharkey’deki aktiviteleriniz vb. olabilir."
+sendErrorReportsDescription: "Açık olduğunda, bir sorun meydana geldiğinde Tribe'e ayrıntılı hata bilgileri gönderilir. Bu, Tribe'in kalitesini artırmaya yardımcı olur.\nGönderilecek bilgiler; işletim sistemi sürümünüz, tarayıcı türünüz, Tribe’deki aktiviteleriniz vb. olabilir."
 noInquiryUrlWarning: "İletişim URL'si ayarlanmamış."
-misskeyUpdated: "Sharkey güncellendi!"
+misskeyUpdated: "Tribe güncellendi!"
 usernameInfo: "Bu sunucuda hesabınızı diğerlerinden ayıracak isimdir. Harf (a~z, A~Z), rakam (0~9) veya alt çizgi (_) kullanabilirsiniz. Kullanıcı adları sonradan değiştirilemez."
 approvalRequiredForSignup: "Yeni kullanıcılar için onay gerektir"
 voteConfirmMulti: "\"{choice}\" seçeneğine oyunuzu onaylıyor musunuz?\n　Onaydan sonra başka seçenekleri de seçebilirsiniz."
@@ -121,8 +121,8 @@ showVisibilitySelectorOnBoost: "Boost sırasında görünürlük seçici göster
 showVisibilitySelectorOnBoostDescription: "Etkinleştirildiğinde, boosta tıklayınca görünürlük seçici açılır. Devre dışı bırakılırsa, aşağıda tanımlı varsayılan görünürlük kullanılır."
 visibilityOnBoost: "Varsayılan boost görünürlüğü"
 defaultLike: "Varsayılan beğeni emojisi"
-didYouLikeMisskey: "Sharkey’i beğendiniz mi?"
-pleaseDonate: "{host}, Sharkey açık kaynak yazılımını kullanmaktadır. Sharkey'in gelişiminin devamı için bağışlarınızı memnuniyetle kabul ederiz!"
+didYouLikeMisskey: "Tribe’i beğendiniz mi?"
+pleaseDonate: "{host}, Tribe açık kaynak yazılımını kullanmaktadır. Tribe'in gelişiminin devamı için bağışlarınızı memnuniyetle kabul ederiz!"
 pleaseDonateInstance: "Ayrıca {host} sunucu yönetimine bağış yaparak doğrudan destek olabilirsiniz."
 thisPostIsMissingAltTextCancel: "İptal"
 thisPostIsMissingAltTextIgnore: "Yine de gönder"
@@ -143,7 +143,7 @@ lookupConfirm: "Bunu sorgulamak istediğinizden emin misiniz?"
 openTagPageConfirm: "Bu etiket sayfasını açmak istediğinizden emin misiniz?"
 deleteThisAccountConfirm: "Bu hesap geri alınamayacak şekilde silinecek. Devam edilsin mi?"
 specifyHost: "Sunucu belirt"
-goToMisskey: "Sharkey’e git"
+goToMisskey: "Tribe’e git"
 enableAchievements: "Başarıları etkinleştir"
 turnOffAchievements: "Kapattığınızda başarı sistemi devre dışı kalır"
 enableBotTrending: "Hashtag’leri botlarla doldur"
@@ -154,7 +154,7 @@ clickToOpen: "Notu açmak için tıkla"
 showBots: "Zaman tünelinde botları göster"
 showRenotes: "Boostları göster"
 sourceCodeIsNotYetProvided: "Kaynak kod henüz sağlanmamış. Lütfen yöneticinizle iletişime geçin."
-repositoryUrlDescription: "Eğer kaynak kodun halka açık olduğu bir depo varsa URL’sini girin. Sharkey’i olduğu gibi kullanıyorsanız (kaynakta değişiklik yapmadan) şu adresi girin: https://activitypub.software/TransFem-org/Sharkey/."
+repositoryUrlDescription: "Eğer kaynak kodun halka açık olduğu bir depo varsa URL’sini girin. Tribe’i olduğu gibi kullanıyorsanız (kaynakta değişiklik yapmadan) şu adresi girin: https://activitypub.software/TransFem-org/Tribe/."
 donation: "Bağış"
 donationUrl: "Bağış URL’si"
 showBelowAvatar: "Avatarın altında göster"
@@ -178,6 +178,7 @@ filesRemoved: "Dosyalar silindi"
 fileImported: "Dosya içe aktarıldı"
 cannotLoadNote: "Not yüklenemedi"
 _flash:
+
   contentHidden: "Flash İçeriği Gizlendi"
   poweredByRuffle: "Ruffle ile çalışıyor."
   arbitraryCodeExecutionWarning: "Rastgele kod çalıştırma riskine karşı dikkatli olun!"
@@ -187,32 +188,44 @@ _flash:
   loadingFlashFile: "Flash dosyası yükleniyor"
   cspError: "raw.esm.sh erişilemedi, bu sunucunun İçerik Güvenlik Politikası muhtemelen güncel değil. Lütfen yöneticinizle iletişime geçin."
 _delivery:
+
   stop: "Teslimatı durdur"
   resume: "Teslimata devam et"
 _initialAccountSetting:
-  youCanContinueTutorial: "{name} (Sharkey) kullanımına dair eğitime devam edebilir veya buradan çıkıp doğrudan kullanmaya başlayabilirsiniz."
+
+  youCanContinueTutorial: "{name} (Tribe) kullanımına dair eğitime devam edebilir veya buradan çıkıp doğrudan kullanmaya başlayabilirsiniz."
 _initialTutorial:
+
   _landing:
-    description: "Burada Sharkey’i ve özelliklerini kullanmanın temellerini öğrenebilirsiniz."
+
+    description: "Burada Tribe’i ve özelliklerini kullanmanın temellerini öğrenebilirsiniz."
   _note:
-    description: "Sharkey’deki gönderilere 'Not' denir. Notlar, zaman tünelinde kronolojik olarak sıralanır ve gerçek zamanlı olarak güncellenir."
+
+    description: "Tribe’deki gönderilere 'Not' denir. Notlar, zaman tünelinde kronolojik olarak sıralanır ve gerçek zamanlı olarak güncellenir."
   _reaction:
+
     letsTryReacting: "Bir nota '{reaction}' düğmesine tıklayarak tepki verebilirsiniz. Bu örnek nota tepki vermeyi deneyin!"
     reactDone: "Tepkiyi '{undo}' düğmesine basarak geri alabilirsiniz."
   _timeline:
-    description1: "Sharkey, kullanım amacına göre birden fazla zaman tüneli sunar (bazıları sunucu politikalarına bağlı olarak mevcut olmayabilir)."
+
+    description1: "Tribe, kullanım amacına göre birden fazla zaman tüneli sunar (bazıları sunucu politikalarına bağlı olarak mevcut olmayabilir)."
     bubble: "Yöneticilerinizin seçtiği bağlı sunuculardan gelen notları görebilirsiniz."
   _postNote:
-    description1: "Sharkey’de not gönderirken çeşitli seçenekler mevcuttur. Gönderi formu şu şekildedir."
+
+    description1: "Tribe’de not gönderirken çeşitli seçenekler mevcuttur. Gönderi formu şu şekildedir."
     _visibility:
+
       home: "Yalnızca Ana zaman tünelinde görünür. Profilinizi ziyaret edenler, takipçileriniz ve boostlarla görebilir."
       followers: "Sadece takipçilere görünür. Takipçiler dışında kimse göremez ve başkaları boostlayamaz."
   _done:
+
     title: "Eğitim tamamlandı! 🎉"
-    description: "Burada tanıtılan özellikler sadece küçük bir kısmıdır. Sharkey’i daha detaylı öğrenmek için {link} adresine göz atabilirsiniz."
+    description: "Burada tanıtılan özellikler sadece küçük bir kısmıdır. Tribe’i daha detaylı öğrenmek için {link} adresine göz atabilirsiniz."
 _timelineDescription:
+
   bubble: "Balon zaman tünelinde, yöneticilerinizin seçtiği bağlı sunuculardan gelen notları görebilirsiniz."
 _serverSettings:
+
   sidebarLogoUrl: "Logo URL’si"
   sidebarLogoDescription: "Yüksek çözünürlüklü, dinamik genişlik senaryolarında normal simge yerine kullanılacak logoyu belirtir."
   sidebarLogoUsageExample: "Örn. Kenar çubuğunda, ziyaretçilere ve \"Hakkında\" sayfasında."
@@ -221,35 +234,48 @@ _serverSettings:
   aboutInstance: "Sunucu hakkında"
   aboutInstanceDescription: "'Sunucu Bilgileri' sayfasında normal sunucu açıklaması yerine görüntülenecek daha uzun bir açıklama. HTML desteklenir."
 _accountMigration:
-  moveAccountDescription: "Hesabınızı başka bir hesaba taşıyacaktır.\n　・Bu hesaptaki takipçiler otomatik olarak yeni hesaba taşınır\n　・Bu hesap şu anda takip ettiği tüm kullanıcıları takipten çıkarır\n　・Bu hesapla yeni not vb. oluşturamazsınız\n\nTakipçilerin taşınması otomatik olsa da, takip ettiğiniz kullanıcıların listesini taşımak için bazı adımları manuel olarak hazırlamanız gerekir. Bunun için ayarlardan takip edilenleri dışa aktarın ve yeni hesabınıza içe aktarın. Aynı prosedür listeleriniz, sessize alınanlar ve engellenen kullanıcılar için de geçerlidir.\n\n(Bu açıklama Sharkey v13.12.0 ve sonrası için geçerlidir. Mastodon gibi diğer ActivityPub yazılımlarında işleyiş farklı olabilir.)"
+
+  moveAccountDescription: "Hesabınızı başka bir hesaba taşıyacaktır.\n　・Bu hesaptaki takipçiler otomatik olarak yeni hesaba taşınır\n　・Bu hesap şu anda takip ettiği tüm kullanıcıları takipten çıkarır\n　・Bu hesapla yeni not vb. oluşturamazsınız\n\nTakipçilerin taşınması otomatik olsa da, takip ettiğiniz kullanıcıların listesini taşımak için bazı adımları manuel olarak hazırlamanız gerekir. Bunun için ayarlardan takip edilenleri dışa aktarın ve yeni hesabınıza içe aktarın. Aynı prosedür listeleriniz, sessize alınanlar ve engellenen kullanıcılar için de geçerlidir.\n\n(Bu açıklama Tribe v13.12.0 ve sonrası için geçerlidir. Mastodon gibi diğer ActivityPub yazılımlarında işleyiş farklı olabilir.)"
 _achievements:
+
   _types:
+
     _notes1:
+
       title: "just setting up my shonk"
-      flavor: "Sharkey ile iyi eğlenceler!"
+      flavor: "Tribe ile iyi eğlenceler!"
     _login1000:
-      flavor: "Sharkey’i kullandığınız için teşekkürler!"
+
+      flavor: "Tribe’i kullandığınız için teşekkürler!"
     _iLoveMisskey:
-      title: "I Love Sharkey"
-      description: "\"I ❤ #Sharkey\" gönder"
-      flavor: "Sharkey geliştirme ekibi desteğiniz için minnettar!"
+
+      title: "I Love Tribe"
+      description: "\"I ❤ #Tribe\" gönder"
+      flavor: "Tribe geliştirme ekibi desteğiniz için minnettar!"
     _client30min:
-      description: "Sharkey’i en az 30 dakika açık tut"
+
+      description: "Tribe’i en az 30 dakika açık tut"
     _client60min:
-      title: "No \"Miss\" in Sharkey"
-      description: "Sharkey’i en az 60 dakika açık tut"
+
+      title: "No \"Miss\" in Tribe"
+      description: "Tribe’i en az 60 dakika açık tut"
     _brainDiver:
-      flavor: "Sharkey-Sharkey La-Tu-Ma"
+
+      flavor: "Tribe-Tribe La-Tu-Ma"
     _tutorialCompleted:
-      title: "Sharkey Temel Kurs Diploması"
+
+      title: "Tribe Temel Kurs Diploması"
 _role:
+
   _options:
+
     btlAvailable: "Balon zaman tünelini görüntüleyebilir"
     canImportNotes: "Notları içe aktarabilir"
     canUpdateBioMedia: "Kullanıcıların avatar veya afişini düzenlemesine izin ver"
     scheduleNoteMax: "Zamanlanmış not sayısı üst sınırı"
     canTrend: "Trend notlar / kullanıcılar listesinde görünebilir"
   _condition:
+
     isLocked: "Gizli hesap"
     isExplorable: "Hesap keşfedilebilir"
     isFromInstance: "Belirli bir sunucudan"
@@ -266,39 +292,52 @@ _role:
     remoteFollowingMoreThanOrEq: "X veya daha fazla uzak hesabı takip ediyor"
   remoteDataWarning: "Bu koşul, uzak kullanıcılar için yanlış olabilir."
 _emailUnavailable:
+
   banned: "Bu e-posta adresi yasaklanmış"
 _signup:
+
   approvalPending: "Hesabınız oluşturuldu ve onay bekliyor."
   reasonInfo: "Bu sunucuya katılma sebebinizi girin."
 _aboutMisskey:
-  about: "Sharkey, 2014’ten beri syuilo tarafından geliştirilen Misskey tabanlı açık kaynaklı bir yazılımdır."
-  original: "Misskey orijinal"
-  original_sharkey: "Sharkey orijinal"
-  thisIsModifiedVersion: "{name}, orijinal Sharkey’in değiştirilmiş bir sürümünü kullanıyor."
-  translation: "Sharkey’i çevir"
-  donate_sharkey: "Sharkey’e bağış yap"
+
+  about: "Tribe, 2014’ten beri syuilo tarafından geliştirilen Tribe tabanlı açık kaynaklı bir yazılımdır."
+  original: "Tribe orijinal"
+  original_sharkey: "Tribe orijinal"
+  thisIsModifiedVersion: "{name}, orijinal Tribe’in değiştirilmiş bir sürümünü kullanıyor."
+  translation: "Tribe’i çevir"
+  donate_sharkey: "Tribe’e bağış yap"
   testers: "Testçiler"
-  misskeyContributors: "Misskey Katkıcıları"
+  misskeyContributors: "Tribe Katkıcıları"
   ourLovelySponsors: "Sevgili sponsorlarımız"
 _serverDisconnectedBehavior:
+
   disabled: "Uyarıyı devre dışı bırak"
 _channel:
+
   allowRenoteToExternal: "Kanaldan dışarı boost ve alıntıya izin ver"
 _instanceMute:
+
   instanceMuteDescription: "Listelenen sunuculardan gelen tüm notları/boostları, sessize alınan bir kullanıcıya yanıt verenler dahil, sessize alır."
 _theme:
+
   keys:
+
     renote: "Boost"
 _soundSettings:
-  driveFileDurationWarnDescription: "Uzun ses dosyaları Sharkey kullanımını bozabilir. Yine de devam edilsin mi?"
+
+  driveFileDurationWarnDescription: "Uzun ses dosyaları Tribe kullanımını bozabilir. Yine de devam edilsin mi?"
   driveFileError: "Ses yüklenemedi. Lütfen bir ses dosyası seçtiğinizden emin olun."
 _2fa:
+
   moreDetailedGuideHere: "Ayrıntılı rehber için buraya tıklayın"
 _widgets:
+
   search: "Ara"
 _poll:
+
   multiple: "Birden fazla seçenek"
 _profile:
+
   updateAvatar: "Avatarı güncelle"
   removeAvatar: "Avatarı kaldır"
   updateBanner: "Afişi güncelle"
@@ -308,11 +347,15 @@ _profile:
   removeBackground: "Arka planı kaldır"
   listenbrainz: "ListenBrainz kullanıcı adı"
 _timelines:
+
   bubble: "Balon"
 _pages:
+
   blocks:
+
     dynamicDescription: "Bu blok türü kaldırıldı. Lütfen bundan sonra {play} kullanın."
 _notification:
+
   youRenoted: "{name} tarafından boost"
   renotedBySomeUsers: "{n} kullanıcı tarafından boostlandı"
   edited: "Not düzenlendi"
@@ -320,24 +363,34 @@ _notification:
   scheduledNotePosted: "Zamanlanmış not gönderildi"
   importOfXCompleted: "{x} içe aktarımı tamamlandı"
   _types:
+
     renote: "Boostlar"
     edited: "Düzenlemeler"
     scheduledNoteFailed: "Zamanlanmış not gönderilemedi"
     scheduledNotePosted: "Zamanlanmış not gönderildi"
   _actions:
+
     renote: "Boost"
 _webhookSettings:
+
   _events:
+
     renote: "Boostlandığında"
   _systemEvents:
+
     abuseReportResolved: "Taciz raporu çözüldüğünde"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       _captions:
+
         mail: "Taciz raporu alındığında moderatörlere e-posta gönder."
         webhook: "Taciz raporu alındığında veya çözüldüğünde Sistem Webhook’una bildirim gönder."
 _moderationLogTypes:
+
   approve: "Onaylandı"
   decline: "Reddedildi"
   setMandatoryCW: "Kullanıcıya içerik uyarısı zorunluluğu koy"
@@ -364,9 +417,10 @@ _moderationLogTypes:
   removeRelay: "Röle kaldırıldı"
 
 _mfm:
-  uncommonFeature: "Bu yaygın bir özellik değildir, diğer Misskey çatalları dahil çoğu federasyon yazılımında düzgün görüntülenmeyebilir."
-  intro: "MFM; Misskey, Sharkey, Firefish, Akkoma ve daha birçok yerde kullanılan bir biçimlendirme dilidir. Birçok yerde kullanılabilir. Burada mevcut tüm MFM sözdizimlerinin listesini görebilirsiniz."
-  dummy: "Sharkey, Fediverse dünyasını genişletir"
+
+  uncommonFeature: "Bu yaygın bir özellik değildir, diğer Tribe çatalları dahil çoğu federasyon yazılımında düzgün görüntülenmeyebilir."
+  intro: "MFM; Tribe, Tribe, Firefish, Akkoma ve daha birçok yerde kullanılan bir biçimlendirme dilidir. Birçok yerde kullanılabilir. Burada mevcut tüm MFM sözdizimlerinin listesini görebilirsiniz."
+  dummy: "Tribe, Fediverse dünyasını genişletir"
   mention: "Bahsetme"
   mentionDescription: "Kullanıcı adının başına '@' ekleyerek bir kullanıcıyı belirtebilirsiniz."
   hashtag: "Hashtag"
@@ -448,38 +502,49 @@ _mfm:
   plain: "Düz"
   plainDescription: "Bu MFM etkisi içindeki tüm diğer MFM efektlerini devre dışı bırakır."
 _animatedMFM:
+
   play: "MFM Animasyonunu Oynat"
   stop: "MFM Animasyonunu Durdur"
   _alert:
+
     text: "Animasyonlu MFM’ler hızlı hareket eden metinler/emojiler ve yanıp sönen ışıklar içerebilir."
     confirm: "Animasyonu Başlat"
 _dataRequest:
+
   title: "Veri Talebi"
   warn: "Veri talepleri yalnızca 3 günde bir yapılabilir."
   text: "Verileriniz indirilmeye hazır olduğunda, bu hesaba kayıtlı e-posta adresinize bir e-posta gönderilecektir."
   button: "Talep Et"
 _dataSaver:
+
   _avatar:
+
     description: "Avatar görseli animasyonunu durdurur. Animasyonlu görseller normal görsellerden daha büyük dosya boyutuna sahip olabilir."
 _urlPreviewSetting:
+
   timeoutDescription: "Önizlemenin alınması bu değerden uzun sürerse, önizleme oluşturulmaz."
   requireContentLength: "Yalnızca Content-Length alınabiliyorsa önizleme oluştur"
   summaryProxy: "Önizleme oluşturmak için proxy uç noktası"
-  summaryProxyDescription: "Önizlemeleri Sharkey yerine Summaly Proxy kullanarak oluşturur."
+  summaryProxyDescription: "Önizlemeleri Tribe yerine Summaly Proxy kullanarak oluşturur."
   summaryProxyDescription2: "Aşağıdaki parametreler sorgu dizesi olarak proxy’ye iletilir. Proxy bunları desteklemiyorsa değerler yok sayılır."
 _externalNavigationWarning:
+
   title: "Harici siteye git"
   description: "{host} adresinden ayrılarak harici bir siteye gidiyorsunuz"
   trustThisDomain: "Bu alan adını bu cihazda gelecekte güvenilir say"
 remoteFollowersWarning: "Uzak takipçiler eksik veya eski etkinlik verilerine sahip olabilir"
 _auth:
+
   allowed: "İzin verildi"
 _announcement:
+
   new: "Yeni"
   confetti: "Konfeti at"
   confettiDescription: "Etkinleştirilirse, duyuru görüntülendiğinde konfeti efekti gösterilir."
 _deck:
+
   _columns:
+
     following: "Takip edilenler"
 selectFollowRelationship: "Bir takip ilişkisi seç..."
 schedulePost: "Notu zamanla"
@@ -487,6 +552,7 @@ schedulePostList: "Zamanlanmış notlar listesi"
 postOn: "Şu tarihte paylaş"
 scheduledNotes: "Zamanlanmış Notlar"
 _permissions:
+
   "write:admin:approve-user": "Yeni kullanıcıları onayla"
   "write:admin:decline-user": "Yeni kullanıcıları reddet"
   "write:admin:nsfw-user": "Kullanıcıyı NSFW olarak işaretle"
@@ -495,27 +561,31 @@ _permissions:
   "write:admin:silence-user": "Kullanıcıyı sessize al"
   "write:admin:unsilence-user": "Kullanıcının sessizliğini kaldır"
   "write:admin:reject-quotes": "Kullanıcıdan alıntı gönderilere izin ver/yasakla"
-  "read:notes-schedule": "Zamanlanmış not listesini görüntüle"
-  "write:notes-schedule": "Zamanlanmış not oluştur veya sil"
+  "read:sparks-schedule": "Zamanlanmış not listesini görüntüle"
+  "write:sparks-schedule": "Zamanlanmış not oluştur veya sil"
 robotsTxt: "Özel robots.txt"
-robotsTxtDescription: "Buraya eklenen girdiler, Sharkey ile gelen varsayılan robots.txt dosyasını geçersiz kılar."
+robotsTxtDescription: "Buraya eklenen girdiler, Tribe ile gelen varsayılan robots.txt dosyasını geçersiz kılar."
 defaultCW: "Yeni gönderiler için varsayılan içerik uyarısı"
 defaultCWDescription: "Buradaki değer, tüm yeni gönderi ve yanıtlarda otomatik olarak içerik uyarısı olarak doldurulur."
 defaultCWPriority: "Otomatik CW önceliği"
 defaultCWPriorityDescription: "Varsayılan CW ile mevcut CW ayarları aynı anda etkinse tercih edilecek davranışı seçin."
 _defaultCWPriority:
+
   default: "Varsayılanı Kullan (Varsayılan CW kullanılır, devralınan CW yok sayılır)"
   parent: "Üst Gönderiyi Kullan (Devralınan CW kullanılır, varsayılan CW yok sayılır)"
   defaultParent: "Varsayılan + Üst Gönderi (Varsayılan CW kullanılır ve devralınan CW eklenir)"
   parentDefault: "Üst Gönderi + Varsayılan (Devralınan CW kullanılır ve varsayılan CW eklenir)"
 genKeys: "Anahtar Oluştur"
 _genKeysDialog:
+
   text: "Yeni anahtarlar oluşturmak istediğinizden emin misiniz? Bu işlem, push bildirimlerini daha önce etkinleştirmiş tüm kullanıcılar için durduracaktır."
   title: "Yeni anahtar oluştur"
 _noteSearch:
+
   newestToOldest: "Yeniden eskiye sırala"
   fileType: "Dosya Türü"
   _fileType:
+
     none: "Yok"
     image: "Görseller"
     video: "Videolar"
@@ -533,6 +603,7 @@ showTranslationButtonInNoteFooter: "Not eylem menüsüne \"Çevir\" ekle"
 translationFailed: "Not çevrilemedi. Lütfen daha sonra tekrar deneyin veya yardım için bir yöneticiye başvurun."
 
 _processErrors:
+
   quoteUnavailable: "Alıntı işlenemiyor. Bu gönderi bağlam eksik olabilir."
   attachmentFailed: "Bir veya daha fazla medya eki mevcut değil ve gösterilemiyor."
 
@@ -540,11 +611,13 @@ authorizedFetchSection: "Yetkili Getirme"
 authorizedFetchLabel: "İmzasız ActivityPub isteklerine izin ver:"
 authorizedFetchDescription: "Bu ayar, uzak bir sunucu veya kullanıcı kimliğini doğrulamadan içeriğinize erişmeye çalıştığında davranışı kontrol eder. Devre dışı bırakılırsa, engellenmiş veya federasyonu kesilmiş olsa bile herhangi bir uzak kullanıcı profilinize ve gönderilerinize erişebilir."
 _authorizedFetchValue:
+
   never: "Asla"
   always: "Her zaman"
   essential: "Yalnızca temel meta veriler için"
   staff: "Yönetici önerisini kullan"
 _authorizedFetchValueDescription:
+
   never: "Tüm imzasız istekleri engeller. Gizliliği artırır ve engellemeleri daha etkili hale getirir, ancak bazı çok eski veya nadir kullanılan yazılımlarla uyumlu değildir."
   always: "Tüm imzasız isteklere izin verir. Diğer sunucularla en yüksek uyumluluğu sağlar, ancak gizliliği azaltır ve engellemeleri zayıflatır."
   essential: "Sınırlı imzasız isteklere izin verir. Daha eski yazılımlarla federasyon için gerekli minimum profil meta verilerini açığa çıkararak \"Asla\" ve \"Her zaman\" arasında bir denge sağlar."
@@ -552,6 +625,7 @@ _authorizedFetchValueDescription:
 authorizedFetchLegacyWarning: "'checkActivityPubGetSignature' yapılandırma özelliği kullanımdan kaldırılmıştır ve yeni Yetkili Getirme ayarı ile değiştirilmiştir. Lütfen yapılandırma dosyanızdan kaldırın."
 
 _followRequest:
+
   recieved: "Alındı"
   sent: "Gönderildi"
 
@@ -561,6 +635,7 @@ enableProxyAccount: "Proxy hesabını etkinleştir"
 enableProxyAccountDescription: "Devre dışı bırakılırsa, proxy hesabı kullanılmaz. Kullanıcı listeleri yalnızca yerel veya takip edilen kullanıcılardan gelen notları içerir."
 
 _confirmPollEdit:
+
   title: "Bu anketi düzenlemek istediğinize emin misiniz?"
   text: "Bu anketi düzenlemek, önceki tüm oyların kaybolmasına neden olur."
 
@@ -637,6 +712,7 @@ rawApDescription: "Ham biçimde ActivityPub kullanıcı verisi. Bu alanlar herke
 signupReason: "Kayıt Olma Sebebi"
 
 clearCachedFilesOptions:
+
   title: "Tüm önbelleğe alınmış uzak dosyaları sil"
   olderThan: "Yalnızca şu tarihten eski dosyaları sil:"
   now: "şimdi"

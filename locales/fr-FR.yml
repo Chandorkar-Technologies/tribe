@@ -1,8 +1,8 @@
 ---
 _lang_: "Français"
-headlineMisskey: "Réseau relié par des notes"
-introMisskey: "Bienvenue ! Misskey est un service de microblogage décentralisé, libre et ouvert.\nÉcrivez des « notes » et partagez ce qui se passe à l’instant présent, autour de vous avec les autres 📡\nLa fonction « réactions », vous permet également d’ajouter une réaction rapide aux notes des autres utilisateur·rice·s 👍\nExplorons un nouveau monde 🚀"
-poweredByMisskeyDescription: "{name} est l'un des services propulsés par la plateforme ouverte <b>Misskey</b> (appelée \"instance Misskey\")."
+headlineMisskey: "Réseau relié par des sparks"
+introMisskey: "Bienvenue ! Tribe est un service de microblogage décentralisé, libre et ouvert.\nÉcrivez des « sparks » et partagez ce qui se passe à l’instant présent, autour de vous avec les autres 📡\nLa fonction « réactions », vous permet également d’ajouter une réaction rapide aux sparks des autres utilisateur·rice·s 👍\nExplorons un nouveau monde 🚀"
+poweredByMisskeyDescription: "{name} est l'un des services propulsés par la plateforme ouverte <b>Tribe</b> (appelée \"instance Tribe\")."
 monthAndDay: "{day}/{month}"
 search: "Rechercher"
 notifications: "Notifications"
@@ -10,7 +10,7 @@ username: "Nom d’utilisateur·rice"
 password: "Mot de passe"
 initialPasswordForSetup: "Mot de passe initial pour la configuration"
 initialPasswordIsIncorrect: "Mot de passe initial pour la configuration est incorrecte"
-initialPasswordForSetupDescription: "Utilisez le mot de passe que vous avez entré pour le fichier de configuration si vous avez installé Misskey vous-même.\nSi vous utilisez un service d'hébergement Misskey, utilisez le mot de passe fourni.\nSi vous n'avez pas défini de mot de passe, laissez le champ vide pour continuer."
+initialPasswordForSetupDescription: "Utilisez le mot de passe que vous avez entré pour le fichier de configuration si vous avez installé Tribe vous-même.\nSi vous utilisez un service d'hébergement Tribe, utilisez le mot de passe fourni.\nSi vous n'avez pas défini de mot de passe, laissez le champ vide pour continuer."
 forgotPassword: "Mot de passe oublié"
 fetchingAsApObject: "Récupération depuis le fédiverse …"
 ok: "OK"
@@ -19,7 +19,7 @@ cancel: "Annuler"
 noThankYou: "Pas maintenant"
 enterUsername: "Entrer un nom d’utilisateur·rice"
 renotedBy: "Renoté par {user}"
-noNotes: "Aucune note"
+noNotes: "Aucune spark"
 noNotifications: "Aucune notification"
 instance: "Instance"
 settings: "Paramètres"
@@ -48,22 +48,22 @@ pin: "Épingler sur le profil"
 unpin: "Désépingler"
 copyContent: "Copier le contenu"
 copyLink: "Copier le lien"
-copyLinkRenote: "Copier le lien de la renote"
+copyLinkRenote: "Copier le lien de la re-spark"
 delete: "Supprimer"
 deleteAndEdit: "Supprimer et réécrire"
-deleteAndEditConfirm: "Êtes-vous sûr de vouloir effacer cette note et la modifier ? Vous perdrez toutes les réactions, renotes et réponses."
+deleteAndEditConfirm: "Êtes-vous sûr de vouloir effacer cette spark et la modifier ? Vous perdrez toutes les réactions, re-sparks et réponses."
 addToList: "Ajouter à une liste"
 addToAntenna: "Ajouter à l’antenne"
 sendMessage: "Envoyer un message"
 copyRSS: "Copier le RSS"
 copyUsername: "Copier le nom d’utilisateur·rice"
 copyUserId: "Copier l'identifiant de l'utilisateur"
-copyNoteId: "Copier l'identifiant de la note"
+copyNoteId: "Copier l'identifiant de la spark"
 copyFileId: "Copier l'identifiant du fichier"
 copyFolderId: "Copier l'identifiant du dossier"
 copyProfileUrl: "Copier l'URL du profil"
 searchUser: "Chercher un·e utilisateur·rice"
-searchThisUsersNotes: "Cherchez les notes de cet·te utilisateur·rice"
+searchThisUsersNotes: "Cherchez les sparks de cet·te utilisateur·rice"
 reply: "Répondre"
 loadMore: "Afficher plus …"
 showMore: "Voir plus"
@@ -73,20 +73,20 @@ receiveFollowRequest: "Demande d’abonnement reçue"
 followRequestAccepted: "La demande d’abonnement a été acceptée"
 mention: "Mentionner"
 mentions: "Mentions"
-directNotes: "Notes directes"
+directNotes: "Sparks directes"
 importAndExport: "Import et export"
 import: "Importer"
 export: "Exporter"
 files: "Fichiers"
 download: "Télécharger"
-driveFileDeleteConfirm: "Êtes-vous sûr·e de vouloir supprimer le fichier « {name} » ? Les notes avec ce fichier joint seront aussi supprimées."
+driveFileDeleteConfirm: "Êtes-vous sûr·e de vouloir supprimer le fichier « {name} » ? Les sparks avec ce fichier joint seront aussi supprimées."
 unfollowConfirm: "Désirez-vous vous désabonner de {name} ?"
 exportRequested: "Vous avez demandé une exportation. L’opération pourrait prendre un peu de temps. Une fois terminée, le fichier sera ajouté au Drive."
 importRequested: "Vous avez initié un import. Cela pourrait prendre un peu de temps."
 lists: "Listes"
 noLists: "Vous n’avez aucune liste"
-note: "Note"
-notes: "Notes"
+note: "Spark"
+notes: "Sparks"
 following: "Abonnements"
 followers: "Abonné·e·s"
 followsYou: "Vous suit"
@@ -102,7 +102,7 @@ youShouldUpgradeClient: "Si la page ne s'affiche pas correctement, rechargez-la 
 enterListName: "Nom de la liste"
 privacy: "Confidentialité"
 makeFollowManuallyApprove: "Accepter manuellement les demandes d’abonnement"
-defaultNoteVisibility: "Visibilité des notes par défaut"
+defaultNoteVisibility: "Visibilité des sparks par défaut"
 follow: "S’abonner"
 followRequest: "Demande d’abonnement"
 followRequests: "Demandes d’abonnement"
@@ -110,15 +110,15 @@ unfollow: "Se désabonner"
 followRequestPending: "Demande d'abonnement en attente de confirmation"
 enterEmoji: "Insérer un émoji"
 renote: "Renoter"
-unrenote: "Annuler la Renote"
+unrenote: "Annuler la Re-spark"
 renoted: "Renoté !"
 renotedToX: "Renoté en {name}"
 cantRenote: "Ce message ne peut pas être renoté."
-cantReRenote: "Impossible de renoter une Renote."
+cantReRenote: "Impossible de renoter une Re-spark."
 quote: "Citer"
 inChannelRenote: "Renoter dans le canal"
 inChannelQuote: "Citer dans le canal"
-pinnedNote: "Note épinglée"
+pinnedNote: "Spark épinglée"
 pinned: "Épingler sur le profil"
 you: "Vous"
 clickToShow: "Cliquer pour afficher"
@@ -133,7 +133,7 @@ emojiPickerDisplay: "Affichage du sélecteur d'émojis"
 overwriteFromPinnedEmojisForReaction: "Remplacer par les émojis épinglés pour la réaction"
 overwriteFromPinnedEmojis: "Remplacer par les émojis épinglés globalement"
 reactionSettingDescription2: "Déplacer pour réorganiser, cliquer pour effacer, utiliser « + » pour ajouter."
-rememberNoteVisibility: "Se souvenir de la visibilité des notes"
+rememberNoteVisibility: "Se souvenir de la visibilité des sparks"
 attachCancel: "Supprimer le fichier joint"
 deleteFile: "Fichier supprimé"
 markAsSensitive: "Marquer comme sensible"
@@ -141,8 +141,8 @@ unmarkAsSensitive: "Supprimer le marquage comme sensible"
 enterFileName: "Entrer le nom du fichier"
 mute: "Masquer"
 unmute: "Ne plus masquer"
-renoteMute: "Masquer les renotes"
-renoteUnmute: "Ne plus masquer les renotes"
+renoteMute: "Masquer les re-sparks"
+renoteUnmute: "Ne plus masquer les re-sparks"
 block: "Bloquer"
 unblock: "Débloquer"
 suspend: "Suspendre"
@@ -173,11 +173,11 @@ youCanCleanRemoteFilesCache: "Vous pouvez supprimer tous les caches en cliquant 
 cacheRemoteSensitiveFiles: "Mettre en cache les fichiers distants sensibles"
 cacheRemoteSensitiveFilesDescription: "Si vous désactivez ce paramètre, les fichiers sensibles distants ne seront pas mis en cache et un lien direct sera utilisé à la place"
 flagAsBot: "Ce compte est un robot"
-flagAsBotDescription: "Si ce compte est géré de manière automatisée, choisissez cette option. Si elle est activée, elle agira comme un marqueur pour les autres développeurs afin d'éviter des chaînes d'interaction sans fin avec d'autres robots et d'ajuster les systèmes internes de Misskey pour traiter ce compte comme un robot."
+flagAsBotDescription: "Si ce compte est géré de manière automatisée, choisissez cette option. Si elle est activée, elle agira comme un marqueur pour les autres développeurs afin d'éviter des chaînes d'interaction sans fin avec d'autres robots et d'ajuster les systèmes internes de Tribe pour traiter ce compte comme un robot."
 flagAsCat: "Ce compte est un chat"
 flagAsCatDescription: "Miaou miaou miaou ?"
 flagShowTimelineReplies: "Afficher les réponses dans le fil"
-flagShowTimelineRepliesDescription: "Affiche les réponses des utilisateurs aux notes des autres utilisateurs dans la timeline si cette option est activée."
+flagShowTimelineRepliesDescription: "Affiche les réponses des utilisateurs aux sparks des autres utilisateurs dans la timeline si cette option est activée."
 autoAcceptFollowed: "Accepter automatiquement les demandes d’abonnement venant d’utilisateur·rice·s que vous suivez"
 addAccount: "Ajouter un compte"
 reloadAccountsList: "Rafraichir la liste des comptes"
@@ -192,7 +192,7 @@ searchWith: "Recherche : {q}"
 youHaveNoLists: "Vous n’avez aucune liste"
 followConfirm: "Êtes-vous sûr·e de vouloir suivre {name} ?"
 proxyAccount: "Compte proxy"
-proxyAccountDescription: "Un compte proxy se comporte, dans certaines conditions, comme un·e abonné·e distant·e pour les utilisateurs d'autres instances. Par exemple, quand un·e utilisateur·rice ajoute un·e utilisateur·rice distant·e à une liste, ses notes ne seront pas visibles sur l'instance si personne ne suit cet·te utilisateur·rice. Le compte proxy va donc suivre cet·te utilisateur·rice pour que ses notes soient acheminées."
+proxyAccountDescription: "Un compte proxy se comporte, dans certaines conditions, comme un·e abonné·e distant·e pour les utilisateurs d'autres instances. Par exemple, quand un·e utilisateur·rice ajoute un·e utilisateur·rice distant·e à une liste, ses sparks ne seront pas visibles sur l'instance si personne ne suit cet·te utilisateur·rice. Le compte proxy va donc suivre cet·te utilisateur·rice pour que ses sparks soient acheminées."
 host: "Serveur distant"
 selectSelf: "Sélectionner manuellement"
 selectUser: "Sélectionner un·e utilisateur·rice"
@@ -224,7 +224,7 @@ instanceInfo: "Informations sur l’instance"
 statistics: "Statistiques"
 clearQueue: "Vider la file d’attente"
 clearQueueConfirmTitle: "Êtes-vous sûr·e de vouloir vider la file d’attente ?"
-clearQueueConfirmText: "Les notes non distribuées ne seront pas délivrées. Normalement, vous n'avez pas besoin d'effectuer cette opération."
+clearQueueConfirmText: "Les sparks non distribuées ne seront pas délivrées. Normalement, vous n'avez pas besoin d'effectuer cette opération."
 clearCachedFiles: "Vider le cache"
 clearCachedFilesConfirm: "Êtes-vous sûr·e de vouloir vider tout le cache de fichiers distants ?"
 blockedInstances: "Instances bloquées"
@@ -236,9 +236,9 @@ mutedUsers: "Utilisateur·rice·s en sourdine"
 blockedUsers: "Utilisateur·rice·s bloqué·e·s"
 noUsers: "Il n’y a pas d’utilisateur·rice·s"
 editProfile: "Modifier votre profil"
-noteDeleteConfirm: "Êtes-vous sûr·e de vouloir supprimer cette note ?"
-pinLimitExceeded: "Vous ne pouvez plus épingler d’autres notes."
-intro: "L’installation de Misskey est terminée ! Veuillez créer un compte administrateur."
+noteDeleteConfirm: "Êtes-vous sûr·e de vouloir supprimer cette spark ?"
+pinLimitExceeded: "Vous ne pouvez plus épingler d’autres sparks."
+intro: "L’installation de Tribe est terminée ! Veuillez créer un compte administrateur."
 done: "Terminé"
 processing: "Traitement en cours"
 preview: "Aperçu"
@@ -293,7 +293,7 @@ nUsersRead: "Lu par {n} personnes"
 agreeTo: "J’accepte {0}"
 agree: "Accepter"
 agreeBelow: "J’accepte ce qui suit"
-basicNotesBeforeCreateAccount: "Notes importantes"
+basicNotesBeforeCreateAccount: "Sparks importantes"
 termsOfService: "Conditions d'utilisation"
 start: "Commencer"
 home: "Principal"
@@ -381,7 +381,7 @@ pinnedUsersDescription: "Listez les utilisateur·rice·s que vous souhaitez voir
 pinnedPages: "Pages épinglées"
 pinnedPagesDescription: "Inscrivez le chemin des pages que vous souhaitez épingler en haut de la page de l'instance. Séparez les pages d'un retour à la ligne."
 pinnedClipId: "Identifiant du clip épinglé"
-pinnedNotes: "Note épinglée"
+pinnedNotes: "Spark épinglée"
 hcaptcha: "hCaptcha"
 enableHcaptcha: "Activer hCaptcha"
 hcaptchaSiteKey: "Clé du site"
@@ -408,14 +408,14 @@ antennaKeywords: "Mots clés à recevoir"
 antennaExcludeKeywords: "Mots clés à exclure"
 antennaExcludeBots: "Exclure les comptes robot"
 antennaKeywordsDescription: "Séparer avec des espaces pour la condition AND. Séparer avec un saut de ligne pour une condition OR."
-notifyAntenna: "Me notifier pour les nouvelles notes"
-withFileAntenna: "Notes ayant des fichiers joints uniquement"
+notifyAntenna: "Me notifier pour les nouvelles sparks"
+withFileAntenna: "Sparks ayant des fichiers joints uniquement"
 enableServiceworker: "Activer ServiceWorker"
 antennaUsersDescription: "Saisissez un seul nom d’utilisateur·rice par ligne"
 caseSensitive: "Sensible à la casse"
 withReplies: "Inclure les réponses"
 connectedTo: "Vous êtes connectés aux services suivants"
-notesAndReplies: "Notes et Réponses"
+notesAndReplies: "Sparks et Réponses"
 withFiles: "Avec fichiers joints"
 silence: "Mettre en sourdine"
 silenceConfirm: "Êtes-vous sûr·e de vouloir mettre l’utilisateur·rice en sourdine ?"
@@ -430,7 +430,7 @@ exploreFediverse: "Explorer le Fediverse"
 popularTags: "Mots-clés populaires"
 userList: "Listes"
 about: "Informations"
-aboutMisskey: "À propos de Misskey"
+aboutMisskey: "À propos de Tribe"
 administrator: "Administrateur"
 token: "Jeton"
 2fa: "Authentification à deux facteurs"
@@ -439,9 +439,9 @@ totp: "Application d'authentification"
 totpDescription: "Entrer un mot de passe à usage unique à l'aide d'une application d'authentification"
 moderator: "Modérateur·rice·s"
 moderation: "Modérations"
-moderationNote: "Note de modération"
-moderationNoteDescription: "Vous pouvez remplir des notes qui seront partagés seulement entre modérateurs."
-addModerationNote: "Ajouter une note de modération"
+moderationNote: "Spark de modération"
+moderationNoteDescription: "Vous pouvez remplir des sparks qui seront partagés seulement entre modérateurs."
+addModerationNote: "Ajouter une spark de modération"
 moderationLogs: "Journal de modération"
 nUsersMentioned: "{n} utilisateur·rice·s mentionné·e·s"
 securityKeyAndPasskey: "Sécurité et clés de sécurité"
@@ -459,7 +459,7 @@ notFound: "Non trouvé"
 notFoundDescription: "Aucune page ne correspond à l’URL spécifiée."
 uploadFolder: "Emplacement de téléversement par défaut"
 markAsReadAllNotifications: "Marquer toutes les notifications comme lues"
-markAsReadAllUnreadNotes: "Marquer toutes les notes comme lues"
+markAsReadAllUnreadNotes: "Marquer toutes les sparks comme lues"
 markAsReadAllTalkMessages: "Marquer toutes les discussions comme lues"
 help: "Aide"
 inputMessageHere: "Écrivez votre message ici"
@@ -472,7 +472,7 @@ text: "Texte"
 enable: "Activer"
 next: "Suivant"
 retype: "Confirmation"
-noteOf: "Notes de {user}"
+noteOf: "Sparks de {user}"
 quoteAttached: "Avec citation"
 quoteQuestion: "Souhaitez-vous ajouter une citation ?"
 onlyOneFileCanBeAttached: "Vous ne pouvez joindre qu’un seul fichier au message"
@@ -502,8 +502,8 @@ menuStyle: "Style du menu"
 style: "Style"
 drawer: "Sélecteur"
 popup: "Pop-up"
-showNoteActionsOnlyHover: "Afficher les actions de note uniquement au survol"
-showReactionsCount: "Afficher le nombre de réactions des notes"
+showNoteActionsOnlyHover: "Afficher les actions de spark uniquement au survol"
+showReactionsCount: "Afficher le nombre de réactions des sparks"
 noHistory: "Pas d'historique"
 signinHistory: "Historique de connexion"
 enableAdvancedMfm: "Activer la MFM avancée"
@@ -532,8 +532,8 @@ accountSettings: "Paramètres du compte"
 promotion: "Promu"
 promote: "Promouvoir"
 numberOfDays: "Nombre de jours"
-hideThisNote: "Masquer cette note"
-showFeaturedNotesInTimeline: "Afficher les notes des Tendances dans le fil d'actualité"
+hideThisNote: "Masquer cette spark"
+showFeaturedNotesInTimeline: "Afficher les sparks des Tendances dans le fil d'actualité"
 objectStorage: "Stockage d'objets"
 useObjectStorage: "Utiliser le stockage d'objets"
 objectStorageBaseUrl: "URL de base"
@@ -557,7 +557,7 @@ deleteAll: "Supprimer tout"
 showFixedPostForm: "Afficher le formulaire de publication en haut du fil d'actualité"
 showFixedPostFormInChannel: "Afficher le formulaire de publication en haut du fil (canaux)"
 withRepliesByDefaultForNewlyFollowed: "Afficher les réponses des nouvelles personnes que vous suivez dans le fil par défaut"
-newNoteRecived: "Voir les nouvelles notes"
+newNoteRecived: "Voir les nouvelles sparks"
 sounds: "Sons"
 sound: "Sons"
 listen: "Écouter"
@@ -567,7 +567,7 @@ popout: "Fenêtre contextuelle"
 volume: "Volume"
 masterVolume: "Volume principal"
 notUseSound: "Ne pas émettre de son"
-useSoundOnlyWhenActive: "Émettre des sons uniquement quand Misskey est active"
+useSoundOnlyWhenActive: "Émettre des sons uniquement quand Tribe est active"
 details: "Détails"
 chooseEmoji: "Choisissez un émoji"
 unableToProcess: "L’opération n’a pas pu être complétée."
@@ -583,7 +583,7 @@ sort: "Trier"
 ascendingOrder: "Ascendant"
 descendingOrder: "Descendant"
 scratchpad: "ScratchPad"
-scratchpadDescription: "ScratchPad fournit un environnement expérimental pour AiScript. Vous pouvez vérifier la rédaction de votre code, sa bonne exécution et le résultat de son interaction avec Misskey."
+scratchpadDescription: "ScratchPad fournit un environnement expérimental pour AiScript. Vous pouvez vérifier la rédaction de votre code, sa bonne exécution et le résultat de son interaction avec Tribe."
 uiInspector: "Inspecteur UI"
 output: "Sortie"
 script: "Script"
@@ -614,8 +614,8 @@ addRelay: "Ajouter un relais"
 inboxUrl: "Inbox URL"
 addedRelays: "Relais ajoutés"
 serviceworkerInfo: "Devrait être activé pour les notifications push."
-deletedNote: "Note supprimée"
-invisibleNote: "Note invisible"
+deletedNote: "Spark supprimée"
+invisibleNote: "Spark invisible"
 enableInfiniteScroll: "Activer le défilement infini"
 visibility: "Visibilité"
 poll: "Sondage"
@@ -694,9 +694,9 @@ behavior: "Comportement"
 sample: "Exemple"
 abuseReports: "Signalements"
 reportAbuse: "Signaler"
-reportAbuseRenote: "Signaler la renote"
+reportAbuseRenote: "Signaler la re-spark"
 reportAbuseOf: "Signaler {name}"
-fillAbuseReportDescription: "Veuillez expliquer les raisons du signalement. S'il s'agit d'une note précise, veuillez en donner le lien."
+fillAbuseReportDescription: "Veuillez expliquer les raisons du signalement. S'il s'agit d'une spark précise, veuillez en donner le lien."
 abuseReported: "Le rapport est envoyé. Merci."
 reporter: "Signalé par"
 reporteeOrigin: "Origine du signalement"
@@ -706,7 +706,7 @@ openInNewTab: "Ouvrir dans un nouvel onglet"
 openInSideView: "Ouvrir en vue latérale"
 defaultNavigationBehaviour: "Navigation par défaut"
 editTheseSettingsMayBreakAccount: "La modification de ces paramètres peut endommager votre compte."
-instanceTicker: "Nom de l'instance d'origine des notes"
+instanceTicker: "Nom de l'instance d'origine des sparks"
 waitingFor: "En attente de {x}"
 random: "Aléatoire"
 system: "Système"
@@ -717,17 +717,17 @@ createNew: "Créer"
 optional: "Facultatif"
 createNewClip: "Créer un nouveau clip"
 unclip: "Supprimer le clip"
-confirmToUnclipAlreadyClippedNote: "Cette note fait déjà partie du clip « {name} ». Souhaitez-vous la supprimer de ce clip ?"
+confirmToUnclipAlreadyClippedNote: "Cette spark fait déjà partie du clip « {name} ». Souhaitez-vous la supprimer de ce clip ?"
 public: "Public"
 private: "Privé"
-i18nInfo: "Misskey est traduit dans différentes langues par des bénévoles. Vous pouvez contribuer à {link}."
+i18nInfo: "Tribe est traduit dans différentes langues par des bénévoles. Vous pouvez contribuer à {link}."
 manageAccessTokens: "Gérer les jetons d'accès"
 accountInfo: " Informations du compte "
-notesCount: "Nombre de notes"
+notesCount: "Nombre de sparks"
 repliesCount: "Nombre de réponses envoyées"
-renotesCount: "Nombre de notes que vous avez renotées"
+renotesCount: "Nombre de sparks que vous avez renotées"
 repliedCount: "Nombre de réponses reçues"
-renotedCount: "Nombre de vos notes renotées"
+renotedCount: "Nombre de vos sparks renotées"
 followingCount: "Nombre d'abonnements"
 followersCount: "Nombre d'abonnés"
 sentReactionsCount: "Nombre de réactions envoyées"
@@ -739,8 +739,8 @@ no: "Non"
 driveFilesCount: "Nombre de fichiers sur le Disque"
 driveUsage: "Utilisation du Disque"
 noCrawle: "Refuser l'indexation par les robots"
-noCrawleDescription: "Demandez aux moteurs de recherche de ne pas indexer votre page de profil, vos notes, vos pages, etc."
-lockedAccountInfo: "À moins que vous ne définissiez la visibilité de votre note sur \"Abonné-e-s\", vos notes sont visibles par tous, même si vous exigez que les demandes d'abonnement soient approuvées manuellement."
+noCrawleDescription: "Demandez aux moteurs de recherche de ne pas indexer votre page de profil, vos sparks, vos pages, etc."
+lockedAccountInfo: "À moins que vous ne définissiez la visibilité de votre spark sur \"Abonné-e-s\", vos sparks sont visibles par tous, même si vous exigez que les demandes d'abonnement soient approuvées manuellement."
 alwaysMarkSensitive: "Marquer les médias comme contenu sensible par défaut"
 loadRawImages: "Affichage complet des images jointes au lieu des vignettes"
 disableShowingAnimatedImages: "Désactiver l'animation des images"
@@ -748,7 +748,7 @@ highlightSensitiveMedia: "Mettre en évidence les médias sensibles"
 verificationEmailSent: "Un e-mail de vérification a été envoyé. Veuillez accéder au lien pour compléter la vérification."
 notSet: "Non défini"
 emailVerified: "Votre adresse e-mail a été vérifiée."
-noteFavoritesCount: "Nombre de notes dans les favoris"
+noteFavoritesCount: "Nombre de sparks dans les favoris"
 pageLikesCount: "Nombre de pages aimées"
 pageLikedCount: "Nombre de vos pages aimées"
 contact: "Contact"
@@ -760,7 +760,7 @@ thisIsExperimentalFeature: "Ceci est une fonctionnalité expérimentale. Il y a 
 developer: "Développeur"
 makeExplorable: "Rendre le compte visible sur la page \"Découvrir\"."
 makeExplorableDescription: "Si vous désactivez cette option, votre compte n'apparaîtra pas sur la page \"Découvrir\"."
-showGapBetweenNotesInTimeline: "Afficher un écart entre les notes sur la Timeline"
+showGapBetweenNotesInTimeline: "Afficher un écart entre les sparks sur la Timeline"
 duplicate: "Duliquer"
 left: "Gauche"
 center: "Centrer"
@@ -772,9 +772,9 @@ showTitlebar: "Afficher la barre de titre"
 clearCache: "Vider le cache"
 onlineUsersCount: "{n} utilisateur(s) en ligne"
 nUsers: "{n} utilisateur·rice·s"
-nNotes: "{n} Notes"
+nNotes: "{n} Sparks"
 sendErrorReports: "Envoyer les rapports d’erreur"
-sendErrorReportsDescription: "Si vous activez l'envoi des rapports d'erreur, vous contribuerez à améliorer la qualité de Misskey grâce au partage d'informations détaillées sur les erreurs lorsqu'un problème survient.\nCela inclut des informations telles que la version de votre système d'exploitation, le type de navigateur que vous utilisez, votre historique d'activité, etc."
+sendErrorReportsDescription: "Si vous activez l'envoi des rapports d'erreur, vous contribuerez à améliorer la qualité de Tribe grâce au partage d'informations détaillées sur les erreurs lorsqu'un problème survient.\nCela inclut des informations telles que la version de votre système d'exploitation, le type de navigateur que vous utilisez, votre historique d'activité, etc."
 myTheme: "Mes thèmes"
 backgroundColor: "Arrière-plan"
 accentColor: "Accentuation"
@@ -814,7 +814,7 @@ unlikeConfirm: "Êtes-vous sûr·e de ne plus vouloir aimer cette publication ?"
 fullView: "Plein écran"
 quitFullView: "Quitter le plein écran"
 addDescription: "Ajouter une description"
-userPagePinTip: "Vous pouvez afficher des notes ici en sélectionnant l'option « Épingler au profil » dans le menu de chaque note."
+userPagePinTip: "Vous pouvez afficher des sparks ici en sélectionnant l'option « Épingler au profil » dans le menu de chaque spark."
 notSpecifiedMentionWarning: "Vous avez mentionné des utilisateur·rice·s qui ne font pas partie de la liste des destinataires"
 info: "Informations"
 userInfo: "Informations sur l'utilisateur·rice"
@@ -846,7 +846,7 @@ postToHashtag: "Publier avec ce hashtag"
 gallery: "Galerie"
 recentPosts: "Les plus récentes"
 popularPosts: "Les plus consultées"
-shareWithNote: "Partager dans une note"
+shareWithNote: "Partager dans une spark"
 ads: "Publicité"
 expiration: "Échéance"
 startingperiod: "Commencer"
@@ -869,7 +869,7 @@ hashtags: "Hashtags"
 troubleshooting: "Résolution de problèmes"
 useBlurEffect: "Utiliser des effets de flou dans l'interface"
 learnMore: "Plus d'informations"
-misskeyUpdated: "Misskey a été mis à jour !"
+misskeyUpdated: "Tribe a été mis à jour !"
 whatIsNew: "Voir les derniers changements"
 translate: "Traduire"
 translatedFrom: "Traduit depuis {x}"
@@ -1002,8 +1002,8 @@ numberOfLikes: "Favoris"
 show: "Affichage"
 neverShow: "Ne plus afficher"
 remindMeLater: "Peut-être plus tard"
-didYouLikeMisskey: "Avez-vous aimé Misskey ?"
-pleaseDonate: "Misskey est le logiciel libre utilisé par {host}. Merci de faire un don pour que nous puissions continuer à le développer !"
+didYouLikeMisskey: "Avez-vous aimé Tribe ?"
+pleaseDonate: "Tribe est le logiciel libre utilisé par {host}. Merci de faire un don pour que nous puissions continuer à le développer !"
 correspondingSourceIsAvailable: "Le code source correspondant est disponible à {anchor}"
 roles: "Rôles"
 role: "Rôles"
@@ -1027,11 +1027,11 @@ selectFromPresets: "Sélectionner à partir des préréglages"
 achievements: "Accomplissements"
 gotInvalidResponseError: "Réponse du serveur invalide"
 gotInvalidResponseErrorDescription: "Il se peut que le serveur soit hors ligne ou en maintenance. Veuillez réessayer plus tard."
-thisPostMayBeAnnoying: "Cette note peut gêner d'autres personnes."
+thisPostMayBeAnnoying: "Cette spark peut gêner d'autres personnes."
 thisPostMayBeAnnoyingHome: "Publier vers le fil principal"
 thisPostMayBeAnnoyingCancel: "Annuler"
 thisPostMayBeAnnoyingIgnore: "Publier quand-même"
-collapseRenotes: "Réduire les renotes déjà vues"
+collapseRenotes: "Réduire les re-sparks déjà vues"
 internalServerError: "Erreur interne du serveur"
 internalServerErrorDescription: "Une erreur inattendue s'est produite sur le serveur."
 copyErrorInfo: "Copier les détails de l’erreur"
@@ -1039,7 +1039,7 @@ joinThisServer: "S'inscrire à cette instance"
 exploreOtherServers: "Trouver une autre instance"
 letsLookAtTimeline: "Jetez un coup d'œil au fil"
 disableFederationConfirm: "Voulez-vous vraiment désactiver la fédération ?"
-disableFederationConfirmWarn: "Même sans fédération, la note ne sera pas privée. Dans la plupart des cas, ce n'est pas nécessaire de désactiver la fédération."
+disableFederationConfirmWarn: "Même sans fédération, la spark ne sera pas privée. Dans la plupart des cas, ce n'est pas nécessaire de désactiver la fédération."
 disableFederationOk: "Désactiver"
 invitationRequiredToRegister: "Actuellement, cette instance est uniquement sur invitation. Seuls ceux qui ont un code d'invitation peuvent s'inscrire."
 emailNotSupported: "Cette instance ne prend pas en charge l'envoi de courriels"
@@ -1053,14 +1053,14 @@ nonSensitiveOnlyForLocalLikeOnlyForRemote: "Non sensibles seulement (mentions j'
 rolesAssignedToMe: "Rôles attribués à moi"
 resetPasswordConfirm: "Souhaitez-vous réinitialiser votre mot de passe ?"
 sensitiveWords: "Mots sensibles"
-sensitiveWordsDescription: "Définir la visibilité des notes contenant un mot défini ici au fil principal automatiquement. Vous pouvez définir plusieurs valeurs en les séparant par des sauts de ligne."
+sensitiveWordsDescription: "Définir la visibilité des sparks contenant un mot défini ici au fil principal automatiquement. Vous pouvez définir plusieurs valeurs en les séparant par des sauts de ligne."
 sensitiveWordsDescription2: "Séparer par une espace pour créer une expression AND ; entourer de barres obliques pour créer une expression régulière."
 prohibitedWords: "Mots interdits"
-prohibitedWordsDescription: "Publier une note contenant un mot défini ici produira une erreur. Vous pouvez définir plusieurs valeurs en les séparant par des sauts de ligne."
+prohibitedWordsDescription: "Publier une spark contenant un mot défini ici produira une erreur. Vous pouvez définir plusieurs valeurs en les séparant par des sauts de ligne."
 prohibitedWordsDescription2: "Séparer par une espace pour créer une expression AND ; entourer de barres obliques pour créer une expression régulière."
 hiddenTags: "Hashtags cachés"
 hiddenTagsDescription: "Les hashtags définis ne s'afficheront pas dans les tendances. Vous pouvez définir plusieurs hashtags en faisant un saut de ligne."
-notesSearchNotAvailable: "La recherche de notes n'est pas disponible."
+notesSearchNotAvailable: "La recherche de sparks n'est pas disponible."
 license: "Licence"
 unfavoriteConfirm: "Vraiment supprimer des favoris ?"
 myClips: "Mes clips"
@@ -1071,10 +1071,10 @@ retryAllQueuesConfirmText: "Cela peut augmenter temporairement la charge du serv
 enableChartsForRemoteUser: "Générer les graphiques pour les utilisateurs distants"
 enableChartsForFederatedInstances: "Générer les graphiques pour les instances distantes"
 enableStatsForFederatedInstances: "Recevoir les statistiques des instances distantes"
-showClipButtonInNoteFooter: "Ajouter « Clip » au menu d'action de la note"
+showClipButtonInNoteFooter: "Ajouter « Clip » au menu d'action de la spark"
 reactionsDisplaySize: "Taille de l'affichage des réactions"
 limitWidthOfReaction: "Limiter la largeur maximale des réactions et les afficher en taille réduite"
-noteIdOrUrl: "Identifiant de la note ou URL"
+noteIdOrUrl: "Identifiant de la spark ou URL"
 video: "Vidéo"
 videos: "Vidéos"
 audio: "Audio"
@@ -1088,7 +1088,7 @@ forceShowAds: "Toujours afficher les publicités"
 addMemo: "Ajouter un mémo"
 editMemo: "Éditer le mémo"
 reactionsList: "Réactions"
-renotesList: "Liste de renotes"
+renotesList: "Liste de re-sparks"
 notificationDisplay: "Style des notifications"
 leftTop: "En haut à gauche"
 rightTop: "En haut à droite"
@@ -1104,18 +1104,18 @@ pleaseAgreeAllToContinue: "Pour continuer, veuillez accepter tous les champs ci-
 continue: "Continuer"
 preservedUsernames: "Noms d'utilisateur·rice réservés"
 preservedUsernamesDescription: "Énumérez les noms d'utilisateur à réserver, séparés par des nouvelles lignes. Les noms d'utilisateur spécifiés ici ne seront plus utilisables lors de la création d'un compte, sauf la création manuelle par un administrateur. De plus, les comptes existants ne seront pas affectés."
-createNoteFromTheFile: "Rédiger une note de ce fichier"
+createNoteFromTheFile: "Rédiger une spark de ce fichier"
 archive: "Archive"
 archived: "Archivé"
 unarchive: "Annuler l'archivage"
 channelArchiveConfirmTitle: "Voulez-vous vraiment archiver {name} ?"
-channelArchiveConfirmDescription: "Une fois archivé, le canal n'apparaîtra plus dans la liste des canaux ni dans les résultats de recherche, et la publication des nouvelles notes sera impossible."
+channelArchiveConfirmDescription: "Une fois archivé, le canal n'apparaîtra plus dans la liste des canaux ni dans les résultats de recherche, et la publication des nouvelles sparks sera impossible."
 thisChannelArchived: "Ce canal a été archivé."
-displayOfNote: "Affichage de la note"
+displayOfNote: "Affichage de la spark"
 initialAccountSetting: "Configuration initiale du profil"
 youFollowing: "Abonné·e"
 preventAiLearning: "Refuser l'usage dans l'apprentissage automatique d'IA générative"
-preventAiLearningDescription: "Demander aux robots d'indexation de ne pas utiliser le contenu publié, tel que les notes et les images, dans l'apprentissage automatique d'IA générative. Cela est réalisé en incluant le drapeau « noai » dans la réponse HTML. Une prévention complète n'est toutefois pas possible, car il est au robot d'indexation de respecter cette demande."
+preventAiLearningDescription: "Demander aux robots d'indexation de ne pas utiliser le contenu publié, tel que les sparks et les images, dans l'apprentissage automatique d'IA générative. Cela est réalisé en incluant le drapeau « noai » dans la réponse HTML. Une prévention complète n'est toutefois pas possible, car il est au robot d'indexation de respecter cette demande."
 options: "Options"
 specifyUser: "Spécifier l'utilisateur·rice"
 openTagPageConfirm: "Ouvrir une page d'hashtags ?"
@@ -1128,7 +1128,7 @@ rolesThatCanBeUsedThisEmojiAsReactionPublicRoleWarn: "Il faut un rôle public."
 cancelReactionConfirm: "Supprimez la réaction ?"
 changeReactionConfirm: "Changer la réaction ?"
 later: "Plus tard"
-goToMisskey: "Retour vers Misskey"
+goToMisskey: "Retour vers Tribe"
 additionalEmojiDictionary: "Dictionnaires d'émojis additionnels"
 installed: "Installé"
 branding: "Image de marque"
@@ -1163,18 +1163,18 @@ pastAnnouncements: "Annonces passées"
 youHaveUnreadAnnouncements: "Il y a des annonces non lues."
 useSecurityKey: "Suivez les instructions de votre navigateur ou de votre appareil pour utiliser une clé de sécurité ou une clé d'accès."
 replies: "Réponses"
-renotes: "Renotes"
+renotes: "Re-sparks"
 loadReplies: "Inclure les réponses"
 loadConversation: "Afficher la conversation"
 pinnedList: "Liste épinglée"
 keepScreenOn: "Garder l'écran toujours allumé"
 verifiedLink: "Votre propriété de ce lien a été vérifiée"
-notifyNotes: "Notifier à propos des nouvelles notes"
-unnotifyNotes: "Ne pas notifier pour la publication des notes"
+notifyNotes: "Notifier à propos des nouvelles sparks"
+unnotifyNotes: "Ne pas notifier pour la publication des sparks"
 authentication: "Authentification"
 authenticationRequiredToContinue: "Veuillez vous authentifier pour continuer"
 dateAndTime: "Date et heure"
-showRenotes: "Afficher les renotes"
+showRenotes: "Afficher les re-sparks"
 edited: "Modifié"
 notificationRecieveConfig: "Paramètres des notifications"
 mutualFollow: "Abonnement mutuel"
@@ -1190,7 +1190,7 @@ externalServices: "Services externes"
 sourceCode: "Code source"
 sourceCodeIsNotYetProvided: "Le code source n'est pas encore disponible. Veuillez signaler ce problème aux administrateurs."
 repositoryUrl: "URL du dépôt"
-repositoryUrlDescription: "Entrez l'URL du dépôt où se trouve le code source ici. Si vous utilisez Misskey tel quel (sans changer le code source), entrez https://github.com/misskey-dev/misskey"
+repositoryUrlDescription: "Entrez l'URL du dépôt où se trouve le code source ici. Si vous utilisez Tribe tel quel (sans changer le code source), entrez https://github.com/misskey-dev/misskey"
 feedback: "Commentaires"
 feedbackUrl: "URL pour les commentaires"
 impressum: "Impressum"
@@ -1234,8 +1234,8 @@ ranking: "Classement"
 lastNDays: "Derniers {n} jours"
 backToTitle: "Retourner au titre"
 hemisphere: "Votre région"
-withSensitive: "Afficher les notes contenant des fichiers joints sensibles"
-userSaysSomethingSensitive: "Note de {name} contenant des fichiers joints sensibles"
+withSensitive: "Afficher les sparks contenant des fichiers joints sensibles"
+userSaysSomethingSensitive: "Spark de {name} contenant des fichiers joints sensibles"
 enableHorizontalSwipe: "Glisser pour changer d'onglet"
 loading: "Chargement en cours"
 surrender: "Annuler"
@@ -1257,8 +1257,8 @@ createdLists: "Listes créées"
 createdAntennas: "Antennes créées"
 fromX: "De {x}"
 genEmbedCode: "Générer le code d'intégration"
-noteOfThisUser: "Notes de cet·te utilisateur·rice"
-clipNoteLimitExceeded: "Aucune note supplémentaire ne peut être ajoutée à ce clip."
+noteOfThisUser: "Sparks de cet·te utilisateur·rice"
+clipNoteLimitExceeded: "Aucune spark supplémentaire ne peut être ajoutée à ce clip."
 performance: "Performance"
 modified: "Modifié"
 discard: "Annuler"
@@ -1276,12 +1276,14 @@ availableRoles: "Rôles disponibles"
 postForm: "Formulaire de publication"
 information: "Informations"
 _chat:
+
   invitations: "Inviter"
   noHistory: "Pas d'historique"
   members: "Membres"
   home: "Principal"
   send: "Envoyer"
 _abuseUserReport:
+
   forward: "Transférer"
   forwardDescription: "Transférer le signalement vers une instance distante en tant qu'anonyme."
   resolve: "Résoudre"
@@ -1289,18 +1291,22 @@ _abuseUserReport:
   reject: "Rejeter"
   resolveTutorial: "Si le signalement est légitime dans son contenu, sélectionnez « Accepter » pour marquer le cas comme résolu par l'affirmative.\nSi le contenu du rapport n'est pas légitime, sélectionnez « Rejeter » pour marquer le cas comme résolu par la négative."
 _delivery:
+
   status: "Statut de la diffusion"
   stop: "Suspendu·e"
   resume: "Reprendre"
   _type:
+
     none: "Publié"
     manuallySuspended: "Suspendre manuellement"
     goneSuspended: "L'instance est suspendue en raison de la suppression de ce dernier"
     autoSuspendedForNotResponding: "L'instance est suspendue car elle ne répond pas"
 _bubbleGame:
+
   howToPlay: "Comment jouer"
   hold: "Réserver"
   _score:
+
     score: "Score"
     scoreYen: "Montant gagné"
     highScore: "Meilleur score"
@@ -1309,6 +1315,7 @@ _bubbleGame:
     estimatedQty: "{qty} pièces"
     scoreSweets: "{onigiriQtyWithUnit} Onigiri(s)"
 _announcement:
+
   forExistingUsers: "Pour les utilisateurs existants seulement"
   needConfirmationToRead: "Exiger la confirmation de la lecture"
   needConfirmationToReadDescription: "Si activé, afficher un dialogue de confirmation quand l'annonce est marquée comme lue. Aussi, elle sera exclue de « marquer tout comme lu » ."
@@ -1321,6 +1328,7 @@ _announcement:
   silence: "Ne pas me notifier"
   silenceDescription: "Si activée, vous ne recevrez pas de notifications sur les annonces et n'aurez pas besoin de les marquer comme lues."
 _initialAccountSetting:
+
   accountCreated: "Votre compte a été créé avec succès !"
   letsStartAccountSetup: "Procédons au réglage initial du compte."
   letsFillYourProfile: "Commençons par configurer votre profil !"
@@ -1328,77 +1336,91 @@ _initialAccountSetting:
   privacySetting: "Paramètres de confidentialité"
   initialAccountSettingCompleted: "Configuration du profil terminée avec succès !"
   haveFun: "Profitez de {name} !"
-  youCanContinueTutorial: "Vous pouvez procéder au tutoriel sur l'utilisation de {name}(Misskey) ou vous arrêter ici et commencer à l'utiliser immédiatement."
+  youCanContinueTutorial: "Vous pouvez procéder au tutoriel sur l'utilisation de {name}(Tribe) ou vous arrêter ici et commencer à l'utiliser immédiatement."
   startTutorial: "Démarrer le tutoriel"
   skipAreYouSure: "Désirez-vous ignorer la configuration du profil ?"
 _initialTutorial:
+
   launchTutorial: "Visionner le tutoriel"
   title: "Tutoriel"
   wellDone: "Bien joué !"
   skipAreYouSure: "Quitter le tutoriel ?"
   _landing:
+
     title: "Bienvenue dans le tutoriel"
-    description: "Ici, vous pouvez apprendre l'utilisation de base de Misskey et ses fonctionnalités."
+    description: "Ici, vous pouvez apprendre l'utilisation de base de Tribe et ses fonctionnalités."
   _note:
-    title: "Qu'est-ce que les notes ?"
-    description: "Les messages sur Misskey sont appelés des « notes » . Les notes sont classées par ordre chronologique sur le fil et sont mises à jour en temps réel."
+
+    title: "Qu'est-ce que les sparks ?"
+    description: "Les messages sur Tribe sont appelés des « sparks » . Les sparks sont classées par ordre chronologique sur le fil et sont mises à jour en temps réel."
     reply: "Vous pouvez répondre aux messages. Vous pouvez également répondre aux réponses et poursuivre la conversation comme un fil de discussion."
-    renote: "Vous pouvez partager cette note sur votre propre fil. Vous pouvez aussi ajouter du texte en citant."
+    renote: "Vous pouvez partager cette spark sur votre propre fil. Vous pouvez aussi ajouter du texte en citant."
     reaction: "Vous pouvez ajouter des réactions. Les détails sont expliqués à la page suivante."
-    menu: "Vous pouvez afficher les détails de la note, copier le lien et effectuer d'autres actions."
+    menu: "Vous pouvez afficher les détails de la spark, copier le lien et effectuer d'autres actions."
   _reaction:
+
     title: "Qu'est-ce que les réactions ?"
-    description: "Vous pouvez ajouter des « réactions » aux notes. Les réactions vous permettent d'exprimer à l'aise des nuances qui ne peuvent pas être exprimées par des mentions j'aime."
-    letsTryReacting: "Des réactions peuvent être ajoutées en cliquant sur le bouton « + » de la note. Essayez d'ajouter une réaction à cet exemple de note !"
+    description: "Vous pouvez ajouter des « réactions » aux sparks. Les réactions vous permettent d'exprimer à l'aise des nuances qui ne peuvent pas être exprimées par des mentions j'aime."
+    letsTryReacting: "Des réactions peuvent être ajoutées en cliquant sur le bouton « + » de la spark. Essayez d'ajouter une réaction à cet exemple de spark !"
     reactToContinue: "Ajoutez une réaction pour procéder."
-    reactNotification: "Vous recevez des notifications en temps réel lorsque quelqu'un réagit à votre note."
+    reactNotification: "Vous recevez des notifications en temps réel lorsque quelqu'un réagit à votre spark."
     reactDone: "Vous pouvez annuler la réaction en cliquant sur le bouton « - » ."
   _timeline:
+
     title: "Fonctionnement des fils"
-    description1: "Misskey offre plusieurs fils selon l'usage (certains peuvent être désactivés par le serveur)."
-    home: "Vous pouvez voir les notes des utilisateurs auxquels vous êtes abonné·e."
-    local: "Vous pouvez voir les notes de tous les utilisateurs sur cette instance."
-    social: "Les notes des fils principal et local sont affichées."
-    global: "Vous pouvez voir les notes de toutes les instances connectées."
+    description1: "Tribe offre plusieurs fils selon l'usage (certains peuvent être désactivés par le serveur)."
+    home: "Vous pouvez voir les sparks des utilisateurs auxquels vous êtes abonné·e."
+    local: "Vous pouvez voir les sparks de tous les utilisateurs sur cette instance."
+    social: "Les sparks des fils principal et local sont affichées."
+    global: "Vous pouvez voir les sparks de toutes les instances connectées."
     description2: "Vous pouvez passer d'un fil à l'autre en haut de l'écran à tout moment."
     description3: "De plus, il y a les fils des listes et des canaux. Pour plus de détails, consultez {link}."
   _postNote:
-    title: "Paramètres de la publication de note"
-    description1: "Lorsque vous publiez des notes sur Misskey, diverses options sont disponibles. Voici le formulaire de publication."
+
+    title: "Paramètres de la publication de spark"
+    description1: "Lorsque vous publiez des sparks sur Tribe, diverses options sont disponibles. Voici le formulaire de publication."
     _visibility:
-      description: "Vous pouvez choisir qui peut voir vos notes."
+
+      description: "Vous pouvez choisir qui peut voir vos sparks."
       public: "Visible à tous les utilisateurs."
-      home: "Uniquement visible sur le fil principal. Les utilisateurs pourront la voir en visitant ton profil, en s'abonnant à vous et par les renotes."
+      home: "Uniquement visible sur le fil principal. Les utilisateurs pourront la voir en visitant ton profil, en s'abonnant à vous et par les re-sparks."
       followers: "Uniquement visible à vos abonnés. Elle ne pourra être renotée que par vous-même."
       direct: "Uniquement visible aux utilisateurs de votre choix. Les récipients seront notifiés. Cette option peut être utilisée comme alternative aux messages directs."
       doNotSendConfidencialOnDirect1: "Faites attention quand vous envoyez vos informations sensibles !"
-      doNotSendConfidencialOnDirect2: "Les administrateurs de l'instance destinataire peuvent voir toutes les notes publiées. Soyez prudent·e avec vos informations sensibles quand vous envoyez des notes directes aux utilisateurs dont vous ne vous fiez pas aux instances."
-      localOnly: "Désactiver la fédération de la note aux autres instances. Les utilisateurs des autres instances ne pourront pas voir directement la note quelle que soit l'étendue de la publication mentionnée ci-dessus."
+      doNotSendConfidencialOnDirect2: "Les administrateurs de l'instance destinataire peuvent voir toutes les sparks publiées. Soyez prudent·e avec vos informations sensibles quand vous envoyez des sparks directes aux utilisateurs dont vous ne vous fiez pas aux instances."
+      localOnly: "Désactiver la fédération de la spark aux autres instances. Les utilisateurs des autres instances ne pourront pas voir directement la spark quelle que soit l'étendue de la publication mentionnée ci-dessus."
     _cw:
+
       title: "Masquer le contenu (CW)"
       description: "Au lieu du corps du texte, le contenu du champ « commentaires » s'affichera. Appuyez sur « afficher le contenu » pour voir le corps du texte."
       _exampleNote:
+
         cw: "Attention : cela vous donnera faim !"
         note: "J'ai mangé un beignet enrobé de chocolat 🍩😋"
-      useCases: "Utilisé pour désigner certaines notes selon les règles du serveur ou pour cacher des spoilers ou des textes sensibles."
+      useCases: "Utilisé pour désigner certaines sparks selon les règles du serveur ou pour cacher des spoilers ou des textes sensibles."
   _howToMakeAttachmentsSensitive:
+
     title: "Comment marquer un fichier joint comme sensible ?"
     description: "Attachez un drapeau « sensible » aux fichiers joints selon les règles du serveur ou si vous ne voulez pas que le fichier soit vu directement."
     tryThisFile: "Essayez de marquer l'image jointe à ce formulaire de publication comme sensible !"
     _exampleNote:
+
       note: "Oups, j'ai échoué à ouvrir le couvercle du natto..."
     method: "Pour marquer un fichier joint comme sensible, cliquez sur la vignette du fichier pour ouvrir le menu et cliquez sur « marquer comme sensible » ."
     sensitiveSucceeded: "Quand vous joignez des fichiers, veuillez indiquer la sensibilité selon les règles du serveur."
     doItToContinue: "Marquez le fichier joint comme sensible pour procéder."
   _done:
+
     title: "Le tutoriel est terminé ! 🎉"
-    description: "Les fonctionnalités introduites ici ne sont que quelques-unes. Pour savoir plus sur l'utilisation de Misskey, veuillez consulter {link}."
+    description: "Les fonctionnalités introduites ici ne sont que quelques-unes. Pour savoir plus sur l'utilisation de Tribe, veuillez consulter {link}."
 _timelineDescription:
-  home: "Sur le fil principal, vous pouvez voir les notes des utilisateurs auxquels vous êtes abonné·e."
-  local: "Sur le fil local, vous pouvez voir les notes de tous les utilisateurs sur cette instance."
-  social: "Sur le fil social, les notes des fils principal et local sont affichées."
-  global: "Sur le fil global, vous pouvez voir les notes de toutes les instances connectées."
+
+  home: "Sur le fil principal, vous pouvez voir les sparks des utilisateurs auxquels vous êtes abonné·e."
+  local: "Sur le fil local, vous pouvez voir les sparks de tous les utilisateurs sur cette instance."
+  social: "Sur le fil social, les sparks des fils principal et local sont affichées."
+  global: "Sur le fil global, vous pouvez voir les sparks de toutes les instances connectées."
 _serverSettings:
+
   iconUrl: "URL de l’icône"
   appIconResolutionMustBe: "La résolution doit être au moins {resolution}."
   shortName: "Nom court"
@@ -1407,213 +1429,283 @@ _serverSettings:
   fanoutTimelineDbFallback: "Recours à la base de données"
   fanoutTimelineDbFallbackDescription: "Si activée, une demande supplémentaire à la base de données est effectuée comme solution de rechange quand le fil n'est pas mis en cache. Si désactivée, la demande à la base de données n'est pas effectuée, ce qui réduit davantage la charge du serveur mais limite l'étendue du fil récupérable."
 _accountMigration:
+
   moveFrom: "Migrer un autre compte vers le présent compte"
   moveFromSub: "Créer un alias vers un autre compte"
   moveToLabel: "Compte vers lequel vous migrez :"
   startMigration: "Migrer"
   movedTo: "Compte vers lequel vous migrez :"
 _achievements:
+
   earnedAt: "Date d'obtention"
   _types:
+
     _notes1:
+
       title: "Je viens tout juste de configurer mon msky"
-      description: "Publiez votre première note"
-      flavor: "Passez un bon moment avec Misskey !"
+      description: "Publiez votre première spark"
+      flavor: "Passez un bon moment avec Tribe !"
     _notes10:
-      title: "Quelques notes"
-      description: "Poster 10 notes"
+
+      title: "Quelques sparks"
+      description: "Poster 10 sparks"
     _notes100:
-      title: "Beaucoup de notes"
-      description: "Poster 100 notes"
+
+      title: "Beaucoup de sparks"
+      description: "Poster 100 sparks"
     _notes500:
-      title: "Couvert de notes"
-      description: "Poster 500 notes"
+
+      title: "Couvert de sparks"
+      description: "Poster 500 sparks"
     _notes1000:
-      title: "Une montagne de notes"
-      description: "Poster 1000 notes"
+
+      title: "Une montagne de sparks"
+      description: "Poster 1000 sparks"
     _notes5000:
-      title: "Débordement de notes"
-      description: "Poster 5 000 notes"
+
+      title: "Débordement de sparks"
+      description: "Poster 5 000 sparks"
     _notes10000:
-      title: "Super note"
-      description: "Poster 10 000 notes"
+
+      title: "Super spark"
+      description: "Poster 10 000 sparks"
     _notes20000:
-      title: "Encore... plus... de... notes..."
-      description: "Poster 20 000 notes"
+
+      title: "Encore... plus... de... sparks..."
+      description: "Poster 20 000 sparks"
     _notes30000:
-      title: "Notes notes notes !"
-      description: "Poster 30 000 notes"
+
+      title: "Sparks sparks sparks !"
+      description: "Poster 30 000 sparks"
     _notes40000:
-      title: "Usine de notes"
-      description: "Poster 40 000 notes"
+
+      title: "Usine de sparks"
+      description: "Poster 40 000 sparks"
     _notes50000:
-      title: "Planète des notes"
-      description: "Poster 50 000 notes"
+
+      title: "Planète des sparks"
+      description: "Poster 50 000 sparks"
     _notes60000:
-      title: "Quasar de note"
-      description: "Poster 50 000 notes"
+
+      title: "Quasar de spark"
+      description: "Poster 50 000 sparks"
     _notes70000:
-      title: "Trou noir de notes"
-      description: "Poster 70 000 notes"
+
+      title: "Trou noir de sparks"
+      description: "Poster 70 000 sparks"
     _notes80000:
-      title: "Galaxie de notes"
-      description: "Poster 80 000 notes"
+
+      title: "Galaxie de sparks"
+      description: "Poster 80 000 sparks"
     _notes90000:
-      title: "Univers de notes"
-      description: "Poster 90 000 notes"
+
+      title: "Univers de sparks"
+      description: "Poster 90 000 sparks"
     _notes100000:
+
       title: "ALL YOUR NOTE ARE BELONG TO US"
-      description: "Poster 100 000 notes"
+      description: "Poster 100 000 sparks"
       flavor: "Avez-vous tant de choses à dire ?"
     _login3:
+
       title: "Débutant I"
       description: "Se connecter pour un total de 3 jours"
       flavor: "Dès maintenant, appelez-moi Misskeynaute"
     _login7:
+
       title: "Débutant II"
       description: "Se connecter pour un total de 7 jours"
       flavor: "On s'habitue ?"
     _login15:
+
       title: "Débutant III"
       description: "Se connecter pour un total de 15 jours"
     _login30:
+
       title: "Misskeynaute I"
       description: "Se connecter pour un total de 30 jours"
     _login60:
+
       title: "Misskeynaute II"
       description: "Se connecter pour un total de 60 jours"
     _login100:
+
       title: "Misskeynaute III"
       description: "Se connecter pour un total de 100 jours"
       flavor: "Misskeynaute acharné·e"
     _login200:
+
       title: "Régulier I"
       description: "Se connecter pour un total de 200 jours"
     _login300:
+
       title: "Régulier II"
       description: "Se connecter pour un total de 300 jours"
     _login400:
+
       title: "Régulier III"
       description: "Se connecter pour un total de 400 jours"
     _login500:
+
       title: "Expert I"
       description: "Se connecter pour un total de 500 jours"
-      flavor: "Non, mes amis, j'aime les notes"
+      flavor: "Non, mes amis, j'aime les sparks"
     _login600:
+
       title: "Expert II"
       description: "Se connecter pour un total de 600 jours"
     _login700:
+
       title: "Expert III"
       description: "Se connecter pour un total de 700 jours"
     _login800:
-      title: "Maître des notes I"
+
+      title: "Maître des sparks I"
       description: "Se connecter pour un total de 800 jours"
     _login900:
-      title: "Maître des notes II"
+
+      title: "Maître des sparks II"
       description: "Se connecter pour un total de 900 jours"
     _login1000:
-      title: "Maître des notes III"
+
+      title: "Maître des sparks III"
       description: "Se connecter pour un total de 1 000 jours"
-      flavor: "Merci d'utiliser Misskey !"
+      flavor: "Merci d'utiliser Tribe !"
     _noteClipped1:
+
       title: "Je... dois... clip..."
-      description: "Ajouter sa première note aux clips"
+      description: "Ajouter sa première spark aux clips"
     _profileFilled:
+
       title: "Bien préparé"
       description: "Configuration de votre profil"
     _markedAsCat:
+
       title: "Je suis un chat"
       description: "Rendre votre compte comme un chat"
       flavor: "Je n'ai pas encore de nom"
     _following1:
+
       title: "Vous suivez votre premier·ère utilisateur·rice"
     _following10:
+
       description: "S'abonner à plus de 10 utilisateur·rice·s"
     _following50:
+
       title: "Beaucoup d'amis"
       description: "S'abonner à plus de 50 utilisateur·rice·s"
     _following100:
+
       description: "S'abonner à plus de 100 utilisateur·rice·s"
     _following300:
+
       description: "S'abonner à plus de 300 utilisateur·rice·s"
     _followers10:
+
       title: "Abonnez-moi !"
       description: "Obtenir plus de 10 abonné·e·s"
     _followers50:
+
       description: "Obtenir plus de 50 abonné·e·s"
     _followers100:
+
       title: "Populaire"
       description: "Obtenir plus de 100 abonné·e·s"
     _followers300:
+
       description: "Obtenir plus de 300 abonné·e·s"
     _followers500:
+
       title: "Tour radio"
       description: "Obtenir plus de 500 abonné·e·s"
     _followers1000:
+
       title: "Influenceur·euse"
       description: "Obtenir plus de 1000 abonné·e·s"
     _iLoveMisskey:
-      title: "J’adore Misskey"
-      description: "Publication « J’❤ #Misskey »"
-      flavor: "L'équipe de développement de Misskey apprécie vraiment votre aide !"
+
+      title: "J’adore Tribe"
+      description: "Publication « J’❤ #Tribe »"
+      flavor: "L'équipe de développement de Tribe apprécie vraiment votre aide !"
     _foundTreasure:
+
       title: "Chasse au trésor"
       description: "Vous avez trouvé le trésor caché"
     _client30min:
+
       title: "Pause bien méritée"
     _postedAtLateNight:
+
       flavor: "C’est l’heure d’aller au lit."
     _postedAt0min0sec:
+
       title: "Horloge parlante"
-      description: "Publication d’une note à 00:00"
+      description: "Publication d’une spark à 00:00"
       flavor: "Tic tac, tic tac, tic tac, ding !"
     _viewInstanceChart:
+
       title: "Analyste"
     _outputHelloWorldOnScratchpad:
+
       title: "Hello, world!"
     _open3windows:
+
       title: "Multi-fenêtres"
     _driveFolderCircularReference:
+
       title: "Référence circulaire"
     _setNameToSyuilo:
+
       title: "Complexe de dieu"
       description: "Vous avez spécifié « syuilo » comme nom"
     _passedSinceAccountCreated1:
+
       title: "Premier anniversaire"
       description: "Un an est passé depuis la création du compte"
     _passedSinceAccountCreated2:
+
       title: "Second anniversaire"
       description: "Deux ans sont passés depuis la création du compte"
     _passedSinceAccountCreated3:
+
       title: "3ème anniversaire"
       description: "Trois ans sont passés depuis la création du compte"
     _loggedInOnBirthday:
+
       title: "Joyeux Anniversaire !"
       description: "Vous vous êtes connecté à la date de votre anniversaire"
     _loggedInOnNewYearsDay:
+
       title: "Bonne année !"
       description: "Vous vous êtes connecté le premier jour de l'année"
       flavor: "Merci pour le soutient continue sur cette instance."
     _cookieClicked:
+
       title: "Jeu de clic sur des cookies"
       description: "Cliqué sur un cookie"
       flavor: "Attendez une minute, vous êtes sur le mauvais site web ?"
     _brainDiver:
+
       title: "Brain Diver"
       description: "Poster le lien sur Brain Diver"
-      flavor: "Misskey-Misskey La-Tu-Ma"
+      flavor: "Tribe-Tribe La-Tu-Ma"
     _smashTestNotificationButton:
+
       title: "Débordement de tests"
       description: "Détruire le bouton de test de notifications dans un intervalle extrêmement court"
     _tutorialCompleted:
-      title: "Diplôme de la course élémentaire de Misskey"
+
+      title: "Diplôme de la course élémentaire de Tribe"
       description: "Terminer le tutoriel"
     _bubbleGameExplodingHead:
+
       title: "🤯"
       description: "Le plus gros objet du jeu de bulles"
     _bubbleGameDoubleExplodingHead:
+
       title: "Double🤯"
 _role:
+
   new: "Nouveau rôle"
   edit: "Modifier le rôle"
   name: "Nom du rôle"
@@ -1636,10 +1728,12 @@ _role:
   displayOrder: "Classement"
   priority: "Priorité"
   _priority:
+
     low: "Basse"
     middle: "Moyen"
     high: "Haute"
   _options:
+
     canManageCustomEmojis: "Gestion des émojis personnalisés"
     canManageAvatarDecorations: "Gestion des décorations d'avatar"
     driveCapacity: "Capacité de stockage du Disque"
@@ -1649,6 +1743,7 @@ _role:
     avatarDecorationLimit: "Nombre maximal de décorations d'avatar"
     canImportAntennas: "Autoriser l'importation d'antennes"
 _sensitiveMediaDetection:
+
   description: "L'apprentissage automatique peut être utilisé pour détecter automatiquement les médias sensibles à modérer. La sollicitation des serveurs augmente légèrement."
   sensitivity: "Sensibilité de la détection"
   sensitivityDescription: "Une sensibilité plus faible réduit les faux positifs. Une sensibilité plus élevée réduit les omissions (faux négatifs)."
@@ -1657,20 +1752,24 @@ _sensitiveMediaDetection:
   analyzeVideos: "Activer l’analyse de vidéos"
   analyzeVideosDescription: "Veillez à ce que les vidéos soient analysées en plus des images fixes. La sollicitation des serveurs augmentera légèrement."
 _emailUnavailable:
+
   used: "Non disponible"
   format: "Le format de cette adresse de courriel est invalide"
   disposable: "Les adresses e-mail jetables ne peuvent pas être utilisées"
   mx: "Ce serveur de courriels est invalide"
   smtp: "Ce serveur de courriels ne répond pas"
 _ffVisibility:
+
   public: "Public"
   followers: "Visible uniquement pour les abonné·e·s"
   private: "Privé"
 _signup:
+
   almostThere: "Bientôt fini"
   emailAddressInfo: "Insérez votre adresse e-mail."
   emailSent: "Un courriel de confirmation vient d'être envoyé à l'adresse que vous avez renseignée ({email}). Cliquez sur le lien contenu dans le message pour terminer la création de votre compte."
 _accountDelete:
+
   accountDelete: "Supprimer le compte"
   mayTakeTime: "La suppression de compte nécessitant beaucoup de ressources, l'exécution du processus peut prendre du temps, en fonction de la quantité de contenus que vous avez créés et du nombre de fichiers que vous avez téléversés."
   sendEmail: "Une fois la suppression de votre compte effectuée, un courriel sera envoyé à l'adresse que vous aviez enregistrée."
@@ -1678,33 +1777,41 @@ _accountDelete:
   started: "La procédure de suppression a commencé."
   inProgress: "Suppression en cours"
 _ad:
+
   back: "Retour"
   reduceFrequencyOfThisAd: "Voir cette publicité moins souvent"
   hide: "Cacher "
   adsSettings: "Paramètres des publicités"
-  notesPerOneAd: "Intervalle de diffusion de publicités lors de la mise à jour en temps réel (nombre de notes par publicité)"
+  notesPerOneAd: "Intervalle de diffusion de publicités lors de la mise à jour en temps réel (nombre de sparks par publicité)"
   setZeroToDisable: "Mettre cette valeur à 0 pour désactiver la diffusion de publicités lors de la mise à jour en temps réel"
   adsTooClose: "L'expérience utilisateur peut être gravement compromise par un intervalle de diffusion de publicités extrêmement court."
 _forgotPassword:
+
   enterEmail: "Entrez ici l'adresse e-mail que vous avez enregistrée pour votre compte. Un lien vous permettant de réinitialiser votre mot de passe sera envoyé à cette adresse."
   ifNoEmail: "Si vous n'avez pas enregistré d'adresse e-mail, merci de contacter l'administrateur·rice de votre instance."
   contactAdmin: "Cette instance ne permettant pas l'utilisation d'adresses e-mail, prenez contact avec l'administrateur·rice pour procéder à la réinitialisation de votre mot de passe."
 _gallery:
+
   my: "Mes publications"
   liked: " Publications que j'ai aimées"
   like: "J'aime"
   unlike: "Je n’aime pas"
 _email:
+
   _follow:
+
     title: "Vous suit"
   _receiveFollowRequest:
+
     title: "Vous avez reçu une demande de suivi"
 _plugin:
+
   install: "Installation d'extensions"
   installWarn: "N’installez que des extensions provenant de sources de confiance."
   manage: "Gestion des extensions"
   viewSource: "Afficher la source"
 _preferencesBackups:
+
   list: "Sauvegardes créées"
   saveNew: "Nouvelle sauvegarde"
   loadFile: "Importer à partir d’un fichier"
@@ -1723,32 +1830,38 @@ _preferencesBackups:
   cannotLoad: "Échec du chargement"
   invalidFile: "Format de fichier non valide"
 _registry:
+
   scope: "Portée"
   key: "Clé "
   keys: "Clé "
   domain: "Domaine"
   createKey: "Créer une clé"
 _aboutMisskey:
-  about: "Misskey est un logiciel libre et ouvert, développé par syuilo depuis 2014."
+
+  about: "Tribe est un logiciel libre et ouvert, développé par syuilo depuis 2014."
   contributors: "Principaux contributeurs"
   allContributors: "Tous les contributeurs"
   source: "Code source"
-  translation: "Traduire Misskey"
-  donate: "Soutenir Misskey"
+  translation: "Traduire Tribe"
+  donate: "Soutenir Tribe"
   morePatrons: "Nous apprécions vraiment le soutien de nombreuses autres personnes non mentionnées ici. Merci à toutes et à tous ! 🥰"
   patrons: "Contributeurs"
   projectMembers: "Membres du projet"
 _displayOfSensitiveMedia:
+
   force: "Masquer tous les médias"
 _instanceTicker:
+
   none: "Cacher "
   remote: "Montrer pour les utilisateur·ice·s distant·e·s"
   always: "Toujours afficher"
 _serverDisconnectedBehavior:
+
   reload: "Rechargement automatique"
   dialog: "Ouvrir une boîte de dialogue pour l'avertissement"
   quiet: "Afficher un avertissement discret"
 _channel:
+
   create: "Créer un canal"
   edit: "Éditer le canal"
   setBanner: "Sélectionner la bannière"
@@ -1757,25 +1870,29 @@ _channel:
   owned: "Mes canaux"
   following: "Abonné·e"
   usersCount: "{n} Participant·e·s"
-  notesCount: "{n} Notes"
+  notesCount: "{n} Sparks"
   nameAndDescription: "Nom et description"
   nameOnly: "Nom seulement"
-  allowRenoteToExternal: "Permettre la renote et la citation hors du canal"
+  allowRenoteToExternal: "Permettre la re-spark et la citation hors du canal"
 _menuDisplay:
+
   sideFull: "Latéral"
   sideIcon: "Latéral (icônes)"
   top: "Haut de page"
   hide: "Masquer"
 _wordMute:
+
   muteWords: "Mots à filtrer"
   muteWordsDescription: "Séparer avec des espaces pour la condition AND. Séparer avec un saut de ligne pour une condition OR."
   muteWordsDescription2: "Pour utiliser des expressions régulières (regex), mettez les mots-clés entre barres obliques."
 _instanceMute:
-  instanceMuteDescription: "Met en sourdine toutes les notes et renotes de l'instance configurée, y compris les réponses aux utilisateurs de l'instance muette."
+
+  instanceMuteDescription: "Met en sourdine toutes les sparks et re-sparks de l'instance configurée, y compris les réponses aux utilisateurs de l'instance muette."
   instanceMuteDescription2: "Séparer avec de nouvelles lignes"
-  title: "Masque les notes venant des instances listées."
+  title: "Masque les sparks venant des instances listées."
   heading: "Instances à mettre en sourdine"
 _theme:
+
   explore: "Explorer les thèmes"
   install: "Installer un thème"
   manage: "Gestion des thèmes"
@@ -1806,6 +1923,7 @@ _theme:
   importInfo: "Vous pouvez importer un thème vers l’éditeur de thèmes en saisissant son code ici."
   deleteConstantConfirm: "Êtes-vous sûr·e de vouloir supprimer la constante {const} ?"
   keys:
+
     accent: "Accentuation"
     bg: "Arrière-plan"
     fg: "Texte"
@@ -1842,18 +1960,21 @@ _theme:
     messageBg: "Arrière plan de la discussion"
     fgHighlighted: "Texte mis en évidence"
 _sfx:
-  note: "Nouvelle note"
-  noteMy: "Ma note"
+
+  note: "Nouvelle spark"
+  noteMy: "Ma spark"
   notification: "Notifications"
   reaction: "Lors de la sélection de la réaction"
 _soundSettings:
+
   driveFile: "Utiliser un effet sonore sur le Disque"
   driveFileWarn: "Veuillez sélectionner le fichier sur le Disque"
   driveFileTypeWarn: "Ce fichier n'est pas pris en charge"
   driveFileTypeWarnDescription: "Veuillez sélectionner un fichier audio"
   driveFileDurationWarn: "L'effet sonore est trop long"
-  driveFileDurationWarnDescription: "Utiliser un effet sonore long peut affecter l'utilisation de Misskey. Voulez-vous encore continuer ?"
+  driveFileDurationWarnDescription: "Utiliser un effet sonore long peut affecter l'utilisation de Tribe. Voulez-vous encore continuer ?"
 _ago:
+
   future: "Futur"
   justNow: "à l’instant"
   secondsAgo: "Il y a {n}s"
@@ -1865,6 +1986,7 @@ _ago:
   yearsAgo: "Il y a {n} ans"
   invalid: "Il n'y a rien à voir ici"
 _timeIn:
+
   seconds: "Dans {n}s"
   minutes: "Dans {n}min"
   hours: "Dans {n}h"
@@ -1873,11 +1995,13 @@ _timeIn:
   months: "Dans {n} mois"
   years: "Dans {n}a"
 _time:
+
   second: "s"
   minute: "min"
   hour: "h"
   day: "j"
 _2fa:
+
   alreadyRegistered: "Configuration déjà achevée."
   step1: "Tout d'abord, installez une application d'authentification, telle que {a} ou {b}, sur votre appareil."
   step2: "Ensuite, scannez le code QR affiché sur l’écran."
@@ -1894,6 +2018,7 @@ _2fa:
   renewTOTPCancel: "Pas maintenant"
   backupCodes: "Codes de Secours"
 _permissions:
+
   "read:account": "Afficher les informations du compte"
   "write:account": "Mettre à jour les informations de votre compte"
   "read:blocks": "Voir les comptes bloqués"
@@ -1908,7 +2033,7 @@ _permissions:
   "write:messaging": "Gérer les discussions"
   "read:mutes": "Voir les comptes masqués"
   "write:mutes": "Gérer les comptes masqués"
-  "write:notes": "Créer / supprimer des notes"
+  "write:sparks": "Créer / supprimer des sparks"
   "read:notifications": "Afficher les notifications"
   "write:notifications": "Gérer vos notifications"
   "read:reactions": "Lire les réactions"
@@ -1951,6 +2076,7 @@ _permissions:
   "write:admin:roles": "Gérer les rôles"
   "write:chat": "Gérer les discussions"
 _auth:
+
   shareAccess: "Autoriser \"{name}\" à accéder à votre compte ?"
   shareAccessAsk: "Voulez-vous vraiment autoriser cette application à accéder à votre compte?"
   permissionAsk: "Cette application nécessite les autorisations suivantes :"
@@ -1958,11 +2084,13 @@ _auth:
   callback: "Retour vers l’application"
   denied: "Accès refusé"
 _antennaSources:
-  all: "Toutes les notes"
-  homeTimeline: "Notes venant des utilisateur·rice·s auxquel·les je suis abonné"
-  users: "Notes venant de la part d’utilisateur·rice·s précis"
-  userList: "Notes venant d’une liste spécifique"
+
+  all: "Toutes les sparks"
+  homeTimeline: "Sparks venant des utilisateur·rice·s auxquel·les je suis abonné"
+  users: "Sparks venant de la part d’utilisateur·rice·s précis"
+  userList: "Sparks venant d’une liste spécifique"
 _weekday:
+
   sunday: "Dimanche"
   monday: "Lundi"
   tuesday: "Mardi"
@@ -1971,9 +2099,10 @@ _weekday:
   friday: "Vendredi"
   saturday: "Samedi"
 _widgets:
+
   profile: "Profil"
   instanceInfo: "Informations sur l’instance"
-  memo: "Note collante"
+  memo: "Spark collante"
   notifications: "Notifications"
   timeline: "Fil"
   calendar: "Calendrier"
@@ -1996,14 +2125,17 @@ _widgets:
   aichan: "Ai"
   userList: "Liste utilisateur"
   _userList:
+
     chooseList: "Sélectionner une liste"
   birthdayFollowings: "Utilisateurs qui fêtent l'anniversaire aujourd'hui"
 _cw:
+
   hide: "Masquer"
   show: "Afficher le contenu"
   chars: "{count} caractères"
   files: "{count} fichiers"
 _poll:
+
   noOnlyOneChoice: "Au moins 2 réponses nécéssaires"
   choiceN: "Choix {n}"
   noMore: "Vous ne pouvez pas en ajouter davantage"
@@ -2026,6 +2158,7 @@ _poll:
   remainingMinutes: "{m} minutes et {s} secondes restantes"
   remainingSeconds: "{s} secondes restantes"
 _visibility:
+
   public: "Public"
   publicDescription: "Publier à tou·te·s les utilisateur·rice·s"
   home: "Principal"
@@ -2036,10 +2169,12 @@ _visibility:
   specifiedDescription: "Publier uniquement aux utilisateur·rice·s mentionné·e·s"
   disableFederation: "Défédérer"
 _postForm:
-  replyPlaceholder: "Répondre à cette note ..."
-  quotePlaceholder: "Citez cette note ..."
+
+  replyPlaceholder: "Répondre à cette spark ..."
+  quotePlaceholder: "Citez cette spark ..."
   channelPlaceholder: "Publier au canal…"
   _placeholders:
+
     a: "Quoi de neuf ?"
     b: "Il s'est passé quelque chose ?"
     c: "Qu’avez-vous en tête ?"
@@ -2047,6 +2182,7 @@ _postForm:
     e: "Écrivez ici"
     f: "En attente de vos écrits ..."
 _profile:
+
   name: "Nom"
   username: "Nom d’utilisateur·rice"
   description: "À propos de moi"
@@ -2060,7 +2196,8 @@ _profile:
   changeBanner: "Changer de bannière"
   avatarDecorationMax: "Vous pouvez mettre au plus {max} décorations d'avatar."
 _exportOrImport:
-  allNotes: "Toutes les notes"
+
+  allNotes: "Toutes les sparks"
   clips: "Clip"
   followingList: "Abonnements"
   muteList: "Comptes masqués"
@@ -2070,25 +2207,27 @@ _exportOrImport:
   excludeInactiveUsers: "Exclure les utilisateur·rice·s inactifs"
   withReplies: "Inclure les réponses des utilisateur·rice·s importé·e·s dans le fil"
 _charts:
+
   federation: "Fédération"
   apRequest: "Requêtes"
   usersIncDec: "Variation du nombre d'utilisateur·rice·s"
   usersTotal: "Nombre des utilisateur·rice·s au total"
   activeUsers: "Nombre d'utilisateurices actif·ve·s"
-  notesIncDec: "Variation du nombre des notes"
-  localNotesIncDec: "Variation du nombre de notes locales"
-  remoteNotesIncDec: "Variation du nombre de notes distantes"
-  notesTotal: "Nombre total des notes"
+  notesIncDec: "Variation du nombre des sparks"
+  localNotesIncDec: "Variation du nombre de sparks locales"
+  remoteNotesIncDec: "Variation du nombre de sparks distantes"
+  notesTotal: "Nombre total des sparks"
   filesIncDec: "Variation du nombre de fichiers"
   filesTotal: "Nombre total de fichiers"
   storageUsageIncDec: "Variation de l'utilisation du stockage"
   storageUsageTotal: "Utilisation totale du stockage"
 _instanceCharts:
+
   requests: "Requêtes"
   users: "Variation du nombre d'utilisateur·rice·s"
   usersTotal: "Total cumulé du nombre d'utilisateur·rice·s"
-  notes: "Variation du nombre de notes"
-  notesTotal: "Nombre total cumulé des notes"
+  notes: "Variation du nombre de sparks"
+  notesTotal: "Nombre total cumulé des sparks"
   ff: "Variation des abonné·e·s / abonnements"
   ffTotal: "Total cumulé du nombre d'abonné·e·s / abonnements"
   cacheSize: "Variation de la taille du cache"
@@ -2096,11 +2235,13 @@ _instanceCharts:
   files: "Variation du nombre de fichiers"
   filesTotal: "Total cumulé du nombre de fichiers"
 _timelines:
+
   home: "Principal"
   local: "Local"
   social: "Social"
   global: "Global"
 _play:
+
   new: "Créer un Play"
   edit: "Modifier un Play"
   created: "Play créé"
@@ -2116,6 +2257,7 @@ _play:
   script: "Script"
   summary: "Description"
 _pages:
+
   newPage: "Créer une page"
   editPage: "Modifier une page"
   readPage: "Affichage de la source en cours"
@@ -2151,21 +2293,25 @@ _pages:
   inputBlocks: "Blocs d'entrée"
   specialBlocks: "Spécial"
   blocks:
+
     text: "Texte"
     textarea: "Zone de texte"
     section: "Section"
     image: "Images"
     button: "Bouton"
-    note: "Note intégrée"
+    note: "Spark intégrée"
     _note:
-      id: "Identifiant de la note"
-      idDescription: "Pour configurer la note, vous pouvez aussi coller ici l'URL correspondante."
+
+      id: "Identifiant de la spark"
+      idDescription: "Pour configurer la spark, vous pouvez aussi coller ici l'URL correspondante."
       detailed: "Afficher les détails"
 _relayStatus:
+
   requesting: "En attente"
   accepted: "Accepté"
   rejected: "Refusée"
 _notification:
+
   fileUploaded: "Le fichier a été téléversé !"
   youGotMention: "{name} vous a mentionné"
   youGotReply: "Réponse de {name}"
@@ -2181,17 +2327,18 @@ _notification:
   achievementEarned: "Accomplissement déverrouillé"
   testNotification: "Tester la notification"
   reactedBySomeUsers: "{n} utilisateur·rice·s ont réagi"
-  likedBySomeUsers: "{n} utilisateurs ont aimé votre note"
+  likedBySomeUsers: "{n} utilisateurs ont aimé votre spark"
   renotedBySomeUsers: "{n} utilisateur·rice·s ont renoté"
   followedBySomeUsers: "{n} utilisateur·rice·s se sont abonné·e·s à vous"
   login: "Quelqu'un s'est connecté"
   _types:
+
     all: "Toutes"
-    note: "Nouvelles notes"
+    note: "Nouvelles sparks"
     follow: "Nouvel·le abonné·e"
     mention: "Mentions"
     reply: "Réponses"
-    renote: "Renotes"
+    renote: "Re-sparks"
     quote: "Citations"
     reaction: "Réactions"
     pollEnded: "Sondages se cloturant"
@@ -2202,10 +2349,12 @@ _notification:
     login: "Se connecter"
     app: "Notifications provenant des apps"
   _actions:
+
     followBack: "Suivre"
     reply: "Répondre"
     renote: "Renoter"
 _deck:
+
   alwaysShowMainColumn: "Toujours afficher la colonne principale"
   columnAlign: "Aligner les colonnes"
   addColumn: "Ajouter une colonne"
@@ -2223,6 +2372,7 @@ _deck:
   introduction2: "Cliquez sur le + à droite de l'écran pour ajouter de nouvelles colonnes quand vous le souhaitez."
   flexible: "Ajuster automatiquement la largeur"
   _columns:
+
     main: "Principale"
     widgets: "Widgets"
     notifications: "Notifications"
@@ -2233,19 +2383,25 @@ _deck:
     mentions: "Mentions"
     direct: "Direct"
 _drivecleaner:
+
   orderBySizeDesc: "Taille descendante"
   orderByCreatedAtAsc: "Date d'ajout ascendante"
 _webhookSettings:
+
   name: "Nom"
   secret: "Secret"
   trigger: "Activateur"
   active: "Activé"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "E-mail "
     keywords: "Mots clés "
 _moderationLogTypes:
+
   createRole: "Rôle créé"
   deleteRole: "Rôle supprimé"
   updateRole: "Rôle mis à jour"
@@ -2257,9 +2413,9 @@ _moderationLogTypes:
   updateCustomEmoji: "Émoji personnalisé mis à jour"
   deleteCustomEmoji: "Émoji personnalisé supprimé"
   updateServerSettings: "Paramètres du serveur mis à jour"
-  updateUserNote: "Note de modération mise à jour"
+  updateUserNote: "Spark de modération mise à jour"
   deleteDriveFile: "Fichier supprimé"
-  deleteNote: "Note supprimée"
+  deleteNote: "Spark supprimée"
   createGlobalAnnouncement: "Annonce globale créée"
   createUserAnnouncement: "Annonce individuelle créée"
   updateGlobalAnnouncement: "Annonce globale mise à jour"
@@ -2283,66 +2439,87 @@ _moderationLogTypes:
   unsetUserBanner: "Supprimer la bannière de l'utilisateur·rice"
   deleteFlash: "Supprimer le Play"
 _fileViewer:
+
   title: "Détails du fichier"
   type: "Type du fichier"
   size: "Taille du fichier"
   url: "URL"
   uploadedAt: "Date de téléversement"
-  attachedNotes: "Notes avec ce fichier"
+  attachedNotes: "Sparks avec ce fichier"
   thisPageCanBeSeenFromTheAuthor: "Cette page ne peut être vue que par l'utilisateur qui a téléversé ce fichier."
 _externalResourceInstaller:
+
   title: "Installer depuis un site externe"
   checkVendorBeforeInstall: "Veuillez confirmer que le distributeur est fiable avant l'installation."
   _plugin:
+
     title: "Voulez-vous installer cette extension ?"
   _theme:
+
     title: "Voulez-vous installer ce thème ?"
   _meta:
+
     base: "Palette de couleurs de base"
   _vendorInfo:
+
     title: "Informations sur le distributeur"
     endpoint: "Point de terminaison référencé"
     hashVerify: "Vérification de l'intégrité du fichier"
   _errors:
+
     _invalidParams:
+
       title: "Paramètres invalides"
       description: "Il y a un manque d'informations nécessaires pour obtenir des données à partir de sites externes. Veuillez vérifier l'URL."
     _resourceTypeNotSupported:
+
       title: "Cette ressource externe n'est pas prise en charge."
       description: "Le type de ressource obtenue à partir de ce site externe n'est pas pris en charge. Veuillez contacter l'administrateur du site."
     _failedToFetch:
+
       title: "Échec de récupération des données"
       fetchErrorDescription: "La communication avec le site externe a échoué. Si vous réessayez et que cela ne s'améliore pas, veuillez contacter l'administrateur du site."
       parseErrorDescription: "Les données obtenues à partir du site externe n'ont pas pu être parsées. Veuillez contacter l'administrateur du site."
     _hashUnmatched:
+
       title: "Échec de vérification des données"
       description: "La vérification de l'intégrité des données fournies a échoué. Pour des raisons de sécurité, l'installation ne peut pas continuer. Veuillez contacter l'administrateur du site."
     _pluginParseFailed:
+
       title: "Erreur d'AiScript"
       description: "Bien que les données aient été obtenues, elles n'ont pas pu être lues, car il y a eu une erreur lors du parsage d'AiScript. Veuillez contacter l'auteur de l'extension. Pour plus de détails sur l'erreur, veuillez consulter la console JavaScript."
     _pluginInstallFailed:
+
       title: "Échec d'installation de l'extension"
       description: "Il y a eu un problème lors de l'installation de l'extension. Veuillez réessayer. Pour plus de détails sur l'erreur, veuillez consulter la console JavaScript."
     _themeParseFailed:
+
       title: "Erreur de parsage du thème"
       description: "Bien que les données aient été obtenues, elles n'ont pas pu être lues, car il y a eu une erreur lors du parsage du fichier du thème. Veuillez contacter l'auteur du thème. Pour plus de détails sur l'erreur, veuillez consulter la console JavaScript."
     _themeInstallFailed:
+
       title: "Échec d'installation du thème"
       description: "Il y a eu un problème lors de l'installation du thème. Veuillez réessayer. Pour plus de détails sur l'erreur, veuillez consulter la console JavaScript."
 _dataSaver:
+
   _media:
+
     title: "Chargement des médias"
     description: "Empêche le chargement automatique des images et des vidéos. Appuyez sur les images et les vidéos cachées pour les charger."
   _avatar:
+
     title: "Animation d'avatars"
     description: "Arrête l'animation d'avatars. Comme les images animées peuvent être plus volumineuses que les images normales, cela permet de réduire davantage le trafic de données."
   _urlPreview:
+
     title: "Vignettes d'aperçu des URL"
     description: "Les vignettes d'aperçu des URL ne seront plus chargées."
   _code:
+
     title: "Mise en évidence du code"
     description: "Si la notation de mise en évidence du code est utilisée, par exemple dans la MFM, elle ne sera pas chargée tant qu'elle n'aura pas été tapée. La mise en évidence du code nécessite le chargement du fichier de définition de chaque langue à mettre en évidence, mais comme ces fichiers ne sont plus chargés automatiquement, on peut s'attendre à une réduction du trafic de données."
 _reversi:
+
   reversi: "Reversi"
   blackIs: "{name} joue les noirs"
   rules: "Règles"
@@ -2356,14 +2533,19 @@ _reversi:
   playing: "En cours"
   lookingForPlayer: "Recherche d'adversaire"
 _mediaControls:
+
   playbackRate: "Vitesse de lecture"
 _embedCodeGen:
+
   title: "Personnaliser le code d'intégration"
   generateCode: "Générer le code d'intégration"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Non trouvé"
 _search:
+
   searchScopeAll: "Tous"
   searchScopeLocal: "Local"
   searchScopeUser: "Spécifier l'utilisateur·rice"

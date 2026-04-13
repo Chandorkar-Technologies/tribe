@@ -15,26 +15,26 @@ const size = 128; // px
 const n = 5; // resolution
 const margin = (size / 4);
 const colors = [
-	['#FF512F', '#DD2476'],
-	['#FF61D2', '#FE9090'],
-	['#72FFB6', '#10D164'],
-	['#FD8451', '#FFBD6F'],
-	['#305170', '#6DFC6B'],
-	['#00C0FF', '#4218B8'],
-	['#009245', '#FCEE21'],
-	['#0100EC', '#FB36F4'],
-	['#FDABDD', '#374A5A'],
-	['#38A2D7', '#561139'],
-	['#121C84', '#8278DA'],
-	['#5761B2', '#1FC5A8'],
-	['#FFDB01', '#0E197D'],
-	['#FF3E9D', '#0E1F40'],
-	['#766eff', '#00d4ff'],
-	['#9bff6e', '#00d4ff'],
-	['#ff6e94', '#00d4ff'],
-	['#ffa96e', '#00d4ff'],
-	['#ffa96e', '#ff009d'],
-	['#ffdd6e', '#ff009d'],
+	['#f56b1f', '#ffa45c'], // tangerine
+	['#ff8533', '#ffd166'], // mango
+	['#d4541a', '#f56b1f'], // burnt orange
+	['#e15a16', '#ff8533'], // vivid orange
+	['#c5571a', '#f28500'], // deep tangerine
+	['#ff6b35', '#ffba49'], // sunset
+	['#e17055', '#ffeaa7'], // coral peach
+	['#d4380d', '#fa8c16'], // persimmon
+	['#fa541c', '#ffa940'], // volcano
+	['#ad4e00', '#fa8c16'], // amber
+	['#cf1322', '#fa541c'], // ember
+	['#7c2d12', '#f97316'], // charcoal-orange
+	['#9a3412', '#fb923c'], // rust
+	['#fb923c', '#fcd34d'], // honey
+	['#dc2626', '#fbbf24'], // fire
+	['#b45309', '#fde68a'], // wheat
+	['#92400e', '#f59e0b'], // bronze
+	['#7c2d12', '#fed7aa'], // bronze cream
+	['#c2410c', '#fdba74'], // pumpkin
+	['#ea580c', '#fef3c7'], // sun
 ];
 
 const actualSize = size - (margin * 2);

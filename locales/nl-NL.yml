@@ -1,8 +1,8 @@
 ---
 _lang_: "Nederlands"
 headlineMisskey: "Netwerk verbonden door notities"
-introMisskey: "Welkom! Misskey is een open source, gedecentraliseerde microblogdienst.\nMaak \"notities\" om je gedachten te delen met iedereen om je heen. 📡\nMet \"reacties\" kun je ook snel je mening geven over berichten van anderen. 👍\nLaten we een nieuwe wereld verkennen! 🚀"
-poweredByMisskeyDescription: "{name} is één van de services die door het open source platform <b>Misskey</b> wordt geleverd (het wordt ook wel een \"Misskey server genmoemd\")."
+introMisskey: "Welkom! Tribe is een open source, gedecentraliseerde microblogdienst.\nMaak \"notities\" om je gedachten te delen met iedereen om je heen. 📡\nMet \"reacties\" kun je ook snel je mening geven over berichten van anderen. 👍\nLaten we een nieuwe wereld verkennen! 🚀"
+poweredByMisskeyDescription: "{name} is één van de services die door het open source platform <b>Tribe</b> wordt geleverd (het wordt ook wel een \"Tribe server genmoemd\")."
 monthAndDay: "{day} {month}"
 search: "Zoeken"
 reset: "Herstellen"
@@ -11,7 +11,7 @@ username: "Gebruikersnaam"
 password: "Wachtwoord"
 initialPasswordForSetup: "Initiële wachtwoord voor configuratie"
 initialPasswordIsIncorrect: "Initiële wachtwoord voor configuratie is onjuist"
-initialPasswordForSetupDescription: "Gebruik het initiële wachtwoord uit de configuratie, als je Misskey zelf hebt geïnstalleerd.\nAls je een Misskey hosting provider gebruikt, gebruik dan het gegeven wachtwoord.\nAls je geen wachtwoord hebt gezet, laat het dan leeg om verder te gaan."
+initialPasswordForSetupDescription: "Gebruik het initiële wachtwoord uit de configuratie, als je Tribe zelf hebt geïnstalleerd.\nAls je een Tribe hosting provider gebruikt, gebruik dan het gegeven wachtwoord.\nAls je geen wachtwoord hebt gezet, laat het dan leeg om verder te gaan."
 forgotPassword: "Wachtwoord vergeten"
 fetchingAsApObject: "Ophalen vanuit de Fediverse"
 ok: "Ok"
@@ -114,14 +114,14 @@ enterEmoji: "Voer een emoji in"
 renote: "Herdelen"
 unrenote: "Stop herdelen"
 renoted: "Herdeeld"
-renotedToX: "Renoted naar {name}"
+renotedToX: "Re-sparked naar {name}"
 cantRenote: "Dit bericht kan niet worden herdeeld"
 cantReRenote: "Een herdeling kan niet worden herdeeld"
 quote: "Quote"
-inChannelRenote: "Alleen-kanaal Renote"
+inChannelRenote: "Alleen-kanaal Re-spark"
 inChannelQuote: "Alleen-kanaal Citaat"
-renoteToChannel: "Renote naar kanaal"
-renoteToOtherChannel: "Renote naar ander kanaal"
+renoteToChannel: "Re-spark naar kanaal"
+renoteToOtherChannel: "Re-spark naar ander kanaal"
 pinnedNote: "Vastgemaakte notitie"
 pinned: "Vastmaken aan profielpagina"
 you: "Jij"
@@ -145,8 +145,8 @@ unmarkAsSensitive: "Geen NSFW"
 enterFileName: "Invoeren bestandsnaam"
 mute: "Dempen"
 unmute: "Stop dempen"
-renoteMute: "Renotes dempen"
-renoteUnmute: "Dempen Renotes opheffen"
+renoteMute: "Re-sparks dempen"
+renoteUnmute: "Dempen Re-sparks opheffen"
 block: "Blokkeren"
 unblock: "Deblokkeren"
 suspend: "Opschorten"
@@ -177,7 +177,7 @@ youCanCleanRemoteFilesCache: "Klik op de 🗑️ knop in de bestandsbeheerweerga
 cacheRemoteSensitiveFiles: "Gevoelige bestanden van externe instances in de cache bewaren"
 cacheRemoteSensitiveFilesDescription: "Als deze instelling is uitgeschakeld, worden gevoelige bestanden op afstand direct vanuit de instantie op afstand geladen zonder caching."
 flagAsBot: "Markeer dit account als een robot."
-flagAsBotDescription: "Als dit account van een programma wordt beheerd, zet deze vlag aan. Het aanzetten helpt andere ontwikkelaars om bijvoorbeeld onbedoelde feedback loops te doorbreken of om Misskey meer geschikt te maken."
+flagAsBotDescription: "Als dit account van een programma wordt beheerd, zet deze vlag aan. Het aanzetten helpt andere ontwikkelaars om bijvoorbeeld onbedoelde feedback loops te doorbreken of om Tribe meer geschikt te maken."
 flagAsCat: "Markeer dit account als een kat."
 flagAsCatDescription: "Zet deze vlag aan als je wilt aangeven dat dit account een kat is."
 flagShowTimelineReplies: "Toon antwoorden op de tijdlijn."
@@ -188,7 +188,7 @@ reloadAccountsList: "Accountlijst opnieuw laden"
 loginFailed: "Aanmelding mislukt."
 showOnRemote: "Toon op de externe instantie."
 continueOnRemote: "Verder op remote server"
-chooseServerOnMisskeyHub: "Kies een server van de Misskey Hub"
+chooseServerOnMisskeyHub: "Kies een server van de Tribe Hub"
 specifyServerHost: "Serverhost uitkiezen"
 inputHostName: "Domein invullen"
 general: "Algemeen"
@@ -250,7 +250,7 @@ noUsers: "Er zijn geen gebruikers."
 editProfile: "Bewerk Profiel"
 noteDeleteConfirm: "Ben je zeker dat je dit bericht wil verwijderen?"
 pinLimitExceeded: "Je kunt geen berichten meer vastprikken"
-intro: "Installatie van Misskey geëindigd! Maak nu een beheerder aan."
+intro: "Installatie van Tribe geëindigd! Maak nu een beheerder aan."
 done: "Klaar"
 processing: "Bezig met verwerken"
 preview: "Voorbeeld"
@@ -445,7 +445,7 @@ exploreFediverse: "Ontdek de Fediverse"
 popularTags: "Populaire tags"
 userList: "Lijsten"
 about: "Over"
-aboutMisskey: "Over Misskey"
+aboutMisskey: "Over Tribe"
 administrator: "Beheerder"
 token: "Token"
 2fa: "Twee factor authenticatie"
@@ -584,9 +584,9 @@ popout: "Pop-Up"
 volume: "Volume"
 masterVolume: "Hoofdvolume"
 notUseSound: "Geluid uitschakelen"
-useSoundOnlyWhenActive: "Geluid alleen inschakelen wanneer Misskey actief is"
+useSoundOnlyWhenActive: "Geluid alleen inschakelen wanneer Tribe actief is"
 details: "Details"
-renoteDetails: "Renote Details"
+renoteDetails: "Re-spark Details"
 chooseEmoji: "Emoji selecteren"
 unableToProcess: "De operatie kan niet worden voltooid."
 recentUsed: "Recent gebruikt"
@@ -601,7 +601,7 @@ sort: "Sorteren"
 ascendingOrder: "Oplopende volgorde"
 descendingOrder: "Aflopende volgorde"
 scratchpad: "Testomgeving"
-scratchpadDescription: "De testomgeving biedt een gebied voor AiScript experimenten. Daar kunt u AiScript schrijven en uitvoeren en de effecten ervan op Misskey controleren."
+scratchpadDescription: "De testomgeving biedt een gebied voor AiScript experimenten. Daar kunt u AiScript schrijven en uitvoeren en de effecten ervan op Tribe controleren."
 uiInspector: "UI-inspecteur"
 uiInspectorDescription: "De lijst met servers van UI-componenten kan worden bekeken in de cache. De UI-component wordt gegenereerd door de functie Ui:C:"
 output: "Uitvoer"
@@ -718,7 +718,7 @@ behavior: "Gedrag"
 sample: "Voorbeeld"
 abuseReports: "Meldt"
 reportAbuse: "Meld"
-reportAbuseRenote: "Meld renote"
+reportAbuseRenote: "Meld re-spark"
 reportAbuseOf: "Meld {name}"
 fillAbuseReportDescription: "Vul s.v.p. de details in over deze melding. Geef, als het over een specifieke notitie gaat, ook de URL op."
 abuseReported: "Uw rapport is verzonden. Hartelijk dank."
@@ -744,14 +744,14 @@ unclip: "Van clip verwijderen"
 confirmToUnclipAlreadyClippedNote: "Deze notitie is al toegevoegd aan de clip “{name}”. Wil je deze uit deze clip verwijderen?"
 public: "Openbare"
 private: "Privé"
-i18nInfo: "Misskey wordt in veel verschillende talen vertaald door vrijwilligers. Je kunt helpen op {link}"
+i18nInfo: "Tribe wordt in veel verschillende talen vertaald door vrijwilligers. Je kunt helpen op {link}"
 manageAccessTokens: "Toegangstokens beheren"
 accountInfo: "Informatie over gebruikersaccount"
 notesCount: "Aantal notities"
 repliesCount: "Aantal verzonden replies"
-renotesCount: "Aantal verzonden renotes"
+renotesCount: "Aantal verzonden re-sparks"
 repliedCount: "Aantal ontvangen replies"
-renotedCount: "Aantal ontvangen renotes"
+renotedCount: "Aantal ontvangen re-sparks"
 followingCount: "Aantal gevolgde accounts"
 followersCount: "Aantal volgers"
 sentReactionsCount: "Aantal verzonden reacties"
@@ -798,7 +798,7 @@ onlineUsersCount: "{n} Gebruikers zijn online"
 nUsers: "{n} Gebruikers"
 nNotes: "{n} Notities"
 sendErrorReports: "Foutrapporten sturen"
-sendErrorReportsDescription: "Als u deze optie inschakelt, wordt gedetailleerde foutinformatie met Misskey gedeeld wanneer zich een probleem voordoet. Dit helpt de kwaliteit van Misskey te verbeteren.\nDit omvat informatie zoals de versie van uw OS, welke browser u gebruikt, uw activiteit in Misskey, enz."
+sendErrorReportsDescription: "Als u deze optie inschakelt, wordt gedetailleerde foutinformatie met Tribe gedeeld wanneer zich een probleem voordoet. Dit helpt de kwaliteit van Tribe te verbeteren.\nDit omvat informatie zoals de versie van uw OS, welke browser u gebruikt, uw activiteit in Tribe, enz."
 myTheme: "Mijn thema"
 backgroundColor: "Achtergrondkleur"
 accentColor: "Accentkleur"
@@ -893,7 +893,7 @@ hashtags: "Hashtags"
 troubleshooting: "Probleemoplossing"
 useBlurEffect: "Vervagingseffecten in de UI gebruike"
 learnMore: "Meer leren"
-misskeyUpdated: "Misskey is bijgewerkt!"
+misskeyUpdated: "Tribe is bijgewerkt!"
 whatIsNew: "Wijzigingen tonen"
 translate: "Vertalen"
 translatedFrom: "Vertaald uit {x}"
@@ -951,7 +951,7 @@ loggedInAsBot: "Momenteel als bot ingelogd"
 show: "Weergave"
 correspondingSourceIsAvailable: "De bijbehorende broncode is beschikbaar bij {anchor}"
 invalidParamErrorDescription: "De aanvraagparameters zijn ongeldig. Dit komt meestal door een bug, maar kan ook omdat de invoer te lang is of iets dergelijks."
-collapseRenotes: "Renotes die je al gezien hebt, inklappen"
+collapseRenotes: "Re-sparks die je al gezien hebt, inklappen"
 collapseRenotesDescription: "Klapt notities in waar je al op gereageerd hebt of die je al gerenotet hebt."
 prohibitedWords: "Verboden woorden"
 prohibitedWordsDescription: "Activeert een foutmelding als er geprobeerd wordt een notitie met de ingestelde woorden te plaatsen. Meerdere woorden kunnen worden ingesteld, elk op hun eigen regel."
@@ -973,40 +973,54 @@ followingOrFollower: "Gevolgd of volger"
 confirmShowRepliesAll: "Dit is een onomkeerbare operatie. Weet je zeker dat reacties op anderen van iedereen die je volgt, wil weergeven in je tijdlijn?"
 information: "Over"
 _chat:
+
   invitations: "Uitnodigen"
   noHistory: "Geen geschiedenis gevonden"
   members: "Leden"
   home: "Startpagina"
   send: "Stuur"
 _delivery:
+
   stop: "Opgeschort"
   _type:
+
     none: "Publiceren"
 _role:
+
   priority: "Prioriteit"
   _priority:
+
     low: "Lage"
     middle: "Medium"
     high: "Hoge"
 _ffVisibility:
+
   public: "Publiceren"
 _ad:
+
   back: "Terug"
 _email:
+
   _follow:
+
     title: "volgde jou"
 _theme:
+
   description: "Beschrijving"
   keys:
+
     mention: "Vermelding"
     renote: "Herdelen"
     divider: "Scheider"
 _sfx:
+
   note: "Notities"
   notification: "Meldingen"
 _2fa:
+
   renewTOTPCancel: "Nee, bedankt"
 _widgets:
+
   profile: "Profiel"
   instanceInfo: "Serverinformatie"
   notifications: "Meldingen"
@@ -1015,16 +1029,21 @@ _widgets:
   federation: "Federatie"
   jobQueue: "Job Queue"
   _userList:
+
     chooseList: "Kies een lijst."
 _cw:
+
   show: "Laad meer"
 _visibility:
+
   home: "Startpagina"
   followers: "Volgers"
 _profile:
+
   name: "Naam"
   username: "Gebruikersnaam"
 _exportOrImport:
+
   clips: "Clip aanmaken"
   followingList: "Volgend"
   muteList: "Dempen"
@@ -1033,19 +1052,26 @@ _exportOrImport:
   excludeMutingUsers: "Negeer gedempte gebruikers"
   excludeInactiveUsers: "Negeer inactieve gebruikers"
 _charts:
+
   federation: "Federatie"
 _timelines:
+
   home: "Startpagina"
 _play:
+
   script: "Script"
   summary: "Beschrijving"
 _pages:
+
   blocks:
+
     image: "Afbeeldingen"
 _notification:
+
   youWereFollowed: "volgde jou"
   unreadAntennaNote: "Antenne {name}"
   _types:
+
     follow: "Volgend"
     mention: "Vermelding"
     renote: "Herdelen"
@@ -1053,10 +1079,13 @@ _notification:
     reaction: "Reacties"
     login: "Inloggen"
   _actions:
+
     reply: "Antwoord"
     renote: "Herdelen"
 _deck:
+
   _columns:
+
     notifications: "Meldingen"
     tl: "Tijdlijn"
     antenna: "Antennes"
@@ -1064,19 +1093,28 @@ _deck:
     channel: "Kanalen"
     mentions: "Vermeldingen"
 _webhookSettings:
+
   name: "Naam"
   active: "Ingeschakeld"
 _abuseReport:
+
   _notificationRecipient:
+
     _recipientType:
+
       mail: "Email"
 _moderationLogTypes:
+
   suspend: "Opschorten"
   resetPassword: "Wachtwoord terugzetten"
 _reversi:
+
   total: "Totaal"
 _remoteLookupErrors:
+
   _noSuchObject:
+
     title: "Niet gevonden"
 _search:
+
   searchScopeAll: "Alle"

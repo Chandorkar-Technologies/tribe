@@ -7,8 +7,11 @@ abuseMarkAsResolved: "Marcar reporte como resuelto"
 replies: "Respuestas"
 renotes: "Renotas"
 _initialTutorial:
+
   _reaction:
+
     letsTryReacting: "Puedes añadir reacciones pulsando en el botón '{reaction}' de la nota. ¡Intenta reaccionar a esta nota de ejemplo!"
     reactDone: "Puedes deshacer una reacción pulsando en el botón '{undo}'."
 _poll:
+
   multiple: "Opciones múltiples"

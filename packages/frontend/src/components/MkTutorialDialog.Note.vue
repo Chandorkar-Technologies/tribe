@@ -67,7 +67,7 @@ const exampleNote = reactive<Misskey.entities.Note>({
 		onlineStatus: 'unknown',
 		badgeRoles: [],
 	},
-	text: 'just setting up my shonk',
+	text: 'lighting my first Spark 🔥',
 	cw: null,
 	visibility: 'public',
 	localOnly: false,

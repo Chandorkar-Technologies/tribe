@@ -5,6 +5,8 @@ forwardReportIsAnonymous: "En lloc del teu compte, es farà servir un compte an�
 abuseMarkAsResolved: "Marca la denúncia com a resolta"
 replies: "Respostes"
 _initialTutorial:
+
   _reaction:
+
     letsTryReacting: "Es poden afegir reaccions fent clic al botó '{reaction}'. Prova reaccionant a aquesta nota!"
     reactDone: "Pots desfer una reacció fent clic al botó '{undo}'."

@@ -1,6 +1,6 @@
 ---
-introMisskey: "Willkommen! Sharkey ist eine dezentralisierte Open-Source Microblogging-Platform.\nVerfasse „Notizen“ um mitzuteilen, was gerade passiert oder um Ereignisse mit anderen zu teilen. 📡\nMit „Reaktionen“ kannst du außerdem schnell deine Gefühle über Notizen anderer Benutzer zum Ausdruck bringen. 👍\nEine neue Welt wartet auf dich! 🚀"
-poweredByMisskeyDescription: "{name} wird durch die Open-Source-Plattform <b>Sharkey</b> betrieben, die auf Misskey basiert (meist als \"Misskey-Instanz\" bezeichnet)."
+introMisskey: "Willkommen! Tribe ist eine dezentralisierte Open-Source Microblogging-Platform.\nVerfasse „Notizen“ um mitzuteilen, was gerade passiert oder um Ereignisse mit anderen zu teilen. 📡\nMit „Reaktionen“ kannst du außerdem schnell deine Gefühle über Notizen anderer Benutzer zum Ausdruck bringen. 👍\nEine neue Welt wartet auf dich! 🚀"
+poweredByMisskeyDescription: "{name} wird durch die Open-Source-Plattform <b>Tribe</b> betrieben, die auf Tribe basiert (meist als \"Tribe-Instanz\" bezeichnet)."
 renotedBy: "Geboostet von {user}"
 approvals: "Genehmigungen"
 copyLinkRenote: "Boost-Link kopieren"
@@ -31,16 +31,16 @@ rejectQuotesRemoteUser: "Zitate in Beiträgen dieses Benutzers entfernen"
 rejectQuotesLocalUser: "Zitieren von Beiträgen für diesen Benutzer sperren"
 rejectQuotesConfirm: "Bist du sicher, dass du Zitate ablehnen möchtest?"
 allowQuotesConfirm: "Bist du sicher, dass du Zitate erlauben möchtest?"
-intro: "Sharkey ist installiert! Lass uns nun ein Administratorkonto einrichten."
+intro: "Tribe ist installiert! Lass uns nun ein Administratorkonto einrichten."
 driveSearchbarPlaceholder: "Drive durchsuchen"
 background: "Hintergrund"
-aboutMisskey: "Über Sharkey"
+aboutMisskey: "Über Tribe"
 disableDrawer: "Keine ausfahrbaren Menüs verwenden"
 warnForMissingAltText: "Warnung anzeigen, wenn keine Bildbeschreibung gesetzt wurde"
 deeplFreeMode: "DeepLX-JS verwenden (kein Auth Key)"
 deeplFreeModeDescription: "Brauchst du Hilfe? Lese unsere Dokumentation, um zu erfahren, wie du DeepLX-JS einrichtest."
-useSoundOnlyWhenActive: "Gebe nur Ton aus, wenn Sharkey aktiv ist"
-scratchpadDescription: "Die Testumgebung bietet einen Bereich für AiScript-Experimente. Dort kannst du AiScript schreiben, ausführen sowie dessen Auswirkungen auf Sharkey überprüfen."
+useSoundOnlyWhenActive: "Gebe nur Ton aus, wenn Tribe aktiv ist"
+scratchpadDescription: "Die Testumgebung bietet einen Bereich für AiScript-Experimente. Dort kannst du AiScript schreiben, ausführen sowie dessen Auswirkungen auf Tribe überprüfen."
 deleteAllFilesQueued: "Löschung aller Dateien in der Warteschlange"
 postFiltered: "Beitrag wird durch einen Filter ausgeblendet"
 enableFaviconNotificationDot: "Favicon-Benachrichtigungspunkt aktivieren"
@@ -62,8 +62,8 @@ makeIndexable: "Öffentliche Notizen nicht indexierbar machen"
 makeIndexableDescription: "Verhindert, dass die Notizensuche deine öffentlichen Notizen indiziert."
 enableRss: "RSS-Feed aktivieren"
 enableRssDescription: "Erzeuge einen RSS-Feed mit deinen grundlegenden Profildaten und öffentlichen Notizen. Die Nutzer können den Feed abonnieren, ohne eine Anfrage zum Folgen oder eine Genehmigung zu benötigen."
-sendErrorReportsDescription: "Ist diese Option aktiviert, so werden beim Auftreten von Fehlern detaillierte Fehlerinformationen an Sharkey weitergegeben, was zur Verbesserung der Qualität von Sharkey beiträgt.\nEnthalten in diesen Informationen sind u.a. die Version deines Betriebssystems, welchen Browser du verwendest und ein Verlauf deiner Aktivitäten innerhalb Sharkey."
-misskeyUpdated: "Sharkey wurde aktualisiert!"
+sendErrorReportsDescription: "Ist diese Option aktiviert, so werden beim Auftreten von Fehlern detaillierte Fehlerinformationen an Tribe weitergegeben, was zur Verbesserung der Qualität von Tribe beiträgt.\nEnthalten in diesen Informationen sind u.a. die Version deines Betriebssystems, welchen Browser du verwendest und ein Verlauf deiner Aktivitäten innerhalb Tribe."
+misskeyUpdated: "Tribe wurde aktualisiert!"
 approvalRequiredForSignup: "Genehmigung für neue Benutzer erforderlich machen"
 voteConfirmMulti: "Abstimmung für \"{choice}\" bestätigen?\n　Du kannst nach der Bestätigung weitere Optionen wählen."
 pendingUserApprovals: "Es gibt Benutzer, die auf eine Genehmigung warten."
@@ -79,8 +79,8 @@ showVisibilitySelectorOnBoost: "Sichtbarkeitswähler anzeigen"
 showVisibilitySelectorOnBoostDescription: "Zeigt den Sichtbarkeitsselektor an, wenn er beim Anklicken von Boosts aktiviert ist. Wenn er deaktiviert ist, wird die unten definierte Standardsichtbarkeit verwendet und der Selektor wird nicht angezeigt."
 visibilityOnBoost: "Standardmäßige Boost-Sichtbarkeit"
 defaultLike: "Standardmäßiges Like-Emoji"
-didYouLikeMisskey: "Gefällt dir Sharkey?"
-pleaseDonate: "Sharkey ist die kostenlose Software, die von {host} verwendet wird. Wir würden uns über Spenden freuen, damit dessen Entwicklung weitergeführt werden kann!"
+didYouLikeMisskey: "Gefällt dir Tribe?"
+pleaseDonate: "Tribe ist die kostenlose Software, die von {host} verwendet wird. Wir würden uns über Spenden freuen, damit dessen Entwicklung weitergeführt werden kann!"
 pleaseDonateInstance: "Du kannst {host} auch direkt unterstützen, indem du an deine Instanz-Administration spendest."
 thisPostIsMissingAltTextCancel: "Abbrechen"
 thisPostIsMissingAltTextIgnore: "Trotzdem veröffentlichen"
@@ -95,7 +95,7 @@ autoloadConversation: "Konversation bei Antworten laden"
 approvalRequiredToRegister: "Diese Instanz akzeptiert nur Benutzer, die einen Grund für die Registrierung angeben."
 limitWidthOfReaction: "Begrenzt die maximale Breite von Reaktionen und zeigt sie in verkleinerter Form an."
 oneko: "Katzenfreund :3"
-goToMisskey: "Zu Sharkey"
+goToMisskey: "Zu Tribe"
 enableAchievements: "Errungenschaften aktivieren"
 turnOffAchievements: "Das Deaktivieren dieser Option schaltet alle Errungenschaften ab"
 enableBotTrending: "Hashtags durch Bots anreichern"
@@ -103,7 +103,7 @@ turnOffBotTrending: "Das Deaktivieren dieser Option verhindert, dass Bots Hashta
 renotes: "Boosts"
 showBots: "Bots in der Chronik anzeigen"
 showRenotes: "Boosts anzeigen"
-repositoryUrlDescription: "Wenn es ein Repository gibt, in dem der Quellcode öffentlich zugänglich ist, gib dessen URL ein. Wenn du Sharkey unverändert verwendest (ohne Änderungen am Quellcode), gib bitte https://activitypub.software/TransFem-org/Sharkey/ ein."
+repositoryUrlDescription: "Wenn es ein Repository gibt, in dem der Quellcode öffentlich zugänglich ist, gib dessen URL ein. Wenn du Tribe unverändert verwendest (ohne Änderungen am Quellcode), gib bitte https://activitypub.software/TransFem-org/Tribe/ ein."
 donation: "Spenden"
 donationUrl: "Spenden-URL"
 showBelowAvatar: "Unter dem Profilbild anzeigen"
@@ -123,6 +123,7 @@ filesRemoved: "Dateien entfernt"
 fileImported: "Datei importiert"
 cannotLoadNote: "Laden der Notiz fehlgeschlagen"
 _flash:
+
   contentHidden: "Flash-Inhalte versteckt"
   arbitraryCodeExecutionWarning: "Sei immer vorsichtig bei der Ausführung von beliebigem Code!"
   failedToLoad: "Fehler beim Laden von Flash-Inhalten:"
@@ -131,93 +132,128 @@ _flash:
   loadingFlashFile: "Flash-Datei laden"
   cspError: "raw.esm.sh konnte nicht aufgerufen werden, was bedeutet, dass die Content Security Policy dieser Instanz wahrscheinlich veraltet ist. Bitte kontaktiere deine Instanzadministratoren."
 _initialAccountSetting:
-  youCanContinueTutorial: "Du kannst mit dem Tutorial von {name} (Sharkey) fortfahren, oder auch abbrechen und gleich anfangen Sharkey zu verwenden."
+
+  youCanContinueTutorial: "Du kannst mit dem Tutorial von {name} (Tribe) fortfahren, oder auch abbrechen und gleich anfangen Tribe zu verwenden."
 _initialTutorial:
+
   _landing:
-    description: "Hier kannst du die Grundlagen und Funktionen von Sharkey lernen."
+
+    description: "Hier kannst du die Grundlagen und Funktionen von Tribe lernen."
   _note:
-    description: "Beiträge auf Sharkey heißen \"Notizen\". Notizen werden chronologisch in der Chronik angeordnet und in Echtzeit aktualisiert."
+
+    description: "Beiträge auf Tribe heißen \"Notizen\". Notizen werden chronologisch in der Chronik angeordnet und in Echtzeit aktualisiert."
   _timeline:
-    description1: "Sharkey verfügt über mehrere Chroniken (einige können je nach den Richtlinien des Servers nicht verfügbar sein)."
+
+    description1: "Tribe verfügt über mehrere Chroniken (einige können je nach den Richtlinien des Servers nicht verfügbar sein)."
     bubble: "Du kannst Notizen von verbundenen Servern ansehen, die von den Administratoren ausgewählt wurden."
   _postNote:
-    description1: "Wenn du eine Notiz auf Sharkey veröffentlichst, stehen dir verschiedene Optionen zur Verfügung. Die Oberfläche sieht folgendermaßen aus."
+
+    description1: "Wenn du eine Notiz auf Tribe veröffentlichst, stehen dir verschiedene Optionen zur Verfügung. Die Oberfläche sieht folgendermaßen aus."
   _done:
-    description: "Die hier beschriebenen Funktionen sind nur ein kleiner Teil dessen, was Sharkey zu bieten hat; um mehr darüber zu erfahren, wie du Sharkey verwenden kannst, besuche bitte {link}."
+
+    description: "Die hier beschriebenen Funktionen sind nur ein kleiner Teil dessen, was Tribe zu bieten hat; um mehr darüber zu erfahren, wie du Tribe verwenden kannst, besuche bitte {link}."
 _timelineDescription:
+
   bubble: "In der Bubble Chronik kannst du Notizen von verbundenen Servern ansehen, die von deinen Administratoren ausgewählt wurden."
 _serverSettings:
+
   sidebarLogoUrl: "Logo-URL"
   sidebarLogoDescription: "Gibt das Logo an, das in Szenarien mit hoher Auflösung und dynamischer Breite anstelle des normalen Symbols verwendet werden soll."
   sidebarLogoUsageExample: "Zum Beispiel in der Seitenleiste, für Besucher und auf der \"Über\"-Seite."
 _accountMigration:
-  moveAccountDescription: "Hierdurch wird dein Konto zu einem anderen migriert.\n ・Follower von diesem Konto werden automatisch auf das neue Konto migriert\n ・Dieses Konto wird allen Nutzern, denen es derzeit folgt, nicht mehr folgen\n ・Mit diesem Konto können keine neuen Notizen usw. erstellt werden\n\nWährend die Migration der Follower automatisch erfolgt, muss die Migration der Konten, denen du folgst, manuell vorbereitet werden. Exportiere hierzu die Liste der gefolgten Nutzer über das Einstellungsmenu, und importiere diese Liste im neuen Konto. Das gleiche Verfahren gilt für erstellte Listen und stummgeschaltete oder blockierte Nutzer.\n\n(Diese Erklärung gilt für Sharkey v13.12.0 oder später. Die Funktionsweise andere ActivityPub-Software, beispielsweise Mastodon,  kann hiervon abweichen.)"
+
+  moveAccountDescription: "Hierdurch wird dein Konto zu einem anderen migriert.\n ・Follower von diesem Konto werden automatisch auf das neue Konto migriert\n ・Dieses Konto wird allen Nutzern, denen es derzeit folgt, nicht mehr folgen\n ・Mit diesem Konto können keine neuen Notizen usw. erstellt werden\n\nWährend die Migration der Follower automatisch erfolgt, muss die Migration der Konten, denen du folgst, manuell vorbereitet werden. Exportiere hierzu die Liste der gefolgten Nutzer über das Einstellungsmenu, und importiere diese Liste im neuen Konto. Das gleiche Verfahren gilt für erstellte Listen und stummgeschaltete oder blockierte Nutzer.\n\n(Diese Erklärung gilt für Tribe v13.12.0 oder später. Die Funktionsweise andere ActivityPub-Software, beispielsweise Mastodon,  kann hiervon abweichen.)"
 _achievements:
+
   _types:
+
     _notes1:
-      title: "Hallo Sharkey!"
-      flavor: "Hab eine schöne Zeit mit Sharkey!"
+
+      title: "Hallo Tribe!"
+      flavor: "Hab eine schöne Zeit mit Tribe!"
     _login1000:
-      flavor: "Danke, dass du Sharkey nutzt!"
+
+      flavor: "Danke, dass du Tribe nutzt!"
     _iLoveMisskey:
-      title: "I Love Sharkey"
-      description: "Sende \"I ❤ #Sharkey\""
-      flavor: "Danke, dass du Sharkey verwendest! - vom Entwicklerteam"
+
+      title: "I Love Tribe"
+      description: "Sende \"I ❤ #Tribe\""
+      flavor: "Danke, dass du Tribe verwendest! - vom Entwicklerteam"
     _client30min:
-      description: "Habe Sharkey für mindestens 30 Minuten geöffnet"
+
+      description: "Habe Tribe für mindestens 30 Minuten geöffnet"
     _client60min:
-      title: "Munter mit Sharkey"
-      description: "Habe Sharkey für mindestens 60 Minuten geöffnet"
+
+      title: "Munter mit Tribe"
+      description: "Habe Tribe für mindestens 60 Minuten geöffnet"
     _brainDiver:
-      flavor: "Sharkey-Sharkey La-Tu-Ma"
+
+      flavor: "Tribe-Tribe La-Tu-Ma"
     _tutorialCompleted:
-      title: "Sharkey Grundkurs-Diplom"
+
+      title: "Tribe Grundkurs-Diplom"
 _role:
+
   _options:
+
     btlAvailable: "Kann auf die Bubble-Chronik zugreifen"
     canImportNotes: "Kann Notizen importieren"
     canUpdateBioMedia: "Kann das Profilbild oder den Banner anpassen"
     scheduleNoteMax: "Maximale Anzahl an geplanten Notizen"
 _signup:
+
   approvalPending: "Dein Konto wurde erstellt und wartet auf die Genehmigung."
   reasonInfo: "Bitte gib einen Grund an, warum du der Instanz beitreten möchtest."
 _aboutMisskey:
-  about: "Sharkey ist Open-Source-Software basiert auf Misskey welche von syuilo seit 2014 entwickelt wird."
-  thisIsModifiedVersion: "{name} benutzt eine modifizierte Version des originalen Sharkey."
-  translation: "Sharkey übersetzen"
-  donate_sharkey: "An Sharkey spenden"
+
+  about: "Tribe ist Open-Source-Software basiert auf Tribe welche von syuilo seit 2014 entwickelt wird."
+  thisIsModifiedVersion: "{name} benutzt eine modifizierte Version des originalen Tribe."
+  translation: "Tribe übersetzen"
+  donate_sharkey: "An Tribe spenden"
   testers: "Tester"
-  misskeyContributors: "Misskey Mitwirkende"
+  misskeyContributors: "Tribe Mitwirkende"
   ourLovelySponsors: "Unsere lieben Sponsoren"
 _serverDisconnectedBehavior:
+
   disabled: "Warnung deaktivieren"
 _channel:
+
   allowRenoteToExternal: "Erlaube Boosts und Zitierungen außerhalb des Kanals"
 _instanceMute:
+
   instanceMuteDescription: "Dadurch werden alle Notizen/Boosts der aufgelisteten Instanzen stummgeschaltet, einschließlich derer von Benutzern, die auf einen Benutzer aus einer stummgeschalteten Instanz antworten."
 _theme:
+
   keys:
+
     renote: "Boost"
 _soundSettings:
-  driveFileDurationWarnDescription: "Lange Töne können die Verwendung von Sharkey stören. Trotzdem fortfahren?"
+
+  driveFileDurationWarnDescription: "Lange Töne können die Verwendung von Tribe stören. Trotzdem fortfahren?"
 _widgets:
+
   search: "Suche"
 _profile:
+
   changeBackground: "Hintergrund ändern"
   updateBackground: "Hintergrund aktualisieren"
   removeBackground: "Hintergrund entfernen"
   listenbrainz: "ListenBrainz Benutzername"
 _timelines:
+
   bubble: "Bubble"
 _notification:
+
   youRenoted: "Boost deiner Notiz von {name}"
   scheduledNoteFailed: "Veröffentlichen der geplanten Notiz fehlgeschlagen"
   scheduledNotePosted: "Geplante Notiz wurde veröffentlicht"
   _types:
+
     renote: "Boosts"
     scheduledNoteFailed: "Veröffentlichen der geplanten Notiz fehlgeschlagen"
     scheduledNotePosted: "Geplante Notiz wurde veröffentlicht"
 _moderationLogTypes:
+
   approve: "Genehmigt"
   decline: "Abgelehnt"
   setMandatoryCW: "Inhaltswarnung für Benutzer gesetzt"
@@ -241,9 +277,10 @@ _moderationLogTypes:
   removeRelay: "Relay entfernt"
 
 _mfm:
-  uncommonFeature: "Dies ist keine weit verbreitete Funktion. Sie wird möglicherweise auf den meisten anderen Fediverse-Softwares, einschließlich anderer Misskey-Forks, nicht richtig angezeigt."
-  intro: "MFM ist eine Auszeichnungssprache, die bei Misskey, Sharkey, Firefish, Akkoma und anderen verwendet wird und an vielen Stellen eingesetzt werden kann. Hier kannst du eine Liste aller verfügbaren MFM-Syntaxen einsehen."
-  dummy: "Sharkey erweitert die Welt des Fediverse"
+
+  uncommonFeature: "Dies ist keine weit verbreitete Funktion. Sie wird möglicherweise auf den meisten anderen Fediverse-Softwares, einschließlich anderer Tribe-Forks, nicht richtig angezeigt."
+  intro: "MFM ist eine Auszeichnungssprache, die bei Tribe, Tribe, Firefish, Akkoma und anderen verwendet wird und an vielen Stellen eingesetzt werden kann. Hier kannst du eine Liste aller verfügbaren MFM-Syntaxen einsehen."
+  dummy: "Tribe erweitert die Welt des Fediverse"
   mention: "Erwähnung"
   mentionDescription: "Du kannst einen Benutzer mit Hilfe des At-Symbols und des Benutzernamens erwähnen."
   hashtag: "Hashtag"
@@ -321,19 +358,24 @@ _mfm:
   plain: "Schlicht"
   plainDescription: "Deaktiviert die Ausführung aller MFM, die in diesem MFM enthalten sind."
 _animatedMFM:
+
   play: "MFM-Animation wiedergeben"
   stop: "MFM-Animation stoppen"
   _alert:
+
     text: "Animierte MFMs können blinkende Lichter und sich schnell bewegende Texte/Emojis enthalten."
     confirm: "Animieren"
 _dataRequest:
+
   title: "Daten anfordern"
   warn: "Datenanfragen sind nur alle 3 Tage möglich."
   text: "Sobald die Daten zum Herunterladen bereit sind, wird eine E-Mail an die für dieses Konto registrierte E-Mail-Adresse gesendet."
   button: "Anfordern"
 _urlPreviewSetting:
-  summaryProxyDescription: "Generierung von Vorschaubildern mit Summaly Proxy anstelle von Sharkey selbst."
+
+  summaryProxyDescription: "Generierung von Vorschaubildern mit Summaly Proxy anstelle von Tribe selbst."
 _externalNavigationWarning:
+
   title: "Zu einer externen Website navigieren"
   description: "Verlasse {host} und gehe zu einer externen Website"
   trustThisDomain: "Dieser Domain auf diesem Gerät in Zukunft vertrauen"
@@ -341,11 +383,15 @@ _externalNavigationWarning:
 remoteFollowersWarning: "Entfernte Follower haben möglicherweise unvollständige oder nicht aktuelle Aktivitäten"
 
 _auth:
+
   allowed: "Erlaubt"
 _announcement:
+
   new: "Neu"
 _deck:
+
   _columns:
+
     following: "Gefolgte"
 
 selectFollowRelationship: "Wähle eine Folgebeziehung aus..."
@@ -355,23 +401,25 @@ schedulePostList: "Liste von geplanten Notizen"
 scheduledNotes: "Geplante Notizen"
 
 _permissions:
+
   "write:admin:approve-user": "Neue Benutzer genehmigen"
   "write:admin:decline-user": "Neue Benutzer ablehnen"
   "write:admin:nsfw-user": "Benutzer als NSFW markieren"
   "write:admin:unnsfw-user": "NSFW-Markierung eines Benutzers entfernen"
   "write:admin:cw-user": "Obligatorische Inhaltswarnung auf Benutzer anwenden"
   "write:admin:reject-quotes": "Zitieren von Beiträgen eines Benutzers zulassen/verbieten"
-  "read:notes-schedule": "Liste der geplanten Notizen anzeigen"
-  "write:notes-schedule": "Geplante Notizen verfassen oder löschen"
+  "read:sparks-schedule": "Liste der geplanten Notizen anzeigen"
+  "write:sparks-schedule": "Geplante Notizen verfassen oder löschen"
 
 robotsTxt: "Benutzerdefinierte robots.txt"
-robotsTxtDescription: "Wenn hier Einträge hinzugefügt werden, wird die mit Sharkey mitgelieferte Standard-Robots.txt überschrieben."
+robotsTxtDescription: "Wenn hier Einträge hinzugefügt werden, wird die mit Tribe mitgelieferte Standard-Robots.txt überschrieben."
 
 defaultCW: "Standard-Inhaltswarnung für neue Beiträge"
 defaultCWDescription: "Der hier angegebene Wert wird automatisch als Inhaltswarnung für alle neuen Beiträge und Antworten ausgefüllt."
 defaultCWPriority: "Automatische Inhaltswarnung-Priorität"
 defaultCWPriorityDescription: "Wähle die bevorzugte Aktion, wenn die Einstellungen Standard-Inhaltswarnung und Inhaltswarnung beibehalten gleichzeitig aktiviert sind."
 _defaultCWPriority:
+
   default: "Standard verwenden (die Standard-Warnung verwenden, die geerbte Warnung ignorieren)"
   parent: "Übergeordnete verwenden (die geerbte Warnung verwenden, die Standard-Warnung ignorieren)"
   defaultParent: "Standard verwenden, dann Übergeordnete (die Standard-Warnung verwenden und die geerbte Warnung anhängen)"
@@ -379,13 +427,16 @@ _defaultCWPriority:
 
 genKeys: "Schlüssel generieren"
 _genKeysDialog:
+
   text: "Bist du sicher, dass du neue Schlüssel erzeugen willst? Dadurch werden die Push-Benachrichtigungen für alle Benutzer, die sie bereits aktiviert haben, eingestellt."
   title: "Neue Schlüssel generieren"
 
 _noteSearch:
+
   newestToOldest: "Sortierung von neu nach alt"
   fileType: "Dateityp"
   _fileType:
+
     none: "Keins"
     image: "Bilder"
     video: "Videos"
@@ -398,17 +449,20 @@ mandatoryCWDescription: "Wendet eine Inhaltswarnung auf alle von diesem Benutzer
 fetchLinkedNote: "Verknüpfte Notiz abrufen"
 
 _processErrors:
+
   quoteUnavailable: "Zitat kann nicht verarbeitet werden. Diesem Beitrag fehlt möglicherweise der Kontext."
 
 authorizedFetchSection: "Authorized Fetch"
 authorizedFetchLabel: "Unsignierte ActivityPub-Anfragen zulassen:"
 authorizedFetchDescription: "Diese Einstellung steuert das Verhalten, wenn eine entfernte Instanz oder ein entfernter Benutzer versucht, auf deine Inhalte zuzugreifen, ohne seine Identität zu bestätigen. Wenn sie deaktiviert ist, kann jeder Remote-Benutzer auf dein Profil und deine Beiträge zugreifen - auch wenn er blockiert oder deföderiert wurde."
 _authorizedFetchValue:
+
   never: "Niemals"
   always: "Immer"
   essential: "Nur für wesentliche Metadaten"
   staff: "Empfehlung der Administratoren verwenden"
 _authorizedFetchValueDescription:
+
   never: "Alle unsignierten Anfragen blockieren. Verbessert den Datenschutz und macht die Blockierung effektiver, ist aber nicht mit sehr alter oder ungewöhnlicher Instanzsoftware kompatibel."
   always: "Erlaubt alle unsignierten Anfragen. Bietet die größte Kompatibilität mit anderen Instanzen, reduziert aber die Privatsphäre und schwächt vorhandene Blockierungen."
   essential: "Erlaubt einige begrenzte unsignierte Anfragen. Bietet eine Mischung aus \"Niemals\" und \"Immer\", indem nur die minimalen Profil-Metadaten offengelegt werden, die für die Föderation mit älterer Software erforderlich sind."
