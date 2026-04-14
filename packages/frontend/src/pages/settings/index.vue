@@ -81,6 +81,11 @@ const menuDef = computed<SuperMenuDef[]>(() => [{
 		to: '/settings/profile',
 		active: currentPage.value?.route.name === 'profile',
 	}, {
+		icon: 'ti ti-user-plus',
+		text: 'Invite friends',
+		to: '/settings/invite',
+		active: currentPage.value?.route.name === 'invite',
+	}, {
 		icon: 'ti ti-lock-open',
 		text: i18n.ts.privacy,
 		to: '/settings/privacy',

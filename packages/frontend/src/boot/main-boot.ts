@@ -81,6 +81,30 @@ export async function mainBoot() {
 		}
 	}
 
+	// Tribe referral auto-follow: when a new user arrives via /invite/<username>
+	// that page stashes { username, id } in localStorage under 'tribe_ref'.
+	// After they sign up and log in for the first time, follow the referrer
+	// once and clear the key. Fails silently so this never blocks boot.
+	if ($i) {
+		try {
+			const raw = window.localStorage.getItem('tribe_ref');
+			if (raw) {
+				const ref = JSON.parse(raw);
+				if (ref && ref.username && ref.username !== $i.username) {
+					const { misskeyApi } = await import('@/utility/misskey-api.js');
+					misskeyApi('users/show', { username: ref.username, host: null })
+						.then(u => u && u.id && u.id !== $i.id
+							? misskeyApi('following/create', { userId: u.id })
+							: null)
+						.catch(() => { /* already following / not found — ignore */ })
+						.finally(() => window.localStorage.removeItem('tribe_ref'));
+				} else {
+					window.localStorage.removeItem('tribe_ref');
+				}
+			}
+		} catch { /* localStorage quota / JSON parse — ignore */ }
+	}
+
 	const stream = useStream();
 
 	let reloadDialogShowing = false;

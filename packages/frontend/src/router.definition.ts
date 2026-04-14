@@ -81,6 +81,10 @@ export const ROUTE_DEF = [{
 		name: 'profile',
 		component: page(() => import('@/pages/settings/profile.vue')),
 	}, {
+		path: '/invite',
+		name: 'invite',
+		component: page(() => import('@/pages/settings/invite.vue')),
+	}, {
 		path: '/avatar-decoration',
 		name: 'avatarDecoration',
 		component: page(() => import('@/pages/settings/avatar-decoration.vue')),
