@@ -3,7 +3,19 @@
  * SPDX-License-Identifier: AGPL-3.0-only
  */
 
-import CRC32 from 'crc-32';
+import * as CRC32Module from 'crc-32';
+
+// Handle both ESM/CJS interop shapes: the crc-32 package is CommonJS with
+// `module.exports = { str, buf, bstr, ... }`. Depending on Node + TS module
+// resolution, this shows up either at the top of the namespace or under
+// `.default`. Pick whichever has a callable `str`.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const CRC32: { str: (s: string, seed?: number) => number } =
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	typeof (CRC32Module as any).str === 'function'
+		? (CRC32Module as unknown as { str: (s: string, seed?: number) => number })
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		: (CRC32Module as any).default;
 
 /**
  * true ... 黒
