@@ -171,6 +171,24 @@ export class CheckModeratorsActivityProcessorService {
 
 		const moderators = await this.fetchModerators()
 			.then(it => it.filter(it => it.lastActiveDate != null));
+
+		// On a fresh instance, no moderator has lastActiveDate yet (it is set lazily
+		// by certain actions). Treating that empty set as "all moderators inactive"
+		// would auto-flip the instance to invitation-only on the first hourly run.
+		// Bail out early instead — the admin can be re-checked once they have any
+		// recorded activity.
+		if (moderators.length === 0) {
+			return {
+				isModeratorsInactive: false,
+				inactiveModerators: [],
+				remainingTime: {
+					time: MODERATOR_INACTIVITY_LIMIT_DAYS * ONE_DAY_MILLI_SEC,
+					asHours: MODERATOR_INACTIVITY_LIMIT_DAYS * 24,
+					asDays: MODERATOR_INACTIVITY_LIMIT_DAYS,
+				},
+			};
+		}
+
 		const inactiveModerators = moderators
 			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 			.filter(it => it.lastActiveDate!.getTime() < inactivePeriod.getTime());
